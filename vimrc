@@ -4,7 +4,6 @@
 
 " base
 set nocompatible                      " vim, not vi
-" syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set noswapfile                        " disable swap files
 set autoread                          " automatically update file if changed elsewhere
