@@ -4,6 +4,7 @@
 
 " base
 set nocompatible                      " vim, not vi
+" syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set noswapfile                        " disable swap files
 set autoread                          " automatically update file if changed elsewhere
@@ -29,6 +30,7 @@ set cursorline                        " highlight current line
 set encoding=UTF-8
 set guifont=Iosevka\ Nerd\ Font:h14
 set conceallevel=3                    " hide concealed text
+set updatetime=300                    " You will have bad experience for diagnostic messages when it's default 4000.
 " set guifont=Iosevka:h11
 " set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
 " set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
@@ -100,8 +102,8 @@ endif
 " resize panes with mouse within tmux
 set mouse+=a
 if &term =~ '^screen'
-    " tmux knows the extended mouse mode
-    set ttymouse=xterm2
+   " tmux knows the extended mouse mode
+   set ttymouse=xterm2
 endif
 "}}}
 
@@ -128,6 +130,7 @@ endif
 
 " edit config files
 nmap <leader>ev :tabedit ~/.vimrc<CR>
+nmap <leader>es :tabedit ~/.vim/my-snippets/UltiSnips/all.snippets<CR>
 nmap <leader>ez :tabnew ~/.bash_prompt<CR>
 nmap <leader>ea :tabnew ~/.aliases<CR>
 nmap <leader>et :tabnew ~/.tmux.conf<CR>
@@ -284,8 +287,10 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typ
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'https://github.com/adelarsq/vim-matchit'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/jsonc.vim'
+Plug 'SirVer/ultisnips'
 " Plug 'w0rp/ale'
 " Plug 'svermeulen/vim-easyclip'
 " Plug 'ervandew/supertab'
@@ -313,7 +318,7 @@ Plug 'yggdroot/indentline'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-" Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 " Icons
 Plug 'ryanoasis/vim-devicons'
@@ -333,6 +338,16 @@ call plug#end()
 " Plugin settings {{{
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""
+" UltiSnips plugin
+"""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<c-y>""
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+let g:UltiSnipsSnippetDirectories=[
+      \ $HOME."/.vim/my-snippets/UltiSnips",
+      \]
 
 """""""""""""""""""""""""""""""""""""""""""
 " NerdTree plugin
@@ -355,6 +370,14 @@ let NERDTreeNodeDelimiter = "\x07"
 if exists('g:loaded_webdevicons')
     call webdevicons#refresh()
 endif
+
+" let g:indent_guides_exclude_filetypes = ['nerdtree']
+" let g:WebDevIconsOS = 'Darwin'
+" let g:DevIconsEnableFoldersOpenClose = 1
+" let g:DevIconsEnableFolderExtensionPatternMatching = 1
+" let g:webdevicons_conceal_nerdtree_brackets = 1
+" let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
+
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
@@ -411,8 +434,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> for trigger completion.
-" inoremap <silent><expr> <c-space> coc#refresh()
+" Use <c-p> for trigger completion.
+inoremap <silent><expr> <c-p> coc#refresh()
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
