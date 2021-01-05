@@ -17,7 +17,7 @@ team=(ARI ATL BA BUF CAR CHI CIN CLE DAL DEN DET GB HOU IND JAC KC MIA MIN NE NO
 ## This first for loop goes through all of the teams in the list and finds who they are playing. In some cases
 ## two of the listed teams are playing one another. In this case we have to sort the list and find only unique pairs.
 
-curl -s http://www.nfl.com/liveupdate/scorestrip/ss.xml > ~/.temp.txt
+curl -s http://static.nfl.com/liveupdate/scorestrip/ss.xml > ~/.temp.txt
 
 # Week Number
 week=`cat ~/.temp.txt | grep "gms w"  | sed -e 's/.*w="\([^"]*\)".*/\1/'`
@@ -172,7 +172,8 @@ time=$hour":"$minute" "$zone
 
 # This section does a little logic to make display the proper status of the game or future games
 if [ $quarter = "F" ]; then
-echo ${visiting_city} ${visiting_team} ${visiting_score} ${home_city} ${home_team} ${home_score} FINAL
+# echo ${visiting_city} ${visiting_team}$'\t\t'${visiting_score}$'\t'${home_city} ${home_team}$'\t\t'${home_score}$'\t'FINAL
+printf "(%3s)  %-18s  %2s  -  %2s  %18s\t FINAL\n" "$day" "$visiting_city $visiting_team" "$visiting_score" "$home_score" "$home_city $home_team"
 elif [ $quarter = "P" ]; then
 echo ${visiting_city} ${visiting_team} at ${home_city} ${home_team} on $day at $time $zone_label
 elif [ $quarter = "H" ]; then
