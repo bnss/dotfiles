@@ -4,10 +4,10 @@
 
 " base
 set nocompatible                      " vim, not vi
-" syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set noswapfile                        " disable swap files
 set autoread                          " automatically update file if changed elsewhere
+" syntax on                             " syntax highlighting
 
 " interface
 set noshowmode                        " don't show mode
@@ -69,12 +69,13 @@ set clipboard=unnamed                 " use native clipboard
 set nobackup                          " don't save backups
 set nowritebackup                     " don't save a backup while editing
 set visualbell                        " no sounds
-set lazyredraw                        " improve re-playing macros
+" set lazyredraw                        " improve re-playing macros
+" set redrawtime=10000
+" set re=1
 set ttyfast                           " indicates a fast terminal connection
 set completeopt=menu,menuone,preview,noselect,noinsert
 set undofile                          " maintain undo history between sessions
 set undodir=~/.vim/undodir
-
 
 " in many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -105,6 +106,11 @@ if &term =~ '^screen'
    " tmux knows the extended mouse mode
    set ttymouse=xterm2
 endif
+
+" change filetype of pcss to css
+au BufRead,BufNewFile *.pcss set filetype=pcss.css
+au BufRead,BufNewFile *.scss set filetype=scss.css
+
 "}}}
 
 " Mappings {{{
@@ -114,6 +120,13 @@ endif
 " change leader to comma
 let mapleader=','
 let localleader='\'
+
+" python
+let g:python_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/usr/local/bin/python3'
+
+" correct vue syntax highlighting of style tag
+let html_no_rendering=1
 
 " set cursorshape based on mode
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
@@ -130,12 +143,15 @@ endif
 
 " edit config files
 nmap <leader>ev :tabedit ~/.vimrc<CR>
-nmap <leader>es :tabedit ~/.vim/my-snippets/UltiSnips/all.snippets<CR>
-nmap <leader>ez :tabnew ~/.bash_prompt<CR>
+nmap <leader>eu :tabedit ~/.vim/my-snippets/UltiSnips/all.snippets<CR>
+nmap <leader>ez :tabnew ~/.zshrc<CR>
 nmap <leader>ea :tabnew ~/.aliases<CR>
 nmap <leader>et :tabnew ~/.tmux.conf<CR>
 nmap <leader>ek :tabnew ~/.config/kitty/kitty.conf<CR>
 nmap <leader>es :tabnew ~/Dropbox/dotfiles/init.sh<CR>
+
+" Reload Coc
+nmap <leader>R :CocRestart<CR>
 
 " jj acts as the escape key
 inoremap jj <Esc>
@@ -157,6 +173,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 
 " toggle FZF :Files
 nnoremap <leader>f :FZF<CR>
+" nnoremap <leader>f :GFiles<CR>
 
 " toggle FZF :Buffers
 nnoremap ; :Buffers<CR>
@@ -211,6 +228,15 @@ nmap <leader>w :b#<CR>
 " close the current buffer and move to the previous one
 " this replicates the idea of closing a tab
 " nmap <leader>w :b#<bar>bd#<CR>
+
+" toggle spell checking
+set spelllang=en_us
+nmap <leader>ss :setlocal spell!<cr>
+
+""" move to misspelled word: '[s' and ']s'
+""" suggest alternative: 'z='
+""" vim is wrong, add to dictionary: 'zg'
+""" vim does not detect wrong word, mark as incorrect: 'zw'
 
 " open omni completion menu closing previous if open and opening new menu without changing the text
 inoremap <expr> <C-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
@@ -273,9 +299,12 @@ call plug#begin('~/.vim/plugged')
 " syntax highlighting
 Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
-Plug 'valloric/matchtagalways'
+" Plug 'valloric/matchtagalways'
 Plug 'alexlafroscia/postcss-syntax.vim'
 Plug 'junegunn/goyo.vim'
+" Plug 'jxnblk/vim-mdx-js'
+" Plug 'findango/vim-mdx'
+" Plug 'ap/vim-css-color'
 
 " text manipulation
 Plug 'alvan/vim-closetag'
@@ -287,6 +316,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typ
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'https://github.com/adelarsq/vim-matchit'
+" :CocInstall coc-tsserver coc-eslint coc-tslint-plugin coc-html coc-json coc-vetur coc-prettier coc-css
 " Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/jsonc.vim'
@@ -296,8 +326,10 @@ Plug 'SirVer/ultisnips'
 " Plug 'ervandew/supertab'
 
 " movement
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'wincent/ferret'
@@ -308,7 +340,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-obsession'
 Plug 'chriskempson/base16-vim'
 Plug 'flazz/vim-colorschemes'
-Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
+" Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
 Plug 'itchyny/lightline.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'yggdroot/indentline'
@@ -318,11 +350,9 @@ Plug 'yggdroot/indentline'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 
 " Icons
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " if has('nvim')
 "   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " else
@@ -362,6 +392,10 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrowExpandable = "\u00a0"
 let NERDTreeDirArrowCollapsible = "\u00a0"
 let NERDTreeNodeDelimiter = "\x07"
+let g:NERDTreeGlyphReadOnly = "RO"
+
+" color of directories
+highlight! link NERDTreeFlags NERDTreeDir
 
 """""""""""""""""""""""""""""""""""""""""""
 " Devicons plugin
@@ -380,9 +414,16 @@ endif
 
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ' '
 let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
+
+" let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+" let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+" let g:NERDTreeDirArrowExpandable = "\u00a0"
+" let g:NERDTreeDirArrowCollapsible = "\u00a0"
+" let g:DevIconsEnableNERDTreeRedraw = 1
 
 """""""""""""""""""""""""""""""""""""""""""
 " MatchTagAlways plugin
@@ -395,6 +436,11 @@ let g:mta_filetypes = {
     \ 'js' : 1,
     \ 'jsx' : 1,
     \}
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Ferret plugin
+"""""""""""""""""""""""""""""""""""""""""""
+" let g:FerretJob=0
 
 """""""""""""""""""""""""""""""""""""""""""
 " AutoPairs plugin
@@ -429,6 +475,12 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
+" let g:coc_global_extensions = [
+"   'coc-emoji', 'coc-eslint', 'coc-prettier',
+"   'coc-tsserver', 'coc-tslint', 'coc-tslint-plugin',
+"   'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml'
+" ]
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -459,11 +511,11 @@ let g:lightline = {
   \ 'colorscheme': 'Tomorrow_Night_Eighties',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
-  \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+  \             [ 'readonly', 'filename', 'modified' ] ]
   \ },
   \ 'component_function': {
   \   'filename': 'FilenameForLightline',
-  \   'cocstatus': 'coc#status'
+  \   'cocstatus': 'coc#status',
   \ },
 \ }
 
@@ -569,9 +621,9 @@ let g:ale_fixers = {
 " \   'vue':        ['prettier', 'eslint']
 " \}
 
-noremap <Leader>ad :ALEGoToDefinition<CR>
-noremap <Leader>af :ALEFix<CR>
-noremap <Leader>ar :ALEFindReferences<CR>
+" noremap <Leader>ad :ALEGoToDefinition<CR>
+" noremap <Leader>af :ALEFix<CR>
+" noremap <Leader>ar :ALEFindReferences<CR>
 
 """""""""""""""""""""""""""""""""""""""""""
 " Flow plugin
@@ -592,6 +644,8 @@ let g:flow#enable = 1
 " Prettier
 """""""""""""""""""""""""""""""""""""""""""
 " Prettier specific config
+" if no prettier config enabled, it will use the one from :CocConfig
+
 " If none specified, will use project's default
 " let g:prettier#exec_cmd_async = 1
 " let g:prettier#config#trailing_comma = 'none'
@@ -600,7 +654,16 @@ let g:flow#enable = 1
 " let g:prettier#config#bracket_spacing = 'true'
 
 " Auto focus quickfix window when errors encountered
-let g:prettier#quickfix_auto_focus = 1
+" let g:prettier#quickfix_auto_focus = 0
+
+" when running at every change you may want to disable quickfix
+let g:prettier#quickfix_enabled = 0
+
+" Default is async
+let g:prettier#exec_cmd_async = 1
+
+" Do not autofocus the quickfix
+let g:prettier#quickfix_auto_focus = 0
 
 " Running Prettier before saving async (vim 8+)
 let g:prettier#autoformat = 0
@@ -696,6 +759,9 @@ let g:fzf_colors =
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 " let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
+" ignore .gitignore files
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " Hide statusline in neovim
 autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
@@ -733,6 +799,7 @@ endif
 "highlight PmenuSel          ctermbg=3   ctermfg=1
 "highlight SpellBad          ctermbg=0   ctermfg=1
 highlight ExtraWhitespace   ctermbg=1   guibg=red
+highlight Comment cterm=italic
 match ExtraWhitespace /\s\+$/
 
 " transparent background
@@ -784,9 +851,21 @@ augroup END
 "   autocmd BufEnter * call s:auto_goyo()
 " augroup END
 
+" MDX files
+autocmd BufNewFile,BufRead *.mdx setlocal filetype=markdown.mdx
+
+" Vue files
+autocmd BufNewFile,BufRead *.vue setlocal filetype=vue
+
 " Vue posva
 let g:vue_disable_pre_processors=1
-autocmd FileType vue syntax sync fromstart
+let g:vue_pre_processors = 'detect_on_enter'
+" autocmd FileType vue syntax sync fromstart
+" autocmd FileType mdx syntax sync fromstart
+"
+autocmd BufEnter,BufRead * syntax sync fromstart
+syntax sync minlines=10000
+set redrawtime=10000
 
 " NERDTree
 autocmd vimenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
