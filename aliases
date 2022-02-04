@@ -45,6 +45,7 @@ alias reddit='rtv -s'
 alias banner='figlet'
 alias aquarium='asciiquarium'
 alias vimup="vim +'PlugUpgrade|PlugInstall|PlugUpdate|qa!'"
+alias tmuxup="~/.tmux/plugins/tpm/bin/update_plugins all"
 alias nfl='~/Documents/code/dotfiles/scripts/nfl.sh'
 alias nflScores='~/Documents/code/dotfiles/scripts/nfl.sh'
 alias testJs='hopa'
