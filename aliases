@@ -109,6 +109,8 @@ alias gtree='git log --all --decorate --oneline --graph'
 alias gpfr='git push-for-review'
 alias gplease='git push --force-with-lease'
 alias gconflict='git diff --name-only --diff-filter=U'
+# Reload gitignore
+alias gignorereload='git rm -rf -cached . && git add .'
 # Open current branch
 alias ghb='gh tree/$(git symbolic-ref --quiet --short HEAD )'
 # Open current directory/file in current branch
