@@ -49,6 +49,7 @@ alias tmuxup="~/.tmux/plugins/tpm/bin/update_plugins all"
 alias nfl='~/Documents/code/dotfiles/scripts/nfl.sh'
 alias nflScores='~/Documents/code/dotfiles/scripts/nfl.sh'
 alias testJs='hopa'
+alias portListening='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 
 # Go to Directories
 alias univ='cd ~/Dropbox/UNIV'
