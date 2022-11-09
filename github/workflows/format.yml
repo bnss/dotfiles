@@ -1,0 +1,40 @@
+name: Code Formatter
+
+on:
+  pull_request:
+    branches-ignore:
+      - to-be-released/**
+      - released/**
+      - dependabot/**
+
+jobs:
+  code-formatter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Cache node dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Setup access to Qlik NPM registry
+        run: echo $QLIK_NPM_DEV_ENCODED | base64 -d >> ~/.npmrc
+        env:
+          QLIK_NPM_DEV_ENCODED: ${{ secrets.QLIK_NPM_DEV_ENCODED }}
+
+      - name: Install node depedencies
+        run: npm ci
+
+      - name: Run Prettier
+        run: npm run format
+
+      - name: Commit code formatter changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply code formatter changes

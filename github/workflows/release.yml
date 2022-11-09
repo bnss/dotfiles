@@ -1,0 +1,110 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.release.target_commitish }}
+          fetch-depth: 0
+
+      - name: Cache node dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Setup access to Qlik NPM registry
+        run: echo $QLIK_NPM_DEV_ENCODED | base64 -d >> ~/.npmrc
+        env:
+          QLIK_NPM_DEV_ENCODED: ${{ secrets.QLIK_NPM_DEV_ENCODED }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build qmfe
+        run: npm run build:qmfe
+
+      - name: Set env
+        run: echo "VERSION=${GITHUB_REF#refs/*/v}" >> $GITHUB_ENV
+
+      - name: Create Sentry release
+        uses: getsentry/action-release@v1
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: qliktechnologies
+          SENTRY_PROJECT: qmfe-automations
+        with:
+          environment: production
+          version: ${{ env.VERSION }}
+          version_prefix: qmfe-automations@
+          sourcemaps: ./dist
+          url_prefix: ~/qmfe/automations/${{ env.VERSION }}
+
+      - name: Upload qmfe artifacts to stage cdn
+        uses: qlik-oss/qmfe-actions/qmfe-to-aws@v1
+        with:
+          aws-bucket-name: qcs-stage-cdn.qlikcloud.com
+          aws-access-key-id: ${{ secrets.AWS_CDN_STAGE_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_CDN_STAGE_SECRET_ACCESS_KEY }}
+          source: ./dist
+          qmfe-id: automations
+          version: ${{ env.VERSION }}
+
+      - name: Upload qmfe artifacts to prod cdn
+        uses: qlik-oss/qmfe-actions/qmfe-to-aws@v1
+        with:
+          aws-bucket-name: qcs-prod-cdn.qlikcloud.com
+          aws-access-key-id: ${{ secrets.AWS_CDN_PROD_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_CDN_PROD_SECRET_ACCESS_KEY }}
+          source: ./dist
+          qmfe-id: automations
+          version: ${{ env.VERSION }}
+
+      - name: Qlik releaser version
+        uses: qlik-oss/ci-tools/action-version@master
+
+      - name: Qlik releaser dispatch
+        uses: qlik-oss/ci-tools/action-releaser-dispatch@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+        
+      - name: Add changelog diff to changelog env
+        run: |
+          echo 'CHANGELOG<<EOF' >> $GITHUB_ENV
+          echo -e "\n" >> $GITHUB_ENV
+          git diff HEAD^ HEAD -- '*.md'| egrep "^\+" | tail -n +2 | sed s/\+// >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
+          echo $GITHUB_ENV.CHANGELOG
+          
+      - name: Convert markdown to slack markdown
+        uses: LoveToKnow/slackify-markdown-action@v1.0.0
+        id: changelogmarkdown
+        with:
+          text: ${{ env.CHANGELOG }}
+      
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_FOR_Q_GAP_BOTS }}
+          SLACK_CHANNEL: "#automations-releases"
+          SLACK_TITLE: "automations-editor release v${{ env.VERSION }}"
+          SLACK_COLOR: good
+          SLACK_ICON_EMOJI: ":stockrocket:"
+          SLACK_MESSAGE: ${{ steps.changelogmarkdown.outputs.text }}
+          SLACK_FOOTER: "Powered by Workflow and Automation team"
+          SLACK_USERNAME: "automations-editor"
+          MSG_MINIMAL: true

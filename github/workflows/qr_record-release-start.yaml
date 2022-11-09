@@ -1,0 +1,23 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Record release start"
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  print-event-info:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: qlik-oss/ci-tools/action-print-event-info@master
+  call-rt_record-release-start:
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_record-release-start.yaml@released/master
+    with:
+      go_ref: refs/heads/released/master
+    secrets: inherit

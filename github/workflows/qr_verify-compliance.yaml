@@ -1,0 +1,28 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Verify compliance"
+on:
+  workflow_dispatch:
+    inputs:
+      verification-types:
+        description: 'The types of verification to perform, e.g. "twistlock, static-compliance"'
+        default: "all"
+        required: false
+      target_ref:
+        description: "Target ref if different from branch/tag that workflow is running on"
+        default: ""
+        required: false
+
+jobs:
+  call-rt_verify-compliance:
+    name: _
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_verify-compliance.yaml@released/master
+    with:
+      target_ref: ${{ github.event.inputs.target_ref || github.event.ref }}
+      verification_types: ${{ github.event.inputs.verification-types }}
+    secrets: inherit

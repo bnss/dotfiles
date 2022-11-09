@@ -1,0 +1,28 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Update component"
+on:
+  workflow_dispatch:
+
+  push:
+    branches-ignore:
+      - to-be-released/**
+      - released/**
+    paths:
+      - "component.yaml"
+
+  schedule:
+    # Run once per week to catch failed immediate notifications
+    - cron: "30 3 * * 0"
+
+jobs:
+  call-rt_update-component:
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_update-component.yaml@released/master
+    with:
+      go_ref: refs/heads/released/master
+    secrets: inherit

@@ -1,0 +1,33 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Make release"
+on:
+  workflow_dispatch:
+    inputs:
+      releaseType:
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+        description: "release type. patch, minor, major"
+        required: true
+        default: "minor"
+      branch:
+        type: string
+        description: "branch to release (default will result in the repo's default branch)"
+        required: true
+        default: default
+
+jobs:
+  call-rt_make-release:
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_make-release.yaml@released/master
+    with:
+      releaseType: ${{ inputs.releaseType }}
+      branch: ${{ inputs.branch }}
+    secrets: inherit

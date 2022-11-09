@@ -1,0 +1,23 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Build component"
+on:
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: "refs/tags/<tag_name>, refs/heads/<branch_name> or <commit_sha>"
+        required: true
+
+jobs:
+  call-rt_build:
+    name: _
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_build.yaml@released/master
+    with:
+      go_ref: refs/heads/released/master
+      target_ref: ${{ github.event.inputs.target_ref }}
+    secrets: inherit

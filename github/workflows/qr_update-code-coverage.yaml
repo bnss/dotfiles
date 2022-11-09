@@ -1,0 +1,29 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Update code coverage"
+on:
+  workflow_dispatch:
+    inputs:
+      code_coverage:
+        description: "Code coverage in the range [0.0-1.0]"
+        required: true
+        type: string
+      code_coverage_tool:
+        description: "Code coverage tool"
+        required: true
+        type: string
+
+jobs:
+  call-rt_update-code-coverage:
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_update-code-coverage.yaml@released/master
+    with:
+      go_ref: refs/heads/released/master
+      code-coverage: ${{ github.event.client_payload.code_coverage || github.event.inputs.code_coverage }}
+      code-coverage-tool: ${{ github.event.client_payload.code_coverage_tool || github.event.inputs.code_coverage_tool }}
+      repository: ${{ github.event.client_payload.repository || github.event.repository.name }}
+    secrets: inherit

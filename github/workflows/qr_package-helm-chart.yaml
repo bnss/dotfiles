@@ -1,0 +1,26 @@
+# !!! DO NOT MODIFY OR COPY THIS FILE !!!
+# This file is part of Qlik Releaser
+# cosmetic_prefix: QR
+# wfRef: refs/tags/v37.0.0
+# goRef: refs/heads/released/master
+# go_ref_short: released/master
+
+name: "QR: Package helm chart"
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version of docker image tag as well as helm chart'
+        required: true
+      commit_sha:
+        description: 'Commit SHA'
+        required: false
+
+jobs:
+  call-rt_package-helm-chart:
+    name: _
+    uses: qlik-trial/qlik-releaser/.github/workflows/rt_package-helm-chart.yaml@released/master
+    with:
+      version: ${{ github.event.inputs.version }}
+      commit_sha: ${{ github.event.inputs.commit_sha }}
+    secrets: inherit

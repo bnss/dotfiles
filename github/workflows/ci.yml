@@ -1,0 +1,169 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - to-be-released/**
+      - released/**
+
+jobs:
+  lints-and-builds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.release.target_commitish }}
+
+      - name: Cache node dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Setup access to Qlik NPM registry
+        run: echo $QLIK_NPM_DEV_ENCODED | base64 -d >> ~/.npmrc
+        env:
+          QLIK_NPM_DEV_ENCODED: ${{ secrets.QLIK_NPM_DEV_ENCODED }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Format check
+        run: npm run format-check
+
+      - name: Build
+        run: npm run build:qmfe
+
+  tests:
+    runs-on: ubuntu-latest
+    container: 
+      image: cypress/browsers:node16.5.0-chrome97-ff96
+      options: --user 1001 # make sure it's run as non-root so screenshots can be captured
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.release.target_commitish }}
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Cache Cypress binary
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-${{ runner.os }}-cypress-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            cypress-${{ runner.os }}-cypress-
+
+      - name: Setup access to Qlik NPM registry
+        run: echo $QLIK_NPM_DEV_ENCODED | base64 -d >> ~/.npmrc
+        env:
+          QLIK_NPM_DEV_ENCODED: ${{ secrets.QLIK_NPM_DEV_ENCODED }}
+
+      - name: Install dependencies and verify Cypress
+        env:
+        # make sure every Cypress install prints minimal information
+          CI: 1
+        # print Cypress and OS info
+        run: |
+          npm ci
+          npx cypress verify
+
+      - name: Cypress tests
+        uses: nick-fields/retry@v2
+        with:
+          timeout_seconds: 1600
+          max_attempts: 2
+          retry_on: error
+          command: npm run cypress:ci
+
+      - name: Javascript tests
+        run: npm run test
+
+      - name: Merge js and cypress tests coverage
+        run: npx nyc merge .nyc_output .merged_nyc_output/merged-coverage.json
+
+      - name: Create coverage report
+        run: npx nyc report --reporter=text-summary
+
+      - uses: paambaati/codeclimate-action@v2.7.5
+        env:
+          CC_TEST_REPORTER_ID: 957232f5e4fe003df06f3790dc25a10d2f3ddeff31d7a07d1b00310e6efdc0ee
+        with:
+          coverageCommand: echo "report coverage"
+
+      - name: Upload coverage report to artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: coverage
+          path: coverage
+
+      - name: Upload cypress screenshots to artifacts
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+  dx-build:
+    needs: [lints-and-builds, tests]
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.release.target_commitish }}
+
+      - name: Cache node dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Setup access to Qlik NPM registry
+        run: echo $QLIK_NPM_DEV_ENCODED | base64 -d >> ~/.npmrc
+        env:
+          QLIK_NPM_DEV_ENCODED: ${{ secrets.QLIK_NPM_DEV_ENCODED }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build dx
+        env:
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: npm run build:dx
+
+      - name: Publish assets
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOY_S3_ASSETS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOY_S3_ASSETS_ACCESS_SECRET }}
+          AWS_EC2_METADATA_DISABLED: true
+        run: |
+          aws s3 cp dist s3://automations-dx/${{ github.ref_name }}/ --recursive
