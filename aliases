@@ -127,6 +127,9 @@ alias 007='mupen64plus --windowed ~/Dropbox/Documents/ROMs/N64/007GoldenEye.n64'
 alias lego='mupen64plus --windowed ~/Dropbox/Documents/ROMs/N64/LEGORacers.n64'
 
 # Bricsys
-alias keycloak='~/Documents/Bricsys/keycloak/bin/standalone.sh -c standalone-ha.xml'
-alias catalina='~/Documents/Bricsys/apache-tomcat-7.0.70/bin/catalina.sh'
+# alias keycloak='~/Documents/Bricsys/keycloak/bin/standalone.sh -c standalone-ha.xml'
+# alias catalina='~/Documents/Bricsys/apache-tomcat-7.0.70/bin/catalina.sh'
 # alias catalinaBoa='~/Documents/Bricsys/tomcat/bin/catalina.sh'
+
+# Qlik
+alias reloadUi='cd ../automations-ui; npm run lib; cd ../automations-editor; npm run serve:qmfe'
