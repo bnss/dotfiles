@@ -1,0 +1,7 @@
+<application>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter id="58cc5242-38d0-4350-a560-13ddfb210325" name="PHP 8.2" home="/opt/homebrew/Cellar/php/8.2.10/bin/php" auto="false" debugger_id="php.debugger.XDebug" />
+    </interpreters>
+  </component>
+</application>

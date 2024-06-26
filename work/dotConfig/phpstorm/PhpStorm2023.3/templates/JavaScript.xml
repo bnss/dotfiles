@@ -1,0 +1,9 @@
+<templateSet group="JavaScript">
+  <template name="cl" value="console.log('$PARAM_COPY$: ', $PARAM$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM_COPY" expression="" defaultValue="PARAM" alwaysStopAt="false" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

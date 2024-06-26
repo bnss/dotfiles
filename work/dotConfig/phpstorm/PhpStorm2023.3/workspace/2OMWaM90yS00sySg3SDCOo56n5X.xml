@@ -1,0 +1,2260 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="bingel-tms" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:refactor" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:robbe" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:robbe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bart" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bart" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bart" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cleanup" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bart" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bart" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:other" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:refactor" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ben" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:story" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bitbucket" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bitbucket" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:release" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bram" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bram" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bram" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bitbucket" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:jeppe" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:jeppe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:jeppe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cleanup" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:jeppe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:jeppe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:refactor" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:renovate" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:robbe" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:robbe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:robbe" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:tijl" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:tijl" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bugfix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:tijl" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myColumnSize">
+      <list>
+        <option value="240" />
+        <option value="221" />
+      </list>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.7411908">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/other/scripts/phpunit-init">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="242">
+                  <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/resources/lang/nl/labels.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="280">
+                  <caret line="741" column="54" selection-start-line="741" selection-start-column="54" selection-end-line="741" selection-end-column="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Settings/Security/Mfa/MfaConfirmResetControllerTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="172">
+                  <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/lang/nl.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="296">
+                  <caret line="55" column="91" selection-start-line="55" selection-start-column="91" selection-end-line="55" selection-end-column="91" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/Unit/App/Exceptions/HandlerTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="51" column="94" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/Unit/App/Services/File/FileValidationServiceTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Admin/Nova/Actions/TriggerWisaResyncTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="70" column="106" selection-start-line="70" selection-start-column="106" selection-end-line="70" selection-end-column="106" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/CareInfo/CareInfoControllerEditTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="172">
+                  <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/assets/js/vue-i18n-locales.generated.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="186">
+                  <caret line="4761" column="22" selection-start-line="4761" selection-start-column="22" selection-end-line="4761" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/lang/en/api.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/resources/lang/en/labels.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                  <caret line="497" column="18" selection-start-line="497" selection-start-column="18" selection-end-line="497" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cfa/Common/Domain/School/Group/GroupResource.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="616">
+                  <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name=".env file">
+      <summary usageCount="6" lastUsed="1700146350959" />
+    </fileType>
+    <fileType name="Blade">
+      <summary usageCount="128" lastUsed="1719390335007" />
+    </fileType>
+    <fileType name="CSS">
+      <summary usageCount="2" lastUsed="1693990608558" />
+    </fileType>
+    <fileType name="DIFF">
+      <summary usageCount="101" lastUsed="1719301970146" />
+    </fileType>
+    <fileType name="ECMAScript 6">
+      <summary usageCount="3" lastUsed="1710341599605" />
+    </fileType>
+    <fileType name="GitIgnore file">
+      <summary usageCount="2" lastUsed="1683284610855" />
+    </fileType>
+    <fileType name="HTML">
+      <summary usageCount="2" lastUsed="1697534423969" />
+    </fileType>
+    <fileType name="JSON">
+      <summary usageCount="67" lastUsed="1719236777047" />
+    </fileType>
+    <fileType name="JavaScript">
+      <summary usageCount="1055" lastUsed="1719317174089" />
+    </fileType>
+    <fileType name="Markdown">
+      <summary usageCount="33" lastUsed="1718260698921" />
+    </fileType>
+    <fileType name="PHP">
+      <summary usageCount="222" lastUsed="1719385757526" />
+    </fileType>
+    <fileType name="PLAIN_TEXT">
+      <summary usageCount="4" lastUsed="1681976438853" />
+    </fileType>
+    <fileType name="SCSS">
+      <summary usageCount="8" lastUsed="1713444300481" />
+    </fileType>
+    <fileType name="SQL">
+      <summary usageCount="1" lastUsed="1716814051278" />
+    </fileType>
+    <fileType name="SVG">
+      <summary usageCount="3" lastUsed="1708952631253" />
+    </fileType>
+    <fileType name="Shell Script">
+      <summary usageCount="10" lastUsed="1719325093934" />
+    </fileType>
+    <fileType name="TypeScript">
+      <summary usageCount="50" lastUsed="1716466895718" />
+    </fileType>
+    <fileType name="Vue.js">
+      <summary usageCount="1265" lastUsed="1719390311103" />
+    </fileType>
+    <fileType name="WebPreview">
+      <summary usageCount="1" lastUsed="1709035440963" />
+    </fileType>
+    <fileType name="XML">
+      <summary usageCount="1" lastUsed="1719325123661" />
+    </fileType>
+    <fileType name="YAML">
+      <summary usageCount="2" lastUsed="1691763040848" />
+    </fileType>
+    <fileType name="textmate">
+      <summary usageCount="4" lastUsed="1694432567949" />
+    </fileType>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>buttons</find>
+      <find>Print</find>
+      <find>followupsystemgoalsetting.`</find>
+      <find>openpanel</find>
+      <find>beforeEach</find>
+      <find>studio</find>
+      <find>canto</find>
+      <find>baiulus</find>
+      <find>v-expansion-panel-title</find>
+      <find>v-menu__con</find>
+      <find>v-list-item</find>
+      <find>button</find>
+      <find>v-input</find>
+      <find>v-input.*control</find>
+      <find>tablewrapper</find>
+      <find>v-btn.*varian</find>
+      <find>v-container</find>
+      <find>parentErrors</find>
+      <find>list-crud-</find>
+      <find>quotation-l</find>
+      <find>quotation&gt;</find>
+      <find>v-model:mo</find>
+      <find>quotationcreator</find>
+      <find>\.sync</find>
+      <find>listcrud</find>
+      <find>selectelem</find>
+      <find>item-text</find>
+      <find>deep.*\n.*hover</find>
+      <find>td</find>
+      <find>:hover</find>
+      <find>-12px</find>
+      <find>list-crud</find>
+      <find>ratingcreator</find>
+      <find>listcrudcom</find>
+      <find>qout</find>
+      <find>labels.*delete</find>
+      <find>sjablonen</find>
+      <find>predefined-ratings</find>
+      <find>quotationsys.bla</find>
+      <find>attachTo</find>
+      <find>MoxiosWait</find>
+      <find>inputelement</find>
+      <find>vid:</find>
+      <find>console.log.*qu</find>
+      <find>console.log.*</find>
+      <find>_icon</find>
+      <find>_empty_icon</find>
+      <find>quotationCreator</find>
+      <find>quotation-creator</find>
+      <find>nexttick</find>
+      <find>Field\n</find>
+      <find>v-resize</find>
+      <find>tmsrating</find>
+      <find>v-switch</find>
+      <find>blue.*lighten</find>
+      <find>activator</find>
+      <find>zill-color</find>
+      <find>shades</find>
+      <find>console.log</find>
+      <find>reportsettingsprintresource</find>
+      <find>bg-blue-lighten-4</find>
+      <find>Label</find>
+      <find>bg-s</find>
+      <find>&lt;v-radio</find>
+      <find>autocomplete-chips-element</find>
+      <find>iconselector</find>
+      <find>vstepper</find>
+      <find>v-stepper</find>
+      <find>grey</find>
+      <find>v-text-field</find>
+      <find>addtest</find>
+      <find>success-lig</find>
+      <find>primary-ligh</find>
+      <find>warning-dar</find>
+      <find>var\(--v-theme</find>
+      <find>v-menu</find>
+      <find>bold</find>
+      <find>handlekeypress</find>
+      <find>reportcommentlist</find>
+      <find>v-alert</find>
+      <find>v-alert\n.*</find>
+      <find>structuredClone</find>
+      <find>packa</find>
+      <find>structured-clone</find>
+      <find>reportoverview</find>
+      <find>report-overview</find>
+      <find>breadcrumbwrapper</find>
+      <find>breadcrumb-wrapper</find>
+      <find>breadcrumbs</find>
+      <find>follow-up-systems.breadcrumbs</find>
+      <find>v-menu.*attach</find>
+      <find>\{.*props</find>
+      <find>\{.*props.*:</find>
+      <find>open</find>
+      <find>followupsystemgoalselector</find>
+      <find>&lt;Form.*ref</find>
+      <find>followupsystembuttons</find>
+      <find>optionsmenu</find>
+      <find>follow-up-system-buttons</find>
+      <find>skip</find>
+      <find>it\.s</find>
+      <find>background.*eeee</find>
+      <find>archiveswitch</find>
+      <find>archive-switch</find>
+      <find>v-btn</find>
+      <find>checkboxelement</find>
+      <find>height: 36px</find>
+      <find>colorpicker</find>
+      <find>color-picker</find>
+      <find>box-shadow</find>
+      <find>tkworkspacetoolbox</find>
+      <find>v-tooltip</find>
+      <find>repetition_end</find>
+      <find>plrPlanner</find>
+      <find>plrPlannerItemsUpdated</find>
+      <find>v-select</find>
+      <find>calculatelanes</find>
+      <find>toolbarbutton</find>
+      <find>yellow</find>
+      <find>quotationdisplay</find>
+      <find>Opslaan en sl</find>
+      <find>save-and-close</find>
+      <find>numericVTextField</find>
+      <find>&lt;Form</find>
+      <find>testoptions</find>
+      <find>v-bind.*attrs</find>
+      <find>pupillistcollapsewrapper</find>
+      <find>mb-0 pb</find>
+      <find>calc\(.*100vh</find>
+      <find>c-util-disable</find>
+      <find>selectcollea</find>
+      <find>height</find>
+      <find>75vh</find>
+      <find>v-data-table</find>
+      <find>border</find>
+      <find>sort-by</find>
+      <find>toegang zorgno</find>
+      <find>staff-rights-table</find>
+      <find>columns</find>
+      <find>labels</find>
+      <find>columnsa</find>
+      <find>expiration-date</find>
+      <find>beschikbaar</find>
+      <find>geen gegevens</find>
+      <find>no-data</find>
+      <find>n</find>
+      <find>geen groepen</find>
+      <find>ITEM.*EMPTY</find>
+      <find>col-11</find>
+      <find>v-col-md-6</find>
+      <find>mfaschooltoggle</find>
+      <find>mfa-school-toggle</find>
+      <find>staffrighttable.test.js</find>
+      <find>v-dialog</find>
+      <find>share-modal</find>
+      <find>transfercollectionmodal.vu</find>
+      <find>&lt;a</find>
+      <find>&lt;a.*class</find>
+      <find>item-title=</find>
+      <find>item-value=</find>
+      <find>empty</find>
+      <find>no-data-te</find>
+      <find>\&gt;</find>
+      <find>activatorProps</find>
+      <find>&lt;v-select</find>
+      <find>update-expiration</find>
+      <find>autocompletechipselement</find>
+      <find>&lt;autocomplete-chips-element</find>
+      <find>image-uploader</find>
+      <find>imageuploadbutton</find>
+      <find>@update</find>
+      <find>@input</find>
+      <find>plrcalendaritemdetail</find>
+      <find>= this.updateClasses</find>
+      <find>groupOptions</find>
+      <find>plannergroupselector</find>
+      <find>history\.replacestate</find>
+      <find>recently_access</find>
+      <find>schoolyearStartYear</find>
+      <find>emits:</find>
+      <find>rotation</find>
+      <find>x-axis</find>
+      <find>xAxis</find>
+      <find>2800</find>
+      <find>chart-element</find>
+      <find>setScrollableChart</find>
+      <find>pointplacement</find>
+      <find>plotbands</find>
+      <find>plotOptions</find>
+      <find>setExtremes</find>
+      <find>isotope-grid</find>
+      <find>&lt;avatar</find>
+      <find>truncate</find>
+      <find>pb-2</find>
+      <find>max is verplicht</find>
+      <find>isoElement</find>
+      <find>aap</find>
+      <find>Eerste leerjaar</find>
+      <find>not_found</find>
+      <find>ongeldige</find>
+      <find>foutie</find>
+      <find>body-user</find>
+      <find>paragraph1</find>
+      <find>import-job-status</find>
+      <find>care_type_required</find>
+      <find>default</find>
+      <find>er ging</find>
+      <find>export\-inactive</find>
+      <find>invalid_human_readable</find>
+      <find>outdated-browser</find>
+      <find>social-emotional</find>
+      <find>qr-title</find>
+      <find>qr_title</find>
+      <find>national_register_numbers_cl</find>
+      <find>trigger_school</find>
+      <find>sync_triggere</find>
+      <find>marked_as_seen</find>
+      <find>passwords</find>
+      <find>toeters</find>
+      <find>ovsg_goalbook</find>
+      <find>mail-confirm</find>
+      <find>delete-disable-reason-care-types</find>
+      <find>boolean</find>
+      <find>date_format</find>
+      <find>step4</find>
+      <find>connectie.*onder</find>
+      <find>verbinding</find>
+      <find>wijzigingen we</find>
+      <find>if you did not request</find>
+      <find>ou</find>
+      <find>orig</find>
+      <find>leermiddelen</find>
+      <find>instructions</find>
+      <find>create_roster</find>
+      <find>is_original</find>
+      <find>agenda</find>
+      <find>AGENDA_</find>
+      <find />
+      <find>niet de juis</find>
+      <find>dominante</find>
+      <find>toegang tot deze</find>
+      <find>external-care-data</find>
+      <find>subject-quotation-settings</find>
+      <find>cms:</find>
+      <find>national_register_numbers_cle</find>
+      <find>even onderbrok</find>
+      <find>volgende schoo</find>
+      <find>sommige wijz</find>
+      <find>ben je zeker dat je</find>
+      <find>startdatum</find>
+      <find>user_recrod</find>
+      <find>user_record</find>
+      <find>beschikbaar is</find>
+      <find>unload</find>
+      <find>default_group</find>
+      <find>ROSTERS</find>
+      <find>move_to_</find>
+      <find>verplaatsen naar</find>
+      <find>shared</find>
+      <find>navigation_error</find>
+      <find>verzio</find>
+      <find>schakeling</find>
+      <find>nieuw tab</find>
+      <find>hoofding :he</find>
+      <find>als je geen account hebt</find>
+      <find>hoef je verder niets te doen</find>
+      <find>gebruik geen buffer</find>
+      <find>buffer</find>
+      <find>buffer</find>
+      <find>terminolog</find>
+      <find>risicozone</find>
+      <find>bekend</find>
+      <find>pupilchange</find>
+      <find>pupilchangenotifi</find>
+      <find>confirmed moet</find>
+      <find>in nieuwe tab</find>
+      <find>Bestand heeft geen geldig bestandstype</find>
+      <find>bestand is te groot,</find>
+      <find>kon leerling ni</find>
+      <find>deze leerling is geblokkeer</find>
+      <find>je kan niet verwijderen</find>
+      <find>dit thema niet verwijderen omdat gegevens aan gekop</find>
+      <find>We zien dat je enkel klassen uit het kleuteronderwijs hebt\. Uw school heeft voor Zorg</find>
+      <find>deze methode geeft een quotatie aan</find>
+      <find>De tweestapsverificatie is enkel beschikbaar voor gebruikers</find>
+      <find>leave-page-mess</find>
+      <find>niet gekend rijk</find>
+      <find>archive-warning-subjects</find>
+      <find>hoofding</find>
+      <find>om je gegevens van een ander</find>
+      <find>verwijderen omdat er gegevens</find>
+      <find>verwijderen omdat er gegevens aan</find>
+      <find>Je kan deze redelijke aanpassing niet verwijderen</find>
+      <find>Je kan deze redelijke aanpassing niet verwijderen omdat er gegevens aan gekoppeld zijn</find>
+      <find>materiaal .* mag</find>
+      <find>url</find>
+      <find>je kan dit blok niet</find>
+      <find>ja of nee</find>
+      <find>de tweestapsverific</find>
+      <find>step-report-settings-wrapp</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>props</replace>
+      <replace>wrapper.unmount()</replace>
+      <replace>activator=&quot;\{ props \}&quot;</replace>
+      <replace>v-bind=&quot;props&quot;</replace>
+      <replace>__vueParentComponent.props.item</replace>
+      <replace>v-field--variant-outlined</replace>
+      <replace>v-table__wrapper</replace>
+      <replace>v-slot:headers</replace>
+      <replace>v-expansion-panel-title</replace>
+      <replace>v-card-text</replace>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/other/nginxLocalSettings</dir>
+      <dir>$PROJECT_DIR$/cfa/Care/Application/Services/Statistics/Graphs/Group</dir>
+      <dir>$PROJECT_DIR$/cfa/Planner/Application/Controllers/Collections</dir>
+      <dir>$PROJECT_DIR$/cfa/Evaluation/Application/View/Components/Report/Report</dir>
+      <dir>$PROJECT_DIR$/resources/views/components/report/report</dir>
+      <dir>$PROJECT_DIR$/resources/assets/cms/js</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/store</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/store</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/store/modules</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Collections</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Planner</dir>
+      <dir>$PROJECT_DIR$/resources/views/settings/planner</dir>
+      <dir>$PROJECT_DIR$/resources/views/components/report/report/tests</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/View/Components/Report/Report</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/View/Components/Report/Report/Tests</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections/CollectionDetail</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/care/notes</dir>
+      <dir>$PROJECT_DIR$/resources/views/care/notes/form</dir>
+      <dir>$PROJECT_DIR$/resources/views/errors/cloudflare</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/stores</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Evaluation/FollowUpSystemGoals/Partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections/CollectionDetail</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/pages/evaluation/report/partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/pages/settings/reports</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Evaluation/FollowUpSystemGoals</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/plugins/vue-tour</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/TmsTour</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Rosters</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/evaluation</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/settings</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/care/info-sheet</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/plugins/vue-infinite-loading/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/import</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Collections/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/settings/history</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Common/Partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/PredefinedFollowUpSystems/Avi</dir>
+      <dir>$PROJECT_DIR$/cfa/Common/Application/Controllers/Settings/FollowUpSystem/FollowUpSystem</dir>
+      <dir>$PROJECT_DIR$/cfa/Common/Application/Controllers/FollowUpSystem/Predefined</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/PredefinedFollowUpSystems</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/Print</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/Evaluate</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/mocks/plugins</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/plugins</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/models/core</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/components/RedicodisManager</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/mocks/evaluation/Report</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/models/dataModels</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections/CollectionDetail/partials</dir>
+      <dir>$PROJECT_DIR$/resources/views/care/notes</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections/RecordDetail/partials/FormElements</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/components/Dashboard</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections/RecordDetail/partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail/partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections/RecordDetail</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/TaskManager</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/plugins/translations</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/pages/settings/pupil-management</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/pages/follow-up-systems/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Dashboard</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/mocks/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/components/TaskManager</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/components/Planner/Collections/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/settings/pupil-management</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Evaluation/Print</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/pages/follow-up-systems</dir>
+      <dir>$PROJECT_DIR$/resources/views/settings/evaluation/quotation-systems</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/mixins</dir>
+      <dir>$PROJECT_DIR$/resources/assets/css</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/QuotationSystem</dir>
+      <dir>$PROJECT_DIR$/resources/views/common/care-info</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/FollowUpSystemGoals</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections/partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/Report/Partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/Report</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/resources/views/settings/follow-up-systems</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/follow-up-systems</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail/partials/FormElements</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/plugins/icons</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/RedicodisManager</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/common</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Calendar/helpers</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/FollowUpSystems</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/follow-up-systems/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Evaluation/FollowUpSystemGoals/Partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/follow-up-systems/reports</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/tests/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections/partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/FormBuilder</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/stores</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/IPages/Planner/Collections/CollectionDetail/partials</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Calendar/components/ListView</dir>
+      <dir>$PROJECT_DIR$/cfa/Common/Domain/School/Group</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Calendar/components</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components/Planner/Calendar</dir>
+      <dir>$PROJECT_DIR$/resources/views/care/groups/dashboard</dir>
+      <dir>$PROJECT_DIR$/cfa/Care/Application/Services/Statistics/Graphs/Pupil</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/pages/care/overview</dir>
+      <dir>$PROJECT_DIR$/resources/views/common/components</dir>
+      <dir>$PROJECT_DIR$/resources/lang/planner</dir>
+      <dir>$PROJECT_DIR$/resources/lang</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/App/Exceptions</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/App/Services/File</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/App/Controllers/PupilChangeNotification</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/CareInfo</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/Redicodi</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Overview/CareInput/Pupil</dir>
+      <dir>$PROJECT_DIR$/resources/lang/vendor/nova</dir>
+      <dir>$PROJECT_DIR$/resources/lang/en</dir>
+      <dir>$PROJECT_DIR$/resources/lang/nl</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/Diagnosis</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Repositories</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Repositories/CollectionV2/Chapter/Record</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/Chapter/Record</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Settings/Block</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Evaluation/ReportPrint</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Settings/Report/QuotationSettings/Bulk</dir>
+      <dir>$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItemRow</dir>
+      <dir>$PROJECT_DIR$/other/scripts</dir>
+      <dir>$PROJECT_DIR$/resources/assets/js/components</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isCustomScope" value="true" />
+    <option name="customScopeName" value="Project Files" />
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="RECENT" type="baf65d7a:GitBranchesTreeModel$RecentNode" />
+      </path>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="RECENT" type="baf65d7a:GitBranchesTreeModel$RecentNode" />
+        <item name="RECENT/[ben]" type="f52d67ed:GitBranchesTreeModel$BranchesPrefixGroup" />
+      </path>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="RECENT" type="baf65d7a:GitBranchesTreeModel$RecentNode" />
+        <item name="RECENT/[feature]" type="f52d67ed:GitBranchesTreeModel$BranchesPrefixGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/resources/lang/nl/emails.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/errors.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/exceptions.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/mfa.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/nova.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/passwords.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/titles.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/validation.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/vue-tour.php" />
+      <option value="$PROJECT_DIR$/resources/lang/planner/planner-nl.json" />
+      <option value="$PROJECT_DIR$/resources/lang/nl.json" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/enums.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/App/Controllers/PupilChangeNotification/PupilChangeNotificationStoreControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/App/Exceptions/HandlerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/App/Services/File/FileValidationServiceTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Admin/Nova/Actions/TriggerWisaResyncTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Overview/CareInput/Pupil/TimelineControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/CareInfo/CareInfoControllerTestCase.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Overview/CareInput/Pupil/PupilControllerNotesTest.php" />
+      <option value="$PROJECT_DIR$/other/scripts/phpunit-init" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/CareType/CareTypeControllerIndexTest.php" />
+      <option value="$PROJECT_DIR$/resources/assets/js/vue-i18n-locales.generated.js" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/Redicodi/RedicodiControllerIndexTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Settings/QuotationSystem/QuotationSystemControllerIndexTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Error/NoGroupWithLicencesControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/FollowUpSystem/Predefined/Avi/AviIndexControllerTest.php" />
+      <option value="$PROJECT_DIR$/resources/lang/vendor/nova/nl.json" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/tooltips.php" />
+      <option value="$PROJECT_DIR$/resources/lang/en/labels.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/api.php" />
+      <option value="$PROJECT_DIR$/resources/lang/nl/labels.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/Diagnosis/DiagnosisIndexControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Repositories/CollectionV2/Chapter/Record/RecordRepositoryTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/CareTheme/CareThemeControllerIndexTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/Timeslot/TimeslotControllerStoreTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/Chapter/Record/RecordUpdateControllerTestCase.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/Attachments/PlannerCollectionAttachmentStoreControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Settings/Block/BlockControllerIndexTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItemRow/CalendarItemRowStoreControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItem/CalendarItemControllerUpdateTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Evaluation/EvaluationTest/EvaluationTestSaveControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/SharePlannerCollectionControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Settings/Report/QuotationSettings/Bulk/SubjectQuotationSettingsScoreSaveControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItemRow/CalendarItemRowUpdateControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Settings/Report/QuotationSettings/Bulk/SubjectQuotationSettingsCommentSaveControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Evaluation/ReportPrint/GroupPrintIndexControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Models/EnumTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Settings/Subject/SubjectControllerIndexTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/UserDataTransfer/UserDataTransferExecutingControllerTest.php" />
+      <option value="$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/UserDataTransfer/UserDataTransferExpiredControllerTest.php" />
+      <option value="$PROJECT_DIR$/resources/views/settings/evaluation/report/step-report-settings.blade.php" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Blade">
+      <summary usageCount="128" lastUsage="1719390335007" />
+    </language>
+    <language id="CSS">
+      <summary usageCount="2" lastUsage="1693990608558" />
+    </language>
+    <language id="DotEnv">
+      <summary usageCount="6" lastUsage="1700146350959" />
+    </language>
+    <language id="ECMAScript 6">
+      <summary usageCount="3" lastUsage="1710341599605" />
+    </language>
+    <language id="GitIgnore">
+      <summary usageCount="2" lastUsage="1683284610855" />
+    </language>
+    <language id="HTML">
+      <summary usageCount="2" lastUsage="1697534423969" />
+    </language>
+    <language id="JSON">
+      <summary usageCount="67" lastUsage="1719236777047" />
+    </language>
+    <language id="JavaScript">
+      <summary usageCount="1055" lastUsage="1719317174089" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="33" lastUsage="1718260698922" />
+    </language>
+    <language id="PHP">
+      <summary usageCount="222" lastUsage="1719385757526" />
+    </language>
+    <language id="SCSS">
+      <summary usageCount="8" lastUsage="1713444300481" />
+    </language>
+    <language id="SQL">
+      <summary usageCount="1" lastUsage="1716814051278" />
+    </language>
+    <language id="SVG">
+      <summary usageCount="3" lastUsage="1708952631253" />
+    </language>
+    <language id="Shell Script">
+      <summary usageCount="10" lastUsage="1719325093934" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="4" lastUsage="1681976438853" />
+    </language>
+    <language id="TypeScript">
+      <summary usageCount="50" lastUsage="1716466895718" />
+    </language>
+    <language id="Vue">
+      <summary usageCount="1265" lastUsage="1719390311103" />
+    </language>
+    <language id="XML">
+      <summary usageCount="1" lastUsage="1719325123661" />
+    </language>
+    <language id="textmate">
+      <summary usageCount="4" lastUsage="1694432567949" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="2" lastUsage="1691763040848" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/@vee-validate}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/@vee-validate}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/@vee-validate/rules}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/@vee-validate}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/@vee-validate/rules}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/@vee-validate/rules/dist}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/vee-validate}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/vee-validate}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/node_modules/vee-validate/dist}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner/Calendar}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner/Calendar}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner/Calendar/components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/components/Planner/common}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/pages}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/pages/follow-up-systems}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/pages/follow-up-systems}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/pages/follow-up-systems/reports}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Dashboard}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner/Calendar}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner/Collections/components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/Planner/common}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/QuotationSystem}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/RedicodisManager}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/components/TaskManager}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/helpers}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation/FollowUpSystemGoals}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation/FollowUpSystemGoals}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation/FollowUpSystemGoals/Partials}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Evaluation/Print}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/CollectionDetail}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/CollectionDetail}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/CollectionDetail/partials}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/partials}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail/partials}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail/partials}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/IPages/Planner/Collections/RecordDetail/partials/FormElements}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/evaluation}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/evaluation}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/evaluation/report}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/settings}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/settings/history}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/assets/js/tests/pages/settings/reports}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/lang}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/lang}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/lang/nl}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/groups}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/groups}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/groups/dashboard}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/notes}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/notes}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/care/notes/form}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/common}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/common}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/common/components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/care}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/care}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/care/pupil-management}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/evaluation}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/evaluation}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/evaluation/quotation-systems}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/follow-up-systems}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/planner}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/security}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/security}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/resources/views/settings/security/permission}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/storage}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/storage}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/storage/app}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingel-tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/bingel-tms/tests}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="false" />
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="PHPUnit.MfaConfirmResetControllerTest" />
+      <element setting="PHPUnit.UserDataTransferExpiredControllerTest" />
+      <element setting="PHPUnit.UserDataTransferExecutingControllerTest" />
+      <element setting="PHPUnit.UserDataTransferConfirmControllerTest" />
+      <element setting="PHPUnit.SubjectControllerIndexTest" />
+      <element setting="PHPUnit.EnumTest" />
+      <element setting="PHPUnit.GroupPrintIndexControllerTest" />
+      <element setting="PHPUnit.EvaluationTestSaveControllerTest" />
+      <element setting="PHPUnit.CalendarItemControllerUpdateTest" />
+      <element setting="PHPUnit.CalendarItemRowStoreControllerTest" />
+      <element setting="PHPUnit.DiagnosisIndexControllerTest" />
+    </history>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/bin/zsh" />
+          <arg value="--login" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SubjectControllerIndexTest - 2024.06.25 at 16h 40m 33s.xml">
+      <configuration name="SubjectControllerIndexTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubjectControllerIndexTest - 2024.06.25 at 16h 40m 38s.xml">
+      <configuration name="SubjectControllerIndexTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubjectControllerIndexTest - 2024.06.25 at 16h 41m 01s.xml">
+      <configuration name="SubjectControllerIndexTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="UserDataTransferConfirmControllerTest - 2024.06.25 at 16h 41m 28s.xml">
+      <configuration name="UserDataTransferConfirmControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="UserDataTransferExecutingControllerTest - 2024.06.25 at 16h 42m 24s.xml">
+      <configuration name="UserDataTransferExecutingControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="UserDataTransferExecutingControllerTest - 2024.06.25 at 16h 43m 05s.xml">
+      <configuration name="UserDataTransferExecutingControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="UserDataTransferExpiredControllerTest - 2024.06.25 at 16h 43m 17s.xml">
+      <configuration name="UserDataTransferExpiredControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="UserDataTransferExpiredControllerTest - 2024.06.25 at 16h 43m 42s.xml">
+      <configuration name="UserDataTransferExpiredControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MfaConfirmResetControllerTest - 2024.06.25 at 16h 43m 54s.xml">
+      <configuration name="MfaConfirmResetControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MfaConfirmResetControllerTest - 2024.06.25 at 16h 44m 02s.xml">
+      <configuration name="MfaConfirmResetControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1693593000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15538195" />
+      <window_info id="Commit" order="1" weight="0.16464844" />
+      <window_info id="npm" order="2" show_stripe_button="false" side_tool="true" />
+      <window_info id="Structure" order="3" weight="0.22366898" />
+      <window_info anchor="bottom" id="Find" weight="0.329682" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.41658944" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.30537534" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.31766784" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.35820204" />
+      <window_info anchor="bottom" id="SonarLint" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Duplicates" order="7" weight="0.329682" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.41658944" />
+      <window_info anchor="right" id="Code With Me" weight="0.21933594" />
+      <window_info anchor="right" id="AIAssistant" weight="0.21961805" />
+      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" weight="0.18066406" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.26765046" />
+      <window_info anchor="right" id="Web Inspector" order="5" weight="0.25" />
+      <unified_weights bottom="0.31766784" left="0.15538195" right="0.21961805" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Debug</value>
+      <value>Project</value>
+      <value>Version Control</value>
+      <value>Find</value>
+      <value>Commit</value>
+      <value>Services</value>
+      <value>Terminal</value>
+      <value>AIAssistant</value>
+      <value>Code With Me</value>
+      <value>Structure</value>
+      <value>Duplicates</value>
+      <value>Coverage</value>
+      <value>Meet New UI</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="798" y="398" width="824" height="840" key="#CLI_Interpreters" timestamp="1715169517261">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="798" y="398" width="824" height="840" key="#CLI_Interpreters/0.25.2560.1415@0.25.2560.1415" timestamp="1715169517261" />
+    <state x="1018" y="482" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1715176916232">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="1018" y="482" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1715176916232" />
+    <state x="70" y="87" width="1593" height="927" key="DiffContextDialog" timestamp="1719302054288">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state x="104" y="89" width="2360" height="1216" key="DiffContextDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1718974225372" />
+    <state x="70" y="87" width="1593" height="927" key="DiffContextDialog/0.38.1728.1079@0.38.1728.1079" timestamp="1719302054288" />
+    <state width="1646" height="407" key="GridCell.Tab.0.bottom" timestamp="1719326642440">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="484" key="GridCell.Tab.0.bottom/0.25.2560.1415@0.25.2560.1415" timestamp="1715946552650" />
+    <state width="1646" height="407" key="GridCell.Tab.0.bottom/0.38.1728.1079@0.38.1728.1079" timestamp="1719326642440" />
+    <state width="1646" height="407" key="GridCell.Tab.0.center" timestamp="1719326642440">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="484" key="GridCell.Tab.0.center/0.25.2560.1415@0.25.2560.1415" timestamp="1715946552650" />
+    <state width="1646" height="407" key="GridCell.Tab.0.center/0.38.1728.1079@0.38.1728.1079" timestamp="1719326642440" />
+    <state width="1646" height="407" key="GridCell.Tab.0.left" timestamp="1719326642440">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="484" key="GridCell.Tab.0.left/0.25.2560.1415@0.25.2560.1415" timestamp="1715946552650" />
+    <state width="1646" height="407" key="GridCell.Tab.0.left/0.38.1728.1079@0.38.1728.1079" timestamp="1719326642440" />
+    <state width="1646" height="407" key="GridCell.Tab.0.right" timestamp="1719326642440">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="484" key="GridCell.Tab.0.right/0.25.2560.1415@0.25.2560.1415" timestamp="1715946552650" />
+    <state width="1646" height="407" key="GridCell.Tab.0.right/0.38.1728.1079@0.38.1728.1079" timestamp="1719326642440" />
+    <state width="1646" height="407" key="GridCell.Tab.1.bottom" timestamp="1719326438443">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="1646" height="407" key="GridCell.Tab.1.bottom/0.38.1728.1079@0.38.1728.1079" timestamp="1719326438443" />
+    <state width="1646" height="407" key="GridCell.Tab.1.center" timestamp="1719326438443">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="1646" height="407" key="GridCell.Tab.1.center/0.38.1728.1079@0.38.1728.1079" timestamp="1719326438443" />
+    <state width="1646" height="407" key="GridCell.Tab.1.left" timestamp="1719326438443">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="1646" height="407" key="GridCell.Tab.1.left/0.38.1728.1079@0.38.1728.1079" timestamp="1719326438443" />
+    <state width="1646" height="407" key="GridCell.Tab.1.right" timestamp="1719326438443">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="1646" height="407" key="GridCell.Tab.1.right/0.38.1728.1079@0.38.1728.1079" timestamp="1719326438443" />
+    <state x="26" y="135" width="2478" height="1161" key="MergeDialog" timestamp="1719326726171">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state x="42" y="152" width="2478" height="1161" key="MergeDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1715000944992" />
+    <state x="26" y="135" width="1686" height="892" key="MergeDialog/0.38.1728.1079@0.38.1728.1079" timestamp="1719326726171" />
+    <state x="607" y="394" key="MultipleFileMergeDialog" timestamp="1719326726189">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state x="899" y="492" key="MultipleFileMergeDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1715001092511" />
+    <state x="607" y="394" key="MultipleFileMergeDialog/0.38.1728.1079@0.38.1728.1079" timestamp="1719326726189" />
+    <state x="719" y="381" key="SettingsEditor" timestamp="1719390748072">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="719" y="381" key="SettingsEditor/0.25.2560.1415@0.25.2560.1415" timestamp="1719390748072" />
+    <state x="377" y="263" key="SettingsEditor/0.38.1728.1079@0.38.1728.1079" timestamp="1719325138531" />
+    <state x="100" y="125" width="2360" height="1215" key="VCS.FileHistoryDialog" timestamp="1719385773342">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="100" y="125" width="2360" height="1215" key="VCS.FileHistoryDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1719385773342" />
+    <state x="100" y="125" width="2360" height="1215" maximized="true" key="VCS.FileHistoryDialog/0.38.1728.1079@0.38.1728.1079" timestamp="1719325752403" />
+    <state x="631" y="262" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1719317963071">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state x="631" y="262" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.38.1728.1079@0.38.1728.1079" timestamp="1719317963071" />
+    <state x="660" y="225" width="1325" height="1016" key="find.popup" timestamp="1719390334968">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="660" y="225" width="1325" height="1016" key="find.popup/0.25.2560.1415@0.25.2560.1415" timestamp="1719390334968" />
+    <state x="231" y="38" width="1325" height="1032" key="find.popup/0.38.1728.1079@0.38.1728.1079" timestamp="1719326300539" />
+    <state x="944" y="338" width="993" height="706" key="search.everywhere.popup" timestamp="1719390311080">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="944" y="338" width="993" height="706" key="search.everywhere.popup/0.25.2560.1415@0.25.2560.1415" timestamp="1719390311080" />
+    <state x="637" y="277" width="693" height="538" key="search.everywhere.popup/0.38.1728.1079@0.38.1728.1079" timestamp="1719326632369" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/titles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="206" column="45" selection-start-line="206" selection-start-column="45" selection-end-line="206" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="425" column="44" selection-start-line="425" selection-start-column="44" selection-end-line="425" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/vue-tour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/vue-tour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/planner/planner-nl.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="55" column="91" selection-start-line="55" selection-start-column="91" selection-end-line="55" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/enums.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="332" column="21" selection-start-line="332" selection-start-column="21" selection-end-line="332" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/App/Exceptions/HandlerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="51" column="94" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/vue-i18n-locales.generated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="4761" column="22" selection-start-line="4761" selection-start-column="22" selection-end-line="4761" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/App/Services/File/FileValidationServiceTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Admin/Nova/Actions/TriggerWisaResyncTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="70" column="106" selection-start-line="70" selection-start-column="106" selection-end-line="70" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/CareInfo/CareInfoControllerEditTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/App/Controllers/PupilChangeNotification/PupilChangeNotificationStoreControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Feature/FeatureToggleCacheRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Overview/CareInput/Pupil/PupilControllerNotesTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/Redicodi/RedicodiControllerIndexTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Error/NoGroupWithLicencesControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/FollowUpSystem/Predefined/Avi/AviIndexControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="101" column="50" lean-forward="true" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/vendor/nova/nl.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="413" column="152" selection-start-line="413" selection-start-column="152" selection-end-line="413" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/labels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="497" column="18" lean-forward="true" selection-start-line="497" selection-start-column="18" selection-end-line="497" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/Timeslot/TimeslotControllerStoreTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="201" column="95" selection-start-line="201" selection-start-column="95" selection-end-line="201" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/CareTheme/CareThemeControllerIndexTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/Attachments/PlannerCollectionAttachmentStoreControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/Chapter/Record/RecordUpdateByCalendarItemRowControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Settings/Block/BlockControllerIndexTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Repositories/CollectionV2/Chapter/Record/RecordRepositoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15794">
+          <caret line="722" column="63" selection-start-line="722" selection-start-column="63" selection-end-line="722" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/Chapter/Record/RecordUpdateControllerTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8011">
+          <caret line="359" column="33" selection-start-line="359" selection-start-column="33" selection-end-line="359" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Repositories/RecordRepositoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2680">
+          <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Care/Controllers/Settings/Diagnosis/DiagnosisIndexControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="48" column="113" selection-start-line="48" selection-start-column="113" selection-end-line="48" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/tooltips.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItemRow/CalendarItemRowStoreControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="385" column="67" selection-start-line="385" selection-start-column="67" selection-end-line="385" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItem/CalendarItemControllerUpdateTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="1058" column="64" selection-start-line="1058" selection-start-column="64" selection-end-line="1058" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Evaluation/EvaluationTest/EvaluationTestSaveControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="124" column="99" selection-start-line="124" selection-start-column="99" selection-end-line="124" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Settings/Report/QuotationSettings/Bulk/SubjectQuotationSettingsCommentSaveControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/CalendarItemRow/CalendarItemRowUpdateControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="518" column="68" selection-start-line="518" selection-start-column="68" selection-end-line="518" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Settings/Report/QuotationSettings/Bulk/SubjectQuotationSettingsScoreSaveControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Planner/Controllers/Api/PlannerCollectionV2/SharePlannerCollectionControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="136" column="95" selection-start-line="136" selection-start-column="95" selection-end-line="136" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Evaluation/Controllers/Evaluation/ReportPrint/GroupPrintIndexControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="171" column="184" selection-start-line="171" selection-start-column="184" selection-end-line="171" selection-end-column="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Models/EnumTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Settings/Subject/SubjectControllerIndexTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="33" column="109" selection-start-line="33" selection-start-column="109" selection-end-line="33" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/UserDataTransfer/UserDataTransferConfirmControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/UserDataTransfer/UserDataTransferExecutingControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/UserDataTransfer/UserDataTransferExpiredControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/scripts/phpunit-init">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Cfa/Common/Controllers/Settings/Security/Mfa/MfaConfirmResetControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/settings/evaluation/report/step-report-settings.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/StepReportSettingsWrapper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/ImageUploadButton.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/nl/labels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="741" column="54" lean-forward="true" selection-start-line="741" selection-start-column="54" selection-end-line="741" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,180 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="highcharts" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/readme.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/test/typescript-dts/highcharts-more/highcharts-more.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file>
+            <entry file="file://$PROJECT_DIR$/ts/masters/highcharts-more.src.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="Markdown">
+      <summary usageCount="3" lastUsed="1684766071771" />
+    </fileType>
+    <fileType name="TypeScript">
+      <summary usageCount="7" lastUsed="1684766071931" />
+    </fileType>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Markdown">
+      <summary usageCount="3" lastUsage="1684766071771" />
+    </language>
+    <language id="TypeScript">
+      <summary usageCount="7" lastUsage="1684766071931" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="highcharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/ben.schepmans/Code/highcharts}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="997000" />
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34321427" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="npm" order="2" show_stripe_button="false" side_tool="true" />
+      <window_info id="Gulp" order="3" show_stripe_button="false" side_tool="true" />
+      <window_info id="Structure" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.329682" />
+      <window_info anchor="bottom" id="Services" order="5" visible="true" weight="0.46649998" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.25" />
+      <window_info anchor="right" id="Web Inspector" order="4" weight="0.25" />
+      <unified_weights bottom="0.46649998" left="0.34321427" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2478" height="424" key="GridCell.Tab.0.bottom" timestamp="1684766016049">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="424" key="GridCell.Tab.0.bottom/0.38.1728.1079/-422.-1415.2560.1415@-422.-1415.2560.1415" timestamp="1683275229592" />
+    <state width="2478" height="424" key="GridCell.Tab.0.bottom/0.38.1728.1079@0.38.1728.1079" timestamp="1684766016049" />
+    <state width="2478" height="424" key="GridCell.Tab.0.center" timestamp="1684766016049">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="424" key="GridCell.Tab.0.center/0.38.1728.1079/-422.-1415.2560.1415@-422.-1415.2560.1415" timestamp="1683275229592" />
+    <state width="2478" height="424" key="GridCell.Tab.0.center/0.38.1728.1079@0.38.1728.1079" timestamp="1684766016049" />
+    <state width="2478" height="424" key="GridCell.Tab.0.left" timestamp="1684766016049">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="424" key="GridCell.Tab.0.left/0.38.1728.1079/-422.-1415.2560.1415@-422.-1415.2560.1415" timestamp="1683275229592" />
+    <state width="2478" height="424" key="GridCell.Tab.0.left/0.38.1728.1079@0.38.1728.1079" timestamp="1684766016049" />
+    <state width="2478" height="424" key="GridCell.Tab.0.right" timestamp="1684766016049">
+      <screen x="0" y="38" width="1728" height="1079" />
+    </state>
+    <state width="2478" height="424" key="GridCell.Tab.0.right/0.38.1728.1079/-422.-1415.2560.1415@-422.-1415.2560.1415" timestamp="1683275229592" />
+    <state width="2478" height="424" key="GridCell.Tab.0.right/0.38.1728.1079@0.38.1728.1079" timestamp="1684766016049" />
+    <state x="521" y="-1102" width="670" height="705" key="search.everywhere.popup" timestamp="1683275284112">
+      <screen x="-422" y="-1415" width="2560" height="1415" />
+    </state>
+    <state x="521" y="-1102" width="670" height="705" key="search.everywhere.popup/0.38.1728.1079/-422.-1415.2560.1415@-422.-1415.2560.1415" timestamp="1683275284112" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/typescript-dts/highcharts-more/highcharts-more.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/masters/highcharts-more.src.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

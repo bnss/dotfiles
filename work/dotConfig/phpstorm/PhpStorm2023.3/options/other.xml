@@ -1,0 +1,87 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Inter" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "FileTemplates.SelectedTemplate": "HTML File",
+    "FindSplitterProportion": "0.3297491",
+    "InstalledPluginsSearchHistory": "rainbow\nrainbo\nrainb\nrain\nrai",
+    "JestJavaScriptTestRunner.Splitter.Proportion": "0.23163842",
+    "JestJavaScriptTestRunnerSupport.hideIgnoredTests": "true",
+    "JestJavaScriptTestRunnerSupport.hidePassedTests": "false",
+    "JestJavaScriptTestRunnerSupport.scrollToSource": "true",
+    "JestJavaScriptTestRunnerSupport.selectFirtsDefect": "true",
+    "KEYMAP": "escape\nenter",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "0",
+    "MarketplacePluginsSearchHistory": "rainbow\n/tag:Keymap\nsonarlint\np\npinia",
+    "NextRunPlatformUpdateBuild": "PS-233.15325.16",
+    "NextRunPlatformUpdateVersion": "2023.3.7",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "PhpStorm.InitialConfiguration": "true",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.se.text.search": "true",
+    "SHELLCHECK.PATH": "/Users/ben.schepmans/Library/Application Support/JetBrains/PhpStorm2023.1/plugins/Shell Script/shellcheck",
+    "SettingsSearchHistory": "cli\nallow the default\ncli interpreters\nkeyb\nshift esc",
+    "SonarLint.firstAutoAnalysisDate": "1705581648450",
+    "SonarLint.lastPromotionNotificationDate": "1719306493285",
+    "ai.assistant.toolwindow.shown.at.start": "true",
+    "appcds.runOnSecondStart": "PS-231.9225.18-c716dee5d4c1c0aaf5f81967faea7f60379b09a19108e045635823a4c2187208",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "bundled.plugins.list.saved.version": "PS-233.13135.108",
+    "com.intellij.history.integration.ui.views.FileHistoryDialog.0": "300",
+    "com.intellij.history.integration.ui.views.FileHistoryDialog.1": "800",
+    "enter_selection_count": "5",
+    "evlsprt3.231": "23",
+    "evlsprt3.233": "7",
+    "experimental.ui.first.promotion.localdate": "2023-04-12",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.once": "true",
+    "experimental.ui.used.version": "233.13135.108",
+    "file.gist.reindex.count": "140",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "14.0",
+    "fontSizeToResetEditor": "14.0",
+    "got.it.tooltip.coverage.view.elements.filter": "1",
+    "got.it.tooltip.php.terminal.customization": "1",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "got.it.tooltip.show.diff.in.editor": "1",
+    "got.it.tooltip.sonarlint.traffic.light.tooltip": "1",
+    "got.it.tooltip.speed.search.shown": "1",
+    "gotit.previous.run": "PS-231.8109.199",
+    "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1719390269916",
+    "js.rename.search.for.text.occurrences": "false",
+    "js.rename.search.in.comments": "false",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Dark",
+    "registry.to.advanced.settings.migration.build": "PS-233.13135.108",
+    "settings.code.style.selected.tab.HTML": "Other",
+    "settings.code.style.selected.tab.JavaScript": "Wrapping and Braces",
+    "settings.code.style.selected.tab.PHP": "Wrapping and Braces",
+    "settings.code.style.selected.tab.TypeScript": "Wrapping and Braces",
+    "settings.code.style.selected.tab.Vue": "Wrapping and Braces",
+    "tasks.pass.word.conversion.enforced": "true",
+    "ts.lib.d.ts.version": "5.2.2",
+    "vcs.history.diff.splitter.proportion": "0.417983"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;CtrlW&quot;: 1681373574430
+  }
+}</component>
+</application>

@@ -1,0 +1,38 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Code/highcharts">
+          <value>
+            <RecentProjectMetaInfo frameTitle="highcharts – highcharts-more.src.ts" projectWorkspaceId="2PMmACAXiHSqBMF0wLFalASpGVx">
+              <option name="activationTimestamp" value="1684766313069" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PS-231.8109.199" />
+              <option name="buildTimestamp" value="1680124287259" />
+              <frame x="164" y="77" width="1400" height="1000" />
+              <option name="productionCode" value="PS" />
+              <option name="projectOpenTimestamp" value="1684766072052" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Code/bingel-tms">
+          <value>
+            <RecentProjectMetaInfo frameTitle="bingel-tms – ChartElement.vue" opened="true" projectWorkspaceId="2OMWaM90yS00sySg3SDCOo56n5X">
+              <option name="activationTimestamp" value="1719390814926" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PS-233.13135.108" />
+              <option name="buildTimestamp" value="1703146620000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="-562" y="29" width="1729" height="838" extendedState="6" />
+              <option name="productionCode" value="PS" />
+              <option name="projectOpenTimestamp" value="1708509881233" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Code/bingel-tms" />
+  </component>
+</application>

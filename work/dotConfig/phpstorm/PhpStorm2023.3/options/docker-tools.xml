@@ -1,0 +1,6 @@
+<application>
+  <component name="DockerSettings">
+    <option name="dockerComposePath" value="/Applications/Docker.app/Contents/Resources/bin//docker" />
+    <option name="dockerPath" value="/Applications/Docker.app/Contents/Resources/bin//docker" />
+  </component>
+</application>
