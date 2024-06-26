@@ -1,0 +1,5532 @@
+: 1681307626:0;ls
+: 1681307626:0;brew install mutagen-io/mutagen/mutagen
+: 1681307626:0;brew install mutagen-io/mutagen/mutagen-compose\
+
+: 1681307626:0;brew install awscli
+: 1681307626:0;brew install git
+: 1681307626:0;la
+: 1681307626:0;la | grep aws
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;sudo vim ~/.aws/credentials
+: 1681307626:0;mkdir ~/.aws
+: 1681307626:0;sudo vim ~/.aws/credentials
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;chmod 777 ~/.aws/credentials
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;ls ~/.aws/credentials
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;la ~/.aws
+: 1681307626:0;vim ~/.aws/credentials~
+: 1681307626:0;la ~/.aws
+: 1681307626:0;mv ~/.aws/credentials~ ~/.aws/credentials
+: 1681307626:0;aws s3api list-buckets --profile vnn-bingel-dev
+: 1681307626:0;touch ~/.aws/config
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;vim ~/.aws/config
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;aws s3api list-buckets --profile vnn-bingel-dev
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;vim ~/.aws/config
+: 1681307626:0;aws s3api list-buckets --profile vnn-bingel-prd
+: 1681307626:0;aws s3api list-buckets --profile vnn-bingel-acc
+: 1681307626:0;sudo vim /etc/hosts
+: 1681307626:0;vim .env.local
+: 1681307626:0;vim ~/.aws/credentials
+: 1681307626:0;vim ~/.aws/config
+: 1681307626:0;./other/scripts/docker-auth
+: 1681307626:0;./other/scripts/docker-init
+: 1681307626:0;sail up\
+
+: 1681307626:0;cd ~/.oh-my-zsh/custom
+: 1681307626:0;vim paths.zsh
+: 1681307626:0;vim customs.zsh
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;sail up
+: 1681307626:0;cd Code/bingel-tms
+: 1681307626:0;sail up
+: 1681307626:0;ls
+: 1681307626:0;pwd
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;ls $ZSH
+: 1681307626:0;ls $ZSH/custom
+: 1681307626:0;echo $PATH
+: 1681307626:0;vim $ZSH/custom/paths.zsh
+: 1681307626:0;sail up
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;sail up
+: 1681307626:0;./other/scripts/docker-init
+: 1681307626:0;sail composer install
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;./other/scripts/docker-init
+: 1681307626:0;vim .env.local
+: 1681307626:0;./other/scripts/docker-init
+: 1681307626:0;npm run dev
+: 1681307626:0;cd Code/bingel-tms
+: 1681307626:0;ls
+: 1681307626:0;gst
+: 1681307626:0;la
+: 1681307626:0;la .git
+: 1681307626:0;la .git/hooks
+: 1681307626:0;la | grep gitignore
+: 1681307626:0;npm run dev
+: 1681307626:0;gst
+: 1681307626:0;ls
+: 1681307626:0;gco -b chore/add-prettier
+: 1681307626:0;gst
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gco -b other/add-prettier
+: 1681307626:0;brew install starship
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ls
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ls
+: 1681307626:0;npm i
+: 1681307626:0;gst
+: 1681307626:0;npm install --save-dev --save-exact prettier
+: 1681307626:0;echo {}> .prettierrc.json
+: 1681307626:0;gst
+: 1681307626:0;echo {}> .prettierignore
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;npm install --save-dev eslint-config-prettier
+: 1681307626:0;ls
+: 1681307626:0;npx eslint-config-prettier vite.config.js
+: 1681307626:0;ls resources
+: 1681307626:0;gst
+: 1681307626:0;npx eslint-config-prettier vite.config.js
+: 1681307626:0;npx eslint-config-prettier resources/assets/js/care.js
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;gcma "other: add prettier to frontend code"
+: 1681307626:0;git commit -m "other: add prettier to frontend code"
+: 1681307626:0;git config --global user.email "ben.schepmans@sanoma.com"
+: 1681307626:0;git config --global user.name "Ben Schepmans"
+: 1681307626:0;git commit -m "other: add prettier to frontend code"
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "other: add prettier to frontend code"
+: 1681307626:0;git push
+: 1681307626:0;git push -u origin other/add-prettier 
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gco -
+: 1681307626:0;git merge -
+: 1681307626:0;git status
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;npx prettier --check .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;npx prettier --check .
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;git status
+: 1681307626:0;npx prettier --check .
+: 1681307626:0;gst
+: 1681307626:0;npm run dev
+: 1681307626:0;git add .
+: 1681307626:0;gst
+: 1681307626:0;git push
+: 1681307626:0;gco -
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git restore .
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gco -
+: 1681307626:0;git rebase -
+: 1681307626:0;ga .
+: 1681307626:0;git rebase --continue
+: 1681307626:0;gst
+: 1681307626:0;git log
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit --amend
+: 1681307626:0;gst
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gco -
+: 1681307626:0;git rebase -
+: 1681307626:0;git fetch
+: 1681307626:0;git rebase origin/master
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;gst
+: 1681307626:0;git commit --amend
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;git reset --soft HEAD^1
+: 1681307626:0;gst
+: 1681307626:0;git restore public/*
+: 1681307626:0;gst
+: 1681307626:0;git restore --staged public/*
+: 1681307626:0;gst
+: 1681307626:0;git restore --staged public
+: 1681307626:0;gst
+: 1681307626:0;ga .prettierignore
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "other - add prettier to frontend code"
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;git restore .
+: 1681307626:0;gst
+: 1681307626:0;git reset --soft HEAD^1
+: 1681307626:0;gst
+: 1681307626:0;git restore --stage resources/assets/js/plugins/url.min.js
+: 1681307626:0;gst
+: 1681307626:0;git restore resources/assets/js/plugins/url.min.js
+: 1681307626:0;gst
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;gst | grep public
+: 1681307626:0;gst | grep storage
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "other - add prettier to frontend code"
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;git reset --soft HEAD^1
+: 1681307626:0;gst
+: 1681307626:0;git restore --stage resources/assets/js/plugins/url.min.js
+: 1681307626:0;gst
+: 1681307626:0;git restore --staged composer.lock
+: 1681307626:0;git restore --staged tests/Unit/App/Console/Commands/Translations/expected.js
+: 1681307626:0;gst
+: 1681307626:0;git restore composer.lock tests/Unit/App/Console/Commands/Translations/expected.js
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "other - add prettier to frontend code"
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit --amend
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;cd Code/bingel-tms
+: 1681307626:0;node_modules/.bin/jest --forceExit --detectOpenHandles
+: 1681307626:0;gst
+: 1681307626:0;git log
+: 1681307626:0;git show 1714d2542a64c2991c284736cfb1dedbbcc4e445
+: 1681307626:0;git show 1714d2542a64c2991c284736cfb1dedbbcc4e445 | grep locale
+: 1681307626:0;git show 1714d2542a64c2991c284736cfb1dedbbcc4e445
+: 1681307626:0;php artisan sol:vue-i18n:generate
+: 1681307626:0;cd Code/bingel-tms
+: 1681307626:0;sail artisan
+: 1681307626:0;php artisan sol:vue-i18n:generate
+: 1681307626:0;brew install php
+: 1681307626:0;sail composer install
+: 1681307626:0;sail artisan sol:vue-i18n:generate
+: 1681307626:0;brew uninstall php
+: 1681307626:0;npm run dev
+: 1681307626:0;rm -rf /usr/local/etc/php/8.2
+: 1681307626:0;ls /usr/local/etc/php
+: 1681307626:0;sail up
+: 1681307626:0;docker-auth
+: 1681307626:0;sail up
+: 1681307626:0;sail artisan sol:vue-i18n:generate
+: 1681307626:0;node_modules/.bin/jest --forceExit --detectOpenHandles
+: 1681307626:0;node_modules/.bin/jest --forceExit --detectOpenHandles
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;node_modules/.bin/jest --forceExit --detectOpenHandles
+: 1681307626:0;gst
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit --amend
+: 1681307626:0;gst
+: 1681307626:0;git push --force
+: 1681307626:0;gst
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gco -
+: 1681307626:0;git rebase - -i
+: 1681307626:0;gst
+: 1681307626:0;git rebase --continue
+: 1681307626:0;git log
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;git commit --amend
+: 1681307626:0;git push --force
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit -m "chore - remove var in favour of const or let"
+: 1681307626:0;git push
+: 1681307626:0;npm run dev
+: 1681307626:0;git fetch
+: 1681307626:0;git rebase origin/master -i
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git rebase --continue
+: 1681307626:0;git push
+: 1681307626:0;git push --force
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit -m "other - remove app.js from coverage check"
+: 1681307626:0;git push
+: 1681307626:0;git fetch
+: 1681307626:0;git rebase origin/master -i
+: 1681307626:0;ga .
+: 1681307626:0;git rebase --continue
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;npx prettier --write .
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit --amend
+: 1681307626:0;gpf
+: 1681307626:0;git log
+: 1681307626:0;git rebase HEAD^2
+: 1681307626:0;git rebase HEAD~2
+: 1681307626:0;git rebase HEAD~2 -i
+: 1681307626:0;git log
+: 1681307626:0;git rebase HEAD~2 -i
+: 1681307626:0;git log
+: 1681307626:0;gst
+: 1681307626:0;gp
+: 1681307626:0;gpf
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gf
+: 1681307626:0;ls
+: 1681307626:0;brew install bastet
+: 1681307626:0;bastet
+: 1681307626:0;brew install netris
+: 1681307626:0;netris
+: 1681307626:0;cd Code/bingel-tms
+: 1681307626:0;npm run serve
+: 1681307626:0;npm run dev
+: 1681307626:0;git pull
+: 1681307626:0;ls /Users/bschepmans/.ssh
+: 1681307626:0;la /Users/bschepmans/.ssh
+: 1681307626:0;la /Users/bschepmans/.ssh/config
+: 1681307626:0;less /Users/bschepmans/.ssh/config
+: 1681307626:0;la /Users/bschepmans/.ssh
+: 1681307626:0;la /Users/bschepmans
+: 1681307626:0;la /Users/bschepmans/.ssh
+: 1681307626:0;ps -auxc | grep ssh-agent
+: 1681307626:0;eval $(ssh-agent)
+: 1681307626:0;git pull
+: 1681307626:0;vim ~/.ssh/config
+: 1681307626:0;find bitbucket_work
+: 1681307626:0;find bitbucket_work ~
+: 1681307626:0;history | grep ssh
+: 1681307626:0;history | grep keygen
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;ls ~/.ssh
+: 1681307626:0;vim ~/.ssh/known_hosts
+: 1681307626:0;ps -auxc | grep ssh-agent\
+
+: 1681307626:0;eval $(ssh-agent)
+: 1681307626:0;vim ~/.ssh/config
+: 1681307626:0;vim ~/.ssh/known_hosts
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;ps -auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps -auxc | grep ssh-agent
+: 1681307626:0;ps -aux | grep ssh-agent
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;kill -9 23271 8645 8152 81007
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;eval $(ssh-agent)
+: 1681307626:0;echo $?
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;echo $?
+: 1681307626:0;kill -9 81857
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;echo $?
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;fg
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;kill -9 85410
+: 1681307626:0;gst
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;kill -9 85828
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;kill -9 89326
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;ps auxc | grep ssh-agent
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;echo $HISTSIZE
+: 1681307626:0;history | grep ssh
+: 1681307626:0;echo $SAVEHIST
+: 1681307626:0;vim ~/.zshrc
+: 1681307626:0;source ~/.zshrc
+: 1681307626:0;cd ~ && ssh-keygen -t ed25519 -b 4096 -C "ben.schepmans@sanoma.com" -f bitbucket_work
+: 1681307626:0;ls ~
+: 1681307626:0;ssh-add ~/bitbucket_work
+: 1681307626:0;cd Code/bingel-tms
+: 1681307626:0;git fetch
+: 1681307626:0;ls ~/.ssh
+: 1681307626:0;less ~/.ssh/config
+: 1681307626:0;la ~/.ssh
+: 1681307626:0;ssh-keygen -t ed25519 -C "your_email@example.com"
+: 1681307626:0;gst
+: 1681307626:0;ls
+: 1681307626:0;ls ~
+: 1681307626:0;ls ~/.ssh
+: 1681307626:0;mv ~/bitbucket_work ~/.ssh
+: 1681307626:0;mv ~/bitbucket_work.pub ~/.ssh
+: 1681307626:0;ls ~
+: 1681307626:0;ls ~/.ssh
+: 1681307626:0;rm ~/.ssh/id*
+: 1681307626:0;ls ~/.ssh
+: 1681307626:0;less ~/.ssh/config
+: 1681307626:0;git pull
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;npm i
+: 1681307626:0;npm run dev
+: 1681307626:0;sail up
+: 1681307626:0;docker-auth
+: 1681307626:0;sail up
+: 1681307626:0;npm run dev
+: 1681307626:0;composer install
+: 1681307626:0;history | grep composer
+: 1681307626:0;sail composer install
+: 1681307626:0;npm run dev
+: 1681307626:0;sail up
+: 1681307626:0;npm run dev
+: 1681307626:0;sail logs --follow
+: 1681307626:0;npm run dev
+: 1681307626:0;sail down
+: 1681307626:0;sail up
+: 1681307626:0;sail ps
+: 1681307626:0;npm run dev
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;gco -b ben/bugfix/checkmark-not-clickable
+: 1681307626:0;gst
+: 1681307626:0;ga .editorconfig
+: 1681307626:0;git commit -m "other: update editorconfig to play nicely with prettier"
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git restore resources/assets/js/pages/*
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git commit -a -m "bugfix - SOL20-7893 - make sure checkmark has enough space"
+: 1681307626:0;git push -u origin ben/bugfix/checkmark-not-clickable 
+: 1681307626:0;git fetch
+: 1681307626:0;git rebase -i
+: 1681307626:0;git push
+: 1681307626:0;gst
+: 1681307626:0;history | grep rebase
+: 1681307626:0;git rebase origin/master -i
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;git rebase -i
+: 1681307626:0;git log
+: 1681307626:0;git rebase -i 27dea65341488a34b3d7bc8dbd3b23ee49984ba0
+: 1681307626:0;git log
+: 1681307626:0;git rebase -i 27dea65341488a34b3d7bc8dbd3b23ee49984ba0^
+: 1681307626:0;gst
+: 1681307626:0;git push
+: 1681307626:0;git log
+: 1681307626:0;git rebase -i 27dea65341488a34b3d7bc8dbd3b23ee49984ba0^
+: 1681307626:0;git commit --amend
+: 1681307626:0;git rebase --continue
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gst
+: 1681307626:0;gco -b ben/story/remove-old-show-original-files
+: 1681307626:0;gst
+: 1681307626:0;git commit -am "feature - SOL20-7869 - remove obsolete 'show original files' dropdown item"
+: 1681307626:0;gst
+: 1681307626:0;git push
+: 1681307626:0;git push -u origin ben/story/remove-old-show-original-files 
+: 1681307626:0;gst
+: 1681307626:0;git commit -am "refactor: update component usage in template to newer PascalCase preference"
+: 1681307626:0;git push
+: 1681307626:0;git fetch
+: 1681307626:0;history | grep rebase
+: 1681307626:0;git rebase origin/master -i
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;git commit --amend
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;sail up
+: 1681307626:0;docker-auth
+: 1681307626:0;sail up
+: 1681307626:0;npm run dev
+: 1681307626:0;history | grep ben/
+: 1681307626:0;gco -b ben/feature/show-co-author-bubbles
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "[WIP] feature - SOL20-7884 - show co-author bubbles in collection"
+: 1681307626:0;git push -u origin ben/feature/show-co-author-bubbles 
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;gco -b ben/feature/tile-view-improvements
+: 1681307626:0;cd Code
+: 1681307626:0;ls
+: 1681307626:0;npm create vite@latests
+: 1681307626:0;npm create vite@latest
+: 1681307626:0;cd elephant\ carpaccio\ calculator
+: 1681307626:0;npm install
+: 1681307626:0;cd elephant\ carpaccio\ calculator
+: 1681307626:0;cd Code/elephant\ carpaccio\ calculator
+: 1681307626:0;npm run dev
+: 1681307626:0;npm i
+: 1681307626:0;npm run dev
+: 1681307626:0;npm run preview
+: 1681307626:0;ps aux | grep node
+: 1681307626:0;ps aux | grep npm
+: 1681307626:0;npm run dev
+: 1681307626:0;cd Code
+: 1681307626:0;ls
+: 1681307626:0;npm init vue@latest
+: 1681307626:0;cd calculator
+: 1681307626:0;npm i
+: 1681307626:0;npm run format
+: 1681307626:0;npm run dev
+: 1681307626:0;cd Code/calculator
+: 1681307626:0;ls
+: 1681307626:0;npm run dev
+: 1681307626:0;cd ..
+: 1681307626:0;rm -rf calculator
+: 1681307626:0;ls
+: 1681307626:0;npm run dev
+: 1681307626:0;gd
+: 1681307626:0;defaults write com.jetbrains.WebStorm ApplePressAndHoldEnabled -bool false
+: 1681307626:0;defaults write com.jetbrains.PhpStorm-EAP ApplePressAndHoldEnabled -bool false
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;gd resources/assets/js/IPages/Planner/Collections/partials/CollectionPreviewLibraryButtons.vue
+: 1681307626:0;gd
+: 1681307626:0;gd resources/assets/js/IPages/Planner/Collections/partials/CollectionPreviewLibraryButtons.vue
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "feature - SOL20-7834 - collections tile view improvements"
+: 1681307626:0;git push -u origin ben/feature/tile-view-improvements 
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;git commit -m "other - fix review comments"
+: 1681307626:0;git push
+: 1681307626:0;sail up
+: 1681307626:0;docker-auth
+: 1681307626:0;sail up
+: 1681307626:0;npm run dev
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;npm i
+: 1681307626:0;npm run dev
+: 1681307626:0;gco bram/feature/SOL20-7880\
+
+: 1681307626:0;git log
+: 1681307626:0;git rebase origin/master -i
+: 1681307626:0;npm run dev
+: 1681307626:0;sail php artisan tinker
+: 1681307626:0;npm run dev
+: 1681307626:0;git log
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git stash
+: 1681307626:0;git pull
+: 1681307626:0;git stash pop
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git fetch
+: 1681307626:0;git reset --hard origin/bram/feature/SOL20-7880 
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git log
+: 1681307626:0;git reflog
+: 1681307626:0;git reset --hard 47b9db74c
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;git reset --hard origin/bram/feature/SOL20-7880 
+: 1681307626:0;gst
+: 1681307626:0;git pull
+: 1681307626:0;gd
+: 1681307626:0;php artisan sol:
+: 1681307626:0;sail artisan sol:
+: 1681307626:0;sail artisan sol:vue-i18n:generate
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;sail up
+: 1681307626:0;docker-auth
+: 1681307626:0;sail up
+: 1681307626:0;git pull
+: 1681307626:0;gst
+: 1681307626:0;git config --global pull.rebase true
+: 1681307626:0;gst
+: 1681307626:0;gco master
+: 1681307626:0;git stash
+: 1681307626:0;gco master
+: 1681307626:0;git pull
+: 1681307626:0;gco -b ben/feature/screen-pupil-merge
+: 1681307626:0;git stash pop
+: 1681307626:0;npm run dev
+: 1681307626:0;gco -
+: 1681307626:0;git branch --delete ben/feature/screen-pupil-merge 
+: 1681307626:0;gco bram/feature/SOL20-7880
+: 1681307626:0;gst
+: 1681307626:0;git stash
+: 1681307626:0;gco bram/feature/SOL20-7880
+: 1681307626:0;git pull
+: 1681307626:0;gst
+: 1681307626:0;gco -b ben/feature/screen-pupil-merge
+: 1681307626:0;gst
+: 1681307626:0;git stash pop
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;git commit -m "feature - SOL20-7881 - add dialog that shows a pupil can be merged"
+: 1681307626:0;gco master
+: 1681307626:0;git pull
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;sudo spctl -master-disable
+: 1681307626:0;sudo spctl --disable
+: 1681307626:0;sudo spctl --enable
+: 1681307626:0;xattr -d com.apple.quarantaine ~/Downloads/K2-V2-84K-RGB-US-V1.04.app
+: 1681307626:0;sudo spctl --master-disable
+: 1681307626:0;xattr -cr /Applications/K2-V2-84K-RGB-US-V1.04.app
+: 1681307626:0;df -h
+: 1681307626:0;xattr -cr /Applications/K2-RGB-V1.6.app
+: 1681307626:0;gd
+: 1681307626:0;history | grep jetbrains
+: 1681307626:0;defaults write com.jetbrains.PhpStorm ApplePressAndHoldEnabled -bool false
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;gd
+: 1681307626:0;gst
+: 1681307626:0;gb
+: 1681307626:0;git pull
+: 1681307626:0;git stash
+: 1681307626:0;git pull
+: 1681307626:0;gst
+: 1681307626:0;gco -b ben/refactor/collection-cover
+: 1681307626:0;git stash pop
+: 1681307626:0;gst
+: 1681307626:0;ga .
+: 1681307626:0;gst
+: 1681307626:0;gcma "refactor - improve collection cover code"
+: 1681307626:0;git commit -m "refactor - improve collection cover code"
+: 1681307626:0;git push -u origin ben/refactor/collection-cover 
+: 1681307626:0;ga .
+: 1681307626:0;git commit --amend
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;ga .
+: 1681307626:0;git commit --amend
+: 1681307626:0;gpf
+: 1681307626:0;git fetch
+: 1681307626:0;git rebase origin/master -i
+: 1681307626:0;git push
+: 1681307626:0;gpf
+: 1681307626:0;gco -
+: 1681307626:0;git pull
+: 1681307626:0;npm run dev
+: 1681307626:0;ls ~
+: 1681307626:0;ls ~/Code
+: 1681307626:0;brew install starship
+: 1681307626:0;\
+\
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\
+
+: 1681305329:0;ls
+: 1681305402:0;cd Code
+: 1681305405:0;git clone git clone git@bitbucket.org:sl-technology/bingel-tms.git
+: 1681305409:0;git clone git@bitbucket.org:sl-technology/bingel-tms.git
+: 1681305456:0;cd bingel-tms
+: 1681305457:0;ls
+: 1681305859:0;cd Code
+: 1681305860:0;ls
+: 1681305865:0;cd
+: 1681305890:0;git clone git@github.com:bnss/dotfiles.git
+: 1681305904:0;git clone https://github.com/bnss/dotfiles.git
+: 1681305907:0;gst
+: 1681305908:0;ls
+: 1681305914:0;cd dotfiles
+: 1681305916:0;ls
+: 1681306453:0;vim ~/.zshrc
+: 1681306551:0;la ~
+: 1681306613:0;cp aliases ~/.aliases
+: 1681306825:0;ls
+: 1681306834:0;cp vimrc ~/.vimrc
+: 1681307235:0;vim ~/.zshrc
+: 1681307257:0;source ~/.zshrc
+: 1681307305:0;gst
+: 1681307307:0;gsta
+: 1681307315:0;source ~/.aliases
+: 1681307316:0;gst
+: 1681307318:0;gsta
+: 1681307400:0;vim
+: 1681307405:0;brew install nvim
+: 1681307491:0;vim
+: 1681307600:0;vim ~/.zshrc
+: 1681307622:0;source ~/.zshrc
+: 1681307703:0;tmux
+: 1681307706:0;brew install tmux
+: 1681307776:0;la
+: 1681307787:0;cd dotfiles
+: 1681307788:0;ls
+: 1681307833:0;cp tmux.conf ~/.tmux.conf
+: 1681307862:0;tmux
+: 1681367441:0;ls /usr/bin/file
+: 1681367447:0;less /usr/bin/file
+: 1681367516:0;$ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions\
+\
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting\
+\
+$ source ~/.zshrc
+: 1681367527:0;git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+: 1681367533:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+: 1681367538:0;R
+: 1681367543:0;source ~/.aliases
+: 1681367545:0;R
+: 1681367561:0;brew install fzf
+: 1681367667:0;vim ~/.zshrc
+: 1681367810:0;brew install karabiner
+: 1681367856:0;brew install --cask karabiner-elements\
+
+: 1681367922:0;git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+: 1681367929:0;R
+: 1681368063:0;Z
+: 1681368065:0;eZ
+: 1681368122:0;R
+: 1681368125:0;ls
+: 1681368129:0;eZ
+: 1681368142:0;R
+: 1681368163:0;eZ
+: 1681368190:0;R
+: 1681368222:0;ls
+: 1681368224:0;tmux
+: 1681368295:0;ls
+: 1681368306:0;ll
+: 1681368308:0;cd Code
+: 1681368309:0;ls
+: 1681368397:0;eZ
+: 1681368984:0;source ~/.aliases
+: 1681368987:0;eZ
+: 1681369064:0;less /usr/bin/file
+: 1681369186:0;eA
+: 1681369214:0;R
+: 1681369222:0;eZ
+: 1681369360:0;R
+: 1681369409:0;eV
+: 1681369498:0;vim
+: 1681369508:0;nvim
+: 1681369515:0;eV
+: 1681369524:0;la
+: 1681369526:0;la .
+: 1681369528:0;la ..
+: 1681369546:0;nvim -es -u init.vim -i NONE -c "PlugInstall" -c "qa"
+: 1681369579:0;nvim -es -i NONE -c "PlugInstall" -c "qa"
+: 1681369808:0;vim
+: 1681369989:0;cd bingel-tms
+: 1681369999:0;ls
+: 1681370003:0;npm i
+: 1681370008:0;brew install npm
+: 1681370069:0;gst
+: 1681370073:0;npm i
+: 1681370095:0;ls
+: 1681370103:0;cd dotfiles
+: 1681370106:0;ls
+: 1681370110:0;cd ..
+: 1681370111:0;cd do
+: 1681370114:0;cd dotfiles
+: 1681370116:0;ls
+: 1681370122:0;cd dotfiles
+: 1681370134:0;ls karabiner
+: 1681370170:0;ls ~
+: 1681370174:0;la Z
+: 1681370177:0;la ~
+: 1681370192:0;la ~/.config
+: 1681370202:0;ls
+: 1681370209:0;ls scripts
+: 1681370216:0;ls work
+: 1681370223:0;ls work/dotConfig
+: 1681370258:0;ls work/dotConfig/nvim
+: 1681370263:0;ls work/dotConfig/nvim/init.vim
+: 1681370275:0;less work/dotConfig/nvim/init.vim
+: 1681370280:0;la ~
+: 1681370313:0;cp -R work/dotConfig/* ~/.config
+: 1681370322:0;ls
+: 1681370324:0;vim
+: 1681370534:0;brew install fzf
+: 1681370572:0;la Z
+: 1681370575:0;la ~
+: 1681370600:0;vim
+: 1681370635:0;$(brew --prefix)/opt/fzf/install
+: 1681370657:0;R
+: 1681370861:0;ls
+: 1681370883:0;git fetch
+: 1681370895:0;gco ben/feature/avatars
+: 1681371453:0;ls
+: 1681371486:0;sail up
+: 1681371556:0;vim ~/.oh-my-zsh/custom/paths.zsh
+: 1681371607:0;brew install awscli
+: 1681371682:0;brew install mutagen-io/mutagen/mutagen
+: 1681371694:0;brew install mutagen-io/mutagen/mutagen-compose
+: 1681371730:0;sail up
+: 1681371755:0;docker-auth
+: 1681371779:0;vim other/scripts/docker-auth
+: 1681371805:0;docker-auth
+: 1681372502:0;sail composer install
+: 1681372534:0;less .env
+: 1681372559:0;la | grep env
+: 1681372617:0;sail composer install
+: 1681372628:0;sail up
+: 1681372900:0;docker info
+: 1681372950:0;R
+: 1681372953:0;docker info
+: 1681373058:0;tmux
+: 1681373105:0;sail up
+: 1681374266:0;vim ~/.oh-my-zsh/custom/paths.zsh
+: 1681374287:0;R
+: 1681374290:0;sail up
+: 1681374292:0;R
+: 1681374294:0;sail up
+: 1681374305:0;vim ~/.oh-my-zsh/custom/paths.zsh
+: 1681374467:0;docker-auth
+: 1681374480:0;sail up
+: 1681374523:0;npm run dev
+: 1681376222:0;git fetch
+: 1681376234:0;git rebase origin/master -i
+: 1681376573:0;cd ..
+: 1681376575:0;git clone git@bitbucket.org:sl-technology/bingel-tms-builder.git
+: 1681376581:0;cd bingel-tms-builder
+: 1681376593:0;ls
+: 1681376598:0;./local-build.sh
+: 1681376605:0;sudo ./local-build.sh
+: 1681376617:0;ll
+: 1681376625:0;chmod 777 local-build.sh
+: 1681376629:0;./local-build.sh
+: 1681376969:0;sail up
+: 1681377057:0;R
+: 1681377060:0;sail down
+: 1681377064:0;sail up
+: 1681377265:0;vim docker-compose.yml
+: 1681377617:0;sail up
+: 1681377625:0;npm i
+: 1681377632:0;npm run dev
+: 1681377747:0;vim /etc/hosts
+: 1681377885:0;chmod +w /etc/hosts
+: 1681377888:0;vim /etc/hosts
+: 1681377933:0;chmod 777 /etc/hosts
+: 1681377945:0;ll /etc
+: 1681377957:0;ll /etc/
+: 1681378008:0;chmod a+w /etc/hosts
+: 1681378015:0;sudo chmod a+w /etc/hosts
+: 1681378024:0;vim /etc/hosts
+: 1681378036:0;sail down
+: 1681378042:0;sail up
+: 1681378230:0;sail down
+: 1681378236:0;sail up
+: 1681378346:0;npm run dev
+: 1681378369:0;npm run production
+: 1681378431:0;./other/scripts/docker-init
+: 1681378759:0;./other/scripts/sail exec fpm mkdir -p /opt/local/bingeltms/storage/framework/cache
+: 1681378765:0;./other/scripts/sail exec -u root fpm chown -R www-data:www-data storage
+: 1681378768:0;./other/scripts/docker-init
+: 1681386325:0;./other/scripts/sail exec fpm mkdir -p /opt/local/bingeltms/storage/framework/sessions
+: 1681386331:0;./other/scripts/sail exec fpm mkdir -p /opt/local/bingeltms/storage/framework/cache
+: 1681386334:0;sail up
+: 1681387906:0;sail down
+: 1681387910:0;sail up
+: 1681388174:0;sail down
+: 1681388197:0;npm run production
+: 1681388234:0;sail up
+: 1681388392:0;sail composer install
+: 1681388431:0;docker-init
+: 1681388468:0;gst
+: 1681388480:0;gd
+: 1681388971:0;./other/scripts/sail exec fpm mkdir -p /opt/local/bingeltms/storage/framework/cache
+: 1681388980:0;docker-init
+: 1681389155:0;sail artisan cache:clear
+: 1681389199:0;artisan cache:clear
+: 1681389202:0;sail artisan cache:clear
+: 1681389254:0;./other/scripts/sail exec fpm mkdir -p /opt/local/bingeltms/storage/framework/cache
+: 1681389277:0;ls storage/
+: 1681389287:0;ls storage/framework
+: 1681389292:0;ls storage/framework/cache
+: 1681389407:0;sail exec fpm /bin/sh
+: 1681389480:0;./other/scripts/sail exec fpm mkdir -p /opt/local/bingeltms/storage/framework/views
+: 1681389489:0;sail exec fpm /bin/sh
+: 1681389506:0;sail artisan cache:clear
+: 1681389512:0;docker-init
+: 1681389614:0;time npm run production
+: 1681389736:0;npm run dev
+: 1681390966:0;defaults write com.jetbrains.PhpStorm ApplePressAndHoldEnabled -bool false
+: 1681456101:0;time npm run production
+: 1681457765:0;npm run dev
+: 1681470764:0;gst
+: 1681470765:0;gd
+: 1681479609:0;gst
+: 1681479611:0;gd
+: 1681481799:0;gst
+: 1681481800:0;gd
+: 1681481806:0;git fetch
+: 1681481819:0;git rebase origin/master -i
+: 1681481825:0;gst
+: 1681481840:0;ga .
+: 1681481845:0;git rebase origin/master -i
+: 1681481847:0;gst
+: 1681481857:0;gsta
+: 1681481866:0;git restore --staged docker-compose.yml
+: 1681481875:0;ga .
+: 1681481966:0;gcma "feature - SOL20-7884 - add new avatars"
+: 1681481968:0;git push
+: 1681481972:0;gpf
+: 1681714634:0;gst
+: 1681717170:0;gco -
+: 1681717172:0;git pull
+: 1681735770:0;gco -
+: 1681736062:0;gst
+: 1681736066:0;ga .
+: 1681736068:0;git comm~it --amend
+: 1681736073:0;git commit --amend
+: 1681736079:0;git push
+: 1681736082:0;gst
+: 1681736084:0;gpf
+: 1681737741:0;la | grep aws
+: 1681737754:0;la ~ | grep aws
+: 1681737762:0;la ~/.aws
+: 1681737779:0;less ~/.aws/credentials
+: 1681737788:0;less ~/.aws/config 
+: 1681737866:0;R
+: 1681805153:0;gco -
+: 1681805154:0;git pull
+: 1681824805:0;whoami
+: 1681824827:0;hostname
+: 1681913635:0;npx eslint
+: 1681913649:0;gst
+: 1681913650:0;gd
+: 1681913689:0;npx eslint --env-info
+: 1681913715:0;npx eslint .
+: 1681913819:0;npx eslint resources/assets/js/*
+: 1681974874:0;npm install @babel/core @babel/eslint-parser --save-dev
+: 1681974908:0;npx eslint resources/assets/js/*
+: 1681974958:0;npx eslint resources/assets/js/IPages/Common/*
+: 1681974980:0;npx eslint resources/assets/js/IPages/Common/Layout.vue
+: 1681975798:0;gst
+: 1681975957:0;npx eslint resources/assets/js/**/*
+: 1681975978:0;npx eslint **/*
+: 1681976058:0;npx eslint --ext .js,.vue **/*
+: 1681976073:0;npx eslint --ext .js,.vue
+: 1681976097:0;npx eslint --ext .js,.vue resources/assets/js/**
+: 1681976159:0;gst
+: 1681976206:0;gco -b ben/refactor/pascalcase-components
+: 1681976207:0;gst
+: 1681976218:0;npx eslint --ext .js,.vue resources/assets/js/** --fix
+: 1681976231:0;gst
+: 1681976235:0;gd
+: 1681976324:0;npx eslint --ext .js,.vue resources/assets/js/**
+: 1681976480:0;npx eslint --ext .js,.vue resources/assets/js
+: 1681976531:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1681976560:0;npx eslint --ext .js,.vue resources/assets/js
+: 1681977033:0;sail down
+: 1681977040:0;sail up
+: 1681977257:0;docker-auth
+: 1681977286:0;sail up
+: 1681977336:0;sail down
+: 1681977349:0;sail up
+: 1681977482:0;sail down
+: 1681977518:0;sail up
+: 1681977831:0;npm run dev
+: 1681978204:0;mutagen-compose version
+: 1681978264:0;git pull
+: 1681978267:0;gst
+: 1681978269:0;gd
+: 1681978274:0;git restore .
+: 1681978275:0;git pull
+: 1681978289:0;./local-build.sh
+: 1681978296:0;sudo ./local-build.sh
+: 1681978309:0;sh local-build.sh
+: 1681978753:0;sail down
+: 1681978773:0;sail up
+: 1681978933:0;git fetch
+: 1681978937:0;sail down
+: 1681978947:0;git rebase origin/master -i
+: 1681978948:0;gst
+: 1681978966:0;ga scripts/frontend-checks.sh
+: 1681978975:0;ga package*
+: 1681978976:0;gst
+: 1681978983:0;ga .eslintrc.js
+: 1681979020:0;git commit -m "other - update eslint config to make components pascalcase"
+: 1681979021:0;gst
+: 1681979035:0;gcma "refactor - make components pascalcase"
+: 1681979036:0;gst
+: 1681979040:0;git rebase origin/master -i
+: 1681979046:0;gst
+: 1681979051:0;sail up
+: 1681979276:0;sail down
+: 1681979290:0;sail composer install
+: 1681979301:0;sail up
+: 1681979449:0;sail composer install
+: 1681979486:0;sail down
+: 1681979499:0;sail up
+: 1681980056:0;less ~/.aws/credentials
+: 1681980106:0;less ~/.aws/config
+: 1681981492:0;sail artisan cache:clear
+: 1681981512:0;npm run dev
+: 1681982822:0;gst
+: 1681982825:0;gd
+: 1681982833:0;gst
+: 1681982836:0;gd
+: 1681982967:0;gst
+: 1681983082:0;git push
+: 1681983089:0;git push -u origin ben/refactor/pascalcase-components
+: 1681983127:0;gst
+: 1681983130:0;gd
+: 1681983150:0;git commit --amend
+: 1681983359:0;R
+: 1681983362:0;git commit --amend
+: 1681983378:0;gst
+: 1681983633:0;git commit --amend
+: 1681984511:0;sail art sol:githooks\
+\
+\
+\
+\
+\
+
+: 1681984516:0;git commit --amend
+: 1681984526:0;gst
+: 1681984533:0;ga .
+: 1681984537:0;git commit --amend
+: 1681984546:0;gst
+: 1681984884:0;git push
+: 1681984890:0;git push -u origin ben/refactor/pascalcase-components
+: 1681988271:0;git fetch
+: 1681988278:0;git rebase origin/master -i
+: 1681988294:0;gd
+: 1681988302:0;gst
+: 1681988315:0;gd
+: 1681988328:0;gsta
+: 1681988332:0;ga .
+: 1681988391:0;git rebase --continue
+: 1681988394:0;gst
+: 1681988396:0;git push
+: 1681988410:0;gplease
+: 1681990841:0;sail down
+: 1681990858:0;sail up
+: 1681991673:0;sail down
+: 1681991695:0;brew install --cask docker
+: 1681991853:0;sail up
+: 1681991864:0;sail down
+: 1681991877:0;sail up
+: 1681992153:0;sail down
+: 1681992167:0;sail up
+: 1681992264:0;sail down
+: 1681992267:0;sail up
+: 1681992484:0;npm run dev
+: 1681993350:0;gst
+: 1681994458:0;R
+: 1681994502:0;vim ~/.config/starship.toml
+: 1681994538:0;gst
+: 1681994541:0;gsta
+: 1682327415:0;git fetch
+: 1682327426:0;git rebase origin/master -i
+: 1682327430:0;gst
+: 1682327441:0;gplease
+: 1682327490:0;rm other/nginxLocalSettings/additional_nginx.conf
+: 1682327504:0;rm other/nginxLocalSettings/app.conf
+: 1682327509:0;ls other/nginxLocalSettings
+: 1682327520:0;rm other/nginxLocalSettings
+: 1682327528:0;rm -f other/nginxLocalSettings
+: 1682327533:0;rm -r other/nginxLocalSettings
+: 1682328305:0;ls other/phpLocalSettings
+: 1682328324:0;rm -rf other/phpLocalSettings
+: 1682328335:0;rm other/scripts/xdebug-toggle
+: 1682328339:0;gst
+: 1682328344:0;ga .
+: 1682328347:0;git commit --amend
+: 1682328357:0;gpl
+: 1682328361:0;gst
+: 1682328370:0;gplease
+: 1682328405:0;man gpl
+: 1682334834:0;gst
+: 1682334835:0;ga 
+: 1682334840:0;ga .
+: 1682334843:0;git commit --amend
+: 1682334851:0;gplease
+: 1682335168:0;gst
+: 1682335170:0;gplease
+: 1682335833:0;git fetch
+: 1682335859:0;git rebase origin/master -i
+: 1682335921:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1682335930:0;gst
+: 1682335944:0;ga .
+: 1682335948:0;git rebase --continue
+: 1682335951:0;gst
+: 1682335955:0;gplease
+: 1682335984:0;docker-auth
+: 1682336001:0;gplease
+: 1682336159:0;gst
+: 1682336236:0;gco ben/feature/avatars
+: 1682336240:0;git fetch
+: 1682336250:0;git rebase origin/master -i
+: 1682336302:0;gst
+: 1682336306:0;ga .
+: 1682336309:0;git rebase --continue
+: 1682336311:0;gst
+: 1682337077:0;git fetch
+: 1682337083:0;git rebase origin/master -i
+: 1682337167:0;gst
+: 1682337170:0;ga .
+: 1682337174:0;git rebase --continue
+: 1682337202:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1682337210:0;gst
+: 1682337212:0;gd
+: 1682337224:0;gst
+: 1682337227:0;gd
+: 1682337294:0;gst
+: 1682337297:0;git restore .
+: 1682337313:0;npx eslint --ext .js,.vue resources/assets/js
+: 1682406350:0;gst
+: 1682406353:0;gd
+: 1682406357:0;git stash
+: 1682406361:0;git fetch
+: 1682406372:0;git rebase origin/master -i
+: 1682406377:0;git stash pop
+: 1682408378:0;sail artisan migrate
+: 1682414931:0;sail artisan sol:vue-i18n:generate
+: 1682426574:0;gst
+: 1682427954:0;git stash
+: 1682427955:0;git fetch
+: 1682427964:0;git rebase origin/master -i
+: 1682427975:0;gplease
+: 1682428094:0;git stash pop
+: 1682428322:0;gst
+: 1682430590:0;git stash
+: 1682430592:0;git fetch
+: 1682430652:0;git rebase origin/master -i
+: 1682430663:0;git stash pop
+: 1682432751:0;gst
+: 1682432826:0;gd
+: 1682432848:0;ga .
+: 1682432882:0;gcma "feature - add co-author bubbles in CollectionDetail"
+: 1682432981:0;gst
+: 1682432986:0;gplease
+: 1682433167:0;gst
+: 1682433170:0;ga .
+: 1682433172:0;git commit --amend
+: 1682433210:0;gst
+: 1682433213:0;gplease
+: 1682433278:0;gst
+: 1682433576:0;ga .
+: 1682433584:0;git commit --amend --no-verify
+: 1682433591:0;gplease --no-verify
+: 1682433878:0;gst
+: 1682433882:0;ga .
+: 1682433885:0;git commit --amend --no-verify
+: 1682433891:0;gplease --no-verify
+: 1682434958:0;sh scripts/frontend-tests.sh
+: 1682493299:0;gst
+: 1682493300:0;ga .
+: 1682493305:0;git commit --amend --no-verify
+: 1682493312:0;gplease --no-verify
+: 1682493337:0;git pull
+: 1682506184:0;gst
+: 1682507951:0;git pull
+: 1682514530:0;gst
+: 1682514532:0;gd
+: 1682514541:0;ga .
+: 1682514545:0;git commit --amend --no-verify
+: 1682514551:0;git pull
+: 1682514562:0;gst
+: 1682514566:0;gplease --no-verify
+: 1682516286:0;sail artisan sol:vue-i18n:generate
+: 1682518259:0;git fetch
+: 1682518282:0;gst
+: 1682518289:0;ga .
+: 1682518292:0;git commit --amend --no-verify
+: 1682518297:0;gst
+: 1682518308:0;git rebase origin/master -i
+: 1682518316:0;gplease
+: 1682518368:0;sail artisan db:seed
+: 1682518561:0;git pull
+: 1682518609:0;gst
+: 1682518617:0;ga .
+: 1682518620:0;git rebase --continue
+: 1682518623:0;gst
+: 1682518628:0;gplease
+: 1682518898:0;gst
+: 1682518899:0;git log
+: 1682519128:0;npm run dev
+: 1682520516:0;gst
+: 1682520522:0;git stash
+: 1682520524:0;git pull
+: 1682520534:0;git stash pop
+: 1682520535:0;gst
+: 1682665279:0;gd
+: 1682665297:0;ga .
+: 1682665302:0;git commit --amend --no-verify
+: 1682665308:0;git pull
+: 1682665312:0;gst
+: 1682669522:0;sail artisan sol:vue-i18n:generate
+: 1682669655:0;sail exec fpm mysqldump -h internal.bingeltms.test -P 33060 -u root -ppassword bingeltms  > dump.mysql
+: 1682669660:0;gst
+: 1682669674:0;vim dump.mysql
+: 1682688423:0;sail exec fpm mysqldump -h internal.bingeltms.test -P 33060 -u root -ppassword bingeltms --complete-insert > dump.mysql
+: 1683017930:0;npm run updateTranslations
+: 1683017953:0;npm run update-translations
+: 1683017970:0;gst
+: 1683017985:0;rm dump.mysql
+: 1683017986:0;gst
+: 1683018427:0;npm run update-translations
+: 1683028520:0;gst
+: 1683028523:0;gd
+: 1683028580:0;gst
+: 1683028581:0;gd
+: 1683028602:0;ga .idea/*
+: 1683028606:0;gst
+: 1683028634:0;git commit -m "other - update editor code style file"
+: 1683028649:0;gst
+: 1683028651:0;gd
+: 1683028656:0;ga package.json
+: 1683028657:0;gst
+: 1683028694:0;gcm "other - add create translation script" --no-verify
+: 1683028695:0;gst
+: 1683028697:0;gd
+: 1683029008:0;git log
+: 1683029039:0;gcma "feature - SOL20-7884 - add new avatars"
+: 1683029135:0;gst
+: 1683029137:0;git fetch
+: 1683029147:0;git rebase origin/master -i
+: 1683029152:0;gst
+: 1683029162:0;vim docker-compose.yml
+: 1683029191:0;sail down
+: 1683029204:0;sail up
+: 1683029226:0;gst
+: 1683029228:0;git push
+: 1683029232:0;gplease
+: 1683029243:0;docker-auth
+: 1683029265:0;sail up
+: 1683029331:0;gplease
+: 1683029390:0;gst
+: 1683029391:0;gd
+: 1683029410:0;ga .
+: 1683029417:0;git commit --amend --no-verify
+: 1683029424:0;gplease
+: 1683029476:0;gst
+: 1683029497:0;gplease --no-verify
+: 1683029595:0;npm run dev
+: 1683029653:0;./other/scripts/sail exec fpm touch storage/db-dumps/database.sqlite
+: 1683029722:0;./other/scripts/sail exec fpm mkdir storage/db-dumps && touch storage/db-dumps/database.sqlite
+: 1683029729:0;gst
+: 1683029739:0;phpunit
+: 1683029744:0;sail phpunit
+: 1683035731:0;gst
+: 1683035734:0;ga .
+: 1683035736:0;git commit --amend --no-verify
+: 1683035742:0;gplease
+: 1683035844:0;tmux a
+: 1683101813:0;gst
+: 1683101814:0;gd
+: 1683101820:0;ga .
+: 1683101822:0;git commit --amend --no-verify
+: 1683101829:0;gplease
+: 1683103814:0;gb
+: 1683103825:0;gb --all
+: 1683103838:0;gb --all | grep pupil
+: 1683103847:0;gco ben/feature/screen-pupil-merge
+: 1683103854:0;git fetch
+: 1683103862:0;git rebase origin/master -i
+: 1683103868:0;gst
+: 1683105696:0;gplease
+: 1683105723:0;gplease --no-verify
+: 1683114823:0;git fetch
+: 1683114831:0;git rebase origin/master -i
+: 1683114836:0;gplease --no-verify
+: 1683116226:0;npm run update-translations
+: 1683116238:0;sail artisan sol:vue-i18n:generate
+: 1683122369:0;gco master
+: 1683122372:0;gst
+: 1683122374:0;gd
+: 1683122392:0;git log
+: 1683122399:0;ga .
+: 1683122401:0;git commit --amend --no-verify
+: 1683122407:0;gplease --no-verify
+: 1683122419:0;gco master
+: 1683122423:0;git pull
+: 1683123603:0;sail artisan sol:vue-i18n:generate
+: 1683125002:0;gco -b ben/feature/prevent-delete-non-empty-chapter
+: 1683125004:0;gst
+: 1683125006:0;gd
+: 1683125026:0;gst
+: 1683125065:0;gcma "feature - SOL20-7924 - prevent possibility to delete a non-empty chapter"
+: 1683125114:0;gcma "feature - SOL20-7924 - prevent possibility to delete a non-empty chapter" --no-verify
+: 1683125117:0;gst
+: 1683125134:0;git push -u origin ben/feature/prevent-delete-non-empty-chapter
+: 1683125162:0;docker-auth
+: 1683125178:0;git push -u origin ben/feature/prevent-delete-non-empty-chapter
+: 1683186149:0;sh scripts/frontend-tests.sh
+: 1683192121:0;gst
+: 1683192122:0;gd
+: 1683192128:0;ga .
+: 1683192131:0;git commit --amend --no-verify
+: 1683192137:0;gplease
+: 1683193008:0;gf
+: 1683193016:0;git rebase origin/master -i
+: 1683193023:0;gplease --no-verify
+: 1683193258:0;gco master
+: 1683193259:0;git pull
+: 1683193584:0;gco -
+: 1683193625:0;gst
+: 1683193628:0;ga .
+: 1683193634:0;git commit --amend --no-verify
+: 1683193638:0;gplease --no-verify
+: 1683193687:0;gco -
+: 1683193830:0;gst
+: 1683193831:0;ga .
+: 1683193835:0;git commit --amend --no-verify
+: 1683193840:0;gplease --no-verify
+: 1683193880:0;gco -
+: 1683203332:0;gst
+: 1683203333:0;gd
+: 1683205705:0;gst
+: 1683205706:0;gd
+: 1683207858:0;gst
+: 1683207859:0;gd
+: 1683207920:0;gco -b ben/fix/broken-charts-dashboard
+: 1683207920:0;gst
+: 1683207934:0;gcma "fix - broken charts on dashboards"
+: 1683207944:0;gst
+: 1683207947:0;gco master
+: 1683207958:0;gco -b ben/bugfix/broken-charts-dashboard
+: 1683207961:0;gcma "fix - broken charts on dashboards"
+: 1683207980:0;gcma "bugfix - broken charts on dashboards"
+: 1683207992:0;gst
+: 1683207993:0;gco -
+: 1683208014:0;git branch --delete ben/fix/broken-charts-dashboard
+: 1683208015:0;gst
+: 1683208019:0;git pull
+: 1683208386:0;php artisan sol:aws:auth\
+
+: 1683208396:0;sail artisan sol:aws:auth\
+
+: 1683208648:0;sail restart horizon
+: 1683270507:0;sail artisan sol:aws:auth\
+
+: 1683270527:0;sail restart horizon
+: 1683273812:0;gst
+: 1683273814:0;gd
+: 1683273827:0;gco -
+: 1683275077:0;cd .
+: 1683275079:0;cd ..
+: 1683275080:0;gst
+: 1683275084:0;git clone git@github.com:highcharts/highcharts.git
+: 1683275109:0;git clone https://github.com/highcharts/highcharts.git
+: 1683275140:0;cd highcharts
+: 1683275153:0;npm i
+: 1683278536:0;gst
+: 1683278537:0;gd
+: 1683278557:0;gst
+: 1683278573:0;npm i
+: 1683278583:0;npm run dev
+: 1683278602:0;gst
+: 1683278604:0;gd
+: 1683278621:0;gst
+: 1683278623:0;gd
+: 1683278676:0;gst
+: 1683278683:0;ga .
+: 1683278686:0;git commit --amend --no-verify
+: 1683278689:0;git push
+: 1683278700:0;git push -u origin ben/bugfix/broken-charts-dashboard
+: 1683278840:0;gst
+: 1683278842:0;ga .
+: 1683278845:0;git commit --amend --no-verify
+: 1683278853:0;gplease --no-verify
+: 1683279644:0;gb
+: 1683279653:0;gco ben/feature/ava
+: 1683279657:0;gco ben/feature/avatars
+: 1683279661:0;git pull
+: 1683279675:0;gst
+: 1683279677:0;git fetch
+: 1683279687:0;git rebase origin/master -i
+: 1683279773:0;gst
+: 1683279781:0;ga .
+: 1683279785:0;git rebase --continue
+: 1683279791:0;gplease --no-verify
+: 1683280724:0;gco -
+: 1683280726:0;gst
+: 1683280736:0;gd
+: 1683280746:0;git commit --amend --no-verify
+: 1683280749:0;gst
+: 1683280753:0;ga .
+: 1683280758:0;gst
+: 1683280765:0;git commit --amend --no-verify
+: 1683280768:0;gst
+: 1683280773:0;gplease --no-verify
+: 1683280797:0;gst
+: 1683280804:0;gco -
+: 1683280805:0;gst
+: 1683280809:0;git pull
+: 1683280945:0;sh scripts/frontend-tests.sh
+: 1683284325:0;gst
+: 1683284327:0;ga .
+: 1683284334:0;git commit --amend --no-verify
+: 1683284343:0;gplease
+: 1683284402:0;gco -
+: 1683287982:0;npm run dev
+: 1683289251:0;gst
+: 1683289252:0;gd
+: 1683289302:0;gst
+: 1683289304:0;ga .
+: 1683289306:0;git commit --amend --no-verify
+: 1683289310:0;gplease
+: 1683289487:0;gst
+: 1683289488:0;gd
+: 1683289496:0;ga .
+: 1683289499:0;git commit --amend --no-verify
+: 1683289503:0;gplease
+: 1683289571:0;gst
+: 1683289577:0;rm test-template.blade.php
+: 1683289578:0;gst
+: 1683289587:0;rm test2-template.blade.php
+: 1683289588:0;gst
+: 1683289589:0;ga .
+: 1683289593:0;git commit --amend --no-verify
+: 1683289601:0;gplease --no-verify
+: 1683289666:0;git fetch
+: 1683289687:0;git rebase origin/master -i
+: 1683289690:0;gst
+: 1683289694:0;gplease --no-verify
+: 1683289809:0;gco -
+: 1683292429:0;git fetch
+: 1683292438:0;git rebase origin/master -i
+: 1683292440:0;gst
+: 1683292529:0;ga .
+: 1683292536:0;git commit --amend --no-verify
+: 1683292540:0;gplease
+: 1683545452:0;gst
+: 1683545454:0;gco -
+: 1683545458:0;gco master
+: 1683545459:0;git pull
+: 1683545465:0;gst
+: 1683545559:0;sail artisan sol:aws:auth\
+
+: 1683545614:0;gst
+: 1683545632:0;sail restart horizon
+: 1683551161:0;sail artisan sol:aws:auth\
+
+: 1683551189:0;sail restart horizon
+: 1683551641:0;sail restart horizon\ 
+: 1683551648:0;sail restart horizon
+: 1683551655:0;npm run dev
+: 1683551763:0;gst
+: 1683551763:0;gd
+: 1683551880:0;gst
+: 1683551882:0;gd
+: 1683551905:0;gst
+: 1683552069:0;sail logs horizon
+: 1683552172:0;gst
+: 1683552276:0;sail exec horizon tail -n 500 storage/logs/laravel.log\
+\
+\
+\
+\
+\
+
+: 1683552464:0;sail composer install
+: 1683552530:0;rm -rf bootstrap/cache/*\
+
+: 1683552540:0;sail composer install
+: 1683552594:0;sail restart horizon
+: 1683554260:0;gd
+: 1683554349:0;sail restart horizon
+: 1683555625:0;sail restart horizon\ 
+: 1683555627:0;sail restart horizon
+: 1683555655:0;gst
+: 1683555657:0;gd
+: 1683555704:0;gco -b ben/feature/redicodis-title-report
+: 1683555705:0;gst
+: 1683555706:0;gd
+: 1683555731:0;gcma "feature - SOL20-7821 - add recicodis title to report"
+: 1683555810:0;gst
+: 1683555833:0;git push -u origin ben/feature/redicodis-title-report
+: 1683556158:0;git fetch
+: 1683556164:0;git rebase origin/master -i
+: 1683556169:0;gplease
+: 1683556715:0;gst
+: 1683556719:0;git fetch
+: 1683556724:0;git rebase origin/master -i
+: 1683556727:0;gst
+: 1683556729:0;gplease
+: 1683617601:0;ls ~
+: 1683617606:0;la ~
+: 1683620071:0;gst
+: 1683620073:0;gd
+: 1683625218:0;gst
+: 1683625265:0;sail restart horizon
+: 1683625294:0;sail artisan sol:aws:auth
+: 1683625328:0;sail restart horizon
+: 1683629637:0;gst
+: 1683629638:0;gd
+: 1683630353:0;git stash
+: 1683630355:0;git fetch
+: 1683630361:0;git rebase origin/master -i
+: 1683630368:0;git stash pop
+: 1683630369:0;gst
+: 1683707529:0;git restore resources/views/*
+: 1683707530:0;gst
+: 1683707536:0;git stash
+: 1683707545:0;gst
+: 1683707560:0;ge
+: 1683707561:0;gd
+: 1683707587:0;sail restart horizon
+: 1683707627:0;sail artisan sol:aws:auth
+: 1683707642:0;sail restart horizon
+: 1683709193:0;gd
+: 1683709393:0;gst
+: 1683709397:0;ga .
+: 1683709399:0;git commit --amend --no-verify
+: 1683709405:0;gplease
+: 1683709535:0;gst
+: 1683709558:0;ga .
+: 1683709560:0;git commit --amend --no-verify
+: 1683709565:0;gplease --no-verify
+: 1683709574:0;gst
+: 1683709594:0;git fetch
+: 1683709602:0;git rebase origin/master -i
+: 1683709604:0;gst
+: 1683709607:0;gplease --no-verify
+: 1683709637:0;gst
+: 1683712582:0;ga .
+: 1683712587:0;git commit --amend --no-verify
+: 1683712590:0;gplease --no-verify
+: 1683712597:0;gst
+: 1683713113:0;git fetch
+: 1683713119:0;git rebase origin/master -i
+: 1683713121:0;gst
+: 1683713124:0;gplease --no-verify
+: 1683713783:0;which docker
+: 1683714238:0;sail artisan test /Users/ben.schepmans/Code/bingel-tms/tests/Unit/Cfa/Evaluation/View/Components/Report/Report/FooterTest.php
+: 1683714260:0;sail artisan test tests/Unit/Cfa/Evaluation/View/Components/Report/Report/FooterTest.php
+: 1683714315:0;ga .
+: 1683714320:0;git commit --amend --no-verify
+: 1683714322:0;gst
+: 1683714329:0;gplease --no-verify
+: 1683719803:0;sail donw
+: 1683719807:0;sail down
+: 1683719811:0;sail up
+: 1683719852:0;docker-auth
+: 1683719881:0;sail up
+: 1683719980:0;gst
+: 1683719983:0;gco master
+: 1683719984:0;git pull
+: 1683719992:0;git stash pop
+: 1683719994:0;gst
+: 1683720025:0;npm i
+: 1683720028:0;npm run dev
+: 1683720122:0;sail artisan migrate
+: 1683788624:0;gst
+: 1683788857:0;gd
+: 1683790045:0;gst
+: 1683790061:0;gd
+: 1683790366:0;gco -b ben/bugfix/remove-care-scrollbar-under-foto
+: 1683790369:0;gst
+: 1683790397:0;ga resources/assets/js/components/AvatarStack.vue resources/assets/js/IPages/Planner/Collections/CollectionDetail/partials/CollectionDetailInfo.vue\
+
+: 1683790398:0;gst
+: 1683790433:0;gcm "bugfix - SOL20-8078 - remove scrollbar under photo in care"
+: 1683790440:0;gst
+: 1683790459:0;git push -u origin ben/bugfix/remove-care-scrollbar-under-foto
+: 1683794096:0;gst
+: 1683794097:0;gco -
+: 1683794099:0;gst
+: 1683794123:0;gd
+: 1683795348:0;gst
+: 1683812094:0;gco -b ben/feature/exclude-avatar-colors
+: 1683812095:0;gst
+: 1683812097:0;gd
+: 1683812176:0;ga resources/assets/js/components/Avatar.vue  resources/assets/js/components/AvatarStack.vue\
+
+: 1683812177:0;gst
+: 1683812213:0;gcm "feature - exclude certain colors from avatar"
+: 1683812226:0;git push -u origin ben/feature/exclude-avatar-colors
+: 1683812269:0;gst
+: 1683812277:0;git push -u origin ben/feature/exclude-avatar-colors --no-verify
+: 1683812355:0;git commit --amend --no-verify
+: 1683812358:0;gst
+: 1683812360:0;gplease --no-verify
+: 1683812396:0;gst
+: 1683812400:0;gplease --no-verify
+: 1683812418:0;git stash
+: 1683812420:0;git fetch
+: 1683812431:0;gst
+: 1683812438:0;git stash pop
+: 1683812440:0;gd
+: 1683812460:0;gst
+: 1683812463:0;gd
+: 1683812495:0;ga resources/assets/js/components/Avatar.vue\
+
+: 1683812496:0;gst
+: 1683812508:0;git commit --amend --no-verify
+: 1683812510:0;gst
+: 1683812515:0;gplease --no-verify
+: 1683812552:0;gst
+: 1683879168:0;gco master
+: 1683879175:0;git stash
+: 1683879177:0;git pull
+: 1683879185:0;gst
+: 1683879206:0;gco -b ben/feature/show-warning-before-deleting-record
+: 1683879207:0;gst
+: 1683879210:0;git stash pop
+: 1683879211:0;gst
+: 1683883243:0;gd
+: 1683883306:0;gst
+: 1683883345:0;gcma "feature - SOL20-7921 - show warning before deleting record of shared collection"
+: 1683883367:0;gcma "feature - SOL20-7921 - show warning before deleting record of shared collection" --no-verify
+: 1683883370:0;gst
+: 1683883389:0;git push -u origin ben/feature/show-warning-before-deleting-record
+: 1683883433:0;git push -u origin ben/feature/show-warning-before-deleting-record --no-verify
+: 1683883780:0;gst
+: 1683884940:0;gd
+: 1683884944:0;ga .
+: 1683884947:0;git commit --amend --no-verify
+: 1683884951:0;gplease --no-verify
+: 1683896345:0;gco -
+: 1683896347:0;git pull
+: 1684145334:0;gst
+: 1684145335:0;gd
+: 1684145367:0;gco -b ben/feature/show-label-share-status
+: 1684145385:0;gcma "feature - SOL20-7874 - show share-status label in collection detail"
+: 1684145404:0;git push -u origin ben/feature/show-label-share-status
+: 1684145437:0;git fetch
+: 1684145447:0;git rebase origin/master -i
+: 1684145449:0;gst
+: 1684145452:0;git push -u origin ben/feature/show-label-share-status
+: 1684145465:0;gst
+: 1684145543:0;ga .
+: 1684145545:0;git commit --amend --no-verify
+: 1684145553:0;gplease --no-verify
+: 1684150097:0;gst
+: 1684150107:0;gco ben/bugfix/remove-care-scrollbar-under-foto
+: 1684150115:0;git fetch
+: 1684150124:0;git rebase origin/master -i
+: 1684150127:0;gst
+: 1684150131:0;gplease
+: 1684150222:0;gst
+: 1684150224:0;ga .
+: 1684150227:0;git commit --amend --no-verify
+: 1684150234:0;gplease --no-verify
+: 1684150242:0;gst
+: 1684150383:0;gco ben/feature/exclude-avatar-colors
+: 1684150384:0;gst
+: 1684150386:0;git fetch
+: 1684150395:0;git rebase origin/master -i
+: 1684150431:0;gst
+: 1684150433:0;ga .
+: 1684150435:0;git commit --amend --no-verify
+: 1684150443:0;gplease --no-verify
+: 1684150517:0;gco ben/feature/show-label-share-status
+: 1684150534:0;sh scripts/frontend-tests.sh
+: 1684151064:0;gst
+: 1684151065:0;gd
+: 1684151077:0;ga .
+: 1684151078:0;gst
+: 1684151082:0;git commit --amend --no-verify
+: 1684151085:0;gplease --no-verify
+: 1684153246:0;gst
+: 1684153247:0;ga .
+: 1684153249:0;git commit --amend --no-verify
+: 1684153254:0;gplease --no-verify
+: 1684153354:0;gco -
+: 1684153358:0;gst
+: 1684153360:0;git fetch
+: 1684153364:0;git rebase origin/master -i
+: 1684153387:0;gst
+: 1684153392:0;ga .
+: 1684153399:0;git rebase --continue
+: 1684153402:0;gst
+: 1684153405:0;gplease --no-verify
+: 1684738439:0;gco -
+: 1684738441:0;git pull
+: 1684747364:0;gco master
+: 1684747365:0;git pull
+: 1684766073:0;npm run dev
+: 1684826476:0;git stash
+: 1684826479:0;git checkout robbe/feature/SOL20-7948
+: 1684826484:0;git pull
+: 1684826500:0;git stash pop
+: 1684832764:0;git stash
+: 1684832766:0;gco -
+: 1684832769:0;git pull
+: 1684832781:0;git stash pop
+: 1684832783:0;gst
+: 1684832789:0;gd
+: 1684832834:0;gst
+: 1684832852:0;git restore resources/assets/js/components/Planner/Collections/Record/CollectionRecord.vue
+: 1684832853:0;gst
+: 1684832859:0;gd
+: 1684833056:0;gst
+: 1684833074:0;gco -b ben/feature/show-label-share-status-record
+: 1684833075:0;gst
+: 1684833164:0;gcma "feature - SOL20-8007 - add label share-status to record page"
+: 1684833173:0;docker-auth
+: 1684833192:0;gcma "feature - SOL20-8007 - add label share-status to record page"
+: 1684833231:0;git push -u origin ben/feature/show-label-share-status-record
+: 1684833630:0;sh scripts/frontend-tests.sh
+: 1684834131:0;gst
+: 1684834137:0;ga .
+: 1684834140:0;git commit --amend --no-verify
+: 1684834144:0;gplease --no-verify
+: 1684835916:0;gst
+: 1684841000:0;git fetch
+: 1684841014:0;git rebase origin/master -i
+: 1684841019:0;gplease --no-verify
+: 1684846202:0;gst
+: 1684846203:0;gd
+: 1684846244:0;ga .
+: 1684846246:0;git commit --amend --no-verify
+: 1684846256:0;sh scripts/frontend-tests.sh
+: 1684846358:0;ga .
+: 1684846361:0;git commit --amend --no-verify
+: 1684846363:0;gst
+: 1684846368:0;gplease
+: 1684850021:0;gst
+: 1684850023:0;ga .
+: 1684850133:0;git commit --amend --no-verify
+: 1684850135:0;gst
+: 1684850141:0;gplease --no-verify
+: 1684851190:0;gst
+: 1684851193:0;git fetch
+: 1684851200:0;git rebase origin/master -i
+: 1684851248:0;gst
+: 1684851256:0;git rebase --continue
+: 1684851261:0;gplease --no-verify
+: 1684914784:0;gst
+: 1684914787:0;gco master
+: 1684914789:0;git pull
+: 1685000600:0;gst
+: 1685000618:0;gco -b ben/feature/show-co-author-label-collection-overview
+: 1685000619:0;gst
+: 1685000668:0;gcma "feature - SOL20-8100 - show co-author label and number on collection overview"
+: 1685000684:0;gcma "feature - SOL20-8100 - show co-author label and number on collection overview" --no-verify
+: 1685000685:0;gst
+: 1685000700:0;git push -u origin ben/feature/show-co-author-label-collection-overview
+: 1685000721:0;git push -u origin ben/feature/show-co-author-label-collection-overview --no-verify
+: 1685003193:0;gco master
+: 1685003195:0;git pull
+: 1685014979:0;gco -
+: 1685015018:0;git fetch
+: 1685015028:0;git rebase origin/master -i
+: 1685015032:0;gst
+: 1685015534:0;gd
+: 1685015541:0;ga .
+: 1685015544:0;git commit --amend --no-verify
+: 1685015547:0;gst
+: 1685015550:0;gplease --no-verify
+: 1685015707:0;gst
+: 1685015709:0;ga .
+: 1685015712:0;git commit --amend --no-verify
+: 1685015715:0;gplease --no-verify
+: 1685017374:0;sh scripts/frontend-tests.sh
+: 1685018905:0;less package.json
+: 1685018916:0;ls scripts
+: 1685019052:0;npm run test
+: 1685022561:0;gst
+: 1685022570:0;ga .
+: 1685022573:0;git commit --amend --no-verify
+: 1685022576:0;gplease --no-verify
+: 1685025005:0;gco -
+: 1685025005:0;gst
+: 1685026211:0;npm run test
+: 1685026228:0;git fetch
+: 1685026233:0;gco -
+: 1685026238:0;git rebase origin/master -i
+: 1685026266:0;gst
+: 1685026271:0;ga .
+: 1685026274:0;git rebase --continue
+: 1685026276:0;gst
+: 1685026280:0;gplease --no-verify
+: 1685083880:0;sh scripts/code-checks.sh other
+: 1685083886:0;sh scripts/code-checks.sh
+: 1685083890:0;gst
+: 1685083892:0;gd
+: 1685083958:0;npm run prettier
+: 1685083970:0;npx prettier --write .
+: 1685083991:0;gst
+: 1685083992:0;gd
+: 1685083997:0;ga .
+: 1685083998:0;gd
+: 1685084008:0;gst
+: 1685084011:0;gsta
+: 1685084019:0;git restore --stage variables.txt
+: 1685084020:0;gst
+: 1685084027:0;git restore variables.txt
+: 1685084028:0;gst
+: 1685084031:0;rm variables.txt
+: 1685084032:0;gst
+: 1685084034:0;ga .
+: 1685084036:0;git commit --amend --no-verify
+: 1685084041:0;gplease --no-verify
+: 1685084274:0;git fetch
+: 1685084282:0;git rebase origin/master -i
+: 1685084284:0;gst
+: 1685084310:0;gplease --no-verify
+: 1685084794:0;gst
+: 1685084797:0;npx prettier --write .
+: 1685084816:0;gd
+: 1685084824:0;ga .
+: 1685084831:0;git commit --amend --no-verify
+: 1685084835:0;gplease --no-verify
+: 1685085372:0;feature - SOL20-8100 - show co-author label and number on collection overview | wc
+: 1685085385:0;"feature - SOL20-8100 - show co-author label and number on collection overview" | wc
+: 1685085433:0;test=feature - SOL20-8100 - show co-author label and number on collection overview
+: 1685085441:0;test="feature - SOL20-8100 - show co-author label and number on collection overview"
+: 1685085449:0;echo ${test}
+: 1685085457:0;echo ${test} | wc
+: 1685085465:0;man wc
+: 1685085481:0;echo ${test} | wc -m
+: 1685086218:0;git commit --amend --no-verify
+: 1685086298:0;gst
+: 1685086301:0;gplease --no-verify
+: 1685086910:0;R
+: 1685092666:0;less package.json
+: 1685092672:0;npm run update-translations
+: 1685099805:0;git fetch
+: 1685099812:0;git rebase origin/master -i
+: 1685099815:0;gst
+: 1685099816:0;gd
+: 1685099820:0;git stash
+: 1685099823:0;git rebase origin/master -i
+: 1685099829:0;git stash pop
+: 1685099830:0;gst
+: 1685099918:0;npm run update-translations
+: 1685104189:0;gst
+: 1685104191:0;gd
+: 1685107086:0;git fetch
+: 1685107099:0;git rebase origin/jeppe/bugfix/co-author
+: 1685107100:0;gst
+: 1685107103:0;git stash
+: 1685107106:0;git rebase origin/jeppe/bugfix/co-author
+: 1685107151:0;vim
+: 1685107179:0;gst
+: 1685107184:0;ga .
+: 1685107186:0;git rebase --continue
+: 1685107189:0;gst
+: 1685107191:0;git stash pop
+: 1685107430:0;gst
+: 1685107432:0;vim
+: 1685108086:0;vim ~/.vimrc
+: 1685108142:0;vim
+: 1685108172:0;brew install fzf
+: 1685108189:0;vim
+: 1685108209:0;R
+: 1685108211:0;vim
+: 1685108265:0;vim ~/.vimrc
+: 1685108303:0;vim
+: 1685108318:0;vim ~/.vimrc
+: 1685108372:0;brew install the_silver_searcher
+: 1685108451:0;brew install ripgrep
+: 1685108468:0;vim
+: 1685108508:0;gst
+: 1685109354:0;ga .
+: 1685109359:0;git commit --amend --no-verify
+: 1685109361:0;gst
+: 1685109364:0;git fetch
+: 1685109375:0;gplease --no-verify
+: 1685109464:0;gst
+: 1685109548:0;ga .
+: 1685109552:0;git commit --amend --no-verify
+: 1685109555:0;gplease --no-verify
+: 1685109748:0;gst
+: 1685109750:0;ga .
+: 1685109757:0;git commit --amend --no-verify
+: 1685109760:0;gplease --no-verify
+: 1685110310:0;gst
+: 1685110311:0;gd
+: 1685110349:0;gst
+: 1685110350:0;ga .
+: 1685110352:0;git commit --amend --no-verify
+: 1685110355:0;gst
+: 1685110356:0;gplease --no-verify
+: 1685110475:0;ga .
+: 1685110477:0;git commit --amend --no-verify
+: 1685110479:0;gplease --no-verify
+: 1685110497:0;git fetch
+: 1685110518:0;git rebase origin/master
+: 1685110519:0;gst
+: 1685430583:0;tmux a
+: 1685430586:0;tmux
+: 1685431266:0;ll | grep aws
+: 1685431269:0;ll
+: 1685431275:0;la | grep aws
+: 1685431276:0;la
+: 1685431821:0;vim ~/.aws/credentials
+: 1685431848:0;vim ~/.aws/config
+: 1685431856:0;vim ~/.aws/credentials
+: 1685432035:0;docker-auth
+: 1685432407:0;git fetch
+: 1685432418:0;git rebase origin/master
+: 1685432420:0;gst
+: 1685432428:0;gplease
+: 1685432621:0;gplease --no-verify
+: 1685437468:0;sail up
+: 1685437497:0;npm run dev
+: 1685438323:0;npm run update-translations
+: 1685438410:0;gst
+: 1685438415:0;ga .
+: 1685438421:0;git commit --amend --no-verify
+: 1685438426:0;gplease --no-verify
+: 1685438668:0;gst
+: 1685438670:0;ga .
+: 1685438672:0;git commit --amend --no-verify
+: 1685438675:0;gplease --no-verify
+: 1685439185:0;git fetch
+: 1685439193:0;git rebase origin/master
+: 1685439267:0;gst
+: 1685439274:0;ga .
+: 1685439277:0;git rebase --continue
+: 1685439305:0;ga .
+: 1685439307:0;git rebase --continue
+: 1685439310:0;gst
+: 1685439313:0;gplease
+: 1685439355:0;gst
+: 1685439365:0;gplease --no-verify
+: 1685443770:0;npm run test
+: 1685443850:0;ga .
+: 1685443854:0;git commit --amend --no-verify
+: 1685443861:0;gplease
+: 1685443933:0;sail composer install
+: 1685443942:0;gplease
+: 1685443991:0;gst
+: 1685444380:0;ls vendor
+: 1685444384:0;ls vendor | lara
+: 1685444404:0;sail down
+: 1685444417:0;rm -rf vendor
+: 1685444424:0;sail composer install
+: 1685444429:0;sail up
+: 1685444466:0;sail composer install
+: 1685444484:0;ls vendor | lara
+: 1685444490:0;ls vendor | grep lara
+: 1685444516:0;ls fpm
+: 1685444524:0;sail ssh
+: 1685444532:0;sail shell
+: 1685444592:0;gplease
+: 1685444655:0;rm -rf vendor/nunomaduro/larastan
+: 1685444661:0;sail composer install
+: 1685444668:0;gplease
+: 1685444702:0;gst
+: 1685444706:0;git fetch
+: 1685444739:0;git rebase origin/master
+: 1685444767:0;gst
+: 1685444769:0;ga .
+: 1685444774:0;git rebase --continue
+: 1685444777:0;gplease
+: 1685447525:0;gco master
+: 1685447528:0;git pull
+: 1685447579:0;npm run dev
+: 1685449383:0;gst
+: 1685449384:0;gd
+: 1685516678:0;ssh 192.168.1.12 -u root
+: 1685516684:0;ssh 192.168.1.12
+: 1685516709:0;ssh root@192.168.1.12
+: 1685517044:0;ssh root@192.168.1.12 -c  diffie-hellman-group1-sha1
+: 1685517082:0;ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 root@192.168.1.12
+: 1685517153:0;ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss root@192.168.1.12
+: 1685518655:0;ssh root@192.168.1.12 -c diffie-hellman-group1-sha1
+: 1685518661:0;ssh root@192.168.1.12
+: 1685518675:0;ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss root@192.168.1.12
+: 1685523032:0;gst
+: 1685535788:0;tty
+: 1685535858:0;ll /dev
+: 1685535877:0;ll /dev | wc
+: 1685535895:0;tty
+: 1685535904:0;ls /dev
+: 1685535934:0;tty
+: 1685535966:0;who
+: 1685536707:0;gst
+: 1685536746:0;gco -b ben/bugfix/show-correct-amount-avatars
+: 1685536756:0;ga resources/assets/js/components/AvatarStack.vue
+: 1685536758:0;gst
+: 1685536874:0;gcm "bugfix - SOL20-8126 - do not show avatar dropdown for only one user"
+: 1685536882:0;gst
+: 1685536891:0;git push -u origin ben/bugfix/show-correct-amount-avatars
+: 1685536949:0;gst
+: 1685536956:0;git stash
+: 1685536958:0;git fetch
+: 1685536969:0;git rebase origin/master\ 
+: 1685536970:0;git rebase origin/master
+: 1685536974:0;gplease
+: 1685536983:0;gplease --no-verify
+: 1685537030:0;gst
+: 1685537032:0;ga .
+: 1685537040:0;git commit --amend --no-verify
+: 1685537043:0;gst
+: 1685537045:0;gplease --no-verify
+: 1685537054:0;gco -
+: 1685537059:0;git pull
+: 1685537063:0;git stash pop
+: 1685537064:0;gst
+: 1685537427:0;git stash
+: 1685537429:0;gco -
+: 1685537491:0;git stash pop
+: 1685539959:0;git stash
+: 1685539960:0;gco -
+: 1685539961:0;gst
+: 1685540279:0;gd
+: 1685540577:0;gst
+: 1685540578:0;gd
+: 1685540621:0;gst
+: 1685540623:0;ga .
+: 1685540626:0;git commit --amend --no-verify
+: 1685540628:0;gst
+: 1685540639:0;gplease --no-verify
+: 1685540806:0;gst
+: 1685540808:0;ga .
+: 1685540810:0;git commit --amend --no-verify
+: 1685540813:0;gplease --no-verify
+: 1685540830:0;gst
+: 1685540841:0;gco -
+: 1685540844:0;git stash pop
+: 1685540845:0;gst
+: 1685604092:0;git stash
+: 1685604094:0;git fetch
+: 1685604110:0;git pull
+: 1685604115:0;git stash pop
+: 1685605544:0;gst
+: 1685605556:0;gd resources/assets/js/IPages/Planner/Collections/RecordDetail/partials/RecordDetailForm.vue\
+
+: 1685605585:0;gco -b ben/bugfix/remove-warning-saved-record
+: 1685605595:0;ga resources/assets/js/IPages/Planner/Collections/RecordDetail/partials/RecordDetailForm.vue\
+
+: 1685605596:0;gst
+: 1685605647:0;gcm "bugfix - SOL20-8127 - remove browser warning for edited record"
+: 1685605659:0;gcm "bugfix - SOL20-8127 - remove browser warning for edited record" --no-verify
+: 1685605661:0;gst
+: 1685605672:0;git push -u origin ben/bugfix/remove-warning-saved-record
+: 1685605748:0;gst
+: 1685605751:0;ga CHANGELOG.md
+: 1685605753:0;gst
+: 1685605755:0;git commit --amend --no-verify
+: 1685605758:0;gst
+: 1685605767:0;git push -u origin ben/bugfix/remove-warning-saved-record --no-verify
+: 1685611876:0;gst
+: 1685611920:0;ga CHANGELOG.md
+: 1685611924:0;git commit --amend --no-verify
+: 1685611927:0;gst
+: 1685611933:0;gplease --no-verify
+: 1685611971:0;git fetch
+: 1685611976:0;git stash
+: 1685611980:0;git rebase origin/master
+: 1685611984:0;gplease --no-verify
+: 1685611995:0;gco -
+: 1685611998:0;git pull
+: 1685612003:0;git stash pop
+: 1685612003:0;gst
+: 1685612476:0;git pull
+: 1685612480:0;git stash
+: 1685612482:0;git pull
+: 1685612487:0;git stash pop
+: 1685618782:0;gst
+: 1685618787:0;gd
+: 1685618829:0;gst
+: 1685618894:0;gd
+: 1685618923:0;gst
+: 1685618925:0;git stash
+: 1685618927:0;gco -
+: 1685618928:0;gst
+: 1685621730:0;gd
+: 1685621871:0;gst
+: 1685621874:0;ga .
+: 1685621879:0;git commit --amend --no-verify
+: 1685621882:0;gplease --no-verify
+: 1685621892:0;gst
+: 1685621894:0;gco -
+: 1685621900:0;git stash pop
+: 1685626262:0;npm run dev
+: 1685691401:0;gst
+: 1685693609:0;npm run update-translations
+: 1685695328:0;gst
+: 1685695332:0;git stash
+: 1685695334:0;git pull
+: 1685695344:0;git stash pop
+: 1685696067:0;gst
+: 1685696087:0;gsta
+: 1685696115:0;gco -b ben/feature/show-original-fields-of-record-detail
+: 1685696116:0;gst
+: 1685965666:0;git fetch
+: 1685965673:0;git stash
+: 1685965678:0;git rebase origin/master
+: 1685965681:0;gst
+: 1685965684:0;git stash pop
+: 1685965776:0;gst
+: 1685976818:0;gd
+: 1686038694:0;gst
+: 1686038704:0;npm i
+: 1686038723:0;sail artisan migrate
+: 1686050951:0;gst
+: 1686050954:0;git stash
+: 1686050956:0;git fetch
+: 1686050965:0;git rebase origin/master
+: 1686050968:0;git stash pop
+: 1686050971:0;gst
+: 1686123272:0;git stash
+: 1686123275:0;git fetch
+: 1686123282:0;git rebase origin/master
+: 1686123321:0;git stash pop
+: 1686126668:0;gst
+: 1686126669:0;gd
+: 1686127632:0;npm run update-translations
+: 1686229657:0;gst
+: 1686229661:0;npm run test
+: 1686235852:0;gst
+: 1686235881:0;gd
+: 1686236062:0;gst
+: 1686236130:0;gcma "feature - SOL20-8057 - show original fields of record detail"
+: 1686236138:0;gcma "feature - SOL20-8057 - show original fields of record detail" --no-verify
+: 1686236149:0;git push -u origin ben/feature/show-original-fields-of-record-detail
+: 1686236159:0;git push -u origin ben/feature/show-original-fields-of-record-detail --no-verify
+: 1686297920:0;gst
+: 1686297921:0;ga .
+: 1686297924:0;git commit --amend --no-verify
+: 1686297930:0;gplease --no-verify
+: 1686297938:0;git fetch
+: 1686297942:0;git rebase origin/master
+: 1686297945:0;gplease --no-verify
+: 1686301643:0;ga .
+: 1686301646:0;git commit --amend --no-verify
+: 1686301650:0;gplease --no-verify
+: 1686639449:0;whoami
+: 1686639452:0;who
+: 1686639457:0;which
+: 1686642045:0;npm run dev
+: 1686647057:0;gst
+: 1686647599:0;ga .
+: 1686647601:0;git commit --amend --no-verify
+: 1686647607:0;gplease --no-verify
+: 1686659115:0;git fetch
+: 1686659579:0;git rebase origin/master
+: 1686659582:0;gplease --no-verify
+: 1686660214:0;npm run test
+: 1686666172:0;gst
+: 1686666174:0;npm run test
+: 1686666240:0;gd
+: 1686666376:0;ga .
+: 1686666378:0;git commit --amend --no-verify
+: 1686666384:0;gplease --no-verify
+: 1686726389:0;ssh git@bitbucket.org host_key_info
+: 1688367955:0;tmux a
+: 1688367958:0;tmux
+: 1688367971:0;gco master
+: 1688367973:0;git pull
+: 1688367992:0;npm i
+: 1688369996:0;npm run dev
+: 1688370417:0;sail up
+: 1688370427:0;docker-auth
+: 1688370444:0;sail up
+: 1688370486:0;npm run dev
+: 1688458308:0;vim ~/.config/starship.toml
+: 1688458440:0;find starship
+: 1688458445:0;brew install fd
+: 1688458477:0;vim ~/.zshrc
+: 1688458496:0;find starship
+: 1688458505:0;find ~ starship
+: 1688458530:0;vim ~/.config/starship.toml
+: 1688458828:0;git stash list
+: 1688458833:0;git stash clear
+: 1688458834:0;gst
+: 1688459052:0;vim ~/.config/starship.toml
+: 1688459110:0;docker-auth
+: 1688459135:0;gst
+: 1688459138:0;git pull
+: 1688459144:0;git fetch
+: 1688459147:0;npm i
+: 1688459183:0;vim ~/.aws/credentials
+: 1688459197:0;gst
+: 1688459270:0;vim ~/.config/starship.toml
+: 1688459287:0;gst
+: 1688459824:0;tmux a
+: 1688459826:0;gst
+: 1688459909:0;R
+: 1688460039:0;gst
+: 1688460253:0;R
+: 1688460302:0;tmux a
+: 1688460303:0;gst
+: 1688460328:0;gsta
+: 1688469244:0;eZ
+: 1688469624:0;vim ~/.config/starship.toml
+: 1688469759:0;username
+: 1688469772:0;$user
+: 1688469774:0;echo $user
+: 1688470071:0;vim ~/.config/starship.toml
+: 1688470076:0;gst
+: 1688470082:0;vim ~/.config/starship.toml
+: 1688470222:0;gst
+: 1688470224:0;vim ~/.config/starship.toml
+: 1688470229:0;gst
+: 1688470332:0;vim ~/.config/starship.toml
+: 1688470359:0;gst
+: 1688470478:0;c
+: 1688470480:0;gst
+: 1688470482:0;gsta
+: 1688470495:0;git fetch
+: 1688470499:0;git pull
+: 1688470982:0;sail up
+: 1688476105:0;gst
+: 1688476159:0;gco -b ben/feature/hide-import-button
+: 1688476160:0;gst
+: 1688476229:0;gcma "feature - SOL20-8289 - hide import button"
+: 1688476259:0;sail composer install
+: 1688476367:0;gcma "feature - SOL20-8289 - hide import button"
+: 1688476538:0;sail composer install
+: 1688476555:0;gcma "feature - SOL20-8289 - hide import button"
+: 1688476610:0;rm -rf vendor
+: 1688476618:0;sail composer install
+: 1688476658:0;gcma "feature - SOL20-8289 - hide import button"
+: 1688476671:0;git push -u origin ben/feature/hide-import-button
+: 1688477802:0;gco -
+: 1688477804:0;git pull
+: 1688479602:0;gst
+: 1688544369:0;npm run update-translations
+: 1688546823:0;gst
+: 1688546836:0;gco -b ben/feature/update-planner-labels
+: 1688546837:0;gst
+: 1688546859:0;gcma "feature - SOL20-8175 - update planner labels"
+: 1688546876:0;gst
+: 1688549607:0;git push -u origin ben/feature/update-planner-labels
+: 1688549846:0;gco ben/feature/hide-import-button
+: 1688549849:0;git fetch
+: 1688549856:0;git rebase origin/master
+: 1688549865:0;gplease
+: 1688549887:0;gplease --no-verify
+: 1688549905:0;gst
+: 1688549922:0;git fetch
+: 1688549931:0;gsta
+: 1688549936:0;git pull
+: 1688549965:0;gco master
+: 1688549966:0;git pull
+: 1688550270:0;gco ben/feature/update-planner-labels
+: 1688550584:0;gst
+: 1688550585:0;gco -
+: 1688550588:0;git pull
+: 1688550591:0;npm i
+: 1688560544:0;tinker
+: 1688560554:0;sail tinker
+: 1688562820:0;less package.json
+: 1688647327:0;gst
+: 1688647331:0;git stash
+: 1688647342:0;gco ben/feature/update-planner-labels
+: 1688647399:0;gst
+: 1688647406:0;git commit --amend --no-verify
+: 1688647410:0;gplease --no-verify
+: 1688647420:0;gco -
+: 1688647422:0;gst
+: 1688647423:0;ga .
+: 1688647426:0;git commit --amend --no-verify
+: 1688647428:0;gst
+: 1688647431:0;gplease --no-verify
+: 1688647439:0;gco -
+: 1688647442:0;git stash pop
+: 1688647443:0;gst
+: 1688647462:0;git stash
+: 1688647466:0;git fetch
+: 1688647473:0;gco -
+: 1688647476:0;git rebase origin/master
+: 1688647501:0;gst
+: 1688647508:0;ga .
+: 1688647511:0;git rebase --continue
+: 1688647513:0;gst
+: 1688647516:0;gplease --no-verify
+: 1688647525:0;gco -
+: 1688647527:0;git pull
+: 1688647535:0;git stash pop
+: 1688647537:0;gst
+: 1688651756:0;gco -b ben/bugfix/show-original-experience-situation
+: 1688651757:0;gst
+: 1688651835:0;gcma "bugfix - SOL20-8310 - show original experience situation"
+: 1688651847:0;docker-auth
+: 1688651868:0;gcma "bugfix - SOL20-8310 - show original experience situation"
+: 1688651895:0;git push -u origin ben/bugfix/show-original-experience-situation
+: 1688652025:0;ga .
+: 1688652027:0;git commit --amend --no-verify
+: 1688652030:0;gplease --no-verify
+: 1688654846:0;npm run test
+: 1688714658:0;git fetch
+: 1688714673:0;git rebase origin/master
+: 1688714800:0;gst
+: 1688714802:0;ga .
+: 1688714805:0;git commit --amend --no-verify
+: 1688714809:0;gplease --no-verify
+: 1688715910:0;npm run test
+: 1688715947:0;ga .
+: 1688715951:0;git commit --amend --no-verify
+: 1688715954:0;gplease --no-verify
+: 1688728806:0;gst
+: 1688728809:0;ga .
+: 1688728814:0;git commit --amend --no-verify
+: 1688728817:0;gplease --no-verify
+: 1688728877:0;git fetch
+: 1688728883:0;git rebase origin/master
+: 1688728886:0;gplease --no-verify
+: 1689053039:0;tmux a
+: 1689053043:0;tmux
+: 1689053059:0;gst
+: 1689057768:0;sail composer install
+: 1689057775:0;sail up
+: 1689057789:0;docker-auth
+: 1689057807:0;sail up
+: 1689057841:0;sail composer install
+: 1689057851:0;npm run dev
+: 1689065613:0;gst
+: 1689065617:0;gco -
+: 1689065619:0;gst
+: 1689065623:0;git stash
+: 1689065625:0;git pull
+: 1689065633:0;git stash pop
+: 1689065634:0;gst
+: 1689067038:0;npm run test
+: 1689067332:0;gst
+: 1689067335:0;gd
+: 1689067348:0;gst
+: 1689074991:0;npm run test
+: 1689075802:0;gd
+: 1689075814:0;gst
+: 1689075816:0;gd
+: 1689082330:0;gst
+: 1689082355:0;gco -b ben/bugfix/restored-lesson-file-rich-text-remains-adapted
+: 1689082358:0;gst
+: 1689082453:0;gcma "bugfix - SOL20-8309 - restored lesson property rich text"
+: 1689082465:0;git push -u origin ben/bugfix/restored-lesson-file-rich-text-remains-adapted
+: 1689082532:0;ga .
+: 1689082533:0;git commit --amend --no-verify
+: 1689082537:0;gplease --no-verify
+: 1689082548:0;gst
+: 1689082624:0;ga .
+: 1689082627:0;git commit --amend --no-verify
+: 1689082632:0;gplease --no-verify
+: 1689082647:0;git fetch
+: 1689082653:0;git rebase origin/master
+: 1689082655:0;gplease --no-verify
+: 1689082744:0;gst
+: 1689084344:0;npm run test
+: 1689084378:0;gst
+: 1689084379:0;gd
+: 1689084385:0;ga .
+: 1689084388:0;git commit --amend --no-verify
+: 1689084391:0;gplease --no-verify
+: 1689084428:0;git fetch
+: 1689084447:0;git rebase origin/master
+: 1689084480:0;gst
+: 1689084487:0;git rebase --continue
+: 1689084489:0;gst
+: 1689084491:0;gplease --no-verify
+: 1689084500:0;gst
+: 1689084747:0;node --version
+: 1689084931:0;ls /usr/local/bin
+: 1689084957:0;which node
+: 1689086160:0;git fetch
+: 1689086173:0;git rebase origin/master
+: 1689086176:0;gplease --no-verify
+: 1689151102:0;gst
+: 1689151105:0;ga .
+: 1689151107:0;git commit --amend --no-verify
+: 1689151111:0;gplease --no-verify
+: 1689151119:0;gst
+: 1689152127:0;ga .
+: 1689152130:0;git commit --amend --no-verify
+: 1689152135:0;gplease --no-verify
+: 1689153854:0;ga .
+: 1689153856:0;git commit --amend --no-verify
+: 1689153859:0;gplease --no-verify
+: 1689165276:0;ga .
+: 1689165277:0;gst
+: 1689165280:0;git commit --amend --no-verify
+: 1689165286:0;gplease --no-verify
+: 1689166061:0;gst
+: 1689166063:0;ga .
+: 1689166064:0;gst
+: 1689166067:0;git commit --amend --no-verify
+: 1689166070:0;gplease --no-verify
+: 1689167042:0;gst
+: 1689167044:0;ga .
+: 1689167047:0;git commit --amend --no-verify
+: 1689167051:0;gplease --no-verify
+: 1689168563:0;jest --coverage
+: 1689168971:0;gst
+: 1689168973:0;ga .
+: 1689168976:0;git commit --amend --no-verify
+: 1689168981:0;gplease --no-verify
+: 1689171874:0;ga .
+: 1689171879:0;git commit --amend --no-verify
+: 1689171884:0;gplease --no-verify
+: 1689173540:0;git fetch
+: 1689173675:0;git rebase origin/master
+: 1689173678:0;gplease --no-verify
+: 1689234889:0;gco master
+: 1689234890:0;git pull
+: 1689240352:0;npm run test
+: 1689247710:0;gst
+: 1689247711:0;gd
+: 1689247736:0;gst
+: 1689247766:0;gco -b ben/feature/show-filters-all-target-groups
+: 1689247769:0;gst
+: 1689247773:0;ga .
+: 1689247795:0;gcma "feature - SOL20-8314 - show all target groups in filters"
+: 1689247806:0;docker-auth
+: 1689247823:0;gcma "feature - SOL20-8314 - show all target groups in filters"
+: 1689248161:0;gst
+: 1689248220:0;gcma "feature - SOL20-8314 - show all filters if all collections have same"
+: 1689248237:0;git push -u origin ben/feature/show-filters-all-target-groups
+: 1689248869:0;npm run test
+: 1689248956:0;gbst
+: 1689248957:0;gst
+: 1689248969:0;gcma "feature - SOL20-8314 - remove obsolete test"
+: 1689248976:0;git push
+: 1689250242:0;git fetch
+: 1689250249:0;git rebase origin/master
+: 1689250276:0;gst
+: 1689250280:0;ga .
+: 1689250282:0;git commit --amend --no-verify
+: 1689250289:0;gplease --no-verify
+: 1689258524:0;gst
+: 1689258527:0;gd
+: 1689258532:0;git stash
+: 1689258534:0;gco master
+: 1689258535:0;git pull
+: 1689258548:0;git stash pop
+: 1689258549:0;gst
+: 1689258665:0;gco -b ben/feature/search-collection-on-title
+: 1689258666:0;gst
+: 1689258687:0;gcma "feature - SOL20-7606 - search collections on title"
+: 1689258743:0;gst
+: 1689258747:0;git commit --amend --no-verify
+: 1689258749:0;gst
+: 1689258752:0;ga .
+: 1689258754:0;git commit --amend --no-verify
+: 1689258756:0;gst
+: 1689258791:0;git commit --amend --no-edit --no-verify
+: 1689258792:0;gst
+: 1689258796:0;git push
+: 1689258802:0;git push -u origin ben/feature/search-collection-on-title
+: 1689317778:0;gco -
+: 1689322010:0;gst
+: 1689322011:0;gd
+: 1689322332:0;gco -b ben/bugfix/ampersand-not-displayed-correctly
+: 1689322333:0;gst
+: 1689322391:0;gcma "bugfix - SOL20-8278 - correctly display & in report periods"
+: 1689322404:0;git push -u origin ben/bugfix/ampersand-not-displayed-correctly
+: 1689322485:0;gst
+: 1689322487:0;git fetch
+: 1689322494:0;git rebase origin/master
+: 1689323442:0;git log
+: 1689323456:0;ga .
+: 1689323458:0;git commit --amend --no-edit --no-verify
+: 1689323460:0;gplease --no-verify
+: 1689328527:0;gco ben/feature/search-collection-on-title
+: 1689328529:0;gst
+: 1689577990:0;tmux
+: 1689578013:0;ls
+: 1689578014:0;gst
+: 1689578016:0;gd
+: 1689582296:0;npm run dev
+: 1689582308:0;sail up
+: 1689582320:0;docker-auth
+: 1689582329:0;sail up
+: 1689582349:0;npm run dev
+: 1689583168:0;gst
+: 1689583171:0;gd
+: 1689583201:0;ga .
+: 1689583204:0;git commit --amend --no-edit --no-verify
+: 1689583207:0;gplease --no-verify
+: 1689583436:0;git fetch
+: 1689583445:0;git rebase origin/master
+: 1689583449:0;gplease --no-verify
+: 1689586656:0;git checkout ben/bugfix/ampersand-not-displayed-correctly
+: 1689586660:0;git rebase origin/master
+: 1689586663:0;gplease --no-verify
+: 1689586670:0;gco -
+: 1689586672:0;gst
+: 1689586687:0;git fetch
+: 1689586692:0;git rebase origin/master
+: 1689586694:0;gplease --no-verify
+: 1689586730:0;git fetch
+: 1689586739:0;gco -
+: 1689586741:0;git fetch
+: 1689586747:0;git rebase origin/master
+: 1689586749:0;gplease --no-verify
+: 1689586759:0;gco -
+: 1689668438:0;gst
+: 1689668440:0;gd
+: 1689668529:0;gst
+: 1689668530:0;ga .
+: 1689668537:0;git commit --amend --no-edit --no-verify
+: 1689668544:0;gplease --no-verify
+: 1689668573:0;git fetch
+: 1689668578:0;git rebase origin/master
+: 1689668580:0;gplease --no-verify
+: 1689669722:0;ga .
+: 1689669726:0;git commit --amend --no-edit --no-verify
+: 1689669728:0;gplease --no-verify
+: 1689673205:0;gco master
+: 1689673206:0;git pull
+: 1689673260:0;gst
+: 1689673282:0;gco -b ben/bugfix/rich-text-looses-formatting
+: 1689673283:0;gst
+: 1689679698:0;gcma "bugfix - SOL20-8304 - rich text correctly displays changed value"
+: 1689679712:0;git push -u origin ben/bugfix/rich-text-looses-formatting
+: 1689681103:0;ga .
+: 1689681106:0;git commit --amend --no-edit --no-verify
+: 1689681109:0;gplease --no-verify
+: 1689681615:0;npm run test
+: 1689682186:0;gst
+: 1689682187:0;ged
+: 1689682188:0;gd
+: 1689682193:0;ga .
+: 1689682195:0;git commit --amend --no-edit --no-verify
+: 1689682198:0;gplease --no-verify
+: 1689686086:0;gst
+: 1689686087:0;ga .
+: 1689686089:0;git commit --amend --no-edit --no-verify
+: 1689686092:0;gplease --no-verify
+: 1689686725:0;git log
+: 1689690883:0;gco master
+: 1689690885:0;git pull
+: 1691393382:0;docker-auth
+: 1691401808:0;sail composer install
+: 1691401818:0;sail up
+: 1691401881:0;npm run dev
+: 1691401891:0;sail up
+: 1691401897:0;npm i
+: 1691401900:0;npm run dev
+: 1691409512:0;npm run update-translations
+: 1691414707:0;gst
+: 1691414708:0;gd
+: 1691414770:0;gst
+: 1691478056:0;tmux a
+: 1691478058:0;tmux
+: 1691480976:0;sail composer install
+: 1691481005:0;sail up
+: 1691481012:0;sail composer install
+: 1691481021:0;npm run dev
+: 1691482351:0;gst
+: 1691482352:0;gd
+: 1691483448:0;gst
+: 1691483449:0;gd
+: 1691485433:0;npm run update-translations
+: 1691485437:0;gst
+: 1691494071:0;gd
+: 1691494319:0;gst
+: 1691494349:0;gco -b ben/feature/tooltip-delete-collection
+: 1691494350:0;gst
+: 1691494387:0;gcma "feature - SOL20-7896 - add tooltip to delete collection button"
+: 1691494411:0;git push -u origin ben/feature/tooltip-delete-collection
+: 1691494454:0;npm run test
+: 1691495114:0;git fetch
+: 1691495123:0;git rebase origin/master
+: 1691495295:0;gst
+: 1691495304:0;git rebase --continue
+: 1691495306:0;gst
+: 1691496511:0;ga .
+: 1691496515:0;git commit --amend --no-edit --no-verify
+: 1691496521:0;git push
+: 1691496537:0;gst
+: 1691496542:0;git pull
+: 1691496566:0;gst
+: 1691496579:0;git rebase --abort
+: 1691496580:0;gst
+: 1691496587:0;gplease --no-verify
+: 1691505435:0;gst
+: 1691505436:0;gd
+: 1691505491:0;gst
+: 1691505493:0;ga .
+: 1691505494:0;gst
+: 1691505498:0;git commit --amend --no-edit --no-verify
+: 1691505502:0;gplease --no-verify
+: 1691571699:0;gco master
+: 1691571701:0;git pull
+: 1691580757:0;gst
+: 1691583171:0;npm install pinia
+: 1691652325:0;npm run dev
+: 1691652946:0;gst
+: 1691652973:0;gco -b ben/feature/use-pinia-store
+: 1691652974:0;gst
+: 1691652981:0;ga .
+: 1691653016:0;gcm "feature - SOL20-8207 - use pinia instead of vuex"
+: 1691653028:0;gst
+: 1691653037:0;git push -u origin ben/feature/use-pinia-store
+: 1691660729:0;gd
+: 1691660914:0;gst
+: 1691660916:0;npm run dev
+: 1691669108:0;gst
+: 1691669113:0;ga .
+: 1691669116:0;git commit --amend --no-edit --no-verify
+: 1691669118:0;gco master
+: 1691669120:0;git pull
+: 1691676727:0;gco -
+: 1691676729:0;gst
+: 1691676730:0;gd
+: 1691676734:0;git restore .
+: 1691676735:0;gst
+: 1691676737:0;gco -
+: 1691676738:0;gst
+: 1691676777:0;gplease --no-verify
+: 1691676849:0;gst
+: 1691676850:0;ga .
+: 1691676852:0;git commit --amend --no-edit --no-verify
+: 1691676853:0;gst
+: 1691676855:0;gplease --no-verify
+: 1691677180:0;npm run dev
+: 1691677420:0;gst
+: 1691677446:0;git restore --source main -- resources/assets/js/IPages/Planner/Collections/CollectionsOverview.vue
+: 1691677448:0;gst
+: 1691677485:0;git restore --source master -- resources/assets/js/IPages/Planner/Collections/CollectionsOverview.vue
+: 1691677488:0;gst
+: 1691677511:0;gd
+: 1691677514:0;git commit --amend --no-edit --no-verify
+: 1691677519:0;gplease --no-verify
+: 1691678390:0;gd
+: 1691678446:0;git restore resources/assets/js/components/Planner/Collections/components/CollectionSettingsModal.vue
+: 1691678447:0;gst
+: 1691678531:0;ga .
+: 1691678534:0;git commit --amend --no-edit --no-verify
+: 1691678536:0;gplease --no-verify
+: 1691739598:0;gst
+: 1691744622:0;gplease --no-verify
+: 1691744629:0;gco master
+: 1691744631:0;git pull
+: 1691744646:0;gco -
+: 1691744655:0;gco ben/feature/tooltip-delete-collection
+: 1691744710:0;gst
+: 1691744712:0;git fetch
+: 1691744720:0;git rebase origin/master
+: 1691744724:0;gplease --no-verify
+: 1691748647:0;gco master
+: 1691748649:0;git pull
+: 1691749021:0;gd
+: 1691752942:0;npm run update-translations
+: 1691753141:0;gst
+: 1691753143:0;gd
+: 1691753235:0;gco -b ben/bugfix/remove-delete-option-my-collections
+: 1691753243:0;gst
+: 1691753277:0;gcma "bugfix - SOL20 - only show delete collection option in archived collections"
+: 1691753284:0;gcma "bugfix - SOL20 - only show delete collection option in archived collections" --no-verify
+: 1691753289:0;npm run test
+: 1691754302:0;gst
+: 1691754303:0;ga .
+: 1691754305:0;git commit --amend --no-edit --no-verify
+: 1691754313:0;npm run test
+: 1691754356:0;git push -u origin ben/bugfix/remove-delete-option-my-collections
+: 1691754365:0;git push -u origin ben/bugfix/remove-delete-option-my-collections --no-verify
+: 1691755292:0;npm run test
+: 1691756110:0;less package.json
+: 1691756350:0;gst
+: 1691756360:0;git rebase
+: 1691756362:0;gst
+: 1691756385:0;git commit --amend
+: 1691756391:0;git commit --amend --no-verify
+: 1691756398:0;gplease --no-verify
+: 1691759314:0;gst
+: 1691759317:0;ga .
+: 1691759322:0;gst
+: 1691759326:0;git commit --amend --no-verify
+: 1691759329:0;gplease --no-verify
+: 1692167443:0;tmux a
+: 1692167449:0;tmux
+: 1692167461:0;gst
+: 1692167496:0;gco -
+: 1692167498:0;git pull
+: 1692167556:0;sail up
+: 1692167570:0;docker-auth
+: 1692167583:0;sail up
+: 1692167624:0;sail composer install
+: 1692167631:0;npm run de
+: 1692167634:0;npm run dev
+: 1692171104:0;gco ben/feature/use-pinia-store
+: 1692171112:0;npm run dev
+: 1692171654:0;gst
+: 1692171657:0;git push
+: 1692171699:0;git log
+: 1692172234:0;npm i -D @pinia/testing
+: 1692175184:0;git fetch
+: 1692187471:0;gst
+: 1692187472:0;gd
+: 1692274586:0;npm run test
+: 1692280606:0;gd
+: 1692608404:0;npm run test
+: 1692608462:0;gst
+: 1692608468:0;ga .
+: 1692608472:0;git commit --amend --no-verify
+: 1692608481:0;gplease
+: 1692608628:0;git fetch
+: 1692608637:0;git rebase origin/master
+: 1692610478:0;gst
+: 1692610483:0;ga .
+: 1692610486:0;git rebase --continue
+: 1692610489:0;gst
+: 1692610491:0;npm run test
+: 1692610507:0;npm run dev
+: 1692610512:0;npm run test
+: 1692610903:0;gst
+: 1692610985:0;npm run test
+: 1692611019:0;gst
+: 1692611022:0;ga .
+: 1692611026:0;git commit --amend --no-verify
+: 1692611028:0;gst
+: 1692611031:0;gplease
+: 1692611060:0;docker-auth
+: 1692611069:0;gplease --no-verify
+: 1692622885:0;gst
+: 1692622888:0;ga .
+: 1692622891:0;git commit --amend --no-verify
+: 1692622895:0;gplease --no-verify
+: 1692624238:0;gst
+: 1692624239:0;ga .
+: 1692624242:0;git commit --amend --no-verify
+: 1692624245:0;gplease --no-verify
+: 1692624931:0;gst
+: 1692624932:0;ga .
+: 1692624934:0;git commit --amend --no-verify
+: 1692624940:0;git commit --amend --no-verify --no-edit
+: 1692624942:0;gst
+: 1692624949:0;gplease --no-verify
+: 1692627771:0;gco master
+: 1692627773:0;git pull
+: 1692627784:0;gco -b ben/feature/use-pinia-store-1
+: 1692627784:0;gst
+: 1692690352:0;git restore --source master -- resources/assets/js/components/Planner/Calendar/components/PlrCalendarItem.vue
+: 1692690356:0;gst
+: 1692690359:0;gco -
+: 1692690364:0;gco ben/feature/use-pinia-store
+: 1692690368:0;git restore --source master -- resources/assets/js/components/Planner/Calendar/components/PlrCalendarItem.vue
+: 1692690369:0;gst
+: 1692690371:0;gd
+: 1692690378:0;git commit --amend --no-verify --no-edit
+: 1692690381:0;gplease --no-verify
+: 1692690407:0;gst
+: 1692690409:0;ga .
+: 1692690413:0;git commit --amend --no-verify --no-edit
+: 1692690415:0;gplease --no-verify
+: 1692690463:0;gco ben/feature/use-pinia-store-1
+: 1692690464:0;gst
+: 1692691112:0;gco -
+: 1692691114:0;gst
+: 1692691117:0;gd
+: 1692691137:0;npm run test
+: 1692691331:0;gco -
+: 1692691332:0;gst
+: 1692691339:0;git stash
+: 1692691342:0;git fetch
+: 1692691350:0;git rebase origin/master
+: 1692691352:0;gst
+: 1692691354:0;git stash pop
+: 1692691356:0;gst
+: 1692691361:0;gd
+: 1692691382:0;gst
+: 1692693519:0;git stash resources/assets/js/IPages/Planner/Collections/partials/*
+: 1692693522:0;gst
+: 1692693557:0;git stash push resources/assets/js/IPages/Planner/Collections/partials/*
+: 1692693559:0;gst
+: 1692693696:0;git stash pop
+: 1692693697:0;gst
+: 1692693870:0;git stash push resources/assets/js/IPages/Planner/Collections/partials/*
+: 1692693877:0;gst
+: 1692693882:0;git stash pop
+: 1692694403:0;sail artisan migrate
+: 1692694424:0;sail artisan migrate:fresh --seed
+: 1692694500:0;sail artisan cache:clear
+: 1692696525:0;npm run test
+: 1692702990:0;gst
+: 1692801318:0;gd
+: 1692860486:0;gst
+: 1692860526:0;gcma "feature - SOL20-8381 - move from vuex to pinia 1"
+: 1692860543:0;docker-auth
+: 1692860553:0;gcma "feature - SOL20-8381 - move from vuex to pinia 1"
+: 1692860590:0;gst
+: 1692860610:0;git push -u origin ben/feature/use-pinia-store-1
+: 1692860655:0;ga .
+: 1692860657:0;git commit --amend --no-verify --no-edit
+: 1692860661:0;git push -u origin ben/feature/use-pinia-store-1
+: 1692860680:0;ga .
+: 1692860682:0;git commit --amend --no-verify --no-edit
+: 1692860685:0;git push -u origin ben/feature/use-pinia-store-1
+: 1692866110:0;npm run test
+: 1692867556:0;gst
+: 1692867559:0;ga .
+: 1692867566:0;git commit --amend --no-verify
+: 1692867594:0;gst
+: 1692867606:0;git commit --amend --no-verify --no-edit
+: 1692868646:0;gplease --no-verify
+: 1692869867:0;npm run test
+: 1692869929:0;gst
+: 1692869931:0;ga .
+: 1692869934:0;git commit --amend --no-verify --no-edit
+: 1692869937:0;gplease
+: 1692878719:0;gst
+: 1692878725:0;ga .
+: 1692878738:0;git commit --amend --no-verify --no-edit
+: 1692878742:0;gplease
+: 1692878975:0;gst
+: 1692878979:0;ga .
+: 1692878982:0;git commit --amend --no-verify --no-edit
+: 1692878984:0;gplease
+: 1692882963:0;npm run test
+: 1692961125:0;gst
+: 1692961131:0;gd
+: 1692963063:0;gst
+: 1692963070:0;gst | grep Record
+: 1692963165:0;gd
+: 1692963292:0;npm run dev
+: 1692964591:0;npm run test
+: 1692966178:0;gd
+: 1692971448:0;npm run test
+: 1693212685:0;gst
+: 1693214055:0;npm run test
+: 1693223271:0;gd
+: 1693231438:0;npm run test
+: 1693234491:0;gd
+: 1693292607:0;gst
+: 1693299490:0;gd
+: 1693299511:0;gst
+: 1693299550:0;git log
+: 1693299571:0;gcma "feature - SOL20-8381 - move collectionRecordStore to pinia"
+: 1693299588:0;docker-auth
+: 1693299598:0;gst
+: 1693299601:0;git push
+: 1693309837:0;gst
+: 1693309851:0;npm run test
+: 1693310249:0;gst
+: 1693310271:0;gcma "feature - SOL20-8381 - remove obsolete collectionsStore"
+: 1693310283:0;git push
+: 1693316479:0;gst
+: 1693316484:0;git fetch
+: 1693316500:0;git rebase origin/master
+: 1693316641:0;gst
+: 1693316643:0;npm run test
+: 1693316675:0;gst
+: 1693316681:0;git rebase --continue
+: 1693316686:0;gst
+: 1693316716:0;gsta
+: 1693316770:0;git rebase --continue
+: 1693316774:0;gst
+: 1693316777:0;git push
+: 1693316806:0;gst
+: 1693316807:0;git log
+: 1693316812:0;gplease
+: 1693317631:0;gst
+: 1693317640:0;git rebase
+: 1693317642:0;gst
+: 1693317646:0;ga .
+: 1693317647:0;gst
+: 1693317656:0;git commit --amend
+: 1693317679:0;gplease
+: 1693319556:0;gst
+: 1693319572:0;git fetch
+: 1693319577:0;gst
+: 1693319582:0;git rebase origin/master
+: 1693319613:0;gst
+: 1693319618:0;git rebase --continue
+: 1693319621:0;gst
+: 1693319623:0;gplease
+: 1693320051:0;npm run test
+: 1693377447:0;git fetch
+: 1693377459:0;git rebase origin/master
+: 1693377462:0;gplease
+: 1693386211:0;gco master
+: 1693386212:0;git pull
+: 1693386220:0;npm run dev
+: 1693486426:0;gst
+: 1693486427:0;gd
+: 1693486430:0;git pull
+: 1693486922:0;gco -b ben/feature/use-maska
+: 1693486933:0;npm i maska
+: 1693487001:0;sail artisan cache:clear
+: 1693487012:0;sail artisan migrate
+: 1693487034:0;sail composer install
+: 1693487777:0;npm run dev
+: 1693488236:0;npm run production
+: 1693488260:0;npm run dev
+: 1693488472:0;sail composer install
+: 1693488486:0;npm run production
+: 1693488514:0;npm run dev
+: 1693488603:0;gst
+: 1693488608:0;git fetch
+: 1693488613:0;gst
+: 1693488615:0;git rebase origin/master
+: 1693488618:0;git stash
+: 1693488621:0;git rebase origin/master
+: 1693488626:0;git stash pop
+: 1693488626:0;gst
+: 1693490086:0;npm i
+: 1693490153:0;gst
+: 1693490154:0;gd
+: 1693490163:0;gst
+: 1693493390:0;gcma "feature - SOL20-8210 - replace vue-the-mask by maska"
+: 1693493417:0;docker-auth
+: 1693493475:0;gcma "feature - SOL20-8210 - replace vue-the-mask by maska" --no-verify
+: 1693493477:0;gst
+: 1693493481:0;git push
+: 1693493489:0;git push -u origin ben/feature/use-maska
+: 1693493501:0;git push -u origin ben/feature/use-maska --no-verify
+: 1693493543:0;npm run test
+: 1693493588:0;gst
+: 1693559787:0;gco master
+: 1693559788:0;git pull
+: 1693559817:0;gco -b ben/feature/change-vuetify-confirm
+: 1693559818:0;gst
+: 1693559940:0;npm i
+: 1693559945:0;gst
+: 1693559948:0;gd
+: 1693559961:0;npm run test
+: 1693560809:0;npm run dev
+: 1693573561:0;tmux a
+: 1693573565:0;tmux
+: 1693573580:0;sail up
+: 1693573600:0;docker-auth
+: 1693573841:0;gst
+: 1693573845:0;lal
+: 1693573851:0;la | grep aws
+: 1693573859:0;la ~ | grep aws
+: 1693573870:0;la ~/.aws | grep aws
+: 1693573874:0;la ~/.aws
+: 1693573883:0;vim ~/.aws/credentials
+: 1693574034:0;docker-auth
+: 1693574120:0;tmux a
+: 1693574144:0;npm run dev
+: 1693574155:0;sail up
+: 1693574237:0;npm run dev
+: 1693574559:0;npm run test
+: 1693574600:0;gst
+: 1693574631:0;gcma "feature - SOL20-8224 - change vuetify-confirm from dep to local code"
+: 1693574643:0;git push -u origin ben/feature/change-vuetify-confirm
+: 1693574713:0;gst
+: 1693574728:0;git push -u origin ben/feature/change-vuetify-confirm
+: 1693574773:0;git fetch
+: 1693574780:0;git rebase origin/master
+: 1693574784:0;gplease
+: 1693811079:0;gst
+: 1693811081:0;ga .
+: 1693811086:0;git commit --amend
+: 1693811094:0;gplease
+: 1693811140:0;git fetch
+: 1693811159:0;git rebase origin/master
+: 1693811290:0;gst
+: 1693811296:0;git rebase --continue
+: 1693811298:0;gst
+: 1693811299:0;gplease
+: 1693811329:0;npm i
+: 1693811371:0;npm run dev
+: 1693811397:0;npm audit
+: 1693811478:0;gst
+: 1693834234:0;gco master
+: 1693834235:0;git pull
+: 1693834242:0;npm run dev
+: 1693897811:0;killall NotificationCenter
+: 1693902908:0;brew update
+: 1693902926:0;brew upgrade
+: 1693914739:0;npm run dev
+: 1693914818:0;npm i
+: 1693914829:0;npm run dev
+: 1693915011:0;npm i jump
+: 1693915056:0;npm i
+: 1693915061:0;npm run dev
+: 1693922557:0;gd
+: 1693925462:0;npm run test
+: 1693990069:0;gco -b ben/feature/change-vue-tour
+: 1693990070:0;gst
+: 1693990114:0;gcma "feature - SOL20-8212 - replace events of vue-tour by a store"
+: 1693990138:0;sail composer install
+: 1693990146:0;sail up
+: 1693990193:0;mutagen daemon start
+: 1693990201:0;gcma "feature - SOL20-8212 - replace events of vue-tour by a store"
+: 1693990215:0;gcma "feature - SOL20-8212 - replace events of vue-tour by a store" --no-verify
+: 1693990217:0;gst
+: 1693990219:0;git fetch
+: 1693990231:0;git rebase origin/master
+: 1693990238:0;sail down
+: 1693990242:0;sail up
+: 1693990454:0;docker-auth
+: 1693990472:0;sail up
+: 1693990664:0;tmux a
+: 1693990667:0;tmux
+: 1693990745:0;sail up
+: 1693991109:0;npm run dev
+: 1693991112:0;gst
+: 1693991116:0;git push
+: 1693991124:0;git push -u origin ben/feature/change-vue-tour
+: 1693992785:0;npx prettier --write .
+: 1693992817:0;gst
+: 1693992819:0;gd
+: 1693992834:0;git commit --amend --no-verify --no-edit
+: 1693992835:0;gst
+: 1693992837:0;ga .
+: 1693992840:0;git commit --amend --no-verify --no-edit
+: 1693992846:0;gplease
+: 1694005552:0;gco master
+: 1694005553:0;git pull
+: 1694007366:0;npm run update-translations
+: 1694007953:0;php artisan sol:vue-i18n:generate
+: 1694007960:0;sail artisan sol:vue-i18n:generate
+: 1694008011:0;sail down
+: 1694008015:0;sail up
+: 1694008039:0;npm run dev
+: 1694008052:0;sail artisan sol:vue-i18n:generate
+: 1694008057:0;npm run update-translations
+: 1694008126:0;php artisan sol:vue-i18n:generate
+: 1694008146:0;brew install php
+: 1694008248:0;php artisan sol:vue-i18n:generate
+: 1694008286:0;npm run dev
+: 1694008298:0;gst
+: 1694008314:0;gd
+: 1694008349:0;gst
+: 1694008427:0;gd
+: 1694008540:0;sail artisan sol:vue-i18n:generate
+: 1694008559:0;gst
+: 1694008674:0;php -v
+: 1694073635:0;gst
+: 1694079626:0;gco -b ben/feature/add-save-to-collection
+: 1694079627:0;gst
+: 1694079636:0;git stash
+: 1694079647:0;gco ben/feature/change-vue-tour
+: 1694079648:0;git pull
+: 1694079767:0;gst
+: 1694079768:0;ga .
+: 1694079770:0;git commit --amend --no-verify --no-edit
+: 1694079774:0;gplease
+: 1694092572:0;gst
+: 1694092573:0;gd
+: 1694094456:0;gst
+: 1694094459:0;gd
+: 1694094468:0;gst
+: 1694094470:0;ga .
+: 1694094477:0;git commit --amend --no-verify --no-edit
+: 1694094479:0;gplease
+: 1694173198:0;gst
+: 1694173200:0;gco -
+: 1694173203:0;gst
+: 1694173204:0;git fetch
+: 1694173213:0;git rebase origin/master
+: 1694173219:0;git stash pop
+: 1694173222:0;gst
+: 1694177798:0;npm run test
+: 1694182350:0;killall NotificationCenter
+: 1694420795:0;tmux
+: 1694420804:0;eV
+: 1694420901:0;gst
+: 1694421329:0;whoami
+: 1694421335:0;ifconfig
+: 1694421345:0;who
+: 1694421674:0;echo $user
+: 1694421684:0;echo $USER
+: 1694421728:0;echo $PATH
+: 1694421735:0;whoami
+: 1694421737:0;who
+: 1694421751:0;hostname
+: 1694430644:0;sail up
+: 1694430652:0;docker-auth
+: 1694430675:0;sail up
+: 1694430716:0;npm run test
+: 1694430721:0;npm run dev
+: 1694435979:0;gd
+: 1694437124:0;git fetch
+: 1694437130:0;gst
+: 1694437132:0;git stash
+: 1694437135:0;git rebase origin/master
+: 1694437137:0;git stash pop
+: 1694504212:0;gd
+: 1694506330:0;gst
+: 1694506330:0;gd
+: 1694506404:0;gst
+: 1694506410:0;ga .
+: 1694506449:0;gcma "feature - SOL20-8489 - add save to collection button"
+: 1694506550:0;gst
+: 1694506552:0;gcma "feature - SOL20-8489 - add save to collection button"
+: 1694506610:0;gst
+: 1694506619:0;git push -u origin ben/feature/add-save-to-collection
+: 1694507621:0;gst
+: 1694507623:0;ga .
+: 1694507625:0;git commit --amend --no-verify --no-edit
+: 1694507628:0;gplease
+: 1694512833:0;php -v
+: 1694513146:0;npm runt est
+: 1694513150:0;npm run test
+: 1694516523:0;gst
+: 1694516526:0;npm run test
+: 1694529010:0;less package.json
+: 1694589548:0;gst
+: 1694589559:0;gd
+: 1694589586:0;ga resources/assets/js/tests/models/dataModels/Record.test.js
+: 1694589587:0;gst
+: 1694589591:0;git commit --amend --no-verify --no-edit
+: 1694589592:0;gst
+: 1694589596:0;gplease
+: 1694605531:0;gst
+: 1694605552:0;gcma "feature - SOL20-8489 - add save to collection button 2"
+: 1694605563:0;gplease
+: 1694605592:0;gplease --no-verify
+: 1694605608:0;git push --force --no-verify
+: 1694605621:0;eA
+: 1694614686:0;gst
+: 1694614687:0;gd
+: 1694678980:0;npm run test
+: 1694701069:0;gco master
+: 1694701071:0;gst
+: 1694701072:0;gd
+: 1694701088:0;gcma "feature - SOL20-8489 - add save to collection button 3"
+: 1694701093:0;gst
+: 1694701095:0;gco master
+: 1694701096:0;git pull
+: 1694701105:0;gst
+: 1694701108:0;npm run dev
+: 1694782181:0;sail artisan sol:aws:auth
+: 1694782231:0;sail restart horizon
+: 1695020215:0;gst
+: 1695020219:0;tmux
+: 1695020229:0;sgt
+: 1695020230:0;gst
+: 1695020234:0;sail up
+: 1695020241:0;docker-auth
+: 1695020253:0;sail up
+: 1695020270:0;sail composer install
+: 1695020274:0;sail up
+: 1695020335:0;gst
+: 1695020340:0;git stash
+: 1695020342:0;git pull
+: 1695020353:0;gst
+: 1695020360:0;git stash pop
+: 1695020363:0;gst
+: 1695020369:0;sail up
+: 1695023507:0;sail artisan sol:aws:auth
+: 1695023534:0;sail restart horizon
+: 1695039811:0;gst
+: 1695039836:0;gco -b ben/feature/print-icons-on-report
+: 1695039837:0;gst
+: 1695039866:0;gcma "feature - SOL20-4940 - print subject icons on report"
+: 1695039869:0;gst
+: 1695039870:0;gd
+: 1695039891:0;gcma "feature - SOL20-4940 - print subject icons on report"
+: 1695039898:0;gst
+: 1695039906:0;git push -u origin ben/feature/print-icons-on-report
+: 1695040357:0;gst
+: 1695108412:0;sail restart horizon
+: 1695108458:0;sail artisan sol:aws:auth
+: 1695108924:0;sail restart horizon
+: 1695109175:0;npm run dev
+: 1695109274:0;sail restart horizon
+: 1695196835:0;sail artisan sol:aws:auth
+: 1695196862:0;sail restart horizon
+: 1695196868:0;npm run dev
+: 1695640622:0;docker-auth
+: 1695640642:0;163771
+: 1695640645:0;docker-auth
+: 1695640659:0;sail artisan sol:aws:auth
+: 1695640672:0;sail restart horizon
+: 1695641862:0;sail artisan sol:aws:auth
+: 1695641885:0;sail restart horizon
+: 1695641890:0;npm run dev
+: 1695641933:0;sail restart horizon
+: 1695642369:0;gst
+: 1695642372:0;ga .
+: 1695642381:0;git commit --amend --no-edit
+: 1695642389:0;gst
+: 1695642394:0;gplease
+: 1695650585:0;git pull
+: 1695650592:0;gst
+: 1695719555:0;git pull
+: 1695719558:0;gst
+: 1695719559:0;gd
+: 1695719606:0;sgt
+: 1695719607:0;gst
+: 1695719615:0;vim .idea/codeStyles/Project.xml
+: 1695719625:0;gst
+: 1695719626:0;gd
+: 1695719636:0;git stash
+: 1695719638:0;git pull
+: 1695719644:0;gst
+: 1695719647:0;git stash pop
+: 1695719648:0;gst
+: 1695719774:0;sail composer install
+: 1695721963:0;composer install
+: 1695721967:0;php composer install
+: 1695721994:0;gst
+: 1695722016:0;./composer install
+: 1695722026:0;php composer install
+: 1695722052:0;rm bootstrap/cache/*
+: 1695722062:0;php composer install
+: 1695722068:0;./composer install
+: 1695722082:0;rm -rf vendor
+: 1695722090:0;php composer install
+: 1695722194:0;.idea/codeStyles/Project.xml b/.idea/codeStyles/Project.xml\
+
+: 1695722209:0;brew tap shivammathur/extensions\
+brew install shivammathur/extensions/apcu@8.2
+: 1695722217:0;brew tap shivammathur/extensions &&\
+brew install shivammathur/extensions/apcu@8.2
+: 1695727947:0;gst
+: 1695727950:0;ga .
+: 1695727956:0;git commit --amend --no-edit
+: 1695727966:0;gst
+: 1695728006:0;gplease
+: 1695728156:0;gst
+: 1695728192:0;export PATH=./vendor/bin:$PATH
+: 1695728195:0;gplease
+: 1695728257:0;vim ~/.zshrc
+: 1695728269:0;gst
+: 1695728315:0;vim /etc/profile
+: 1695728340:0;vim ~/.zprofile
+: 1695728350:0;echo $PATH
+: 1695728558:0;whereis $PATH
+: 1695728581:0;vim /usr/bin/profiles
+: 1695728584:0;gst
+: 1695728716:0;composer install
+: 1695728810:0;export PATH=./composer:$PATH
+: 1695728821:0;composer install
+: 1695728831:0;source ~/.zshrc
+: 1695728835:0;composer install
+: 1695728888:0;export PATH=.:$PATH
+: 1695728894:0;composer install
+: 1695728901:0;echo $PATH
+: 1695728906:0;gplease
+: 1695728939:0;gst
+: 1695729002:0;vim $ZSH_CUSTOM/path.zsh
+: 1695729019:0;ls $ZSH
+: 1695729033:0;la $ZSH
+: 1695729048:0;la $ZSH_CUSTOM
+: 1695729061:0;la $ZSH_CUSTOM/paths.zsh
+: 1695729067:0;vim $ZSH_CUSTOM/paths.zsh
+: 1695729270:0;gst
+: 1695729278:0;composer install
+: 1695729283:0;gst
+: 1695731017:0;sail artisan sol:aws:auth
+: 1695731039:0;sail restart horizon
+: 1695731249:0;gst
+: 1695731804:0;git fetch
+: 1695731808:0;git rebase origin/master
+: 1695731810:0;gst
+: 1695731840:0;git log
+: 1695731862:0;changelog --type added --amend
+: 1695731871:0;gplease
+: 1695733445:0;sail restart horizon
+: 1695734908:0;gst
+: 1695734911:0;git stash
+: 1695734914:0;gco master
+: 1695734916:0;git pull
+: 1695734940:0;gco -b ben/feature/update-margin-report
+: 1695734941:0;gst
+: 1695734944:0;git stash pop
+: 1695734945:0;gst
+: 1695734946:0;gd
+: 1695735001:0;gcma "feature - SOL20-8571 - update margins report"
+: 1695735014:0;changelog --type added --amend
+: 1695735018:0;gst
+: 1695735026:0;git push -u origin ben/feature/update-margin-report
+: 1695735042:0;git log
+: 1695804597:0;gst
+: 1695804601:0;gco master
+: 1695804603:0;git pull
+: 1695804689:0;gco -b ben/feature/replace-events-modals
+: 1695816056:0;tmux
+: 1695819560:0;sail up
+: 1695819573:0;docker-auth
+: 1695819586:0;sail up
+: 1695819639:0;npm run dev
+: 1695820648:0;gst
+: 1695883725:0;killall NotificationCenter
+: 1695972020:0;gst
+: 1695972024:0;gd
+: 1695973470:0;gst
+: 1695973472:0;gd
+: 1695973615:0;gst
+: 1695973620:0;npm run test
+: 1695974040:0;gst
+: 1695975900:0;npm run test
+: 1695975950:0;gst
+: 1695975979:0;gcma "feature - SOL20-8216 - replace events of modals with attach"
+: 1695975982:0;gst
+: 1695975992:0;git push -u origin ben/feature/replace-events-modals
+: 1695976117:0;git fetch
+: 1695976127:0;git rebase origin/master
+: 1695976199:0;gst
+: 1695976204:0;git rebase --continue
+: 1695976208:0;gplease
+: 1695977252:0;git fetch
+: 1695977268:0;git fetch && git rebase origin/master
+: 1695977334:0;gst
+: 1695977338:0;npm run test
+: 1695977384:0;git rebase --continue
+: 1695977389:0;npm run test
+: 1695977429:0;gplease
+: 1696229925:0;killall NotificationCenter
+: 1696253121:0;gst
+: 1696253127:0;npm install --save-dev tiny-emitter
+: 1696253505:0;gst
+: 1696253556:0;gd
+: 1696253650:0;gst
+: 1696253656:0;gd
+: 1696253715:0;less .idea/codeStyles/Project.xml
+: 1696253749:0;gd
+: 1696253957:0;gst
+: 1696253958:0;gd
+: 1696254201:0;gst
+: 1696254202:0;gd
+: 1696254223:0;gst
+: 1696254228:0;gd
+: 1696254411:0;gst
+: 1696254413:0;gd
+: 1696254707:0;gst
+: 1696254759:0;gcma "feature - SOL20-8215 - replace events isotopegrid with dependency"
+: 1696254770:0;gst
+: 1696254833:0;git reset --soft HEAD^1
+: 1696254834:0;gst
+: 1696254840:0;git stash
+: 1696254843:0;gco master
+: 1696254845:0;git pull
+: 1696254865:0;gco -b ben/feature/replace-events-isotopegrid
+: 1696254866:0;gst
+: 1696254871:0;gcma "feature - SOL20-8215 - replace events isotopegrid with dependency"
+: 1696254879:0;git stash pop
+: 1696254886:0;gcma "feature - SOL20-8215 - replace events isotopegrid with dependency"
+: 1696254894:0;gst
+: 1696254905:0;git push -u origin ben/feature/replace-events-isotopegrid
+: 1696316294:0;killall NotificationCenter
+: 1696318412:0;gst
+: 1696318423:0;gco ben/feature/replace-events-modals
+: 1696318424:0;gst
+: 1696318450:0;ga .
+: 1696318453:0;git commit --amend --no-edit
+: 1696318457:0;gplease
+: 1696318889:0;gco -
+: 1696318890:0;gst
+: 1696319199:0;vim .idea/codeStyles/Project.xml
+: 1696319212:0;gst
+: 1696319216:0;gd
+: 1696319232:0;ga .
+: 1696319235:0;git commit --amend --no-edit
+: 1696319238:0;gplease
+: 1696405985:0;gco master
+: 1696405986:0;git pull
+: 1696407083:0;gst
+: 1696407089:0;npm run update-translations
+: 1696407096:0;gst
+: 1696419679:0;gco -b ben/feature/save-agenda-item-to-collection
+: 1696419680:0;gst
+: 1696419765:0;git stash
+: 1696419766:0;gco master
+: 1696419768:0;git pull
+: 1696430835:0;gco -
+: 1696430837:0;git stash pop
+: 1696489985:0;tmux
+: 1696489999:0;sail up
+: 1696490007:0;docker-auth
+: 1696490025:0;sail up
+: 1696490069:0;npm run dev
+: 1696491187:0;gst
+: 1696491191:0;git stash
+: 1696491194:0;git fetch && git rebase origin/master
+: 1696491207:0;git stash pop
+: 1696491208:0;gst
+: 1696491216:0;sail composer install
+: 1696491258:0;sail artisan migrate
+: 1696491603:0;sail artisan cache:clear
+: 1696491612:0;sail artisan migrate
+: 1696492146:0;php artisan migrate
+: 1696492279:0;sail artisan feature-toggles:sync
+: 1696492324:0;sail down
+: 1696492331:0;sail up
+: 1696492394:0;sail artisan feature-toggles:sync
+: 1696492496:0;docker-init
+: 1696492901:0;sail up
+: 1696492911:0;npm run dev
+: 1696493012:0;sail down
+: 1696493057:0;sail up
+: 1696493077:0;npm run dev
+: 1696525560:0;sail down
+: 1696516187:29;npm run test
+: 1696575119:0;killall NotificationCenter
+: 1696575128:0;sail up
+: 1696926215:0;gst
+: 1696926218:0;gd
+: 1696941637:0;gst
+: 1696941654:0;git stash
+: 1696941656:0;git fetch
+: 1696941684:0;git rebase origin/bart/feature/SOL20-8559
+: 1696941685:0;gst
+: 1696941689:0;git stash pop
+: 1696941773:0;gst
+: 1696941853:0;sail composer install
+: 1697013647:0;gst
+: 1697013651:0;git stash
+: 1697013653:0;git fetch
+: 1697013666:0;git rebase origin/bart/feature/SOL20-8559
+: 1697013670:0;git stash pop
+: 1697016809:0;gst
+: 1697016837:0;gcma "feature - SOL20-8559 - save new agenda item to collection"
+: 1697016843:0;gst
+: 1697016849:0;git log
+: 1697094786:0;killall NotificationCenter
+: 1697097981:0;gst
+: 1697099666:0;gd
+: 1697099672:0;gst
+: 1697099676:0;git commit --amend --no-edit
+: 1697099680:0;gst
+: 1697099682:0;ga .
+: 1697099685:0;git commit --amend --no-edit
+: 1697099692:0;gplease
+: 1697099698:0;git push -u origin ben/feature/save-agenda-item-to-collection
+: 1697099735:0;gst
+: 1697099737:0;gd
+: 1697099749:0;ga .
+: 1697099754:0;git commit --amend --no-edit
+: 1697099760:0;gst
+: 1697099764:0;ga .
+: 1697099765:0;gst
+: 1697099898:0;git commit --amend --no-edit --no-verify
+: 1697099899:0;gst
+: 1697099902:0;git push -u origin ben/feature/save-agenda-item-to-collection
+: 1697099927:0;git push -u origin ben/feature/save-agenda-item-to-collection --no-verify
+: 1697100048:0;ga .
+: 1697100050:0;git commit --amend --no-edit --no-verify
+: 1697100052:0;gplease
+: 1697100057:0;gplease --no-verify
+: 1697100068:0;npm run test
+: 1697100326:0;gst
+: 1697100328:0;npm run test
+: 1697100370:0;ga .
+: 1697100374:0;git commit --amend --no-edit --no-verify
+: 1697100376:0;gplease --no-verify
+: 1697102256:0;gst
+: 1697102258:0;git fetch
+: 1697102277:0;git rebase origin/master
+: 1697102279:0;gst
+: 1697102283:0;gplease --no-verify
+: 1697104375:0;npm run test
+: 1697104411:0;ga .
+: 1697104414:0;git commit --amend --no-edit --no-verify
+: 1697104417:0;gplease --no-verify
+: 1697441109:0;gst
+: 1697441113:0;gco master
+: 1697441115:0;git pull
+: 1697441141:0;sail down
+: 1697441174:0;sail composer install
+: 1697441178:0;sail up
+: 1697441225:0;sail down
+: 1697441287:0;docker-auth
+: 1697441299:0;sail up
+: 1697444914:0;git fetch
+: 1697444919:0;gb
+: 1697444993:0;npm i
+: 1697445057:0;npm uninstall vue-infinite-loading
+: 1697445072:0;gst
+: 1697445073:0;gd
+: 1697445078:0;npm i
+: 1697445083:0;gst
+: 1697445084:0;gd
+: 1697445105:0;rm -rf node_modules
+: 1697445113:0;npm i
+: 1697445143:0;npm i --force
+: 1697445164:0;npm run dev
+: 1697445293:0;gst
+: 1697445621:0;gd
+: 1697445651:0;gst
+: 1697447435:0;git restore .
+: 1697447436:0;gst
+: 1697447440:0;npm i
+: 1697447443:0;gst
+: 1697447445:0;gd
+: 1697447448:0;npm run dev
+: 1697447782:0;npm uninstall vue-infinite-loading
+: 1697447788:0;npm run dev
+: 1697448064:0;npm install -D less
+: 1697448428:0;npm run test
+: 1697448521:0;npm run dev
+: 1697456004:0;gst
+: 1697456051:0;gco -b ben/feature/make-vue-infinite-loading-local-plugin
+: 1697456052:0;gst
+: 1697456055:0;ga .
+: 1697456055:0;gst
+: 1697456074:0;gcma "feature - SOL20-8222 - make vue-infinite-loading local plugin"
+: 1697456085:0;gti push -u origin ben/feature/make-vue-infinite-loading-local-plugin
+: 1697456110:0;gst
+: 1697456121:0;gti push -u origin ben/feature/make-vue-infinite-loading-local-plugin --no-verify
+: 1697456133:0;gti fetch
+: 1697456137:0;gst
+: 1697459536:0;eV
+: 1697460883:0;echo $PATH
+: 1697460887:0;echo $PATH | grep java
+: 1697463922:0;eV
+: 1697528023:0;gst
+: 1697528027:0;vim
+: 1697528034:0;gst
+: 1697528053:0;gco master
+: 1697528055:0;git pull
+: 1697528065:0;npm i
+: 1697528069:0;gst
+: 1697528077:0;npm run dev
+: 1697528918:0;gst
+: 1697528938:0;gco -b feature/vue3
+: 1697528939:0;gst
+: 1697529629:0;ga resources/views/*
+: 1697529630:0;gst
+: 1697529649:0;gcm "remove scoped-slots"
+: 1697529661:0;git commit -m "remove scoped-slots"
+: 1697529673:0;gst
+: 1697529677:0;gco master
+: 1697529678:0;gst
+: 1697529744:0;gco -b ben/other/vue3
+: 1697529745:0;gst
+: 1697529751:0;gcm "remove scoped-slots"
+: 1697529773:0;gcm "other - remove scoped-slots"
+: 1697529779:0;gst
+: 1697529820:0;gcma "other - change propsData to props in tests"
+: 1697529858:0;npm i
+: 1697529865:0;gst
+: 1697529867:0;gd
+: 1697529873:0;gst
+: 1697529905:0;gd
+: 1697529910:0;gd package.json
+: 1697529916:0;gd
+: 1697529974:0;npm run dev
+: 1697530098:0;npm uninstall inertiajs/vue2
+: 1697530107:0;npm uninstall inertiajs/vue2 --force
+: 1697530110:0;gst
+: 1697530130:0;npm install @inertiajs/vue3
+: 1697530225:0;npm uninstall vitejs/plugin-vue2
+: 1697530229:0;npm uninstall vitejs/plugin-vue2 --force
+: 1697530303:0;npm i @vitejs/plugin-vue
+: 1697530309:0;npm i @vitejs/plugin-vue --force
+: 1697530332:0;npm install @inertiajs/vue3
+: 1697530383:0;npm install @inertiajs/vue3 --force
+: 1697530539:0;npm uninstall vue/test-utils
+: 1697530548:0;npm uninstall @vue/test-utils
+: 1697530557:0;npm uninstall @vue/test-utils --force
+: 1697530572:0;npm install @vue/test-utils --save-dev
+: 1697530577:0;npm install @vue/test-utils --save-dev --force
+: 1697530611:0;npm uninstall @vue/vue2-jest
+: 1697530616:0;npm uninstall @vue/vue2-jest --force
+: 1697530670:0;npm install --save-dev @vue/vue3-jest@28
+: 1697530675:0;npm install --save-dev @vue/vue3-jest@28 --force
+: 1697530804:0;npm install --save-dev @vue/vue3-jest@latest
+: 1697530808:0;npm install --save-dev @vue/vue3-jest@latest --force
+: 1697530741:1;npm run dev
+: 1697530812:0;npm run dev
+: 1697530928:0;npm remove vee-validate
+: 1697530932:0;npm remove vee-validate --force
+: 1697530941:0;npm install vee-validate --save-dev
+: 1697530963:0;npm install vee-validate --save-dev --force
+: 1697530988:0;gst
+: 1697530992:0;git stash
+: 1697531038:0;git reset origin/ben/feature/make-vue-infinite-loading-local-plugin
+: 1697531040:0;gst
+: 1697531059:0;git reset origin/ben/feature/make-vue-infinite-loading-local-plugin --HARD
+: 1697531067:0;git reset origin/ben/feature/make-vue-infinite-loading-local-plugin --hard
+: 1697531072:0;gst
+: 1697531109:0;git log
+: 1697531129:0;git reflog
+: 1697531180:0;git reset --hard c34201f85
+: 1697531181:0;gst
+: 1697531183:0;git log
+: 1697531186:0;gst
+: 1697531196:0;git rebase origin/ben/feature/make-vue-infinite-loading-local-plugin
+: 1697531198:0;gst
+: 1697531202:0;git stash pop
+: 1697531208:0;gst
+: 1697531220:0;rm package-lock.json
+: 1697531222:0;npm i
+: 1697531234:0;npm remove vue-prism
+: 1697531240:0;npm remove vue-prism --force
+: 1697531246:0;gst
+: 1697531249:0;npm i
+: 1697531287:0;npm remove vue-virtual-scroller
+: 1697531290:0;npm remove vue-virtual-scroller --force
+: 1697531301:0;npm install vue-virtual-scroller@next
+: 1697531306:0;npm install vue-virtual-scroller@next --force
+: 1697531309:0;npm i
+: 1697531322:0;npm remove vuetify --force
+: 1697531362:0;npm i -D vuetify vite-plugin-vuetify
+: 1697531369:0;npm i -D vuetify vite-plugin-vuetify --force
+: 1697531373:0;gst
+: 1697531375:0;npm i
+: 1697531384:0;npm i @mdi/font
+: 1697531390:0;npm i @mdi/font --force
+: 1697531393:0;npm i
+: 1697531483:0;npm update vue-i18n
+: 1697531490:0;npm upgrade vue-i18n
+: 1697531497:0;npm update vue-i18n
+: 1697531501:0;npm update vue-i18n --force
+: 1697531503:0;gst
+: 1697531504:0;npm i
+: 1697531522:0;npm remove vue-i18n
+: 1697531530:0;gst
+: 1697531539:0;npm install vue-i18n
+: 1697531542:0;npm i
+: 1697531550:0;npm run dev
+: 1697531739:0;npm i hash-sum
+: 1697531743:0;npm run dev
+: 1697532890:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1697532934:0;gd
+: 1697533010:0;npm run dev
+: 1697533160:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1697533176:0;gst
+: 1697533193:0;npm run dev
+: 1697533441:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1697533471:0;gst
+: 1697533481:0;npm run dev
+: 1697534150:0;gst
+: 1697534151:0;gd
+: 1697534517:0;npm run dev
+: 1697534630:0;gst
+: 1697534647:0;gcma "other - update to vue3"
+: 1697534653:0;gst
+: 1697535206:0;git push -u origin ben/other/vue3
+: 1697551320:0;gst
+: 1697551324:0;npm run test
+: 1697551388:0;npm install --save-dev vue-jest
+: 1697551435:0;npm i -D @vue/vue3-jest
+: 1697551441:0;npm run test
+: 1697551452:0;npm remove vue/vue2-jest
+: 1697551454:0;gst
+: 1697551457:0;npm run test
+: 1697551497:0;npm i @vue/vue3-jest
+: 1697551501:0;npm run test
+: 1697551663:0;gst
+: 1697551668:0;npm run dev
+: 1697551678:0;gst
+: 1697551689:0;git log
+: 1697551710:0;gcma "other - update test to new syntax"
+: 1697551716:0;git push
+: 1697552186:0;gst
+: 1697552809:0;npm i
+: 1697552988:0;npm remove pinia
+: 1697552997:0;npm install pinia
+: 1697553008:0;npm run dev
+: 1697553061:0;npm install @vitejs/plugin-vue
+: 1697553064:0;gst
+: 1697553067:0;npm run dev
+: 1697553395:0;gst
+: 1697553396:0;gd
+: 1697553838:0;npm install @vee-validate/rules
+: 1697553884:0;npm run dev
+: 1697554341:0;gst
+: 1697554345:0;gd
+: 1697554375:0;gst
+: 1697554388:0;gcma "other - update vee-validate config"
+: 1697554402:0;git push --no-verify
+: 1697614003:0;gst
+: 1697614006:0;rm -rf node_modules
+: 1697614016:0;npm i
+: 1697614041:0;gst
+: 1697614044:0;npm run dev
+: 1697614090:0;git pull
+: 1697614101:0;gst
+: 1697614109:0;rm -rf node_modules && npm i
+: 1697614852:0;npm run dev
+: 1697616848:0;gst
+: 1697616856:0;gd
+: 1697616871:0;gcma "other - fix keys and plugins"
+: 1697616878:0;git push --no-verify
+: 1697622041:0;gst
+: 1697622065:0;gcma "other - change ValidationProvider and Observer to Field and Form"
+: 1697622072:0;git push
+: 1697622098:0;gst
+: 1698049085:0;git pull
+: 1698049092:0;gst
+: 1698051988:0;cd ..
+: 1698052026:0;cd shellbot-wincent
+: 1698052027:0;gst
+: 1698052030:0;ls
+: 1698052037:0;./shellbot.sh
+: 1698052083:0;ls
+: 1698052087:0;cargo build
+: 1698052090:0;npm install cargo
+: 1698052098:0;cargo build
+: 1698052105:0;R
+: 1698052111:0;cargo build
+: 1698052112:0;ls
+: 1698052120:0;ls src
+: 1698052147:0;./shellbot.sh
+: 1698052167:0;vim shellbot.sh
+: 1698052236:0;cargo-build
+: 1698052283:0;source $HOME/.cargo/env
+: 1698052310:0;brew install rust
+: 1698052527:0;cargo build
+: 1698052545:0;ls
+: 1698052551:0;vim shellbot.sh
+: 1698052554:0;./shellbot.sh
+: 1698052618:0;la
+: 1698052641:0;./shellbot.sh
+: 1698052651:0;gst
+: 1698054504:0;npm run dev\ 
+: 1698131524:0;git pull
+: 1698131530:0;gst
+: 1698054506:77015;npm run dev
+: 1698131532:0;npm run dev
+: 1698134356:0;gst
+: 1698134377:0;gcma "other - add vee-validate Form and Field imports"
+: 1698134383:0;git push
+: 1698134394:0;git push --no-verify
+: 1698137014:0;gst
+: 1698137015:0;gd
+: 1698138299:0;gst
+: 1698138302:0;git restore .
+: 1698138303:0;gst
+: 1698145612:0;gd
+: 1698146575:0;gst
+: 1698146589:0;gcma "other - refactor :deep css selector"
+: 1698146596:0;git pull
+: 1698146601:0;git push --no-verify
+: 1698148921:0;npm run dev
+: 1698149082:0;gst
+: 1698149083:0;gd
+: 1698149108:0;gst
+: 1698149110:0;gd
+: 1698149148:0;gst
+: 1698149150:0;gd
+: 1698149190:0;gst
+: 1698149194:0;gd
+: 1698149229:0;ga resources/assets/js/common.js resources/assets/js/plugins/*
+: 1698149230:0;gst
+: 1698149241:0;gcm "other - fix i18n update"
+: 1698149245:0;gst
+: 1698149246:0;gd
+: 1698149263:0;gcma "other - fix eslint location attribute update"
+: 1698149268:0;git pull
+: 1698149278:0;git push --no-verify
+: 1698149293:0;git log
+: 1698149325:0;npm run dev
+: 1698150878:0;gst
+: 1698150879:0;gd
+: 1698150897:0;gcma "other - refactor v-list-item-icon component"
+: 1698150903:0;git push --no-verify
+: 1698152113:0;gst
+: 1698152126:0;gcma "other - refactor dense prop"
+: 1698152134:0;git push
+: 1698152140:0;git push --no-verify
+: 1698152494:0;gst
+: 1698152498:0;git restore .
+: 1698153712:0;gst
+: 1698153735:0;gcma "other - refactor activator slots syntax"
+: 1698153742:0;git log
+: 1698153749:0;git push --no-verify
+: 1698154282:0;gst
+: 1698154286:0;ga .
+: 1698154288:0;gst
+: 1698154296:0;gcma "other - refactor activator slots syntax"
+: 1698154301:0;git push --no-verify
+: 1698220310:0;gst
+: 1698220312:0;git pull
+: 1698223431:0;gst
+: 1698223443:0;gcma "other - refactor vee-validate reset to resetForm"
+: 1698223449:0;git push
+: 1698223454:0;git push --no-verify
+: 1698232260:0;gst
+: 1698232262:0;gd
+: 1698232269:0;git restore .
+: 1698235347:0;git pull
+: 1698235701:0;gst
+: 1698235702:0;gd
+: 1698235728:0;gcma "other - overwrite overflow-y from scroll to auto on html tag"
+: 1698235734:0;git push --no-verify
+: 1698302886:0;tmux a
+: 1698302889:0;tmux
+: 1698302949:0;gst
+: 1698302951:0;git pull
+: 1698302962:0;sail up
+: 1698302973:0;npm run dev
+: 1698326342:0;gst
+: 1698326345:0;gd
+: 1698326401:0;ga resources/assets/js/IPages/* resources/assets/js/plugins/*
+: 1698326402:0;gst
+: 1698326412:0;ga resources/assets/js/components/Planner/Rosters/*
+: 1698326413:0;gst
+: 1698326430:0;gcm "other - fix broken vee-validate rules"
+: 1698327809:0;gst
+: 1698327810:0;gd
+: 1698328466:0;gst
+: 1698328483:0;gcma "other - remove all remaining obsolete $set"
+: 1698328490:0;git push --no-verify
+: 1698328502:0;git pull
+: 1698328684:0;git restore .
+: 1698328684:0;gst
+: 1698331162:0;git pull
+: 1698654266:0;npm run dev
+: 1698662219:0;gst
+: 1698662262:0;gcma "other - add vee-validate field slots"
+: 1698662270:0;git push --no-verify
+: 1698670668:0;gst
+: 1698676331:0;npm run dev
+: 1698680143:0;gd
+: 1698680173:0;git restore resources/assets/js/components/Planner/Calendar/*
+: 1698680173:0;gst
+: 1698680250:0;gd
+: 1698680303:0;gst
+: 1698680304:0;gd
+: 1698680582:0;gst
+: 1698680584:0;gd
+: 1698680588:0;gst
+: 1698680597:0;gcma "other - fix obsolete __vue__ usage"
+: 1698680604:0;git pull
+: 1698680614:0;git push --no-verify
+: 1698739682:0;tmux
+: 1698740122:0;sail up
+: 1698740131:0;npm run dev
+: 1698746027:0;gst
+: 1698746076:0;git pull
+: 1698909648:0;gst
+: 1698918483:0;gd
+: 1698919424:0;gst
+: 1698919425:0;gd
+: 1698919464:0;gcma "other - fix v-text-field styling calendar"
+: 1698919469:0;git pull
+: 1698919481:0;git push --no-verify
+: 1698920080:0;git pull
+: 1698932182:0;npm run dev
+: 1698934745:0;gst
+: 1698934763:0;gcma "other - refactor obsolete v-list-item-content to v-list-item-title"
+: 1698934772:0;git push
+: 1698934776:0;git push --no-verify
+: 1698940845:0;npm run production
+: 1698941300:0;gd
+: 1699000026:0;gst
+: 1699000034:0;ga .
+: 1699000039:0;git commit
+: 1699000135:0;git push --no-verify
+: 1699000142:0;git pull
+: 1699000154:0;git push --no-verify
+: 1699000171:0;gst
+: 1699000174:0;git fetch
+: 1699003013:0;npx eslint --ext .vue,.js resources/
+: 1699004184:0;gst
+: 1699004185:0;gd
+: 1699004206:0;gcma "other - fix v-timeline-item right prop"
+: 1699004226:0;npm run dev
+: 1699004256:0;git log
+: 1699266403:0;gst
+: 1699266431:0;npx eslint --ext .vue,.js resources/ | grep Props
+: 1699266693:0;npx eslint --ext .vue,.js resources/
+: 1699266791:0;gcma "other - disallow access to this in props default function"
+: 1699266806:0;git pull
+: 1699266815:0;git push --no-verify
+: 1699279553:0;npx eslint --ext .vue,.js resources/
+: 1699280669:0;gd
+: 1699280757:0;npx eslint --ext .vue,.js resources/
+: 1699283156:0;gd
+: 1699283304:0;npx eslint --ext .vue,.js resources/
+: 1699344714:0;gst
+: 1699344717:0;npx eslint --ext .vue,.js resources/
+: 1699351785:0;gst
+: 1699351787:0;npx eslint --ext .vue,.js resources/
+: 1699352638:0;npx eslint --ext .vue,.js,.php resources/
+: 1699352668:0;npx eslint --ext .vue,.js resources/
+: 1699353832:0;npx eslint --ext .vue,.js,.php resources/
+: 1699353854:0;gcma "other - fix many eslint errors"
+: 1699353862:0;git pull
+: 1699353872:0;git push --no-verify
+: 1699353885:0;npx eslint --ext .vue,.js,.php resources/
+: 1699353967:0;npm install --save-dev @babel/plugin-proposal-decorators
+: 1699353987:0;npx eslint --ext .vue,.js,.php resources/
+: 1699359629:0;gd
+: 1699359730:0;gst
+: 1699360502:0;gd
+: 1699360509:0;git stash
+: 1699360511:0;npx eslint --ext .vue,.js,.php resources/
+: 1699360530:0;git stash pop
+: 1699360534:0;npx eslint --ext .vue,.js,.php resources/
+: 1699361046:0;git restore .
+: 1699361047:0;gst
+: 1699361057:0;npx eslint --ext .vue,.js resources/
+: 1699366112:0;gst
+: 1699366140:0;npm run dev
+: 1699366500:0;gst
+: 1699434717:0;gd
+: 1699434878:0;git stash
+: 1699434880:0;git pull
+: 1699434894:0;git stash pop
+: 1699434901:0;npm run dev
+: 1699436406:0;git stash
+: 1699436445:0;git stash pop
+: 1699453574:0;gst
+: 1699453577:0;gd
+: 1699453762:0;gcma "other - fix tabClick prop function"
+: 1699453767:0;git pull
+: 1699453779:0;git push --no-verify
+: 1699515700:0;killall NotificationCenter
+: 1699543290:0;gst
+: 1699543293:0;gd
+: 1699543307:0;gcma "other - v-data-table fixes"
+: 1699543315:0;git pull
+: 1699543326:0;git push --no-verify
+: 1699544144:0;man pmset
+: 1699544181:0;sudo pmset schedule sleep 1
+: 1699544240:0;shutdown -s +1
+: 1699544254:0;sudo shutdown -s +1
+: 1699544308:0;ps aux | grep shut
+: 1699544318:0;kill -9
+: 1699544322:0;c
+: 1699544323:0;ls
+: 1699544626:0;sudo shutdown -s +1
+: 1699544653:0;kill -9 40825
+: 1699544658:0;sudo kill -9 40825
+: 1699544664:0;c
+: 1699544686:0;git pull
+: 1699544700:0;npm run dev
+: 1699544940:0;sleep ((60 * 1)); pmset sleep
+: 1699545027:0;sleep $((60 * 1)); pmset sleep
+: 1699545152:0;pmset sleepnow
+: 1699545175:0;sleep $((10 * 60)); gd; pmset sleepnow
+: 1699603259:0;gd
+: 1699603272:0;git status
+: 1699603282:0;sleep $((10 * 60)); git status; pmset sleepnow
+: 1699608049:0;gst
+: 1699608683:0;npm run dev
+: 1699627028:0;sleep $((25 * 60)); git status; pmset sleepnow
+: 1699864334:0;npm run dev
+: 1699865752:0;gst
+: 1699865754:0;gd
+: 1699865783:0;npx eslint --ext .vue,.js resources/
+: 1699865833:0;git stash
+: 1699865839:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1699865846:0;gst
+: 1699865849:0;git stash pop
+: 1699866728:0;gd
+: 1699886342:0;gst
+: 1699886344:0;gd
+: 1699886875:0;gcma "other - v-data-table thead and footer fixes"
+: 1699886885:0;git pull
+: 1699886899:0;git push --no-verify
+: 1699948202:0;gst
+: 1699948203:0;gd
+: 1699948210:0;gst
+: 1699948221:0;git restore .
+: 1699948224:0;git pull
+: 1699948229:0;gst
+: 1699948233:0;git stash pop
+: 1699948235:0;gst
+: 1699948245:0;git restore .
+: 1699948247:0;gst
+: 1699948251:0;gsta
+: 1699948258:0;git restore --staged .
+: 1699948259:0;gst
+: 1699948261:0;git restore .
+: 1699948262:0;gst
+: 1699948265:0;git stash pop
+: 1699948268:0;gst
+: 1699948273:0;git restore --staged .
+: 1699948278:0;git restore .
+: 1699948279:0;gst
+: 1699948292:0;npm run dev
+: 1699948340:0;gst
+: 1699948392:0;git stash list
+: 1699948432:0;git stash clear
+: 1699948433:0;gst
+: 1699949992:0;gcma "other - remove redundant arrow in FilteredList"
+: 1699950000:0;git push --no-verify
+: 1699954109:0;gst
+: 1699954110:0;gd
+: 1699954156:0;gcma "other - fix some icons on evaluation"
+: 1699954251:0;gst
+: 1699954253:0;ga .
+: 1699954262:0;git commit --amend --no-edit --no-verify
+: 1699954263:0;gst
+: 1699954273:0;git pull
+: 1699954289:0;git push --no-verify
+: 1699969051:0;gst
+: 1700041142:0;gd
+: 1700041164:0;gd | grep vert
+: 1700041171:0;gd | grep hor
+: 1700212534:0;gst
+: 1700212535:0;gd
+: 1700212644:0;gst
+: 1700212672:0;gcma "other - many evaluation fixes including tabs and tables"
+: 1700212680:0;git pull
+: 1700212701:0;git push --no-verify
+: 1700212823:0;git commit --amend --no-edit --no-verify
+: 1700212833:0;git commit --amend
+: 1700212851:0;git log
+: 1700212857:0;git push --no-verify
+: 1700212867:0;gplease --no-verify
+: 1700467871:0;tmux a
+: 1700467873:0;tmux
+: 1700471016:0;npm run dev
+: 1700471026:0;sail up
+: 1700471042:0;npm run dev
+: 1700471066:0;gst
+: 1700471068:0;gd
+: 1700475415:0;gst
+: 1700475430:0;tmux a
+: 1700475431:0;gst
+: 1700475433:0;gd
+: 1700576528:0;gst
+: 1700576560:0;gcma "other - reports page fixes"
+: 1700576564:0;gst
+: 1700576567:0;git pull
+: 1700576581:0;npm run dev
+: 1700576658:0;git pull
+: 1700576667:0;git log
+: 1700576706:0;npm run dev
+: 1700576788:0;gst
+: 1700576795:0;gcma "other - update imports"
+: 1700576812:0;gcma "other - update imports" --no-verify
+: 1700576813:0;gst
+: 1700576819:0;git push --no-verify
+: 1700647943:0;gst
+: 1700647944:0;gd
+: 1700647965:0;gcma "other - fix print page" --no-verify
+: 1700647966:0;gst
+: 1700647969:0;git pull
+: 1700647976:0;git push --no-verify
+: 1700668243:0;sleep $((15 * 60)); git status; pmset sleepnow
+: 1700725939:0;killall NotificationCenter
+: 1700753396:0;sleep $((35 * 60)); git status; pmset sleepnow
+: 1700809304:0;killall NotificationCenter
+: 1700836517:0;gst
+: 1701163190:0;gcma "other - fix follow-up-systems page"
+: 1701163199:0;gcma "other - fix follow-up-systems page" --no-verify
+: 1701163227:0;gst
+: 1701163229:0;git pull
+: 1701163245:0;npm run dev
+: 1701163304:0;git push --no-verify
+: 1701183963:0;npm run dev
+: 1701337139:0;npm install --save-dev @date-io/dayjs
+: 1701337369:0;npm run dev
+: 1701338645:0;gst
+: 1701338649:0;gd
+: 1701944615:0;gst
+: 1701944616:0;gd
+: 1701944651:0;gst
+: 1701944660:0;gcma "other - fix datepicker" --no-verify
+: 1701944661:0;gst
+: 1701944663:0;git pull
+: 1701944676:0;git push --no-verify
+: 1702044403:0;gst
+: 1702044404:0;gd
+: 1702044433:0;gcma "other - code style" --no-verify
+: 1702044437:0;git push --no-verify
+: 1702390247:0;n
+: 1702390250:0;vim
+: 1702390255:0;vim test.md
+: 1702390271:0;gst
+: 1702390279:0;ls | grep test
+: 1702911357:0;gst
+: 1702911360:0;git pull
+: 1702911367:0;npm run dev
+: 1702911919:0;vim ~/.aws/credentials
+: 1702912038:0;docker-auth
+: 1702912067:0;npm run dev
+: 1702912090:0;gst
+: 1702912263:0;sail composer install
+: 1702912290:0;npm run dev
+: 1702912689:0;npm run build-impersonate-prod
+: 1702912712:0;npm run dev
+: 1702996779:0;gst
+: 1702996799:0;gcma "other - fix alignment icons evaluation pages"
+: 1702996810:0;docker-auth
+: 1702996821:0;gcma "other - fix alignment icons evaluation pages"
+: 1702996853:0;git push
+: 1702997064:0;gst
+: 1702997082:0;gd
+: 1702997095:0;gcma "other - prettier"
+: 1702997101:0;git push
+: 1702997127:0;gst
+: 1702997132:0;git push --no-verify
+: 1702997139:0;git pull
+: 1702997146:0;git push
+: 1702997150:0;git push --no-verify
+: 1703060744:0;sudo softwareupdate -iaR
+: 1703062217:0;tmux a
+: 1703062219:0;gst
+: 1703062221:0;tmux
+: 1703062240:0;killall NotificationCenter
+: 1703062826:0;sudo softwareupdate -iaR
+: 1703063840:0;gst
+: 1703065617:0;softwareupdate --list-full-installers
+: 1703066855:0;sail up
+: 1703066879:0;docker-auth
+: 1703066895:0;sail up
+: 1703066928:0;npm run dev
+: 1703069878:0;grep -r "^enum " cfa
+: 1703069884:0;grep -r "^enum " cfa | sort -u
+: 1703069904:0;[11:58] Jeppe Knockaert\
+grep -r "^enum " app cfa
+: 1703069913:0;grep -r "^enum " app cfa
+: 1703069947:0;grep -irl "enum "
+: 1703070000:0;ps aux | grep grep
+: 1703070018:0;kill -9 41589
+: 1703070021:0;CcccccCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCgst
+: 1703070917:0;tmux a
+: 1703070919:0;tmux
+: 1704187581:0;ls
+: 1704187582:0;gst
+: 1704187587:0;sail up
+: 1704187708:0;gst
+: 1704187709:0;gd
+: 1704187744:0;vim .env.local
+: 1704187752:0;composer config http-basic.nova.laravel.com vaninsolpm@vanin.be $(grep "NOVA_LICENSE_KEY" .env.local|cut -d "=" -f2)
+: 1704187788:0;npm run dev
+: 1704187833:0;gd
+: 1704203955:0;gst
+: 1704203959:0;gd
+: 1704290457:0;gst
+: 1704294549:0;gd
+: 1704294602:0;gst
+: 1704294621:0;gcma "other - fix QuotationCommentDialog in EvaluationTable"
+: 1704294632:0;git push
+: 1704294681:0;gst
+: 1704294686:0;git push --no-verify
+: 1704294691:0;git pull
+: 1704294699:0;git push --no-verify
+: 1704294706:0;npm run dev
+: 1704360924:0;gst
+: 1704360925:0;gd
+: 1704360945:0;gcma "other - fix :deep selectors"
+: 1704360955:0;git push --no-verify
+: 1704360966:0;gst
+: 1704724571:0;gd
+: 1704724606:0;gst
+: 1704724660:0;gcma "other - improve planner calendar popover"
+: 1704724671:0;git push --no-verify
+: 1704788232:0;gst
+: 1704788235:0;npm run test
+: 1704788626:0;npm install --save-dev babel-core@bridge
+: 1704788640:0;gst
+: 1704788888:0;jest tests/unit --clearCache
+: 1704788897:0;npm run test
+: 1704790287:0;gst
+: 1704790289:0;gd
+: 1704790722:0;npm run test
+: 1705069973:0;sleep $((35 * 60)); git status; pmset sleepnow
+: 1705324604:0;npm run test
+: 1706084441:0;tmux a
+: 1706084444:0;tmux
+: 1706085914:0;whoami
+: 1706088360:0;sail up
+: 1706088395:0;npm run serve
+: 1706088405:0;less package.json
+: 1706088412:0;npm run dev
+: 1706178775:0;gst
+: 1706178806:0;gd
+: 1706179255:0;gst
+: 1706179273:0;gcma "other - fix testing config & some tests"
+: 1706179325:0;gcma "other - fix testing config & some tests" --no-verify
+: 1706179326:0;gst
+: 1706179343:0;git pull
+: 1706179362:0;gst
+: 1706179365:0;npm run dev
+: 1706179451:0;rm -rf bootstrap/cache/*.php
+: 1706179421:12;composer install
+: 1706179456:0;composer install
+: 1706179492:0;npm run dev
+: 1706179543:0;gst
+: 1706179546:0;git push --no-verify
+: 1706197691:0;sleep $((15 * 60)); git status; pmset sleepnow
+: 1706625998:0;gst
+: 1706625999:0;gd
+: 1706626033:0;gcma "other - fix more tests" --no-verify
+: 1706626034:0;gst
+: 1706626038:0;git pull
+: 1706626157:0;gst
+: 1706626160:0;gsta
+: 1706626171:0;ga .
+: 1706626174:0;git rebase --continue
+: 1706626177:0;gst
+: 1706626240:0;sail down
+: 1706626246:0;mutagen daemon stop
+: 1706626254:0;brew remove mutagen-io/mutagen/mutagen-compose
+: 1706626265:0;brew remove mutagen-io/mutagen/mutagen
+: 1706626920:0;sail down
+: 1706627161:0;sail up --remove-orphans
+: 1706627225:0;docker-auth
+: 1706627246:0;sail up --remove-orphans
+: 1706627288:0;npm run dev
+: 1706627324:0;sail down
+: 1706627328:0;composer install
+: 1706627339:0;sail up
+: 1706627342:0;npm run dev
+: 1706627556:0;ls storage/framework/cache
+: 1706627560:0;ls storage/framework/
+: 1706627575:0;sail artisan cache:clear
+: 1706627580:0;sail up
+: 1706627583:0;npm run dev
+: 1706627656:0;sail artisan cache:clearphp artisan cache:clear
+: 1706627664:0;php artisan config:clear
+: 1706627669:0;php artisan view:clear
+: 1706627674:0;php artisan cache:clear
+: 1706627880:0;rm -rf bootstrap/cache/
+: 1706627887:0;php artisan cache:clear
+: 1706627896:0;composer install
+: 1706627994:0;ls storage/framework/
+: 1706628002:0;ls bootstrap
+: 1706628062:0;mkdir bootstrap/cache
+: 1706628066:0;composer install
+: 1706628074:0;sail up
+: 1706628077:0;npm run dev
+: 1706688088:0;docker down
+: 1706688094:0;sail down
+: 1706688101:0;docker-init
+: 1706688117:0;sail up
+: 1706688121:0;npm run dev
+: 1706696980:0;npm run test
+: 1706698547:0;git log -S v-slot:activator
+: 1706715041:0;sleep $((35 * 60)); git status; pmset sleepnow
+: 1707311802:0;gst
+: 1707311816:0;git stash
+: 1707311819:0;git pull
+: 1707311825:0;git stash pop
+: 1707311827:0;gst
+: 1707385995:0;npm run test
+: 1707407011:0;sleep $((20 * 60)); git status; pmset sleepnow
+: 1707487799:0;sleep $((50 * 60)); git status; pmset sleepnow
+: 1707752798:0;sleep $((15 * 60)); git status; pmset sleepnow
+: 1707811494:0;sail up
+: 1707811501:0;docker-auth
+: 1707811515:0;sail up
+: 1707811817:0;npm run dev
+: 1707812963:0;npm run test
+: 1707818814:0;gst
+: 1707837034:0;gcma "other - fix more tests" --no-verify
+: 1707837037:0;gst
+: 1707837045:0;ga .
+: 1707837048:0;gst
+: 1707837056:0;git commit --amend
+: 1707837072:0;git commit --amend --no-edit --no-verify
+: 1707837074:0;gst
+: 1707837077:0;git pull
+: 1707837085:0;git push
+: 1707837090:0;git push --no-verify
+: 1707835010:3;npm run update-translations
+: 1708356740:0;sleep $((25 * 60)); git status; pmset sleepnow
+: 1708416082:0;gst
+: 1708416084:0;git stash
+: 1708416086:0;git pull
+: 1708416089:0;gst
+: 1708416093:0;git stash
+: 1708416094:0;gst
+: 1708416107:0;gsta
+: 1708416118:0;git stash
+: 1708416146:0;gst
+: 1708416149:0;gsta
+: 1708416182:0;git pull
+: 1708416192:0;gst
+: 1708416194:0;git stash
+: 1708416197:0;gsta
+: 1708416239:0;gst
+: 1708416257:0;git stash
+: 1708416259:0;gst
+: 1708416293:0;gd
+: 1708416337:0;gst
+: 1708416340:0;git pull
+: 1708416401:0;tmux a
+: 1708416404:0;git pull
+: 1708416451:0;rm -f ./.git/index.lock
+: 1708416453:0;git pull
+: 1708416456:0;gst
+: 1708440024:0;git stash
+: 1708440027:0;git pull
+: 1708440041:0;git stash pop
+: 1708440044:0;gst
+: 1708440319:0;npm run test
+: 1708510032:0;tmux a
+: 1708510034:0;tmux
+: 1708510060:0;npm run test
+: 1708595539:0;npm install --save-dev @babel/plugin-transform-modules-commonjs
+: 1708595556:0;gst
+: 1708595575:0;npm uninstall --save-dev @babel/plugin-transform-modules-commonjs
+: 1708595580:0;gst
+: 1708595643:0;jest --clearCache
+: 1708611379:0;npm run test
+: 1708685172:0;agst
+: 1708685174:0;gst
+: 1708694666:0;npm run test
+: 1708937981:0;gst
+: 1708938002:0;npm run test
+: 1708939180:0;gst
+: 1708939183:0;git stash
+: 1708939186:0;git pull
+: 1708939192:0;git stash pop
+: 1708939299:0;gst
+: 1708939302:0;gsta
+: 1708939315:0;npm run test
+: 1709021454:0;npm run dev
+: 1709021464:0;sail up
+: 1709021479:0;docker-auth
+: 1709021490:0;sail up
+: 1709021597:0;npm run dev
+: 1709029176:0;npm run test
+: 1709038111:0;gd | grep $notify
+: 1709038119:0;gd | grep "$notify"
+: 1709038142:0;gd
+: 1709044769:0;npm run test
+: 1709194198:0;/Users/ben.schepmans/Downloads/GateKeeper\ Helper/GateKeeper_Helper.command ; exit;
+: 1709201519:0;gst
+: 1709201522:0;npm run test
+: 1709202896:0;gst
+: 1709202921:0;gco -b ben/test/fix-more-tests
+: 1709202921:0;gst
+: 1709202927:0;ga .
+: 1709202927:0;gst
+: 1709202959:0;gcma "test - fix more tests" --no-verify
+: 1709202961:0;gst
+: 1709202976:0;git push
+: 1709203025:0;git push -u origin ben/test/fix-more-tests
+: 1709203033:0;git push -u origin ben/test/fix-more-tests --no-verify
+: 1709203227:0;git pull
+: 1709211699:0;gco -
+: 1709211702:0;git pull
+: 1709217030:0;npm run dev
+: 1709286169:0;npm run test
+: 1709299357:0;sail artisan cache:clear
+: 1709303536:0;gst
+: 1709539891:0;tmux a
+: 1709539895:0;tmux
+: 1709539905:0;docker-auth
+: 1709539925:0;sail up
+: 1709539939:0;npm run dev
+: 1709626102:0;gst
+: 1709626105:0;git stash
+: 1709626106:0;git pull
+: 1709626114:0;git stash pop
+: 1709626117:0;gst
+: 1709629857:0;gd
+: 1709643664:0;gst
+: 1709727766:0;git stash
+: 1709727768:0;git pull
+: 1709727774:0;git stash pop
+: 1709727779:0;gst
+: 1709728604:0;npm run dev
+: 1709728880:0;gst
+: 1709728881:0;gd
+: 1709807393:0;gst
+: 1709807395:0;git stash
+: 1709807397:0;git pull
+: 1709807404:0;git stash pop
+: 1709807641:0;gst
+: 1709807642:0;gd
+: 1709630202:2;npm run update-translations
+: 1709822535:0;sleep $((20 * 60)); git status; pmset sleepnow
+: 1710231383:0;gst
+: 1710231385:0;git stash
+: 1710231387:0;git pull
+: 1710231398:0;git stash pop
+: 1710232252:0;npm run dev
+: 1710247693:0;gst
+: 1710247693:0;gd
+: 1710257232:0;gst
+: 1710257234:0;git stash
+: 1710257236:0;git pull
+: 1710257241:0;git stash pop
+: 1710340671:0;gst
+: 1710340672:0;git stash
+: 1710340673:0;git pull
+: 1710340680:0;git stash pop
+: 1710342151:0;gd
+: 1710344916:0;sleep $((14 * 60)); git status; pmset sleepnow
+: 1710419608:0;gst
+: 1710419609:0;gd
+: 1710419627:0;gst
+: 1710419659:0;gco -b ben/fix/broken-edit-quotation-page
+: 1710419660:0;gst
+: 1710419665:0;ga .
+: 1710419713:0;gcm "bugfix - SOL20-9037 - fix broken edit quotation page" --no-verify
+: 1710419714:0;gst
+: 1710419725:0;git push -u origin ben/fix/broken-edit-quotation-page --no-verify
+: 1710420360:0;git pull
+: 1710429087:0;gst
+: 1710429107:0;gcma "fix - solve requested changes"
+: 1710429134:0;gcma "bugfix - solve requested changes"
+: 1710429159:0;gco -b ben/bugfix/broken-edit-quotations-page
+: 1710429160:0;gst
+: 1710429164:0;gcma "bugfix - solve requested changes"
+: 1710429170:0;gcma "bugfix - solve requested changes" --no-verify
+: 1710429173:0;git push
+: 1710429182:0;git push -u origin ben/bugfix/broken-edit-quotations-page
+: 1710429245:0;git push -u origin ben/bugfix/broken-edit-quotations-page --no-verify
+: 1710429316:0;q
+: 1710429321:0;git pull
+: 1710429356:0;npm run test
+: 1710431461:0;gst
+: 1710431473:0;gcma "test - fix more tests" --no-verify
+: 1710431474:0;gst
+: 1710431477:0;git push
+: 1710431483:0;git push --no-verify
+: 1710489774:0;gst
+: 1710489812:0;gcma "cleanup - remove obsolete field" --no-verify
+: 1710489817:0;git push --no-verify
+: 1710489976:0;npx eslint --ext .js,.vue resources/assets/js --fix
+: 1710489986:0;gst
+: 1710491556:0;git pull
+: 1710491604:0;gwst
+: 1710491605:0;gst
+: 1710491616:0;gcma "bugfix - solve requested changes" --no-verify
+: 1710491617:0;gst
+: 1710491620:0;git push --no-verify
+: 1710498841:0;gco -
+: 1710498847:0;gco ben/other/vue3
+: 1710498849:0;git pull
+: 1710498853:0;npm run dev
+: 1710511111:0;gst
+: 1710511135:0;gco ben/bugfix/edit-follow-up-systems-page
+: 1710511138:0;gst
+: 1710511145:0;gco -b ben/bugfix/edit-follow-up-systems-page
+: 1710511145:0;gst
+: 1710511180:0;gcma "bugfix - fix styling of edit follow-up-systems page"
+: 1710511185:0;gcma "bugfix - fix styling of edit follow-up-systems page" --no-verify
+: 1710511186:0;gst
+: 1710511193:0;git push -u origin ben/bugfix/edit-follow-up-systems-page
+: 1710511229:0;gst
+: 1710511237:0;q
+: 1710511238:0;gst
+: 1710511243:0;git push -u origin ben/bugfix/edit-follow-up-systems-page
+: 1710511246:0;gst
+: 1710511250:0;npm run test
+: 1710511438:0;gst
+: 1710511540:0;ga .
+: 1710511541:0;gst
+: 1710511544:0;git commit --amend --no-edit --no-verify
+: 1710511545:0;gst
+: 1710511574:0;git rebase origin/ben/other/vue3
+: 1710511577:0;gst
+: 1710511586:0;gco -
+: 1710511588:0;git pull
+: 1710511595:0;gco -
+: 1710511596:0;gst
+: 1710511598:0;git rebase origin/ben/other/vue3
+: 1710511600:0;gst
+: 1710511854:0;npm run test
+: 1710512030:0;git push -u origin ben/bugfix/edit-follow-up-systems-page --no-verify
+: 1710512097:0;npm run test
+: 1710513381:0;less package-lock.json
+: 1710513396:0;rm package-lock.json
+: 1710513399:0;npm run dev
+: 1710513404:0;npm run test
+: 1710513414:0;less package-lock.json
+: 1710513512:0;gst
+: 1710513521:0;ga .
+: 1710513524:0;git commit --amend --no-edit --no-verify
+: 1710513525:0;gst
+: 1710513534:0;rm package-lock.json
+: 1710513537:0;npm run dev
+: 1710513544:0;npm run ts
+: 1710513547:0;npm run tests
+: 1710513549:0;npm run test
+: 1710513557:0;gst
+: 1710513560:0;ga .
+: 1710513563:0;git commit --amend --no-edit --no-verify
+: 1710513564:0;gst
+: 1710513575:0;gplease --no-verify
+: 1710513615:0;sleep $((14 * 60)); git status; pmset sleepnow
+: 1710753308:0;gst
+: 1710753448:0;git rebase origin/ben/other/vue3
+: 1710753451:0;gst
+: 1710753474:0;git pull
+: 1710753506:0;git fetch
+: 1710753510:0;git rebase origin/ben/other/vue3
+: 1710753535:0;gst
+: 1710753542:0;git rebase --continue
+: 1710753546:0;gst
+: 1710753547:0;ga .
+: 1710753549:0;git rebase --continue
+: 1710753552:0;gst
+: 1710753554:0;git push
+: 1710753557:0;git push --no-verify
+: 1710753563:0;gplease --no-verify
+: 1710753626:0;vim package-lock.json
+: 1710753637:0;gst
+: 1710753639:0;ga .
+: 1710753641:0;git commit --amend --no-edit --no-verify
+: 1710753643:0;gplease --no-verify
+: 1710753678:0;npm run dev
+: 1710753681:0;gst
+: 1710753686:0;npm i
+: 1710753688:0;gst
+: 1710753704:0;rm package-lock.json
+: 1710753707:0;npm i
+: 1710753710:0;gst
+: 1710753716:0;npm i
+: 1710753719:0;gst
+: 1710753725:0;rm -rf node_modules && npm i
+: 1710753750:0;gst
+: 1710756656:0;git fetch
+: 1710756666:0;git rebase origin/ben/other/vue3
+: 1710756668:0;gst
+: 1710756702:0;git push --no-verify
+: 1710756711:0;gst
+: 1710756714:0;gplease --no-verify
+: 1710757430:0;gst
+: 1710757635:0;git restore --source ben/other/vue3 -- package-lock.js
+: 1710757649:0;git restore --source ben/other/vue3 -- package-lock.json
+: 1710757651:0;gst
+: 1710757652:0;gd
+: 1710757655:0;gst
+: 1710757658:0;ga .
+: 1710757660:0;git commit --amend --no-edit --no-verify
+: 1710757666:0;gplease --no-verify
+: 1710757702:0;vim package-lock.json
+: 1710757718:0;gst
+: 1710757720:0;ga .
+: 1710757721:0;git commit --amend --no-edit --no-verify
+: 1710757723:0;gplease --no-verify
+: 1710757766:0;git fetch
+: 1710757780:0;git restore --source origin/ben/other/vue3 -- package-lock.json
+: 1710757781:0;gst
+: 1710757782:0;gd
+: 1710758170:0;ls
+: 1710758171:0;gst
+: 1710763630:0;gd
+: 1710763645:0;git restore .
+: 1710763649:0;npm i
+: 1710763652:0;gst
+: 1710763654:0;gd
+: 1710763663:0;ga .
+: 1710763665:0;git commit --amend --no-edit --no-verify
+: 1710763667:0;gplease --no-verify
+: 1711014483:0;gst
+: 1711014513:0;gco -
+: 1711014515:0;git pull
+: 1711014521:0;git stash pop
+: 1711014550:0;git stash
+: 1711014551:0;gst
+: 1711014570:0;git restore --staged .
+: 1711014570:0;gst
+: 1711014578:0;git stash
+: 1711014579:0;gst
+: 1711014584:0;git stash list
+: 1710757308:257375;npm run dev
+: 1711014683:0;npm run dev
+: 1711014699:0;php artisan migrate
+: 1711014725:0;sail composer install
+: 1711014740:0;sail down
+: 1711014745:0;sail up
+: 1711014751:0;docker-auth
+: 1711014764:0;164056
+: 1711014768:0;docker-auth
+: 1711016479:0;vim ~/.aws/credentials
+: 1711016510:0;docker-auth
+: 1711016525:0;sail up
+: 1711016603:0;sail composer install
+: 1711016620:0;php artisan migrate
+: 1711016628:0;sail composer install
+: 1711016780:0;rm -rf bootstrap/cache/*
+: 1711016788:0;sail composer install
+: 1711016966:0;./other/scripts/sail exec -u root fpm touch .phpstorm.meta.php
+: 1711016972:0;./other/scripts/sail exec -u root fpm chown www-data:www-data .phpstorm.meta.php
+: 1711016976:0;sail composer install
+: 1711016993:0;npm run dev
+: 1711017067:1;php artisan migrate
+: 1711017123:0;sail down
+: 1711017127:0;sail up
+: 1711017130:0;npm run dev
+: 1711017554:0;sail down
+: 1711017559:0;sail up
+: 1711017656:0;sail artisan migrate:fresh --seed
+: 1711017716:0;sail down
+: 1711017721:0;sail up
+: 1711035864:0;gd
+: 1711036402:0;gst
+: 1711036404:0;gd
+: 1711036471:0;gco -b ben/bugfix/fix-numeric-steppers-follow-up-systems
+: 1711036472:0;gst
+: 1711036503:0;gcma "bugfix - SOL20 - fix color of follow-up-system icons in table" --no-verify
+: 1711036504:0;gst
+: 1711036508:0;git fetch
+: 1711036515:0;git rebase origin/ben/other/vue3
+: 1711036516:0;gst
+: 1711036544:0;git push -u origin ben/bugfix/fix-numeric-steppers-follow-up-systems
+: 1711036560:0;git push -u origin ben/bugfix/fix-numeric-steppers-follow-up-systems --no-verify
+: 1711036580:0;gst
+: 1711096101:0;git fetch
+: 1711096109:0;git rebase origin/ben/other/vue3
+: 1711096114:0;gplease --no-verify
+: 1711098846:0;gst
+: 1711098852:0;ga .
+: 1711098854:0;git commit --amend --no-edit --no-verify
+: 1711098856:0;gplease --no-verify
+: 1711100271:0;gst
+: 1711100274:0;gd
+: 1711100303:0;gco -b ben/bugfix/various-fixes
+: 1711100304:0;gst
+: 1711100340:0;gcma "bugfix - various styling and logic fixes" --no-verify
+: 1711100349:0;git push -u origin ben/bugfix/various-fixes
+: 1711100355:0;git push -u origin ben/bugfix/various-fixes --no-verify
+: 1711100645:0;gst
+: 1711100647:0;ga .
+: 1711100649:0;git commit --amend --no-edit --no-verify
+: 1711100652:0;git push --no-verify
+: 1711100657:0;gplease --no-verify
+: 1711100728:0;git fetch
+: 1711100736:0;git rebase origin/ben/other/vue3
+: 1711100745:0;gplease --no-verify
+: 1711118452:0;sleep $((24 * 60)); git status; pmset sleepnow
+: 1711378032:0;gst
+: 1711378035:0;gco -
+: 1711378037:0;gst
+: 1711378043:0;gco ben/other/vue3
+: 1711378047:0;git stash
+: 1711378048:0;git pull
+: 1711378069:0;gco -b ben/bugfix/group-selector-dropdown
+: 1711378069:0;gst
+: 1711378072:0;git stash pop
+: 1711378073:0;gst
+: 1711378113:0;gcma "bugfix - SOL20-9087 - improve group selector dropdown styling" --no-verify
+: 1711378113:0;gst
+: 1711378119:0;git push -u origin ben/bugfix/group-selector-dropdown
+: 1711378124:0;git push -u origin ben/bugfix/group-selector-dropdown --no-verify
+: 1711444037:0;gco -
+: 1711444039:0;git pull
+: 1711444043:0;rm -rf bootstrap/cache/*
+: 1711444050:0;composer install
+: 1711444056:0;gst
+: 1711444058:0;ls
+: 1711444065:0;gst
+: 1711444065:0;ls
+: 1711457233:0;npm run dev
+: 1711466105:0;gst
+: 1711466131:0;gco -b ben/bugfix/report-layout
+: 1711466199:0;gcma "bugfix - SOL20-9086 - fix styling of report comments" --no-verify
+: 1711466200:0;gst
+: 1711466210:0;git push -u origin ben/bugfix/report-layout --no-verify
+: 1711466301:0;ga .
+: 1711466304:0;git commit --amend --no-edit --no-verify
+: 1711466307:0;gplease --no-verify
+: 1711466347:0;git fetch
+: 1711466353:0;git rebase origin/ben/other/vue3
+: 1711466356:0;gplease --no-verify
+: 1711614086:0;tmux a
+: 1711614088:0;tmux
+: 1711614098:0;sail up
+: 1711614103:0;docker-auth
+: 1711614113:0;sail up
+: 1711614222:0;npm run dev
+: 1711632675:0;gst
+: 1711632677:0;gd
+: 1711632717:0;gst
+: 1711632728:0;gco -
+: 1711632731:0;git stash
+: 1711632732:0;git pull
+: 1711632738:0;gst
+: 1711632754:0;gco -b ben/bugfix/report-wizard
+: 1711632755:0;gst
+: 1711632759:0;git stash po
+: 1711632760:0;git stash pop
+: 1711632762:0;gst
+: 1711632792:0;gcma "bugfix - SOL20-9040 - fix evaluation report wizard" --no-verify
+: 1711632802:0;git push -u origin ben/bugfix/report-wizard
+: 1711632809:0;git push -u origin ben/bugfix/report-wizard --no-verify
+: 1711633940:0;gst
+: 1711633942:0;gd
+: 1711633952:0;ga .
+: 1711633954:0;git commit --amend --no-edit --no-verify
+: 1711634336:0;gplease --no-verify
+: 1711634541:0;npm run dev
+: 1712693324:0;../Downloads/potrace-1.16.mac-x86_64/potrace ../Downloads/FreeSample-Vectorizer-io-102427ff-e3c7-49f0-ab23-98a00ad900e2\ copy
+: 1712693412:0;../Downloads/potrace-1.16.mac-x86_64/potrace ../Downloads/test.jpg
+: 1712693451:0;../Downloads/potrace-1.16.mac-x86_64/potrace ../Downloads/test_copy.bmp
+: 1712693535:0;../Downloads/potrace-1.16.mac-x86_64/potrace ../Downloads/test_copy.pnm
+: 1712693564:0;mv ../Downloads/test_copy.pnm.bmp ../Downloads/test_copy.pnm
+: 1712693570:0;../Downloads/potrace-1.16.mac-x86_64/potrace ../Downloads/test_copy.pnm
+: 1712693660:0;../Downloads/potrace-1.16.mac-x86_64/potrace ../Downloads/test.bmp
+: 1713171353:0;gco -
+: 1713171355:0;git pull
+: 1713171362:0;npm run dev
+: 1713182015:0;gst
+: 1713182040:0;gco -b ben/bugfix/report-settings-teacher-selection-popup-styling
+: 1713182041:0;gst
+: 1713182075:0;gcma "bugfix - SOL20-9152 - fix styling teacher selection popup in report settings" --no-verify
+: 1713182087:0;git push -u origin ben/bugfix/report-settings-teacher-selection-popup-styling
+: 1713182094:0;git push -u origin ben/bugfix/report-settings-teacher-selection-popup-styling --no-verify
+: 1713182149:0;ga .
+: 1713182153:0;git commit --amend --no-edit --no-verify
+: 1713182157:0;gplease --no-verify
+: 1713188465:0;gco -
+: 1713188469:0;git pull
+: 1713253623:0;gst
+: 1713257854:0;gd | grep "Form"
+: 1713257868:0;gd
+: 1713268052:0;uptime
+: 1713268685:0;gst
+: 1713268686:0;gd
+: 1713268967:0;gco -b ben/bugfix/settings-follow-up-systems
+: 1713268968:0;gst
+: 1713269013:0;gcma "bugfix - SOL20-9153 - fix flow and styling of fus settings" --no-verify
+: 1713269025:0;git push -u origin ben/bugfix/settings-follow-up-systems --no-verify
+: 1713269124:0;gco ben/bugfix/report-settings-teacher-selection-popup-styling
+: 1713269126:0;git pull
+: 1713269136:0;git commit --amend --no-verify
+: 1713269165:0;gplease --no-verify
+: 1713269177:0;git fetch
+: 1713269181:0;git rebase origin/ben/other/vue3
+: 1713269184:0;gplease --no-verify
+: 1713269342:0;gst
+: 1713269344:0;ga .
+: 1713269348:0;git commit --amend --no-edit --no-verify
+: 1713269352:0;gplease --no-verify
+: 1713270190:0;gst
+: 1713270192:0;gd
+: 1713270197:0;ga .
+: 1713270199:0;git commit --amend --no-edit --no-verify
+: 1713270201:0;gplease --no-verify
+: 1713273077:0;gco ben/bugfix/settings-follow-up-systems
+: 1713273080:0;git fetch
+: 1713273086:0;git rebase origin/ben/other/vue3
+: 1713273091:0;gplease --no-verify
+: 1713273416:0;gst
+: 1713273418:0;ga .
+: 1713273421:0;git commit --amend --no-edit --no-verify
+: 1713273423:0;gplease --no-verify
+: 1713275508:0;gst
+: 1713275511:0;ga .
+: 1713275514:0;git commit --amend --no-edit --no-verify
+: 1713275516:0;gplease --no-verify
+: 1713275817:0;gst
+: 1713275818:0;ga .
+: 1713275820:0;git commit --amend --no-edit --no-verify
+: 1713275822:0;gplease --no-verify
+: 1713345994:0;npm run dev
+: 1713346013:0;gco -
+: 1713346023:0;gco ben/other/vue3
+: 1713346026:0;git pull
+: 1713346040:0;npm run dev
+: 1713346198:0;npm run test
+: 1713365105:0;sleep $((17 * 60)); git status; pmset sleepnow
+: 1713440898:0;git pull
+: 1713440968:0;npm run dev
+: 1713446228:0;gst
+: 1713446248:0;gco -b ben/bugfix/remove-obsolete-table-hover
+: 1713446295:0;gst
+: 1713446319:0;gcma "bugfix - remove obsolete table hover" --no-verify
+: 1713446327:0;git push -u origin ben/bugfix/remove-obsolete-table-hover
+: 1713446334:0;git push -u origin ben/bugfix/remove-obsolete-table-hover --no-verify
+: 1713452668:0;gst
+: 1713452669:0;gd
+: 1713452682:0;gco -
+: 1713452684:0;gst
+: 1713452697:0;gco -b ben/bugfix/settings-style-changes
+: 1713452723:0;gcma "bugfix - fix some styling of settings page" --no-verify
+: 1713452731:0;git push -u origin ben/bugfix/settings-style-changes
+: 1713452737:0;git push -u origin ben/bugfix/settings-style-changes --no-verify
+: 1713514210:0;gco -
+: 1713514211:0;git pull
+: 1713514215:0;npm run dev
+: 1713770279:0;npm run test
+: 1713772892:0;npm run dev
+: 1713773045:0;sail composer install
+: 1713773057:0;npm run dev
+: 1713773115:0;gst
+: 1713773116:0;gd
+: 1713775617:0;gst
+: 1713775618:0;gd
+: 1713775657:0;gco -b ben/bugfix/collection-settings-modal-target-audiences
+: 1713775657:0;gst
+: 1713775698:0;gcma "bugfix - SOL20-9175 - fix target audiences collection settings modal" --no-verify
+: 1713775699:0;gst
+: 1713775706:0;git push -u origin ben/bugfix/collection-settings-modal-target-audiences
+: 1713775712:0;git push -u origin ben/bugfix/collection-settings-modal-target-audiences --no-verify
+: 1713775821:0;git fetch
+: 1713775826:0;git rebase origin/ben/other/vue3
+: 1713775829:0;gplease --no-verify
+: 1713795186:0;gco -
+: 1713795190:0;git pull
+: 1713795194:0;gst
+: 1713859421:0;gd
+: 1713859473:0;npm run dev
+: 1713859570:0;gd | grep calendar
+: 1713859577:0;gd
+: 1713859596:0;npm run dev
+: 1713945470:0;rm -rf .jest.cache
+: 1713964434:0;gst
+: 1713964435:0;gd
+: 1713964513:0;gst
+: 1713964536:0;gco -b ben/bugfix/planner-repeating-items-error
+: 1713964536:0;gst
+: 1713964575:0;gcma "bugfix - SOL20-9174 - planner repeating item & hover over calendars" --no-verify
+: 1713964581:0;git push -u origin ben/bugfix/planner-repeating-items-error
+: 1713964588:0;git push -u origin ben/bugfix/planner-repeating-items-error --no-verify
+: 1713964636:0;gco -
+: 1713966305:0;git fe
+: 1713966309:0;git fetch
+: 1713966316:0;git rebase origin/ben/other/vue3
+: 1713966318:0;gplease --no-verify
+: 1713967797:0;gco -
+: 1714057556:0;git fetch
+: 1714057563:0;git rebase origin/ben/other/vue3
+: 1714057565:0;gst
+: 1714057567:0;git stash
+: 1714057569:0;git rebase origin/ben/other/vue3
+: 1714057571:0;git stash pop
+: 1714057573:0;gst
+: 1714057581:0;git stash
+: 1714057583:0;git pull
+: 1714057587:0;git stash pop
+: 1714057589:0;gst
+: 1714057741:0;gd
+: 1714057785:0;git log
+: 1714057790:0;ga .
+: 1714057792:0;git commit --amend --no-edit --no-verify
+: 1714057794:0;gplease --no-verify
+: 1714057869:0;git fetch
+: 1714057873:0;git rebase origin/ben/other/vue3
+: 1714057878:0;gst
+: 1714057880:0;gplease --no-verify
+: 1714379622:0;gco -
+: 1714379624:0;git pull
+: 1714399011:0;gd
+: 1714399071:0;gst
+: 1714399184:0;gco -b ben/bugfix/fus-history-missing
+: 1714399185:0;gst
+: 1714399202:0;gcma "bugfix - SOL20-9201 - fus history missing"
+: 1714401866:0;docker-auth
+: 1714401879:0;gcma "bugfix - SOL20-9201 - fus history missing"
+: 1714402143:0;git push -u origin ben/bugfix/fus-history-missing
+: 1714402244:0;gst
+: 1714402249:0;git push -u origin ben/bugfix/fus-history-missing
+: 1714463319:0;gst
+: 1714463325:0;gco -
+: 1714463328:0;gst
+: 1714465354:0;gco -b ben/bugfix/eval-weight-scrollbar
+: 1714465355:0;gst
+: 1714465441:0;gcma "bugfix - SOL20-9192 - remove eval weight scrollbar"
+: 1714465448:0;gst
+: 1714465457:0;git push -u origin ben/bugfix/eval-weight-scrollbar
+: 1714465532:0;git fetch
+: 1714465537:0;git rebase origin/ben/other/vue3
+: 1714465539:0;gplease --no-verify
+: 1714467000:0;gco -
+: 1714467002:0;git pull
+: 1714467375:0;gco ben/bugfix/fus-history-missing
+: 1714467400:0;ga .
+: 1714467402:0;git commit --amend --no-edit --no-verify
+: 1714467406:0;git rebase origin/ben/other/vue3
+: 1714467408:0;gplease --no-verify
+: 1714467417:0;gco -
+: 1714469154:0;gst
+: 1714469240:0;gco ben/bugfix/eval-weight-scrollbar
+: 1714469243:0;git fetch
+: 1714469249:0;git rebase origin/ben/other/vue3
+: 1714469252:0;gplease
+: 1714483168:0;gst
+: 1714484938:0;gd
+: 1714484962:0;ga .
+: 1714484966:0;git commit --amend --no-edit --no-verify
+: 1714484968:0;gplease
+: 1714486476:0;gst
+: 1714486494:0;gco -
+: 1714486497:0;git pull
+: 1714487070:0;sail artisan migrate:fresh --seed
+: 1714653560:0;gst
+: 1714653561:0;gd
+: 1714653638:0;gst
+: 1714653659:0;gco -b ben/bugfix/eval-max-score
+: 1714653660:0;gst
+: 1714653687:0;gcma "bugfix - SOL20-9193 - eval max score is now mandatory"
+: 1714654454:0;git push -u origin ben/bugfix/eval-max-score
+: 1714654504:0;gst
+: 1714654508:0;npm run test
+: 1714657911:0;gst
+: 1714657913:0;ga .
+: 1714657925:0;gst
+: 1714657928:0;gd
+: 1714657930:0;ga .
+: 1714657935:0;git commit --amend --no-edit --no-verify
+: 1714657940:0;gplease
+: 1714657948:0;git push -u origin ben/bugfix/eval-max-score
+: 1714658075:0;git fetch
+: 1714658080:0;git rebase origin/ben/other/vue3
+: 1714658085:0;gplease
+: 1714722610:0;gco -
+: 1714722612:0;git pull
+: 1714722804:0;gst
+: 1714722805:0;gd
+: 1714723253:0;gst
+: 1714723272:0;gco -b ben/bugfix/eval-navigate-scroll
+: 1714723273:0;gst
+: 1714723335:0;gcma "bugfix - SOL20-9197 - navigating to subject scrolls and shows header"
+: 1714723347:0;gst
+: 1714723358:0;git push -u origin ben/bugfix/eval-navigate-scroll
+: 1714738317:0;gst
+: 1714738318:0;gd
+: 1714738390:0;gst
+: 1714738390:0;gd
+: 1714738405:0;gco -
+: 1714738405:0;gst
+: 1714738431:0;gco -b ben/bugfix/planner-add-record-scroll
+: 1714738432:0;gst
+: 1714739912:0;gcma "bugfix - SOL20-9176 - add record in planner now scrolls to record"
+: 1714741212:0;git fetch
+: 1714741221:0;git rebase origin/ben/other/vue3
+: 1714741230:0;gti push -u origin ben/bugfix/planner-add-record-scroll
+: 1714741659:0;npm run test
+: 1714743410:0;gco -
+: 1714743414:0;git restore .
+: 1714743415:0;gst
+: 1714743417:0;gco -
+: 1714743419:0;git pull
+: 1714986422:0;npm run dev
+: 1714996881:0;gst
+: 1714996915:0;gco -b ben/bugfix/scrolling-select-colleague-calendar-modal
+: 1714996916:0;gst
+: 1714996952:0;gcma "bugfix - SOL20-9173 - SelectColleagueCalendarModal now is scrollable again"
+: 1714996983:0;gcma "bugfix - SOL20-9173 - selecting calendar colleague is now scrollable again"
+: 1714996999:0;gcma "bugfix - SOL20-9173 - selecting calendar colleague is now scrollable"
+: 1714997004:0;gst
+: 1714997010:0;git push -u origin ben/bugfix/scrolling-select-colleague-calendar-modal
+: 1714999976:0;gco -
+: 1714999982:0;gco feature/vue3
+: 1714999988:0;npm run dev
+: 1715000039:0;sail composer install
+: 1715000047:0;sail up
+: 1715000059:0;git pull
+: 1715000076:0;gco -
+: 1715000079:0;gst
+: 1715000082:0;git restore .
+: 1715000082:0;gst
+: 1715000105:0;rm -rf .git/index.lock
+: 1715000108:0;gco -
+: 1715000112:0;git pull
+: 1715000115:0;git fetch
+: 1715000133:0;gb
+: 1715000141:0;gb | grep vue3
+: 1715000148:0;gco feature/vue3
+: 1715000151:0;git pull
+: 1715000171:0;gb --set-upstream-to=origin/feature/vue3
+: 1715000173:0;gst
+: 1715000175:0;git pull
+: 1715000182:0;sail up
+: 1715000188:0;docker-auth
+: 1715000199:0;sail pu
+: 1715000202:0;sail up
+: 1715000237:0;npm run dev
+: 1715000297:0;gst
+: 1715000364:0;git log
+: 1715000412:0;gb
+: 1715000429:0;gco ben/bugfix/scrolling-select-colleague-calendar-modal
+: 1715000430:0;gst
+: 1715000431:0;git log
+: 1715000439:0;gco -
+: 1715000452:0;git cherry-pick 834055567a17581eaf4a72a611ac901fb4ca2f46
+: 1715000453:0;gst
+: 1715000473:0;git push
+: 1715000554:0;gst
+: 1715000576:0;git fetch origin
+: 1715000587:0;git reset --hard origin/feature/vue3
+: 1715000589:0;gst
+: 1715000592:0;gco -
+: 1715000601:0;git fetch
+: 1715000612:0;git rebase origin/feature/vue3
+: 1715000785:0;gst
+: 1715000789:0;git rebase --continue
+: 1715000793:0;gst
+: 1715000804:0;git rebase --continue
+: 1715000817:0;gst
+: 1715000819:0;git rebase --continue
+: 1715000987:0;gst
+: 1715000989:0;git rebase --continue
+: 1715001003:0;gst
+: 1715001006:0;git rebase --continue
+: 1715001102:0;git rebase --abort
+: 1715001103:0;gst
+: 1715001170:0;gco -
+: 1715001176:0;gco -b ben/bugfix/scrolling-select-colleague-calendar-modal
+: 1715001180:0;gco -b ben/bugfix/scrolling-select-colleague-calendar-modal-2
+: 1715001181:0;gst
+: 1715001467:0;gcma "bugfix - SOL20-9173 - selecting calendar colleague is now scrollable"
+: 1715001473:0;git push
+: 1715001476:0;git push -u origin ben/bugfix/scrolling-select-colleague-calendar-modal
+: 1715001482:0;git push -u origin ben/bugfix/scrolling-select-colleague-calendar-modal-2
+: 1715001550:0;gst
+: 1715001552:0;git push -u origin ben/bugfix/scrolling-select-colleague-calendar-modal-2
+: 1715002007:0;gst
+: 1715002017:0;git push -u origin ben/bugfix/scrolling-select-colleague-calendar-modal-2 --no-verify
+: 1715004725:0;gst
+: 1715004726:0;gd
+: 1715004752:0;gst
+: 1715004754:0;gco -
+: 1715004755:0;gst
+: 1715004800:0;gco -b ben/bugfix/button-is-clickable
+: 1715004801:0;gst
+: 1715004833:0;gcma "bugfix - SOL20-9219 - saving button is not greyed out"
+: 1715004845:0;git push -u origin ben/bugfix/button-is-clickable
+: 1715004861:0;git push -u origin ben/bugfix/button-is-clickable --no-verify
+: 1715004871:0;gst
+: 1715006423:0;git commit --amend
+: 1715006431:0;git push
+: 1715006468:0;gst
+: 1715006471:0;gd
+: 1715006475:0;ga .
+: 1715006477:0;git commit --amend
+: 1715006483:0;gst
+: 1715006488:0;git push
+: 1715006588:0;sail composer install
+: 1715006600:0;git push
+: 1715006644:0;gplease
+: 1715006682:0;gst
+: 1715075255:0;gco -
+: 1715075256:0;git pull
+: 1715153509:0;gst
+: 1715153510:0;gd
+: 1715153789:0;gco -b ben/bugfix/finish-design-access-page
+: 1715153790:0;gst
+: 1715153804:0;gcma "bugfix - SOL20-9090 - finish design access page"
+: 1715153831:0;gcma "bugfix - SOL20-9090 - finish design access page" -n
+: 1715153833:0;gst
+: 1715153834:0;git push
+: 1715153842:0;git push -u origin ben/bugfix/finish-design-access-page
+: 1715153908:0;npm run test
+: 1715155928:0;gst
+: 1715155929:0;gd
+: 1715155954:0;ga .
+: 1715155956:0;git commit --amend
+: 1715155977:0;git push -u origin ben/bugfix/finish-design-access-page
+: 1715156629:0;git push -u origin ben/bugfix/finish-design-access-page -n
+: 1715156650:0;git push -u origin ben/bugfix/finish-design-access-page --no-verify
+: 1715157205:0;gst
+: 1715157206:0;ga .
+: 1715157209:0;git commit --amend
+: 1715157218:0;gst
+: 1715157220:0;gplease
+: 1715157282:0;git fetch
+: 1715157298:0;git rebase origin/feature/vue3
+: 1715157301:0;gplease
+: 1715157878:0;sail artisan migrate
+: 1715168006:0;sail phpunit tests/Unit/Cfa/Common/Controllers/Settings/Security/Permission/PermissionIndexControllerTest.php
+: 1715170851:0;gst
+: 1715170860:0;ga .
+: 1715170862:0;git commit --amend
+: 1715170874:0;git fetch
+: 1715170881:0;git rebase origin/feature/vue3
+: 1715170886:0;gplease
+: 1715176999:0;gst
+: 1715177000:0;gd
+: 1715177067:0;gco -
+: 1715177068:0;gst
+: 1715177089:0;gco -b ben/bugfix/planner-list-filter-show-all
+: 1715177089:0;gst
+: 1715177172:0;gcma "bugfix - SOL20-9221 - planner list filter select all"
+: 1715177179:0;gst
+: 1715177196:0;git push -u origin ben/bugfix/planner-list-filter-show-all
+: 1715177631:0;git fetch
+: 1715177637:0;git rebase origin/feature/vue3
+: 1715177639:0;gplease
+: 1715177715:0;npm run test
+: 1715181227:0;git fetch
+: 1715181233:0;git rebase origin/feature/vue3
+: 1715587471:0;gst
+: 1715587472:0;git fetch
+: 1715587497:0;git rebase origin/feature/vue3
+: 1715587502:0;npm run test
+: 1715587787:0;gplease
+: 1715600859:0;gst
+: 1715600861:0;gco -
+: 1715600865:0;git stash
+: 1715600867:0;git pull
+: 1715600871:0;gst
+: 1715600889:0;gco -b ben/bugfix/planner-block-bg-color
+: 1715600890:0;gst
+: 1715600893:0;git stash pop
+: 1715600900:0;gst
+: 1715600968:0;gd
+: 1715601004:0;gcma "bugfix - SOL20-9220 - planner item has bg color again"
+: 1715601017:0;git push -u origin ben/bugfix/planner-block-bg-color
+: 1715605975:0;git checkout ben/bugfix/planner-list-filter-show-all
+: 1715605978:0;git fetch
+: 1715605988:0;git rebase origin/feature/vue3
+: 1715605990:0;gplease
+: 1715605993:0;gplease --no-verify
+: 1715611760:0;gco -
+: 1715611766:0;gco feature/vue3
+: 1715611771:0;git pull
+: 1715611774:0;git stash
+: 1715611775:0;git pull
+: 1715611781:0;git stash pop
+: 1715611781:0;gst
+: 1715675182:0;gd
+: 1715675353:0;gco -b ben/bugfix/planner-transfer-collection
+: 1715675355:0;gst
+: 1715675396:0;gcma "bugfix - SOL20-9237 - improve transfer collection ui/ux"
+: 1715675408:0;gst
+: 1715675411:0;gcma "bugfix - SOL20-9237 - improve transfer collection ui/ux"
+: 1715675427:0;git push -u origin ben/bugfix/planner-transfer-collection
+: 1715675673:0;npm run test
+: 1715676138:0;gco -
+: 1715676142:0;git stash
+: 1715676144:0;gco -
+: 1715676147:0;git stash pop
+: 1715676149:0;gst
+: 1715676982:0;git stash
+: 1715676984:0;git pull
+: 1715676990:0;git stash pop
+: 1715694731:0;gst
+: 1715694735:0;git stash
+: 1715694737:0;git pull
+: 1715694745:0;gco -
+: 1715694750:0;git stash pop
+: 1715694751:0;gst
+: 1715694751:0;gd
+: 1715761195:0;gst
+: 1715761196:0;gd
+: 1715761201:0;git restore .
+: 1715761203:0;git pull
+: 1715674484:2;npm run update-translations
+: 1715775201:0;sail artisan sol:aws:auth
+: 1715775215:0;sail restart horizon
+: 1715777835:0;gst
+: 1715777835:0;gd
+: 1715777913:0;gst
+: 1715777947:0;gd
+: 1715777980:0;gco -b ben/bugfix/planner-change-cover
+: 1715778055:0;gcma "bugfix - SOL20-9229 - collection cover does update correctly"
+: 1715778072:0;docker-auth
+: 1715778082:0;gcma "bugfix - SOL20-9229 - collection cover does update correctly"
+: 1715778109:0;gst
+: 1715778126:0;git push -u origin ben/bugfix/planner-change-cover
+: 1715784676:0;sleep $((11 * 60)); git status; pmset sleepnow
+: 1715843859:0;gco -
+: 1715843927:0;gst
+: 1715843929:0;ga .
+: 1715843932:0;git commit --amend --no-edit --no-verify
+: 1715843934:0;gst
+: 1715843942:0;gplease
+: 1715844044:0;git fetch
+: 1715844051:0;git rebase origin/feature/vue3
+: 1715844055:0;gplease --no-verify
+: 1715844098:0;gco -
+: 1715844100:0;git pull
+: 1715849537:0;gst
+: 1715849542:0;git stash
+: 1715849544:0;git pull
+: 1715849745:0;gti stash pop
+: 1715850034:0;gst
+: 1715850066:0;gco -b ben/bugfix/care-group-filters
+: 1715850067:0;gst
+: 1715850113:0;gcma "bugfix - SOL20-9278 - filter updates when removing group"
+: 1715850126:0;git push -u origin ben/bugfix/care-group-filters
+: 1715850178:0;gst
+: 1715850180:0;git push -u origin ben/bugfix/care-group-filters
+: 1715850245:0;npm run test
+: 1715853383:0;gst
+: 1715853385:0;ga .
+: 1715853387:0;git commit --amend --no-edit --no-verify
+: 1715853399:0;git push -u origin ben/bugfix/care-group-filters --no-verify
+: 1715853463:0;rm -rf .jest.cache
+: 1715853474:0;npm run test
+: 1715853543:0;gst
+: 1715853559:0;git fetch
+: 1715853564:0;git rebase origin/feature/vue3
+: 1715853566:0;gst
+: 1715853570:0;gplease --no-verify
+: 1715853748:0;rm -rf .jest.cache; rm -rf node_modules; npm install
+: 1715853809:0;npm run test
+: 1715862616:0;gst
+: 1715864329:0;ga .
+: 1715864331:0;git commit --amend --no-edit --no-verify
+: 1715864333:0;gplease --no-verify
+: 1715864389:0;git fetch
+: 1715864402:0;git fetch; git rebase origin/feature/vue3
+: 1715864414:0;gplease --no-verify
+: 1715934711:0;gco -
+: 1715934715:0;git pull
+: 1715934721:0;npm run dev
+: 1715945909:0;gst
+: 1715945910:0;gd
+: 1715945934:0;gco -b ben/bugfix/planner-html-code
+: 1715945961:0;gcma "bugfix - SOL20-9277 - remove html from planner agenda list view"
+: 1715945976:0;npm run test
+: 1715946370:0;gst
+: 1715946372:0;gd
+: 1715946381:0;git push -u origin ben/bugfix/planner-html-code
+: 1715946439:0;gst
+: 1715946449:0;npm run test
+: 1715946494:0;git push -u origin ben/bugfix/planner-html-code
+: 1715946660:0;git fetch; git rebase origin/feature/vue3
+: 1715946666:0;gst
+: 1715946669:0;git push -u origin ben/bugfix/planner-html-code
+: 1715953463:0;gst
+: 1715953474:0;sail composer install
+: 1716277840:0;gst
+: 1716277841:0;gd
+: 1716277862:0;gst
+: 1716277864:0;ga .
+: 1716277867:0;git commit --amend --no-edit --no-verify
+: 1716277871:0;git fetch; git rebase origin/feature/vue3
+: 1716277877:0;gplease
+: 1716277973:0;gst
+: 1716277975:0;gplease
+: 1716279360:0;gst
+: 1716279361:0;gd
+: 1716279370:0;ga .
+: 1716279374:0;git commit --amend --no-edit --no-verify
+: 1716279386:0;git fetch; git rebase origin/feature/vue3; gplease
+: 1716279440:0;git fetch && git rebase origin/feature/vue3 && gplease
+: 1716279480:0;gst
+: 1716285660:0;gd
+: 1716285665:0;gst
+: 1716285667:0;gd
+: 1716293497:0;gst
+: 1716293498:0;gd
+: 1716293693:0;git stash
+: 1716293695:0;gco -
+: 1716293697:0;git pull
+: 1716293753:0;gst
+: 1716294006:0;git stash pop
+: 1716296201:0;git stash
+: 1716296204:0;git pull
+: 1716296212:0;git stash pop
+: 1716296237:0;gst
+: 1716296277:0;gco -b ben/bugfix/planner-unclear-recent-groups-list
+: 1716296277:0;gst
+: 1716296335:0;gcma "bugfix - SOL20-9268 - planner recent groups list reactivity"
+: 1716296344:0;docker-auth
+: 1716296357:0;gcma "bugfix - SOL20-9268 - planner recent groups list reactivity"
+: 1716296677:0;git push -u origin ben/bugfix/planner-unclear-recent-groups-list
+: 1716297110:0;npm run test
+: 1716302207:0;gst
+: 1716302224:0;ga resources/assets/js/components/Planner/*
+: 1716302225:0;gst
+: 1716302229:0;git commit --amend --no-edit --no-verify
+: 1716302234:0;gst
+: 1716302239:0;gplease
+: 1716302363:0;gst
+: 1716302367:0;ga resources/assets/js/components/Planner/*
+: 1716302368:0;gst
+: 1716302371:0;git commit --amend --no-edit --no-verify
+: 1716302379:0;gplease
+: 1716370071:0;gst
+: 1716370072:0;gd
+: 1716370407:0;git restore .
+: 1716452541:0;gst
+: 1716452544:0;gd
+: 1716452699:0;git stash
+: 1716452700:0;gco -
+: 1716452703:0;git pull
+: 1716452762:0;gco -b ben/bugfix/settings-permissions-filter
+: 1716452768:0;git stash pop
+: 1716452769:0;gst
+: 1716452770:0;gd
+: 1716453277:0;gst
+: 1716453303:0;gcma "bugfix - SOL20-9278 - filter updates when removing group"
+: 1716453311:0;gst
+: 1716453321:0;git push -u origin ben/bugfix/settings-permissions-filter
+: 1716465934:0;gco -
+: 1716465937:0;git pull
+: 1716469479:0;gst
+: 1716469480:0;gd
+: 1716469507:0;git restore resources/assets/js/components/Planner/Reports/components/ZillLearningAreaChart.vue
+: 1716470081:0;gst
+: 1716470081:0;gd
+: 1716470200:0;gst
+: 1716471597:0;gco -b ben/bugfix/planner-goals-report
+: 1716471597:0;gst
+: 1716471690:0;gcma "bugfix - SOL20-9234 - selects goals reporting in planner"
+: 1716471916:0;git push -u origin ben/bugfix/planner-goals-report
+: 1716471967:0;git fetch && git rebase origin/feature/vue3 && gplease
+: 1716472011:0;gst
+: 1716472033:0;git fetch && git rebase origin/feature/vue3 && gplease --no-verify
+: 1716472047:0;npm run test
+: 1716474528:0;git fetch && git rebase origin/feature/vue3 && gplease
+: 1716542917:0;gco -
+: 1716542918:0;gst
+: 1716542933:0;git stash && git pull && git stash pop
+: 1716542940:0;gst
+: 1716548173:0;gco -b ben/bugfix/settings-wizards-css
+: 1716548176:0;gst
+: 1716548177:0;gd
+: 1716548316:0;gcma "bugfix - revert wizard icons css changes & improve"
+: 1716548335:0;git push -u origin ben/bugfix/settings-wizards-css
+: 1716548462:0;git fetch && git rebase origin/feature/vue3 && gplease
+: 1716819294:0;qgst
+: 1716819296:0;gst
+: 1716819298:0;gd
+: 1718007785:0;gco -
+: 1718007799:0;gco master
+: 1718007803:0;gst
+: 1718007813:0;git stash
+: 1718007816:0;gco master
+: 1718007822:0;git pull
+: 1718007851:0;gst
+: 1718007916:0;npm run dev
+: 1718007936:0;rm -rf .jest.cache; rm -rf node_modules; npm install
+: 1718011118:0;npm run dev
+: 1718011866:0;sail artisan sol:aws:auth
+: 1718011883:0;sail restart horizon
+: 1718089779:0;npm run production
+: 1718090087:0;gd
+: 1718090613:0;npm i
+: 1718090622:0;npm run production
+: 1718090677:0;gd
+: 1718090696:0;git stash
+: 1718090702:0;npm run production
+: 1718090738:0;npm run serve
+: 1718090746:0;npm run dev
+: 1718090750:0;git stash pop
+: 1718090750:0;gst
+: 1718090796:0;gco -b ben/bugfix/care-foto-pupil
+: 1718090797:0;gst
+: 1718090801:0;gd
+: 1718090835:0;gcma "bugfix - SOL20-9343 - care pupil foto position and size"
+: 1718090855:0;docker-auth
+: 1718090865:0;gcma "bugfix - SOL20-9343 - care pupil foto position and size"
+: 1718091008:0;gst
+: 1718091016:0;git push -u origin ben/bugfix/care-foto-pupil
+: 1718091194:0;git fetch && git rebase origin/master && gplease
+: 1718092617:0;changelog --type fixed --amend
+: 1718092640:0;gplease
+: 1718350175:0;gco -
+: 1718350177:0;git pull
+: 1718351310:0;sail artisan sol:aws:auth
+: 1718351323:0;sail restart horizon
+: 1718609871:0;gst
+: 1718609871:0;gd
+: 1718609909:0;gco -b ben/bugfix/care-notes-foto-pupil
+: 1718609910:0;gst
+: 1718609928:0;gcma "bugfix - SOL20-9343 - care notes pupil foto size"
+: 1718609933:0;docker-auth
+: 1718609943:0;gcma "bugfix - SOL20-9343 - care notes pupil foto size"
+: 1718609976:0;git fetch && git rebase origin/master && gplease
+: 1718609991:0;git push -u origin ben/bugfix/care-notes-foto-pupil
+: 1718610000:0;npm run dev
+: 1718610555:0;git commit --amend
+: 1718610572:0;gplease
+: 1718617648:0;gst
+: 1718617652:0;changelog --type fixed --amend
+: 1718617660:0;gplease
+: 1718630538:0;ls
+: 1718630549:0;gst
+: 1718630550:0;gd
+: 1718630568:0;la ~
+: 1718630593:0;diff ~/.vimrc ./vimrc
+: 1718630631:0;diff ~/.tmux.conf ./tmux.conf
+: 1718630712:0;vim ~/.zshrc
+: 1718630765:0;cp ~/.zshrc ./zshrc
+: 1718630766:0;gst
+: 1718630769:0;ga .
+: 1718630771:0;gst
+: 1718630780:0;git log
+: 1718630789:0;ls
+: 1718630795:0;ls work
+: 1718630801:0;ls work/dotConfig
+: 1718630813:0;ll
+: 1718630833:0;gst
+: 1718630834:0;gd
+: 1718630847:0;ls -l
+: 1718630852:0;ls -la
+: 1718630869:0;git log
+: 1718630876:0;git commit --amend
+: 1718630892:0;gst
+: 1718630893:0;gd
+: 1718630898:0;ls work
+: 1718630900:0;la work
+: 1718630912:0;diff zshrc work/.zshrc
+: 1718630997:0;vim zshrc
+: 1718631021:0;diff zshrc work/.zshrc
+: 1718631043:0;mv work/.zshrc work/zshrc
+: 1718631044:0;gst
+: 1718631048:0;ga .
+: 1718631050:0;git commit --amend
+: 1718631052:0;gst
+: 1718631053:0;git push
+: 1718631296:0;la
+: 1718631299:0;git push
+: 1718632587:0;git pull
+: 1718632589:0;gst
+: 1718632591:0;git push
+: 1718710611:0;gst
+: 1718710619:0;gco -
+: 1718710622:0;git pull
+: 1718710630:0;git stash pop
+: 1718710634:0;gs
+: 1718710637:0;gst
+: 1718711109:0;gco -b ben/bugfix/eval-graph-too-extended
+: 1718711110:0;gst
+: 1718711115:0;git push
+: 1718711127:0;git push -u origin ben/bugfix/eval-graph-too-extended
+: 1718711149:0;gst
+: 1718711153:0;git push -u origin ben/bugfix/eval-graph-too-extended
+: 1718711210:0;gst
+: 1718711266:0;gd
+: 1718711574:0;gsta
+: 1718711583:0;git restore --staged .
+: 1718711584:0;gst
+: 1718711585:0;gd
+: 1718715417:0;git stash
+: 1718715419:0;git pull
+: 1718715429:0;git stash pop
+: 1718715430:0;gst
+: 1718715433:0;npm run dev
+: 1718716731:0;gd
+: 1718717485:0;git restore resources/assets/js/components/Planner/Calendar/components/PlrCalendarItemCourseRecordsRow.vue
+: 1718717486:0;gst
+: 1718717496:0;gd
+: 1718718070:0;gst
+: 1718718071:0;gd
+: 1718718115:0;gst
+: 1718718116:0;gd
+: 1718718156:0;gst
+: 1718718157:0;gd
+: 1718718326:0;gst
+: 1718718327:0;gd
+: 1718718593:0;gst
+: 1718718596:0;gd
+: 1718720779:0;gst
+: 1718720814:0;gcma "bugfix - SOL20-9253 - eval graph too extended"
+: 1718720845:0;gst
+: 1718720849:0;gcma "bugfix - SOL20-9253 - eval graph too extended"
+: 1718720873:0;git push
+: 1718720964:0;git fetch && git rebase origin/master && gplease
+: 1718782114:0;npm run test
+: 1718783521:0;gst
+: 1718783531:0;gd
+: 1718783539:0;git restore resources/assets/js/*
+: 1718783540:0;gst
+: 1718783543:0;ga .
+: 1718783547:0;git commit --amend --no-edit --no-verify
+: 1718783551:0;gplease
+: 1718783583:0;git fetch && git rebase origin/master && gplease
+: 1718783664:0;changelog --type feature
+: 1718783676:0;man changelog
+: 1718783762:0;changelog --type feature --title "Graphs are full width & Controledictee is shortened to CD"
+: 1718783764:0;gst
+: 1718783794:0;changelog --type feature "Graphs are full width & Controledictee is shortened to CD"
+: 1718783816:0;changelog --type added "Graphs are full width & Controledictee is shortened to CD"
+: 1718783819:0;gst
+: 1718783867:0;changelog --type added SOL20-9253 - graphs are full width & Controledictee is shortened to CD
+: 1718783872:0;gst
+: 1718783904:0;changelog --type added SOL20-9253 - graphs are full width and Controledictee is shortened to CD
+: 1718783910:0;changelog --type added SOL20-9253 - graphs are full width and Controledictee is shortened to CD --force
+: 1718783916:0;ga .
+: 1718783920:0;gplease
+: 1718784067:0;gst
+: 1718784087:0;ga .
+: 1718784090:0;git commit --amend --no-edit --no-verify
+: 1718784093:0;gplease --no-verify
+: 1718786546:0;gco -
+: 1718786550:0;gst
+: 1718786550:0;gd
+: 1718786554:0;git restore .
+: 1718786556:0;gco -
+: 1718786558:0;git pull
+: 1718960973:0;gst
+: 1718960975:0;gd
+: 1719305444:0;gst
+: 1719305477:0;gco -b ben/bugfix/adapted-translations
+: 1719305478:0;gst
+: 1719305499:0;gcma "bugfix - SOL20-8263 - updated adapted translations"
+: 1719305512:0;git fetch && git rebase origin/master && gplease
+: 1719305533:0;git push -u origin ben/bugfix/adapted-translations
+: 1719305544:0;gst
+: 1719305548:0;git push -u origin ben/bugfix/adapted-translations
+: 1719306356:0;sail composer install
+: 1719306415:0;git push -u origin ben/bugfix/adapted-translations
+: 1719306462:0;gst
+: 1719306511:0;ga .
+: 1719306513:0;git commit --amend --no-edit --no-verify
+: 1719306515:0;gplease --no-verify
+: 1719306936:0;ga .
+: 1719306938:0;git commit --amend --no-edit --no-verify
+: 1719306940:0;gplease --no-verify
+: 1719307112:0;gst
+: 1719308343:0;ga .
+: 1719308346:0;git commit --amend --no-edit --no-verify
+: 1719308350:0;gplease --no-verify
+: 1719316459:0;sail shell
+: 1719316509:0;phpunit -init
+: 1719316513:0;phpunit-init
+: 1719316554:0;sail down
+: 1719316559:0;sail up
+: 1719316580:0;docker-auth
+: 1719316785:0;vim ~/.aws/credentials
+: 1719316842:0;docker-auth
+: 1719316864:0;sail up
+: 1719317017:0;sail shell
+: 1719317250:0;npm run update-translations
+: 1719317619:0;sail shell
+: 1719317789:0;gd
+: 1719317882:0;npm run update-translations
+: 1719318436:0;OA
+: 1719318439:0;npm run update-translations
+: 1719319418:0;gst
+: 1719319420:0;ga .
+: 1719319422:0;git commit --amend --no-edit --no-verify
+: 1719319429:0;git fetch && git rebase origin/master && gplease
+: 1719320090:0;gd
+: 1719320252:0;ga .
+: 1719320253:0;git commit --amend --no-edit --no-verify
+: 1719320256:0;gplease --no-verify
+: 1719322751:0;gst
+: 1719322752:0;gd
+: 1719325067:0;ls .bitbucket
+: 1719325076:0;sail shell
+: 1719326653:0;gst
+: 1719326656:0;ga .
+: 1719326659:0;git commit --amend --no-edit --no-verify
+: 1719326661:0;gplease --no-verify
+: 1719326677:0;git fetch && git rebase origin/master && gplease
+: 1719326683:0;gst
+: 1719326732:0;gsta
+: 1719326744:0;git rebase --continue
+: 1719326746:0;gst
+: 1719326748:0;gplease --no-verify
+: 1719389972:0;npm run dev
+: 1719389993:0;sail artisan migrate:fresh --seed
+: 1719390147:0;sail artisan sol:aws:auth
+: 1719390729:0;ls
+: 1719390733:0;ls work
+: 1719390738:0;ls work/dotConfig
+: 1719390818:0;ls ~/Library/Application Support/JetBrains/
+: 1719390829:0;ls ~/Library/Application\ Support/JetBrains
+: 1719390855:0;ls ~/Library/Application\ Support/JetBrains/PhpStorm2023.3
+: 1719390895:0;cp ~/Library/Application\ Support/JetBrains/PhpStorm2023.3/* work/dotConfig/phpstorm
+: 1719390902:0;mkdir work/dotConfig/phpstorm
+: 1719390905:0;cp ~/Library/Application\ Support/JetBrains/PhpStorm2023.3/* work/dotConfig/phpstorm
+: 1719390919:0;cp -r ~/Library/Application\ Support/JetBrains/PhpStorm2023.3/* work/dotConfig/phpstorm
+: 1719390921:0;ls
+: 1719390923:0;gst
+: 1719390926:0;ga .
+: 1719390932:0;gst
+: 1719390987:0;git log
+: 1719391025:0;gcma "feat: add work phpstorm"
+: 1719391027:0;gst
+: 1719391031:0;git push
+: 1719391115:0;R
+: 1719391133:0;ls ~/Library/Application\ Support/JetBrains
+: 1719391433:0;gsdt
+: 1719391434:0;gst
+: 1719391436:0;ga .
+: 1719391437:0;gst
+: 1719391443:0;git commit --amend --no-edit --no-verify
+: 1719391447:0;git push
+: 1719391451:0;gplease --no-verify
+: 1719392038:0;gst
+: 1719392046:0;git restore .
+: 1719392948:0;ls
+: 1719392952:0;ls work
+: 1719392962:0;diff zshrc work/.zshrc
+: 1719393017:0;ls ~/.zsh_history
+: 1719393023:0;ls ~/.zsh
+: 1719393062:0;cp ~/.zsh_history work/zsh_history
