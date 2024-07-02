@@ -1,0 +1,45 @@
+=======================
+Some useful Vue shizzle
+=======================
+
+Template Syntax
+===============
+
+Link to templates:
+  https://vuejs.org/v2/guide/syntax.html
+
+Concepts:
+
+  * v-once
+  * v-html
+  * v-bind
+
+
+# Text
+
+<span v-once> This will never change: {{ msg }}</span>
+
+<p>Using mustaches: {{ rawHtml }}</p>
+    Using mustaches: <span style="color: red"> This should be red.</span>
+<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+    Using v-html directive: This should be red.
+
+
+# Attributes
+
+<div v-bind:id="dynamicId"></div>
+<button v-bind:disabled="isButtonDisabled">Button</button>
+
+# Shorthands
+
+v-bind
+  <!-- full syntax -->
+    <a v-bind:href="url"> ... </a>
+  <!-- shorthand -->
+    <a :href="url"> ... </a>
+
+v-on
+  <!-- full syntax -->
+    <a v-on:click="doSomething"> ... </a>
+  <!-- shorthand -->
+    <a @click="doSomething"> ... </a>

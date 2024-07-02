@@ -1,0 +1,708 @@
+#!/bin/zsh
+
+# TERM=xterm-256color
+# Copied from https://github.com/wincent/wincent/blob/master/roles/dotfiles/files/.zshrc
+
+# GREEN="\033[1;32m"
+# ORANGE="\033[1;33m"
+# BLUE="\033[1;34m"
+# MAGENTA="\033[0;31m"
+# PURPLE="\033[1;35m"
+# WHITE="\033[1;37m"
+# BOLD=""
+# RESET="\033[m"
+#
+# BLACK=$(tput setaf 0)
+# RED=$(tput setaf 1)
+# GREEN=$(tput setaf 2)
+# ORANGE=$(tput setaf 3)
+# BLUE=$(tput setaf 4)
+# MAGENTA=$(tput setaf 5)
+# CYAN=$(tput setaf 6)
+# WHITE=$(tput setaf 7)
+# BOLD=$(tput bold)
+# RESET=$(tput sgr0)
+#
+# export BLACK
+# export RED
+# export GREEN
+# export ORANGE
+# export BLUE
+# export MAGENTA
+# export CYAN
+# export PURPLE
+# export WHITE
+# export BOLD
+# export RESET
+#
+# export PS1="\[$BLUE\]\u \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$ORANGE\]\$(parse_git_branch)\[$WHITE\]\n❯ \[$RESET\]"
+#
+
+# First .bash_profile is loaded, then everything else
+
+# Moral:
+# For bash, put stuff in ~/.bashrc, and make ~/.bash_profile source it.
+# For zsh, put stuff in ~/.zshrc, which is always executed.
+
+
+
+# Functions {{{
+
+# ll with github repo
+function lsg() {
+  paste <(CLICOLOR_FORCE=true ls -ld *) <(for i in *; do if [ -d "$i"/.git ] ; then echo "($(git --git-dir="$i"/.git symbolic-ref --short HEAD))"; else echo; fi; done)
+}
+
+# ll with github repo
+function lg () {
+  ls -alF "$@" | awk '{match($0,/^(\S+\s+){8}(.+)$/,f); b=""; c="git -C \""f[2]"\" branch 2>/dev/null"; while((c|getline g)>0){if(match(g,/^\* (.+)$/,a)){b="("a[1]")"}}; close(c); print$0,b}';
+}
+
+function parse_git_dirty() {
+  [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+}
+
+function parse_git_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+
+gh(){
+  open $(git config remote.origin.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")/$1$2
+}
+
+weather() {
+  curl wttr.in/$1;
+}
+
+# yahoo finance api is down
+# stock() {
+#   curl -s 'http://download.finance.yahoo.com/d/quotes.csv?s=JIVE&f=l1'
+#   # curl -s 'http://download.finance.yahoo.com/d/quotes.csv?s=ABI.BR&f=l1'
+# }
+
+inflation() {
+  # $1: money
+  # $2: percentage
+  # $3: years
+  echo "$(( $1*($2)**($3) ))";
+}
+
+hour() {
+  date "+TIME: %H:%M:%S%nDATE: %Y-%m-%d"
+}
+
+sleepIn() {
+  \sleep $1 && pmset sleepnow
+}
+
+mdtopdf() {
+  pandoc $1 -s --latex-engine=xelatex -o $2;
+}
+
+adoctopdf() {
+  asciidoctor -b docbook $1 -o tmp.xml;
+  pandoc -f docbook -t latex tmp.xml -s --latex-engine=xelatex -o $2;
+  rm tmp.xml;
+}
+
+pngtosvg() {
+  convert $1 file.pnm;
+  potrace file.pnm -s -o file.svg;
+  rm file.pnm;
+}
+
+resizeImage() {
+  sips -Z $1 *.jpeg;
+}
+
+rsynctoserverit2() {
+  # Add --delete-after to delete files in the target (destination)
+  rsync -rav ~/Dropbox/Documents/Coding/HTML5/Ben/* root@94.177.180.91:/var/www/html/ && rsyncsnookertoserverit2;
+}
+
+rsyncfromserverit2() {
+  rsync -rav root@94.177.180.91:/var/www/html/* ~/Dropbox/Documents/Coding/HTML5/Ben/;
+}
+
+rsyncsnookertoserverit2() {
+  # Add --delete-after to delete files in the target (destination)
+  # rsync -rav ~/Dropbox/Documents/Coding/JavaScript/snooker/* root@94.177.180.91:/var/www/html/snooker/;
+  rsync -rav ~/Dropbox/Documents/Coding/React/snookerweb/dist/* root@94.177.180.91:/var/www/html/snooker/;
+}
+
+diffserverit2() {
+  diff ~/Dropbox/Documents/Coding/HTML5/Ben/ root@94.177.180.91:/var/www/html/;
+}
+
+# cd into whatever is the forefront Finder window
+cdf() {
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`";
+}
+
+# snake_case to camelCase
+snaketocamel() {
+  PASSED=$1
+  if [ -d "${PASSED}" ] ; then
+    echo "$PASSED is a directory";
+  else
+    if [ -f "${PASSED}" ]; then
+      sed -E 's/_([a-z])/\U\1/g' < $1
+    else
+      sed -E 's/_([a-z])/\U\1/g' <<< $1
+    fi
+  fi
+}
+
+# camelCase to snake_case
+cameltosnake() {
+  PASSED=$1
+  if [ -d "${PASSED}" ] ; then
+    echo "$PASSED is a directory";
+  else
+    if [ -f "${PASSED}" ]; then
+      sed -r 's/([a-z0-9])([A-Z])/\1_\L\2/g' < $1
+    else
+      sed -r 's/([a-z0-9])([A-Z])/\1_\L\2/g' <<< $1
+    fi
+  fi
+}
+
+# download whole website with every visible link
+downloadWholeWebsite() {
+  if [[ -z $1 ]]; then
+    read -e -p "url: " resp;
+    wget -mkEpnp $resp -e robots="off";
+  else
+    wget -mkEpnp $1 -e robots="off";
+  fi
+}
+
+update() {
+  softwareupdate -l;
+  # Add if no updates found, exit "No new software available."
+  read -e -p "Do you want to update? (y/n): " resp;
+  if [[ "$resp" == "y"  ]]; then
+    read -e -p "Do you want to update all or only recommended? (a/r): " resp2;
+    if [[ "$resp2" == "a"  ]]; then
+      echo "I will now proceed to install all updates and reboot afterwards."
+      sudo softwareupdate -iav && sudo reboot;
+    else
+      echo "I will now proceed to install recommended updates and reboot afterwards."
+      sudo softwareupdate -irv && sudo reboot;
+    fi
+    cp $fileTest $file;
+  else
+    echo "Not doing anything.";
+  fi
+}
+
+# Notes
+no() {
+  mkdir -p ~/Documents/notes
+  if [ $# -eq 0 ]; then
+    $EDITOR ~/Documents/notes/temp.txt
+  else
+    $EDITOR ~/Documents/notes/"$*".txt
+  fi
+}
+
+nols() {
+  mkdir -p ~/Documents/notes
+  ls -c ~/Documents/notes/ | grep "$*"
+  if [ $? -eq 0 ]; then
+    echo "No notes..."
+  fi
+}
+
+battery() {
+  pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';'
+}
+
+# Go up x steps in directory hierarchy
+function up() {
+LIMIT=$1
+P=$PWD
+for ((i=1; i <= LIMIT; i++))
+do
+  P=$P/..
+done
+cd $P
+export MPWD=$P
+}
+
+# Go back x steps in directory hierarchy
+function back() {
+LIMIT=$1
+P=$MPWD
+for ((i=1; i <= LIMIT; i++))
+do
+  P=${P%/..}
+done
+cd $P
+export MPWD=$P
+}
+
+# Chapoo Catalina stop
+function catalinaStop() {
+  kill $(ps aux | grep '[j]ava.*apache.*catalina'| awk '{print $2}')
+}
+
+# Remove local branches which are no longer on remote
+function gDelete() {
+  git checkout master && git fetch -p && git branch -vv | grep -v "\*" | awk '/: gone]/{print $1}' | xargs git branch -D
+}
+
+#screenfetch 2>/dev/null;
+#neofetch;
+#fortuneCow; echo;
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+# }}}
+
+
+
+#
+# Global
+#
+
+# Create a hash table for globally stashing variables without polluting main
+# scope with a bunch of identifiers.
+typeset -A __BNSS
+
+__BNSS[ITALIC_ON]=$'\e[3m'
+__BNSS[ITALIC_OFF]=$'\e[23m'
+
+# Allow ls colors
+export CLICOLOR=1
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+
+#
+# Completion
+#
+
+fpath=($HOME/.zsh/completions $fpath)
+
+autoload -U compinit
+compinit -u
+
+# Make completion:
+# - Try exact (case-sensitive) match first.
+# - Then fall back to case-insensitive.
+# - Accept abbreviations after . or _ or - (ie. f.b -> foo.bar).
+# - Substring complete (ie. bar -> foobar).
+zstyle ':completion:*' matcher-list '' '+m:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}' '+m:{_-}={-_}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# Colorize completions using default `ls` colors.
+zstyle ':completion:*' list-colors ''
+
+# Allow completion of ..<Tab> to ../ and beyond.
+zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(..) ]] && reply=(..)'
+
+# $CDPATH is overpowered (can allow us to jump to 100s of directories) so tends
+# to dominate completion; exclude path-directories from the tag-order so that
+# they will only be used as a fallback if no completions are found.
+zstyle ':completion:*:complete:(cd|pushd):*' tag-order 'local-directories named-directories'
+
+# Categorize completion suggestions with headings:
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:descriptions' format %F{default}%B%{$__BNSS[ITALIC_ON]%}--- %d ---%{$__BNSS[ITALIC_OFF]%}%b%f
+
+# Enable keyboard navigation of completions in menu
+# (not just tab/shift-tab but cursor keys as well):
+zstyle ':completion:*' menu select
+
+#
+# Correction
+#
+
+# exceptions to auto-correction
+alias bundle='nocorrect bundle'
+alias cabal='nocorrect cabal'
+alias man='nocorrect man'
+alias mkdir='nocorrect mkdir'
+alias mv='nocorrect mv'
+alias stack='nocorrect stack'
+alias sudo='nocorrect sudo'
+alias yarn='nocorrect yarn'
+
+#
+# Prompt
+#
+
+autoload -U colors
+colors
+
+# http://zsh.sourceforge.net/Doc/Release/User-Contributions.html
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+zstyle ':vcs_info:*' enable git hg
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' disable-patterns "${(b)HOME}/code/portal(|-ee)(|/*)"
+zstyle ':vcs_info:*' stagedstr "%F{green}●%f" # default 'S'
+zstyle ':vcs_info:*' unstagedstr "%F{red}●%f" # default 'U'
+zstyle ':vcs_info:*' use-simple true
+# zstyle ':vcs_info:git+set-message:*' hooks git-untracked
+zstyle ':vcs_info:git*:*' formats '%b%m%c%u' # default ' (%s)-[%b]%c%u-'
+zstyle ':vcs_info:git*:*' actionformats '%b|%a%m%c%u' # default ' (%s)-[%b|%a]%c%u-'
+zstyle ':vcs_info:hg*:*' formats '[%m%b]'
+zstyle ':vcs_info:hg*:*' actionformats '[%b|%a%m]'
+zstyle ':vcs_info:hg*:*' branchformat '%b'
+zstyle ':vcs_info:hg*:*' get-bookmarks true
+zstyle ':vcs_info:hg*:*' get-revision true
+zstyle ':vcs_info:hg*:*' get-mq false
+zstyle ':vcs_info:hg*+gen-hg-bookmark-string:*' hooks hg-bookmarks
+zstyle ':vcs_info:hg*+set-message:*' hooks hg-message
+
+function +vi-hg-bookmarks() {
+  emulate -L zsh
+  if [[ -n "${hook_com[hg-active-bookmark]}" ]]; then
+    hook_com[hg-bookmark-string]="${(Mj:,:)@}"
+    ret=1
+  fi
+}
+
+function +vi-hg-message() {
+  emulate -L zsh
+
+  # Suppress hg branch display if we can display a bookmark instead.
+  if [[ -n "${hook_com[misc]}" ]]; then
+    hook_com[branch]=''
+  fi
+  return 0
+}
+
+# function +vi-git-untracked() {
+#   emulate -L zsh
+#   if [[ -n $(git ls-files --exclude-standard --others 2> /dev/null) ]]; then
+#     hook_com[unstaged]+="%F{blue}●%f"
+#   fi
+# }
+
+RPROMPT_BASE=""
+setopt PROMPT_SUBST
+
+# Anonymous function to avoid leaking variables.
+function () {
+  NEWLINE=$'\n'
+  ORNAMENT_SMALL=❯
+  ORNAMENT_BIG=$'\u276f'
+
+  # Check for tmux by looking at $TERM, because $TMUX won't be propagated to any
+  # nested sudo shells but $TERM will.
+  local TMUXING=$([[ "$TERM" =~ "tmux" ]] && echo tmux)
+
+  if [ -n "$TMUXING" -a -n "$TMUX" ]; then
+    # In a a tmux session created in a non-root or root shell.
+    local LVL=$(($SHLVL - 1))
+  else
+    # Either in a root shell created inside a non-root tmux session,
+    # or not in a tmux session.
+    local LVL=$SHLVL
+  fi
+
+  if [[ $EUID -eq 0 ]]; then
+    local SUFFIX='%F{yellow}%n%f'$(printf '%%F{yellow}${ORNAMENT_SMALL}%.0s%%f' {1..$LVL})
+  else
+    local SUFFIX=$(printf '%%F{white}${ORNAMENT_SMALL}%.0s%%f' {1..$LVL})
+  fi
+
+  export PS1='%F{green}${SSH_TTY:+%n@%m}%f%B${SSH_TTY:+:}%b%F{green}%~%f%F{cyan}%(1j.*.)%f%F{red}%(?..!)%f %F{yellow}${vcs_info_msg_0_} %f${NEWLINE}'"${SUFFIX}"' '
+
+  if [[ -n "$TMUXING" ]]; then
+    # Outside tmux, ZLE_RPROMPT_INDENT ends up eating the space after PS1, and
+    # prompt still gets corrupted even if we add an extra space to compensate.
+    export ZLE_RPROMPT_INDENT=0
+  fi
+}
+
+export RPROMPT=$RPROMPT_BASE
+export SPROMPT="zsh: correct %F{red}'%R'%f to %F{red}'%r'%f [%B%Uy%u%bes, %B%Un%u%bo, %B%Ue%u%bdit, %B%Ua%u%bbort]? "
+
+#
+# History
+#
+
+export HISTSIZE=100000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+
+#
+# Options
+#
+
+setopt AUTO_CD                 # [default] .. is shortcut for cd .. (etc)
+setopt AUTO_PARAM_SLASH        # tab completing directory appends a slash
+setopt AUTO_PUSHD              # [default] cd automatically pushes old dir onto dir stack
+setopt AUTO_RESUME             # allow simple commands to resume backgrounded jobs
+setopt CLOBBER                 # allow clobbering with >, no need to use >!
+setopt CORRECT                 # [default] command auto-correction
+setopt CORRECT_ALL             # [default] argument auto-correction
+setopt NO_FLOW_CONTROL         # disable start (C-s) and stop (C-q) characters
+setopt NO_HIST_IGNORE_ALL_DUPS # don't filter duplicates from history
+setopt NO_HIST_IGNORE_DUPS     # don't filter contiguous duplicates from history
+setopt HIST_FIND_NO_DUPS       # don't show dupes when searching
+setopt HIST_IGNORE_SPACE       # [default] don't record commands starting with a space
+setopt HIST_VERIFY             # confirm history expansion (!$, !!, !foo)
+setopt IGNORE_EOF              # [default] prevent accidental C-d from exiting shell
+setopt INTERACTIVE_COMMENTS    # [default] allow comments, even in interactive shells
+setopt LIST_PACKED             # make completion lists more densely packed
+setopt MENU_COMPLETE           # auto-insert first possible ambiguous completion
+setopt NO_NOMATCH              # [default] unmatched patterns are left unchanged
+setopt PRINT_EXIT_VALUE        # [default] for non-zero exit status
+setopt PUSHD_IGNORE_DUPS       # don't push multiple copies of same dir onto stack
+setopt PUSHD_SILENT            # [default] don't print dir stack after pushing/popping
+setopt SHARE_HISTORY           # share history across shells
+
+#
+# Bindings
+#
+
+bindkey -e # emacs bindings, set to -v for vi bindings
+
+# Use "cbt" capability ("back_tab", as per `man terminfo`), if we have it:
+if tput cbt &> /dev/null; then
+  bindkey "$(tput cbt)" reverse-menu-complete # make Shift-tab go to previous completion
+fi
+
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "\e[A" history-beginning-search-backward-end  # cursor up
+bindkey "\e[B" history-beginning-search-forward-end   # cursor down
+
+autoload -U select-word-style
+select-word-style bash # only alphanumeric chars are considered WORDCHARS
+
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^x^x' edit-command-line
+
+bindkey ' ' magic-space # do history expansion on space
+
+# Replace standard history-incremental-search-{backward,forward} bindings.
+# These are the same but permit patterns (eg. a*b) to be used.
+bindkey "^r" history-incremental-pattern-search-backward
+bindkey "^s" history-incremental-pattern-search-forward
+
+# Make CTRL-Z background things and unbackground them.
+function fg-bg() {
+  if [[ $#BUFFER -eq 0 ]]; then
+    fg
+  else
+    zle push-input
+  fi
+}
+zle -N fg-bg
+bindkey '^Z' fg-bg
+
+#
+# Hooks
+#
+
+autoload -U add-zsh-hook
+
+function -set-tab-and-window-title() {
+  emulate -L zsh
+  local CMD="${1:gs/$/\\$}"
+  print -Pn "\e]0;$CMD:q\a"
+}
+
+# $HISTCMD (the current history event number) is shared across all shells
+# (due to SHARE_HISTORY). Maintain this local variable to count the number of
+# commands run in this specific shell.
+HISTCMD_LOCAL=0
+
+# Executed before displaying prompt.
+function -update-window-title-precmd() {
+  emulate -L zsh
+  if [[ HISTCMD_LOCAL -eq 0 ]]; then
+    # About to display prompt for the first time; nothing interesting to show in
+    # the history. Show $PWD.
+    -set-tab-and-window-title "$(basename $PWD)"
+  else
+    local LAST=$(history | tail -1 | awk '{print $2}')
+    if [ -n "$TMUX" ]; then
+      # Inside tmux, just show the last command: tmux will prefix it with the
+      # session name (for context).
+      -set-tab-and-window-title "$LAST"
+    else
+      # Outside tmux, show $PWD (for context) followed by the last command.
+      -set-tab-and-window-title "$(basename $PWD) > $LAST"
+    fi
+  fi
+}
+add-zsh-hook precmd -update-window-title-precmd
+
+# Executed before executing a command: $2 is one-line (truncated) version of
+# the command.
+function -update-window-title-preexec() {
+  emulate -L zsh
+  setopt EXTENDED_GLOB
+  HISTCMD_LOCAL=$((++HISTCMD_LOCAL))
+
+  # Skip ENV=settings, sudo, ssh; show first distinctive word of command;
+  # mostly stolen from:
+  #   https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/termsupport.zsh
+  local TRIMMED="${2[(wr)^(*=*|mosh|ssh|sudo)]}"
+  if [ -n "$TMUX" ]; then
+    # Inside tmux, show the running command: tmux will prefix it with the
+    # session name (for context).
+    -set-tab-and-window-title "$TRIMMED"
+  else
+    # Outside tmux, show $PWD (for context) followed by the running command.
+    -set-tab-and-window-title "$(basename $PWD) > $TRIMMED"
+  fi
+}
+add-zsh-hook preexec -update-window-title-preexec
+
+typeset -F SECONDS
+function -record-start-time() {
+  emulate -L zsh
+  ZSH_START_TIME=${ZSH_START_TIME:-$SECONDS}
+}
+add-zsh-hook preexec -record-start-time
+
+function -report-start-time() {
+  emulate -L zsh
+  if [ $ZSH_START_TIME ]; then
+    local DELTA=$(($SECONDS - $ZSH_START_TIME))
+    local DAYS=$((~~($DELTA / 86400)))
+    local HOURS=$((~~(($DELTA - $DAYS * 86400) / 3600)))
+    local MINUTES=$((~~(($DELTA - $DAYS * 86400 - $HOURS * 3600) / 60)))
+    local SECS=$(($DELTA - $DAYS * 86400 - $HOURS * 3600 - $MINUTES * 60))
+    local ELAPSED=''
+    test "$DAYS" != '0' && ELAPSED="${DAYS}d"
+    test "$HOURS" != '0' && ELAPSED="${ELAPSED}${HOURS}h"
+    test "$MINUTES" != '0' && ELAPSED="${ELAPSED}${MINUTES}m"
+    if [ "$ELAPSED" = '' ]; then
+      SECS="$(print -f "%.2f" $SECS)s"
+    elif [ "$DAYS" != '0' ]; then
+      SECS=''
+    else
+      SECS="$((~~$SECS))s"
+    fi
+    ELAPSED="${ELAPSED}${SECS}"
+    export RPROMPT="%F{cyan}%{$__BNSS[ITALIC_ON]%}${ELAPSED}%{$__BNSS[ITALIC_OFF]%}%f $RPROMPT_BASE"
+    unset ZSH_START_TIME
+  else
+    export RPROMPT="$RPROMPT_BASE"
+  fi
+}
+add-zsh-hook precmd -report-start-time
+
+function -auto-ls-after-cd() {
+  emulate -L zsh
+  # Only in response to a user-initiated `cd`, not indirectly (eg. via another
+  # function).
+  if [ "$ZSH_EVAL_CONTEXT" = "toplevel:shfunc" ]; then
+    ls -a
+  fi
+}
+add-zsh-hook chpwd -auto-ls-after-cd
+
+# Remember each command we run.
+function -record-command() {
+  __BNSS[LAST_COMMAND]="$2"
+}
+add-zsh-hook preexec -record-command
+
+# Update vcs_info (slow) after any command that probably changed it.
+function -maybe-show-vcs-info() {
+  local LAST="$__BNSS[LAST_COMMAND]"
+
+  # In case user just hit enter, overwrite LAST_COMMAND, because preexec
+  # won't run and it will otherwise linger.
+  __BNSS[LAST_COMMAND]="<unset>"
+
+  # Check first word; via:
+  # http://tim.vanwerkhoven.org/post/2012/10/28/ZSH/Bash-string-manipulation
+  case "$LAST[(w)1]" in
+    cd|cp|git|rm|touch|mv|)
+      vcs_info
+      ;;
+    *)
+      ;;
+  esac
+}
+add-zsh-hook precmd -maybe-show-vcs-info
+
+# adds `cdr` command for navigating to recent directories
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+
+# enable menu-style completion for cdr
+zstyle ':completion:*:*:cdr:*:*' menu selection
+
+# fall through to cd if cdr is passed a non-recent dir as an argument
+zstyle ':chpwd:*' recent-dirs-default true
+
+#
+# Other
+#
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+# BASE16_SHELL=$HOME/.config/base16-shell/
+# [ -n "$PS1"  ] && [ -s $BASE16_SHELL/profile_helper.sh  ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
+export PATH=$HOME/bin:$PATH
+
+# export CATALINA_HOME="/Users/bnss/Documents/Bricsys/apache-tomcat-7.0.88"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home"
+export JAVA_OPTS="-Duser.timezone=Etc/UTC"
+# export TZ="Etc/UTC"
+export TZ="Europe/Brussels"
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file
+
+# FZF completion
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Fix mariadb files not existing, causing chapoo to fail after restart
+if [[ ! -e /usr/local/etc/my.cnf.d ]]; then
+  mkdir /usr/local/etc/my.cnf.d
+elif [[ ! -d /usr/local/etc/my.cnf.d ]]; then
+  echo "\"/usr/local/etc/my.cnf.d\" already exists but is not a directory" 1>&2
+fi
+
+# Setting PATH for Python 3.5
+# The original version is saved in .bash_profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH="/usr/local/opt/mariadb@10.1/bin:$PATH"
+export PATH="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# To use z
+. /usr/local/etc/profile.d/z.sh
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

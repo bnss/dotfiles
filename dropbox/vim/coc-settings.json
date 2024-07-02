@@ -1,0 +1,53 @@
+{
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "prettier.disableSuccessMessage": true,
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.validation.template": true,
+  "vetur.validation.script": true,
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.useWorkspaceDependencies": true,
+  "tsserver.enableJavascript": false,
+  /* "tslint.enable": true, */
+  /* "javascript.format.enable": false, */
+  "eslint.enable": false,
+  /* "eslint.run": "onSave", */
+  /* "eslint.autoFixOnSave": true, */
+  /* "eslint.filetypes": [ */
+  /*   "javascript", */
+  /*   "typescript", */
+  /*   "typescriptreact", */
+  /*   "javascriptreact", */
+  /*   "html", */
+  /*   "vue" */
+  /* ], */
+  /* "eslint.workingDirectories": [{ "mode": "auto" }], */
+  /* "eslint.validate": ["javascript", "javascriptreact", "html", "vue"] */
+  /* "eslint.validate": [ */
+  /*   {"language": "javascript", "autoFix": true}, */
+  /*   {"language": "typescript", "autoFix": true}, */
+  /*   {"language": "vue", "autoFix": true} */
+  /* ] */
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.rootPatterns": [
+    ".vim",
+    ".git",
+    ".hg",
+    ".projections.json",
+    "./config/ts-config/tsconfig.json",
+    "./config/eslint-config/index.js"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact"
+  ],
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•"
+}

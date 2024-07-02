@@ -1,0 +1,21 @@
+# common and fallback configurations
+[user]
+  name = benschepmans
+  email = ben_schepmans@hotmail.com
+[credential]
+  helper = osxkeychain
+[alias]
+  commit = commit --no-verify
+  push = push --no-verify
+  commend = commit --amend --no-edit
+  push-for-review = !git push origin HEAD:refs/for/${1-master}
+#[core]
+#  sshCommand = ssh -i ~/.ssh/id_rsa.private
+[color]
+  ui = auto
+
+# conditional configuration for work repos
+[includeIf "gitdir:~/Documents/Bricsys/"]
+  path = .gitconfig.work
+[pull]
+	rebase = false
