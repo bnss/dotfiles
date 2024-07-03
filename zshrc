@@ -133,3 +133,5 @@ source ~/.aliases
 #unset file
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GH_TOKEN=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
