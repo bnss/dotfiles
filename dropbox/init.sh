@@ -20,7 +20,7 @@ brew cask install iterm2 kitty mactex
 # exec su - $USER
 
 brew install zsh zsh-completions zsh-syntax-highlighting
-brew install vim nvim tmux git npm yarn wget nmap ag tree fd bat rtv netris fortune cowsay lolcat imagemagick pandoc
+brew install vim nvim tmux git npm yarn wget nmap ag tree fd bat rtv netris fortune cowsay lolcat imagemagick pandoc ripgrep the_silver_searcher
 
 echo "-= Installing Fonts =-"
 brew tap caskroom/fonts
