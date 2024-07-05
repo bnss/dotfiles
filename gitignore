@@ -1,0 +1,80 @@
+# Yarn and npm #
+################
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+built
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+[._]*.un~
+Session.vim
+.netrwhist
+*~
+tags
+
+# OS generated files #
+######################
+.DS_Store*
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Icon
+Icon?
+Thumbs.db
+._*
+*.lock
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite

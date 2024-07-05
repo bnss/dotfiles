@@ -72,13 +72,14 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
   z
   npm
 )
 
 source $ZSH/oh-my-zsh.sh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 # User configuration
 
@@ -133,5 +134,4 @@ source ~/.aliases
 #unset file
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export GH_TOKEN=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
+source <(fzf --zsh)

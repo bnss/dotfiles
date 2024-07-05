@@ -67,7 +67,7 @@ alias eV='vim ~/.vimrc'
 alias eU='vim ~/.vim/my-snippets/UltiSnips/all.snippets'
 alias eT='vim ~/.tmux.conf'
 alias eK='vim ~/.config/kitty/kitty.conf'
-alias eS='vim ~/Dropbox/dotfiles/init.sh'
+alias eS='vim ~/dotfiles/init.sh'
 
 # Open help files
 alias cvim='open https://vim.rtorr.com'

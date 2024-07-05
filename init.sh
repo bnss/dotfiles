@@ -8,7 +8,7 @@ sudo -v
 
 echo "-= Removing any existing folders and configs =-"
 mkdir ~/old_configs
-mv {~/.config,~/.bash*,~/.zsh*,~/.aliases,~/.vim,~/.vimrc,~/.tmux,~/.tmux.conf} ~/old_configs
+mv {~/.config,~/.bash*,~/.zsh*,~/.aliases,~/.vim,~/.vimrc,~/.tmux,~/.tmux.conf,~/.gitignore} ~/old_configs
 
 echo "-= Creating necessary directories =-"
 mkdir -p ~/.config
@@ -27,12 +27,14 @@ brew install --cask karabiner-elements
 # chsh -s /usr/local/bin/zsh
 # exec su - $USER
 
-# brew install zsh zsh-completions zsh-syntax-highlighting
-brew install node starship vim nvim tmux git npm wget nmap ag tree fd bat netris fortune cowsay lolcat imagemagick pandoc ripgrep the_silver_searcher
+brew install zsh zsh-syntax-highlighting zsh-autosuggestions
+brew install node starship vim nvim tmux git npm wget nmap ag tree fd netris fortune cowsay lolcat imagemagick pandoc
+brew install fzf bat ripgrep the_silver_searcher perl universal-ctags
 
 echo "-= Installing Fonts =-"
 brew tap homebrew/cask-fonts
 brew install --cask font-iosevka
+brew install --cask font-iosevka-nerd-font
 # brew cask install font-fira-code
 
 echo "-= Symlinking new configs =-"
@@ -41,7 +43,9 @@ ln -s ~/dotfiles/zsh_history ~/.zsh_history
 ln -s ~/dotfiles/starship.toml ~/.config/starship.toml
 ln -s ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 ln -s ~/dotfiles/aliases ~/.aliases
+ln -s ~/dotfiles/gitignore ~/.gitignore
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
