@@ -49,5 +49,6 @@
   ],
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+  "diagnostic.infoSign": "•",
+  "svelte.enable-ts-plugin": false
 }
