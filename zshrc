@@ -80,6 +80,13 @@ source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Colors when doing ls
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
+
+# export LS_COLORS=di="1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # User configuration
 
@@ -128,6 +135,7 @@ fi
 eval "$(starship init zsh)"
 
 source ~/.aliases
+source ~/.tokens
 #for file in ~/.{path,exports,aliases,functions,extra}; do
 #  [ -r "$file" ] && source "file"
 #done
@@ -135,3 +143,12 @@ source ~/.aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+# export FZF_DEFAULT_OPTS="
+#   --preview 'bat --theme=base16 -n --color=always {}'
+#   "
+export BAT_THEME=base16
+
+# export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+# Created by `pipx` on 2024-07-24 13:25:08
+# export PATH="$PATH:/Users/bnss/.local/bin"

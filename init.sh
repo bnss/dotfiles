@@ -12,7 +12,7 @@ mv {~/.config,~/.bash*,~/.zsh*,~/.aliases,~/.vim,~/.vimrc,~/.tmux,~/.tmux.conf,~
 
 echo "-= Creating necessary directories =-"
 mkdir -p ~/.config
-mkdir -p ~/.vim/autoload ~/.vim/undodir
+mkdir -p ~/.vim/autoload ~/.vim/undodir ~/.vim/my-snippets/UltiSnips
 mkdir -p ~/.config/nvim/
 mkdir -p ~/.config/karabiner
 
@@ -20,6 +20,7 @@ echo "-= Installing System Dependencies =-"
 brew install --cask iterm2
 # brew install --cask mactex
 brew install --cask karabiner-elements
+brew install --cask gitify
 
 # brew install bash zsh
 # echo /usr/local/bin/bash >> /etc/shells
@@ -47,6 +48,7 @@ ln -s ~/dotfiles/gitignore ~/.gitignore
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
+ln -s ~/dotfiles/vim/all.snippets ~/.vim/my-snippets/UltiSnips/all.snippets
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 # ln -s ~/Dropbox/dotfiles/bash/bashrc.bash ~/.bashrc

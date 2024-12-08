@@ -1,20 +1,22 @@
 {
   "prettier.singleQuote": true,
-  "prettier.eslintIntegration": true,
-  "prettier.tslintIntegration": true,
-  "prettier.disableSuccessMessage": true,
+  // "prettier.eslintIntegration": true,
+  // "prettier.tslintIntegration": true,
+  // "prettier.disableSuccessMessage": true,
   "vetur.format.defaultFormatter.css": "prettier",
   "vetur.validation.template": true,
   "vetur.validation.script": true,
   "vetur.format.defaultFormatter.ts": "prettier",
   "vetur.format.defaultFormatter.js": "prettier",
   "vetur.useWorkspaceDependencies": true,
-  "tsserver.enableJavascript": false,
-  /* "tslint.enable": true, */
+  "tsserver.enable": true,
+  // "tslint.enable": true,
+  "eslint.experimental.useFlatConfig": true,
   /* "javascript.format.enable": false, */
-  "eslint.enable": false,
+  "eslint.enable": true,
+  // "eslint.format.enable": true,
   /* "eslint.run": "onSave", */
-  /* "eslint.autoFixOnSave": true, */
+  "eslint.autoFixOnSave": true,
   /* "eslint.filetypes": [ */
   /*   "javascript", */
   /*   "typescript", */
@@ -24,31 +26,43 @@
   /*   "vue" */
   /* ], */
   /* "eslint.workingDirectories": [{ "mode": "auto" }], */
-  /* "eslint.validate": ["javascript", "javascriptreact", "html", "vue"] */
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue", "svelte"],
   /* "eslint.validate": [ */
   /*   {"language": "javascript", "autoFix": true}, */
   /*   {"language": "typescript", "autoFix": true}, */
   /*   {"language": "vue", "autoFix": true} */
   /* ] */
-  "suggest.echodocSupport": true,
+  // "suggest.echodocSupport": true,
+  "suggest.floatConfig": {
+    "border": true
+  },
+  "diagnostic.floatConfig": {
+    "border": true
+  },
+  "signature.floatConfig": {
+    "border": true
+  },
+  "hover.floatConfig": {
+    "border": true
+  },
   "suggest.maxCompleteItemCount": 20,
-  "coc.preferences.rootPatterns": [
-    ".vim",
-    ".git",
-    ".hg",
-    ".projections.json",
-    "./config/ts-config/tsconfig.json",
-    "./config/eslint-config/index.js"
-  ],
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "json",
-    "javascriptreact"
-  ],
+  // "coc.preferences.rootPatterns": [
+  //   ".vim",
+  //   ".git",
+  //   ".hg",
+  //   ".projections.json",
+  //   "./config/ts-config/tsconfig.json",
+  //   "./config/eslint-config/index.js"
+  // ],
+  // "coc.preferences.formatOnSaveFiletypes": [
+  //   "javascript",
+  //   "typescript",
+  //   "typescriptreact",
+  //   "json",
+  //   "javascriptreact"
+  // ],
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
-  "svelte.enable-ts-plugin": false
+  "svelte.enable-ts-plugin": true
 }

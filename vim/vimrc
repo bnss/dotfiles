@@ -6,12 +6,14 @@
 set nocompatible                      " vim, not vi
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set noswapfile                        " disable swap files
-set autoread                          " automatically update file if changed elsewhere
-" syntax on                             " syntax highlighting
+set background=dark
+" set nowrap                            " don't wrap text when buffer width is too small
+syntax on                             " syntax highlighting
 
 " interface
 set noshowmode                        " don't show mode
 set number                            " show line numbers
+set signcolumn=yes                    " show gutter always
 set ruler                             " show current position at bottom
 set scrolloff=5                       " keep at least 5 lines above/below
 set sidescrolloff=5                   " keep at least 5 lines left/right
@@ -25,11 +27,11 @@ set hidden                            " buffers can exist in the background
 set gcr=a:blinkon0                    " disable cursor blink
 set showmatch                         " show bracket matches
 set laststatus=2                      " always show status bar
-set list listchars=tab:»·,trail:·     " show extra space characters
+set list listchars=tab:\│\ ,trail:·     " show extra space characters
 set cursorline                        " highlight current line
 set encoding=UTF-8
 set guifont=Iosevka\ Nerd\ Font:h14
-set conceallevel=3                    " hide concealed text
+" set conceallevel=3                    " hide concealed text
 set updatetime=300                    " You will have bad experience for diagnostic messages when it's default 4000.
 " set guifont=Iosevka:h11
 " set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
@@ -61,11 +63,11 @@ set smartcase                         " case sensitive searching when not all lo
 
 " background processes
 set history=1000                      " store lots of :cmdline history
-set autoread                          " update file when changed outside of vim
+set autoread                          " automatically update file when changed outside of vim
 set autoindent                        " copy indentation from the previous line for new line
 set timeoutlen=1000                   " mapping delays
 set ttimeoutlen=0                     " key code delays
-set clipboard=unnamed                 " use native clipboard
+" set clipboard=unnamed                 " use native clipboard
 set nobackup                          " don't save backups
 set nowritebackup                     " don't save a backup while editing
 set visualbell                        " no sounds
@@ -121,9 +123,32 @@ au BufRead,BufNewFile *.scss set filetype=scss.css
 let mapleader=','
 let localleader='\'
 
+" open netrw
+nnoremap - :Ex<CR>
+
+" netrw (default vim nerdtree)
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
+" Shift-j/k in visual mode allows for moving lines up and down
+vnoremap <silent>J :m '>+1<CR>gv=gv
+vnoremap <silent>K :m '<-2<CR>gv=gv
+
+" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
+" nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+" nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+" nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+" nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
 " python
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
+
+" svelte
+let g:svelte_preprocessor_tags = [
+  \ { 'name': 'ts', 'tag': 'script', 'as': 'typescript' }
+  \ ]
+let g:svelte_preprocessors = ['ts']
 
 " correct vue syntax highlighting of style tag
 let html_no_rendering=1
@@ -148,10 +173,14 @@ nmap <leader>ez :tabnew ~/.zshrc<CR>
 nmap <leader>ea :tabnew ~/.aliases<CR>
 nmap <leader>et :tabnew ~/.tmux.conf<CR>
 nmap <leader>ek :tabnew ~/.config/kitty/kitty.conf<CR>
-nmap <leader>es :tabnew ~/Dropbox/dotfiles/init.sh<CR>
+nmap <leader>es :tabnew ~/dotfiles/init.sh<CR>
 
 " Reload Coc
 nmap <leader>R :CocRestart<CR>
+
+" Show signature help in insert mode
+" Does not work
+" inoremap <silent><C-h> CocActionAsync('showSignatureHelp')<CR>
 
 " jj acts as the escape key
 inoremap jj <Esc>
@@ -171,27 +200,55 @@ nnoremap <space> za
 " toggle NERDTree on/off
 nnoremap <leader>n :NERDTreeToggle<CR>
 
-" toggle FZF :Files
-nnoremap <leader>f :FZF<CR>
+" toggle FZF search for files
+" nnoremap <leader>f :FZF<CR>
 " nnoremap <leader>f :GFiles<CR>
+" nnoremap <leader>f :Files<CR>
+" command! -bang -nargs=? -complete=dir Files
+"   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+" Only search for content inside of files, not file names
+" command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep('rg --column --no-heading --line-number --color=always '.shellescape(<q-args>),
+  \ 1,
+  \ fzf#vim#with_preview({'options': '--delimiter : --nth 3..'},),
+  \ <bang>0)
+
+command! FZFFiles execute (exists("*fugitive#head") && len(fugitive#head())) ? 'GFiles' : 'Files'
+command! Gd execute 'GFiles?'
+nnoremap <leader>f :FZFFiles<CR>
+nnoremap ' :GFiles?<CR>
+
+" toggle FZF search in files
+" command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+" command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+nnoremap <Leader>a :Rg<CR>
 
 " toggle FZF :Buffers
 nnoremap ; :Buffers<CR>
 
 " new buffer in current window
 nnoremap <C-n><CR> :enew<CR>
-
 " new buffer in new tab
 nnoremap <C-n>t :tabnew<CR>
-
 " new buffer in vsplit window
 nnoremap <C-n>v :vnew<CR>
-
 " new buffer in split window
 nnoremap <C-n>s :new<CR>
 
 " copy till end of line, instead of entire line
 nnoremap Y y$
+
+" join next line but maintain cursor position
+nnoremap J mzJ`z
+
+" keep cursor in the middle when jumping in the page
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+" keep cursor in the middle when jumping between search results
+" nnoremap n nzzzv
+" nnoremap N Nzzzv
 
 " break lines, custom opposite <shift>J
 nnoremap K ^f<Space>xi<CR><Esc>
@@ -208,8 +265,16 @@ noremap <left> <C-w>5<
 noremap <up> <C-w>5+
 noremap <down> <C-w>5-
 
-" make vim paste from and to the system's clipboard
+" make vim yank/paste from and to the system's clipboard
 vnoremap <C-c> "*y
+nnoremap <leader>y "*y
+vnoremap <leader>y "*y
+nnoremap <leader>Y "*Y
+" nnoremap <leader>d "_d
+" vnoremap <leader>d "_d
+
+" remove Q binding/map
+nnoremap Q <nop>
 
 " keep selection after indent
 vnoremap < <gv
@@ -224,6 +289,9 @@ vnoremap // y/<C-R>"<CR>
 
 " move to the previous buffer
 nmap <leader>w :b#<CR>
+
+" change slashed to dashes
+vnoremap <leader>s :s/\//-/g<CR>
 
 " close the current buffer and move to the previous one
 " this replicates the idea of closing a tab
@@ -251,7 +319,10 @@ let g:instant_markdown_autostart = 0    " disable autostart
 nnoremap <leader>md :InstantMarkdownPreview<CR>
 
 " open file in github
-nnoremap <leader>og :Gbrowse master:%<CR>
+nnoremap <leader>og :.GBrowse<CR>
+
+" show git blame
+nnoremap gb :Git blame<CR>
 
 " disable arrow movement, resize splits instead.
 nnoremap <Left> :vertical resize -1<CR>
@@ -281,6 +352,24 @@ if !has('nvim')
   end
 endif
 
+" Diffview.nvim
+nnoremap <leader>do :DiffviewOpen<CR>
+nnoremap <leader>dc :DiffviewClose<CR>
+nnoremap <leader>dfh :DiffviewFileHistory<CR>
+
+" gitsigns
+nnoremap <leader>dd :Gitsigns preview_hunk<CR>
+
+" Copy path of current file
+map <leader>l :let @*=expand("%")<CR>
+
+" Copy path of current file with line number
+""" Relative path to file: %
+""" Absolute path to file: %:p
+""" Filename only: %:t
+""" Directory name only: %:p:h
+map <leader>l :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
+
 " visually select text between matching object
 " noremap % v%
 "}}}
@@ -303,29 +392,34 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " syntax highlighting
+Plug 'RRethy/base16-nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 " Plug 'valloric/matchtagalways'
 Plug 'alexlafroscia/postcss-syntax.vim'
-Plug 'junegunn/goyo.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'jxnblk/vim-mdx-js'
 " Plug 'findango/vim-mdx'
 " Plug 'ap/vim-css-color'
+" Plug 'othree/html5.vim' "svelte
+" Plug 'pangloss/vim-javascript' "svelte
+" Plug 'evanleck/vim-svelte', {'branch': 'main'} "svelte
+Plug 'Shougo/context_filetype.vim'
 
 " text manipulation
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdcommenter'
+" Plug 'scrooloose/nerdcommenter'
+" Plug 'preservim/nerdcommenter'
+Plug 'numToStr/Comment.nvim'
 Plug 'flowtype/vim-flow'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'vue', 'html', 'svelte'] }
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'vue', 'html', 'svelte'] }
 " Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'https://github.com/adelarsq/vim-matchit'
-" :CocInstall coc-tsserver coc-eslint coc-tslint-plugin coc-html coc-json coc-vetur coc-prettier coc-css
-" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/jsonc.vim'
 " Plug 'SirVer/ultisnips'
 " Plug 'w0rp/ale'
 " Plug 'svermeulen/vim-easyclip'
@@ -336,28 +430,42 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" FZF & CoC
+" :CocInstall coc-tsserver coc-eslint coc-tslint coc-tslint-plugin coc-html coc-json coc-vetur coc-prettier coc-css coc-svelte
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'neoclide/jsonc.vim'
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+
 Plug 'wincent/ferret'
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
 
 " interface
 Plug 'tpope/vim-obsession'
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
 Plug 'flazz/vim-colorschemes'
 " Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
 Plug 'itchyny/lightline.vim'
 Plug 'wesQ3/vim-windowswap'
-Plug 'yggdroot/indentline'
+" Plug 'junegunn/goyo.vim'
 " Plug 'jeetsukumaran/vim-buffergator'
 " Plug 'ap/vim-buftabline'
 
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'lewis6991/gitsigns.nvim'
 " Plug 'airblade/vim-gitgutter'
+Plug 'sindrets/diffview.nvim'
 
 " Icons
 " if has('nvim')
@@ -457,30 +565,34 @@ let g:AutoPairsCenterLine = 0
 """""""""""""""""""""""""""""""""""""""""""
 " Goyo plugin
 """""""""""""""""""""""""""""""""""""""""""
-function! s:auto_goyo()
-  if &ft == 'markdown'
-    Goyo 80
-  elseif exists('#goyo')
-    let bufnr = bufnr('%')
-    Goyo!
-    execute 'b '.bufnr
-  endif
-endfunction
+" function! s:auto_goyo()
+"   if &ft == 'markdown'
+"     Goyo 80
+"   elseif exists('#goyo')
+"     let bufnr = bufnr('%')
+"     Goyo!
+"     execute 'b '.bufnr
+"   endif
+" endfunction
 
 """""""""""""""""""""""""""""""""""""""""""
 " CoC plugin theme
 """""""""""""""""""""""""""""""""""""""""""
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+" Use tab for trigger completion with characters ahead and navigate
+" NOTE: There's always complete item selected by default, you may want to enable
+" no select by `"suggest.noselect": true` in your configuration file
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
-" Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
-" Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " let g:coc_global_extensions = [
 "   'coc-emoji', 'coc-eslint', 'coc-prettier',
@@ -488,7 +600,7 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "   'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml'
 " ]
 
-function! s:check_back_space() abort
+function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
@@ -502,9 +614,30 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Remap for rename current word
+" Use K to show documentation in preview window
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming
 nmap <leader>rn <Plug>(coc-rename)
 
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s)
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
 
 """""""""""""""""""""""""""""""""""""""""""
 " Lightline plugin theme
@@ -557,42 +690,80 @@ let g:closetag_filetypes = 'html,xhtml,phtml,vue,js'
 """""""""""""""""""""""""""""""""""""""""""
 " Nerdcommenter plugin theme
 """""""""""""""""""""""""""""""""""""""""""
-" <leader>cc to comment, <leader>cu to uncomment
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
-" Set a language to use its alternate delimiters by default
-let g:NERDAltDelims_java = 1
-" Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" Vue settings
-let g:ft = ''
-function! NERDCommenter_before()
-  if &ft == 'vue'
-    let g:ft = 'vue'
-    let stack = synstack(line('.'), col('.'))
-    if len(stack) > 0
-      let syn = synIDattr((stack)[0], 'name')
-      if len(syn) > 0
-        exe 'setf ' . substitute(tolower(syn), '^vue_', '', '')
-      endif
-    endif
-  endif
-endfunction
-function! NERDCommenter_after()
-  if g:ft == 'vue'
-    setf vue
-    let g:ft = ''
-  endif
-endfunction
+" " <leader>cc to comment, <leader>cu to uncomment
+" " Add spaces after comment delimiters by default
+" let g:NERDSpaceDelims = 1
+" " Use compact syntax for prettified multi-line comments
+" let g:NERDCompactSexyComs = 1
+" " Align line-wise comment delimiters flush left instead of following code indentation
+" let g:NERDDefaultAlign = 'left'
+" " Set a language to use its alternate delimiters by default
+" let g:NERDAltDelims_java = 1
+" " Add your own custom formats or override the defaults
+" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" " Allow commenting and inverting empty lines (useful when commenting a region)
+" let g:NERDCommentEmptyLines = 1
+" " Enable trimming of trailing whitespace when uncommenting
+" let g:NERDTrimTrailingWhitespace = 1
+"
+" if !exists('g:context_filetype#same_filetypes')
+"    let g:context_filetype#filetypes = {}
+"  endif
+"
+"  let g:context_filetype#filetypes.svelte =
+"  \ [
+"  \   {'filetype' : 'javascript', 'start' : '<script \?.*>', 'end' : '</script>'},
+"  \   {
+"  \     'filetype': 'typescript',
+"  \     'start': '<script\%( [^>]*\)\? \%(ts\|lang="\%(ts\|typescript\)"\)\%( [^>]*\)\?>',
+"  \     'end': '',
+"  \   },
+"  \   {'filetype' : 'css', 'start' : '<style \?.*>', 'end' : '</style>'},
+"  \ ]
+"
+"  let g:ft = ''
+"
+" " Svelte/Vue settings
+" let g:ft = ''
+" function! NERDCommenter_before()
+"   if (&ft == 'html') || (&ft == 'svelte')
+"   let g:ft = &ft
+"   let cfts = context_filetype#get_filetypes()
+"   if len(cfts) > 0
+"     if cfts[0] == 'svelte'
+"       let cft = 'html'
+"     elseif cfts[0] == 'scss'
+"       let cft = 'css'
+"     else
+"       let cft = cfts[0]
+"     endif
+"     exe 'setf ' . cft
+"     endif
+"   endif
+"
+"   if &ft == 'vue'
+"     let g:ft = 'vue'
+"     let stack = synstack(line('.'), col('.'))
+"     if len(stack) > 0
+"       let syn = synIDattr((stack)[0], 'name')
+"       if len(syn) > 0
+"         exe 'setf ' . substitute(tolower(syn), '^vue_', '', '')
+"       endif
+"     endif
+"   endif
+" endfunction
+"
+" function! NERDCommenter_after()
+"   if (g:ft == 'html') || (g:ft == 'svelte')
+"   exec 'setf ' . g:ft
+"   let g:ft = ''
+"   endif
+"
+"   if g:ft == 'vue'
+"     setf vue
+"     let g:ft = ''
+"   endif
+" endfunction
 
 " Making it faster
 let g:vue_disable_pre_processors=1
@@ -674,7 +845,8 @@ let g:prettier#quickfix_auto_focus = 0
 
 " Running Prettier before saving async (vim 8+)
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.svelte,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.svelte,*.yaml,*.html CocCommand prettier.formatFile
 " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue Prettier
 
 " " format javascript on save with prettier
@@ -734,15 +906,26 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 """""""""""""""""""""""""""""""""""""""""""
 " Fuzzy File Finder
 """""""""""""""""""""""""""""""""""""""""""
+" Initialize configuration dictionary
+let g:fzf_vim = {}
+
 " This is the default extra key bindings
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 
+" This is the default option:
+"   - Preview window on the right with 50% width
+"   - CTRL-/ will toggle preview window.
+" - Note that this array is passed as arguments to fzf#vim#with_preview function.
+" - To learn more about preview window options, see `--preview-window` section of `man fzf`.
+let g:fzf_vim.preview_window = ['right,50%', 'ctrl-/']
+let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+
 " default fzf layout
 " - down / up / left / right
-let g:fzf_layout = { 'down': '~10%' }
+" let g:fzf_layout = { 'down': '~20%' }
 
 " customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -767,12 +950,24 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 " let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " ignore .gitignore files
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+" let $FZF_DEFAULT_COMMAND = 'ag --hidden -g ""'
 
 " Hide statusline in neovim
-autocmd! FileType fzf
-autocmd  FileType fzf set laststatus=0 noshowmode noruler
-  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+" autocmd! FileType fzf
+" autocmd  FileType fzf set laststatus=0 noshowmode noruler
+"   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Gitgutter
+"""""""""""""""""""""""""""""""""""""""""""
+let g:gitgutter_sign_added = '┃' "+
+let g:gitgutter_sign_modified = '┃' "~
+let g:gitgutter_sign_removed = '_'
+let g:gitgutter_sign_removed_first_line = '‾'
+" let g:gitgutter_sign_removed_above_and_below = '{'
+" let g:gitgutter_sign_modified_removed = 'ww'
+
 " }}}
 
 " Color scheme {{{
@@ -791,6 +986,8 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
+colorscheme base16-eighties
+
 " Custom colors
 "highlight VertSplit         ctermbg=236
 "highlight ColorColumn       ctermbg=235
@@ -805,7 +1002,7 @@ endif
 "highlight Pmenu             ctermbg=240 ctermfg=12
 "highlight PmenuSel          ctermbg=3   ctermfg=1
 "highlight SpellBad          ctermbg=0   ctermfg=1
-highlight ExtraWhitespace   ctermbg=1   guibg=red
+" highlight ExtraWhitespace   ctermbg=1   guibg=red
 highlight Comment cterm=italic
 match ExtraWhitespace /\s\+$/
 
@@ -813,19 +1010,25 @@ match ExtraWhitespace /\s\+$/
 hi Normal guibg=NONE ctermbg=NONE
 
 " highlight only cursor line number, instead of whole line
-hi clear CursorLine
-augroup CLClear
-  autocmd! ColorScheme * hi clear CursorLine
-augroup END
-hi CursorLineNR cterm=bold
-augroup CLNRSet
-  autocmd! ColorScheme * hi CursorLineNR cterm=bold
-augroup END
+" hi clear CursorLine
+" augroup CLClear
+"   autocmd! ColorScheme * hi clear CursorLine
+" augroup END
+" hi CursorLineNR cterm=bold
+" augroup CLNRSet
+"   autocmd! ColorScheme * hi CursorLineNR cterm=bold
+" augroup END
+
 "}}}
 
 " Autocmds {{{
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" when closing a tab, open previous tab instead of next
+autocmd TabClosed * tabprevious
 
 augroup TrailingSpaces
   autocmd!
@@ -859,7 +1062,13 @@ augroup END
 " augroup END
 
 " MDX files
+autocmd BufNewFile,BufRead *.md setlocal filetype=markdown.md
+autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
+autocmd BufNewFile,BufRead *.md setlocal conceallevel=2
 autocmd BufNewFile,BufRead *.mdx setlocal filetype=markdown.mdx
+autocmd BufNewFile,BufRead *.mdx setlocal syntax=markdown
+autocmd BufNewFile,BufRead *.mdx setlocal conceallevel=2
+
 
 " Vue files
 autocmd BufNewFile,BufRead *.vue setlocal filetype=vue
@@ -869,10 +1078,21 @@ let g:vue_disable_pre_processors=1
 let g:vue_pre_processors = 'detect_on_enter'
 " autocmd FileType vue syntax sync fromstart
 " autocmd FileType mdx syntax sync fromstart
-"
+
 autocmd BufEnter,BufRead * syntax sync fromstart
 syntax sync minlines=10000
 set redrawtime=10000
+
+" Triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+        \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
 " NERDTree
 autocmd vimenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -888,8 +1108,8 @@ autocmd! FocusGained,BufEnter * checktime
 
 augroup Reload
   autocmd!
-  autocmd bufwritepost .vimrc source $MYVIMRC
-  autocmd bufwritepost .vimrc call LightlineReload()
+  autocmd bufwritepost ~/.vimrc source $MYVIMRC
+  autocmd bufwritepost ~/.vimrc call LightlineReload()
 augroup END
 
 " augroup Folds
@@ -903,3 +1123,99 @@ augroup END
 " zM: close all folds
 " zE: delete all folds
 " zf: create fold in Visual mode
+
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Lua stuff goes here
+"""""""""""""""""""""""""""""""""""""""""""
+lua << EOF
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufNewFile' }, {
+  pattern = '.env*',
+  command = 'set filetype=sh',
+})
+
+-- Treesitter
+require 'nvim-treesitter.configs'.setup {
+	ensure_installed = { "c", "lua", "vim", "javascript", "typescript", "html", "css", "vue", "svelte" },
+
+	-- Install parsers synchronously (only applied to `ensure_installed`)
+	sync_install = false,
+
+	-- Automatically install missing parsers when entering buffer
+	-- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+	auto_install = true,
+
+	highlight = {
+		-- `false` will disable the whole extension
+		enable = true,
+
+		-- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+		-- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+		-- Using this option may slow down your editor, and you may see some duplicate highlights.
+		-- Instead of true it can also be a list of languages
+		additional_vim_regex_highlighting = false,
+	},
+}
+
+-- Gitsigns
+require('gitsigns').setup {
+  signs = {
+    add          = { text = '┃' },
+    change       = { text = '┃' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+    untracked    = { text = '┆' },
+  },
+  signs_staged = {
+    add          = { text = '┃' },
+    change       = { text = '┃' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+    untracked    = { text = '┆' },
+  },
+  signs_staged_enable = true,
+  signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
+  numhl      = true, -- Toggle with `:Gitsigns toggle_numhl`
+  linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
+  word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
+  watch_gitdir = {
+    follow_files = true
+  },
+  auto_attach = true,
+  attach_to_untracked = false,
+  current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame_opts = {
+    virt_text = true,
+    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+    delay = 2000,
+    ignore_whitespace = false,
+    virt_text_priority = 100,
+    use_focus = true,
+  },
+  current_line_blame_formatter = '<author>, <author_time:%R> - <summary>',
+  sign_priority = 6,
+  update_debounce = 100,
+  status_formatter = nil, -- Use default
+  max_file_length = 40000, -- Disable if file is longer than this (in lines)
+  preview_config = {
+    -- Options passed to nvim_open_win
+    border = 'single',
+    style = 'minimal',
+    relative = 'cursor',
+    row = 0,
+    col = 1
+  },
+}
+
+require('Comment').setup({
+-- toggler = {
+--          --Line-comment toggle keymap
+--          line = '<leader>cc',
+--          --Block-comment toggle keymap
+--          block = 'gbc',
+--      },
+ })
+EOF
+
