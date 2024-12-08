@@ -146,6 +146,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 #   "
 export BAT_THEME=base16
 
+export GIT_EDITOR=nvim
+
 # export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 # Created by `pipx` on 2024-07-24 13:25:08
 # export PATH="$PATH:/Users/bnss/.local/bin"
