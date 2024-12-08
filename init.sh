@@ -10,11 +10,15 @@ echo "-= Removing any existing folders and configs =-"
 mkdir ~/old_configs
 mv {~/.config,~/.bash*,~/.zsh*,~/.aliases,~/.vim,~/.vimrc,~/.tmux,~/.tmux.conf,~/.gitignore} ~/old_configs
 
-echo "-= Creating necessary directories =-"
+echo "-= Creating necessary directories and files =-"
 mkdir -p ~/.config
 mkdir -p ~/.vim/autoload ~/.vim/undodir ~/.vim/my-snippets/UltiSnips
 mkdir -p ~/.config/nvim/
 mkdir -p ~/.config/karabiner
+mkdir -p ~/.oh-my-zsh
+
+touch ~/.tokens
+touch ~/.oh-my-zsh/oh-my-zsh.sh
 
 echo "-= Installing System Dependencies =-"
 brew install --cask iterm2
