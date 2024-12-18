@@ -46,7 +46,7 @@ echo "-= Symlinking new configs =-"
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/zsh_history ~/.zsh_history
 ln -s ~/dotfiles/starship.toml ~/.config/starship.toml
-ln -s ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+ln -s ~/dotfiles/karabiner ~/.config
 ln -s ~/dotfiles/aliases ~/.aliases
 ln -s ~/dotfiles/gitignore ~/.gitignore
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
