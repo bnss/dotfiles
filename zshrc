@@ -140,13 +140,25 @@ source ~/.tokens
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+# export FZF_DEFAULT_COMMAND='find . -printf "%P\\n"'
+
+# export FZF_DEFAULT_OPTS="--height=100% --tmux=100%,100% --info=inline --border --margin=1 --padding=1"
 # export FZF_DEFAULT_OPTS="
 #   --preview 'bat --theme=base16 -n --color=always {}'
 #   "
+
 export BAT_THEME=base16
 
 export GIT_EDITOR=nvim
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# add to .zshrc to easily switch AWS profiles later on
+alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 
 # export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 # Created by `pipx` on 2024-07-24 13:25:08

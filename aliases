@@ -63,7 +63,7 @@ alias copyOsToPi='open https://www.raspberrypi.org/documentation/installation/in
 # Edit files
 alias eZ='vim ~/.zshrc'
 alias eA='vim ~/.aliases'
-alias eV='vim ~/.vimrc'
+alias eV='vim ~/.config/nvim/lua/general.lua'
 alias eU='vim ~/.vim/my-snippets/UltiSnips/all.snippets'
 alias eT='vim ~/.tmux.conf'
 alias eK='vim ~/.config/kitty/kitty.conf'
@@ -93,7 +93,7 @@ alias gd='git diff'
 alias gb='git branch'
 alias gp='git pull'
 alias gps='git push'
-alias gpl='git pull --rebase'
+# alias gpl='git pull --rebase'
 alias gls='git log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative'
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
 alias gcl='git clone'
@@ -120,8 +120,10 @@ alias ghbd="gh tree/$(git symbolic-ref --quiet --short HEAD )/$(git rev-parse --
 alias ghd='gh tree/master/$(git rev-parse --show-prefix)'
 # Make a temporary commit
 alias gctc='git commit -m "temp commit" --no-verify'
-# Undo last temporary commit
-alias gutc='git reset HEAD^'
+# Undo last commit
+alias gulc='git reset HEAD^'
+# Redo last commit
+alias grlc="git reset 'HEAD@{1}'"
 
 # Games
 alias tetris='netris -k "hkl jspf^ln" -i 0.6'  #'bastet'

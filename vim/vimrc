@@ -207,10 +207,13 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 " command! -bang -nargs=? -complete=dir Files
 "   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
+let FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+" let FZF_DEFAULT_COMMAND = 'find . -printf "%P\\n"'
+
 " Only search for content inside of files, not file names
 " command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
 command! -bang -nargs=* Rg
-  \ call fzf#vim#grep('rg --column --no-heading --line-number --color=always '.shellescape(<q-args>),
+  \ call fzf#vim#grep('rg --column --no-heading --line-number --ignore-case --hidden --color=always '.shellescape(<q-args>),
   \ 1,
   \ fzf#vim#with_preview({'options': '--delimiter : --nth 3..'},),
   \ <bang>0)
@@ -290,7 +293,7 @@ vnoremap // y/<C-R>"<CR>
 " move to the previous buffer
 nmap <leader>w :b#<CR>
 
-" change slashed to dashes
+" change slashes to dashes
 vnoremap <leader>s :s/\//-/g<CR>
 
 " close the current buffer and move to the previous one
@@ -609,10 +612,10 @@ endfunction
 inoremap <silent><expr> <c-p> coc#refresh()
 
 " Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap gd <Plug>(coc-definition)
+nmap gy <Plug>(coc-type-definition)
+nmap gi <Plug>(coc-implementation)
+nmap gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call ShowDocumentation()<CR>
@@ -920,8 +923,8 @@ let g:fzf_action = {
 "   - CTRL-/ will toggle preview window.
 " - Note that this array is passed as arguments to fzf#vim#with_preview function.
 " - To learn more about preview window options, see `--preview-window` section of `man fzf`.
-let g:fzf_vim.preview_window = ['right,50%', 'ctrl-/']
-let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+let g:fzf_vim.preview_window = ['up,60%', 'ctrl-/']
+" let g:fzf_preview_window = ['up,60%', 'ctrl-/']
 
 " default fzf layout
 " - down / up / left / right
