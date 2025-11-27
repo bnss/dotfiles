@@ -16,6 +16,7 @@ mkdir -p ~/.vim/autoload ~/.vim/undodir ~/.vim/my-snippets/UltiSnips
 mkdir -p ~/.config/nvim/
 mkdir -p ~/.config/karabiner
 mkdir -p ~/.config/ghostty
+mkdir -p ~/.config/tinted-theming/tinty/
 mkdir -p ~/.oh-my-zsh
 
 touch ~/.tokens
@@ -30,6 +31,10 @@ brew install --cask gitify
 brew install --cask vial
 brew install --cask linearmouse
 brew install --cask background-music
+
+echo "-= Installing Theming Dependencies =-"
+brew tap tinted-theming/tinted
+brew install tinty
 
 # brew install bash zsh
 # echo /usr/local/bin/bash >> /etc/shells
@@ -52,6 +57,7 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/zsh_history ~/.zsh_history
 ln -s ~/dotfiles/starship.toml ~/.config/starship.toml
 ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
+ln -s ~/dotfiles/tinted-theming/tinty/config.toml ~/.config/tinted-theming/tinty/config.toml
 ln -s ~/dotfiles/karabiner ~/.config
 ln -s ~/dotfiles/aliases ~/.aliases
 ln -s ~/dotfiles/gitignore ~/.gitignore
@@ -86,5 +92,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # echo "-= Scheduling cron jobs =-"
 # echo "30 16 * * 1-5 ~/Dropbox/dotfiles/eject_tm_disk.sh" | sudo crontab
 # crontab -l
+
+echo "-= Initialize theming =-"
+tinty install
+tinty sync
+tinty apply base16-everforest
 
 echo "-= Log out and fire up iTerm2 to see the awesomeness =-"

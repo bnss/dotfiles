@@ -1,5 +1,4 @@
-
-vim.cmd[[
+vim.cmd [[
 
 " base
 set nocompatible                      " vim, not vi

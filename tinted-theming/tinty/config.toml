@@ -1,0 +1,34 @@
+# Global settings
+shell = "zsh -c '{}'"
+default-scheme = "base16-eighties"
+preferred-schemes = ["base16-everforest", "base16-gruvbox-light"]
+
+# Item configurations
+# [[items]]
+# name = "tinted-shell"
+# path = "https://github.com/tinted-theming/tinted-shell"
+# themes-dir = "scripts"
+# hook = "source \"$TINTY_THEME_FILE_PATH\""
+# supported-systems = ["base16", "base24"]
+
+[[items]]
+name = "base16-vim"
+path = "https://github.com/tinted-theming/base16-vim"
+themes-dir = "colors"
+supported-systems = ["base16"]
+# Look at USAGE.md for more information on sourcing the generated file in vim
+
+# [[items]]
+# name = "tmux"
+# path = "~/path/path/to/base16-tmux"
+# themes-dir = "colors"
+# hook = "tmux run 2> /dev/null && tmux source-file \"$TINTY_THEME_FILE_PATH\""
+# supported-systems = ["base16", "base24"]
+
+[[items]]
+name = "tinted-tmux"
+path = "https://github.com/tinted-theming/tinted-tmux"
+# Check if tmux is in use and if it is, reload the config file
+themes-dir = "colors"
+# hook = "tmux run 2> /dev/null && tmux source-file %f"
+hooks = ["tmux source-file ~/.tmux.conf"]

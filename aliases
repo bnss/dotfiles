@@ -50,6 +50,7 @@ alias nfl='~/Documents/code/dotfiles/scripts/nfl.sh'
 alias nflScores='~/Documents/code/dotfiles/scripts/nfl.sh'
 alias testJs='hopa'
 alias portListening='sudo lsof -iTCP -sTCP:LISTEN -n -P'
+alias theme='tinty apply $(tinty list | fzf)'
 
 # Go to Directories
 alias univ='cd ~/Dropbox/UNIV'
