@@ -23,3 +23,4 @@ macos-icon-ghost-color = #e0b22d
 
 # gtk-titlebar = false
 # theme = light:rose-pine-dawn,dark:Tomorrow Night Eighties
+keybind = shift+enter=text:\x1b\r
