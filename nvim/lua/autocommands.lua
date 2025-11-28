@@ -19,11 +19,7 @@ augroup END
 
 augroup Shortcuts
   autocmd!
-  " autocmd FileType c,javascript setlocal foldmethod=indent
   autocmd FileType vim setlocal foldmethod=marker
-  autocmd FileType javascript map <C-p> :FlowJumpToDef<CR>
-  autocmd FileType javascript map <Localleader>t :FlowType<CR>
-  autocmd FileType javascript map <leader>p :Prettier<CR>
   autocmd FileType css set omnifunc=csscomplete#CompleteCSS<CR>
   " autocmd FileType postcss set omnifunc=csscomplete#CompleteCSS<CR>
 augroup END
@@ -51,12 +47,6 @@ autocmd BufNewFile,BufRead *.mdx setlocal conceallevel=2
 " Vue files
 autocmd BufNewFile,BufRead *.vue setlocal filetype=vue
 
-" Vue posva
-let g:vue_disable_pre_processors=1
-let g:vue_pre_processors = 'detect_on_enter'
-" autocmd FileType vue syntax sync fromstart
-" autocmd FileType mdx syntax sync fromstart
-
 autocmd BufEnter,BufRead * syntax sync fromstart
 syntax sync minlines=10000
 set redrawtime=10000
@@ -72,23 +62,14 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
 autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
-" NERDTree
-autocmd vimenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 " Update buffers on focus
-autocmd! FocusGained,BufEnter * checktime
+autocmd FocusGained,BufEnter * checktime
 
 " Run Neoformat on save
 " augroup fmt
 "   autocmd!
 "   autocmd BufWritePre * undojoin | Neoformat
 " augroup END
-
-augroup Reload
-  autocmd!
-  autocmd bufwritepost ~/.vimrc source $MYVIMRC
-  autocmd bufwritepost ~/.vimrc call LightlineReload()
-augroup END
 
 " augroup Folds
 "   autocmd!
@@ -97,3 +78,11 @@ augroup END
 " augroup END
 " }}}
 ]]
+
+vim.g.vue_disable_pre_processors = 1
+vim.g.vue_pre_processors = 'detect_on_enter'
+
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufNewFile' }, {
+  pattern = '.env*',
+  command = 'set filetype=sh',
+})

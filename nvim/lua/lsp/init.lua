@@ -1,111 +1,122 @@
+local has_modern_lsp = vim.fn.has("nvim-0.11") == 1 and vim.lsp and vim.lsp.config
+local legacy_lspconfig = has_modern_lsp and nil or require("lspconfig")
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
 local servers = {
-	"lua_ls",
-	"ts_ls",
-	-- "tsserver",
-	"eslint",
-	"svelte",
-	"vue",
-	-- "vuels",
-	"marksman",
+	lua_ls = {
+		settings = {
+			Lua = {
+				diagnostics = { globals = { "vim" } },
+				workspace = {
+					library = vim.api.nvim_get_runtime_file("", true),
+					checkThirdParty = false,
+				},
+				telemetry = { enable = false },
+			},
+		},
+	},
+	ts_ls = {},
+	eslint = {},
+	svelte = {},
+	vue_ls = {
+		filetypes = {
+			"typescript",
+			"javascript",
+			"javascriptreact",
+			"typescriptreact",
+			"vue",
+		},
+	},
+	marksman = {},
 }
 
-for _, server in ipairs(servers) do
-	require("lspconfig")[server].setup({})
+local server_names = vim.tbl_keys(servers)
 
-	vim.api.nvim_create_autocmd("LspAttach", {
-		callback = function()
-			local opts = { buffer = 0, remap = false }
-
-			vim.keymap.set("n", "gd", function()
-				vim.lsp.buf.definition()
-			end, opts)
-			vim.keymap.set("n", "K", function()
-				vim.lsp.buf.hover()
-			end, opts)
-			vim.keymap.set("n", "<leader>vws", function()
-				vim.lsp.buf.workspace_symbol()
-			end, opts)
-			vim.keymap.set("n", "<leader>vd", function()
-				vim.diagnostic.open_float()
-			end, opts)
-			vim.keymap.set("n", "[d", function()
-				vim.diagnostic.jump({ count = 1, float = true })
-			end, opts)
-			vim.keymap.set("n", "]d", function()
-				vim.diagnostic.jump({ count = -1, float = true })
-			end, opts)
-			vim.keymap.set("n", "<leader>vca", function()
-				vim.lsp.buf.code_action()
-			end, opts)
-			vim.keymap.set("n", "<leader>fr", function()
-				require("telescope.builtin").lsp_references()
-				-- vim.lsp.buf.references()
-			end, opts)
-			vim.keymap.set("n", "<leader>r", function()
-				vim.lsp.buf.rename()
-			end, opts)
-			vim.keymap.set("i", "<C-h>", function()
-				vim.lsp.buf.signature_help()
-			end, opts)
-		end,
-	})
-
-	-- vim.lsp.enable(server)
+local function setup_server(server_name)
+	local opts = vim.tbl_deep_extend("force", { capabilities = capabilities }, servers[server_name] or {})
+	if has_modern_lsp then
+		local existing = vim.lsp.config[server_name]
+		if not existing then
+			vim.notify(string.format("LSP server %s is not available in vim.lsp.config", server_name), vim.log.levels.WARN)
+			return
+		end
+		vim.lsp.config(server_name, opts)
+		if not vim.lsp.is_enabled(server_name) then
+			vim.lsp.enable(server_name)
+		end
+	else
+		local server = legacy_lspconfig[server_name]
+		if not server then
+			vim.notify(string.format("LSP server %s is not supported by nvim-lspconfig", server_name),
+				vim.log.levels.WARN)
+			return
+		end
+		if type(server) == "table" and server.setup then
+			server.setup(opts)
+		else
+			server(opts)
+		end
+	end
 end
+
+local ok_mason, mason_lspconfig = pcall(require, "mason-lspconfig")
+if ok_mason then
+	local ensure = {}
+	if mason_lspconfig.get_available_servers then
+		local available = mason_lspconfig.get_available_servers()
+		for _, server_name in ipairs(server_names) do
+			if vim.tbl_contains(available, server_name) then
+				table.insert(ensure, server_name)
+			else
+				setup_server(server_name)
+			end
+		end
+	else
+		ensure = server_names
+	end
+
+	mason_lspconfig.setup({ ensure_installed = ensure })
+
+	if mason_lspconfig.setup_handlers then
+		mason_lspconfig.setup_handlers({
+			function(server_name)
+				setup_server(server_name)
+			end,
+		})
+	else
+		for _, server_name in ipairs(server_names) do
+			setup_server(server_name)
+		end
+	end
+else
+	for _, server_name in ipairs(server_names) do
+		setup_server(server_name)
+	end
+end
+
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = vim.api.nvim_create_augroup("LspKeymaps", { clear = true }),
+	callback = function(event)
+		local opts = { buffer = event.buf, remap = false }
+
+		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+		vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+		vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
+		vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+		vim.keymap.set("n", "[d", function()
+			vim.diagnostic.jump({ count = 1, float = true })
+		end, opts)
+		vim.keymap.set("n", "]d", function()
+			vim.diagnostic.jump({ count = -1, float = true })
+		end, opts)
+		vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
+		vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, opts)
+		vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
+		vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
+	end,
+})
 
 vim.diagnostic.config({
 	virtual_text = true,
 	signs = true,
 })
-
-
--- local lspconfig = require("lspconfig")
---
--- local servers = {
---   "lua_ls",
---   "tsserver",   -- note: in lspconfig this is "tsserver", not "ts_ls"
---   "eslint",
---   "svelte",
---   "vuels",      -- in lspconfig Vue is "vuels" or "volar" (recommended), not "vue"
---   "marksman",
--- }
---
--- for _, server in ipairs(servers) do
---   local opts = {}
---
---   if server == "lua_ls" then
---     opts = {
---       settings = {
---         Lua = {
---           diagnostics = { globals = { "vim" } },  -- <- silences “Undefined global 'vim'”
---           workspace = {
---             library = vim.api.nvim_get_runtime_file("", true), -- completions for vim.*
---             checkThirdParty = false,
---           },
---           telemetry = { enable = false },
---         },
---       },
---     }
---   end
---
---   lspconfig[server].setup(opts)
---
---   -- keymaps on attach
---   vim.api.nvim_create_autocmd("LspAttach", {
---     callback = function()
---       local o = { buffer = 0, remap = false }
---       vim.keymap.set("n", "gd", vim.lsp.buf.definition, o)
---       vim.keymap.set("n", "K",  vim.lsp.buf.hover, o)
---       vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, o)
---       vim.keymap.set("n", "<leader>vd",  vim.diagnostic.open_float, o)
---       vim.keymap.set("n", "[d", function() vim.diagnostic.jump({ count = 1,  float = true }) end, o)
---       vim.keymap.set("n", "]d", function() vim.diagnostic.jump({ count = -1, float = true }) end, o)
---       vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, o)
---       vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, o)
---       vim.keymap.set("n", "<leader>r",  vim.lsp.buf.rename, o)
---       vim.keymap.set("i", "<C-h>",      vim.lsp.buf.signature_help, o)
---     end,
---   })
--- end
---
--- vim.diagnostic.config({ virtual_text = true, signs = true })

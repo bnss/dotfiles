@@ -1,7 +1,3 @@
--- Set leader keys
-vim.g.mapleader = ','
-vim.g.maplocalleader = '\\'
-
 -- Netrw settings
 -- vim.keymap.set('n', '-', ':Ex<CR>')
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
@@ -48,7 +44,7 @@ vim.keymap.set('n', '<leader>ek', ':tabnew ~/.config/kitty/kitty.conf<CR>')
 vim.keymap.set('n', '<leader>es', ':tabnew ~/dotfiles/init.sh<CR>')
 
 -- Plugin bindings
-vim.keymap.set('n', '<leader>R', ':CocRestart<CR>')
+vim.keymap.set('n', '<leader>R', '<cmd>LspRestart<CR>', { desc = 'Restart language servers' })
 
 -- jj acts as the escape key
 vim.keymap.set('i', 'jj', '<Esc>')
@@ -63,27 +59,36 @@ vim.keymap.set('n', '<leader><space>', ':nohlsearch<CR>')
 -- Toggle folds
 vim.keymap.set('n', '<space>', 'za')
 
--- NERDTree toggle
-vim.keymap.set('n', '<leader>n', ':NERDTreeToggle<CR>')
+-- Oil file browser
+vim.keymap.set('n', '<leader>n', ':Oil<CR>', { desc = 'Toggle Oil file browser' })
 
--- FZF
-vim.g.FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+local function telescope_safe(callable)
+  return function()
+    local ok, builtin = pcall(require, "telescope.builtin")
+    if not ok then
+      vim.notify("Telescope is not available", vim.log.levels.ERROR)
+      return
+    end
+    callable(builtin)
+  end
+end
 
--- Only search for content inside of files, not file names
-vim.cmd [[
-" command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep('rg --column --no-heading --line-number --ignore-case --hidden --color=always '.shellescape(<q-args>),
-  \ 1,
-  \ fzf#vim#with_preview({'options': '--delimiter : --nth 3..'},),
-  \ <bang>0)
-command! FZFFiles execute (exists("*fugitive#head") && len(fugitive#head())) ? 'GFiles' : 'Files'
-command! Gd execute 'GFiles?'
-]]
-vim.keymap.set('n', "<leader>f", ":FZFFiles<CR>")
-vim.keymap.set('n', "'", ":GFiles?<CR>")
-vim.keymap.set('n', '<Leader>a', ':Rg<CR>')
-vim.keymap.set('n', ';', ':Buffers<CR>')
+local function telescope_project_files()
+  local ok, builtin = pcall(require, "telescope.builtin")
+  if not ok then
+    vim.notify("Telescope is not available", vim.log.levels.ERROR)
+    return
+  end
+  local git_ok = pcall(builtin.git_files, { show_untracked = true })
+  if not git_ok then
+    builtin.find_files()
+  end
+end
+
+vim.keymap.set('n', "<leader>f", telescope_project_files, { desc = "Find files (git aware)" })
+vim.keymap.set('n', "'", telescope_safe(function(builtin) builtin.git_status() end), { desc = "Git status picker" })
+vim.keymap.set('n', '<Leader>a', telescope_safe(function(builtin) builtin.live_grep() end), { desc = "Live grep" })
+vim.keymap.set('n', ';', telescope_safe(function(builtin) builtin.buffers() end), { desc = "List buffers" })
 
 -- Buffers
 -- new buffer in current window
@@ -144,15 +149,6 @@ vim.keymap.set('i', '<C-Space>', [[<C-r>=pumvisible() ? "\<Esc>i\<Right>\<C-x>\<
 -- Open user completion menu closing previous if open and opening new menu without changing the text
 vim.keymap.set('i', '<S-Space>', [[<C-r>=pumvisible() ? "\<Esc>i\<Right>\<C-x>\<C-u>" : "\<C-x>\<C-u>"<CR>]],
   { expr = true })
-
--- Markdown preview
-vim.g.vimwiki_ext2syntax = {
-  ['.md'] = 'markdown',
-  ['.markdown'] = 'markdown',
-  ['.mdown'] = 'markdown'
-}
-vim.g.instant_markdown_autostart = 0
-vim.keymap.set('n', '<leader>md', ':InstantMarkdownPreview<CR>')
 
 -- Git
 vim.keymap.set('n', '<leader>og', ':.GBrowse<CR>')
