@@ -41,9 +41,6 @@ endif
 highlight Comment cterm=italic
 match ExtraWhitespace /\s\+$/
 
-" transparent background
-hi Normal guibg=NONE ctermbg=NONE
-
 " highlight only cursor line number, instead of whole line
 " hi clear CursorLine
 " augroup CLClear
@@ -76,8 +73,47 @@ if file_exists(theme_script_path) then
   vim.cmd("source " .. theme_script_path)
 
   vim.api.nvim_create_autocmd("FocusGained", {
-    callback = handle_focus_gained,
+	    callback = handle_focus_gained,
   })
 end
 
-vim.g.tinted_background_transparent = 1
+vim.g.tinted_background_transparent = 0
+
+local function to_hex(n)
+  if not n then
+    return nil
+  end
+  return string.format("#%06x", n)
+end
+
+local function blend_hex(fg, bg, alpha)
+  if not fg or not bg then
+    return fg or bg
+  end
+  local function split(c)
+    return math.floor(c / 0x10000), math.floor(c / 0x100) % 0x100, c % 0x100
+  end
+  local fr, fg_ch, fb = split(fg)
+  local br, bg_ch, bb = split(bg)
+  local mix = function(a, b)
+    return math.floor(a * alpha + b * (1 - alpha))
+  end
+  return mix(fr, br) * 0x10000 + mix(fg_ch, bg_ch) * 0x100 + mix(fb, bb)
+end
+
+local function set_float_groups()
+  local normal = vim.api.nvim_get_hl(0, { name = "Normal", link = false })
+  local nf = vim.api.nvim_get_hl(0, { name = "NormalFloat", link = false })
+
+  local bg = nf.bg or normal.bg
+  local fg = nf.fg or normal.fg
+  local border_fg = blend_hex(fg, bg, 0.6) -- soften border so it is not too bright
+
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = to_hex(bg), fg = to_hex(fg) })
+  vim.api.nvim_set_hl(0, "FloatBorder", { bg = to_hex(bg), fg = to_hex(border_fg) })
+end
+
+set_float_groups()
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = set_float_groups,
+})

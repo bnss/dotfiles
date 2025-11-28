@@ -1,0 +1,4 @@
+WRN 2025-11-28T11:32:10.001 ?.29830    server_start:193: Failed to start server: operation not permitted: /var/folders/l_/xg8_k5vn7xd7ysg8n2dwc83w0000gn/T/nvim.bnss/olXdyq/nvim.29830.0
+WRN 2025-11-28T11:32:45.181 ?.31505    server_start:193: Failed to start server: operation not permitted: /var/folders/l_/xg8_k5vn7xd7ysg8n2dwc83w0000gn/T/nvim.bnss/a4g4O4/nvim.31505.0
+WRN 2025-11-28T11:33:12.396 ?.33260    server_start:193: Failed to start server: operation not permitted: /var/folders/l_/xg8_k5vn7xd7ysg8n2dwc83w0000gn/T/nvim.bnss/Dn5G01/nvim.33260.0
+WRN 2025-11-28T11:33:34.299 ?.34686    server_start:193: Failed to start server: operation not permitted: /var/folders/l_/xg8_k5vn7xd7ysg8n2dwc83w0000gn/T/nvim.bnss/aQvwrL/nvim.34686.0

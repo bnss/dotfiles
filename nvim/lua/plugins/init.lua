@@ -263,6 +263,27 @@ return {
 			local previewers = require("telescope.previewers")
 			local max_bytes = 200 * 1024
 
+			local function apply_telescope_links()
+				local links = {
+					TelescopeNormal = "NormalFloat",
+					TelescopePromptNormal = "NormalFloat",
+					TelescopeResultsNormal = "NormalFloat",
+					TelescopePreviewNormal = "NormalFloat",
+					TelescopeBorder = "FloatBorder",
+					TelescopePromptBorder = "FloatBorder",
+					TelescopeResultsBorder = "FloatBorder",
+					TelescopePreviewBorder = "FloatBorder",
+					TelescopeTitle = "FloatBorder",
+					TelescopePromptTitle = "FloatBorder",
+					TelescopeResultsTitle = "FloatBorder",
+					TelescopePreviewTitle = "FloatBorder",
+				}
+
+				for group, link in pairs(links) do
+					vim.api.nvim_set_hl(0, group, { link = link })
+				end
+			end
+
 			local buffer_previewer_maker = function(filepath, bufnr, opts)
 				filepath = vim.fn.expand(filepath)
 				vim.loop.fs_stat(filepath, function(_, stat)
@@ -278,28 +299,20 @@ return {
 
 			return {
 				defaults = {
-					prompt_prefix = " ",
-					selection_caret = " ",
-					find_command = { "fd", "--type=f", "--hidden", "--strip-cwd-prefix", "--exclude", ".git" },
-					layout_config = {
-						horizontal = { preview_width = 0.55 },
-						vertical = { mirror = false },
-					},
-					file_ignore_patterns = { ".git/" },
-					border = true,
-					borderchars = {
-						prompt = { "─", "│", " ", "│", "┌", "┐", "│", "│" },
-						results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
-						preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
-					},
-					winblend = 0,
 					buffer_previewer_maker = buffer_previewer_maker,
 				},
+				_apply_telescope_links = apply_telescope_links, -- stash for config
 			}
 		end,
 		config = function(_, opts)
 			local telescope = require("telescope")
 			telescope.setup(opts)
+			if opts._apply_telescope_links then
+				opts._apply_telescope_links()
+				vim.api.nvim_create_autocmd("ColorScheme", {
+					callback = opts._apply_telescope_links,
+				})
+			end
 			pcall(telescope.load_extension, "fzf")
 		end,
 	},
