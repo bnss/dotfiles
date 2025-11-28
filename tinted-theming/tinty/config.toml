@@ -32,3 +32,11 @@ path = "https://github.com/tinted-theming/tinted-tmux"
 themes-dir = "colors"
 # hook = "tmux run 2> /dev/null && tmux source-file %f"
 hooks = ["tmux source-file ~/.tmux.conf"]
+
+[[items]]
+path = "https://github.com/tinted-theming/tinted-terminal"
+name = "tinted-terminal"
+themes-dir = "themes/ghostty"
+# With `theme` set to "tinted-theming", this will be where Ghostty looks for the theme file:
+hook = "command cp -f %f ~/.config/ghostty/themes/tinted-theming && killall -SIGUSR2 ghostty"
+supported-systems = ["base16", "base24"]

@@ -15,7 +15,7 @@ mkdir -p ~/.config
 mkdir -p ~/.vim/autoload ~/.vim/undodir ~/.vim/my-snippets/UltiSnips
 mkdir -p ~/.config/nvim/
 mkdir -p ~/.config/karabiner
-mkdir -p ~/.config/ghostty
+mkdir -p ~/.config/ghostty/themes
 mkdir -p ~/.config/tinted-theming/tinty/
 mkdir -p ~/.oh-my-zsh
 

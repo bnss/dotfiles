@@ -80,12 +80,13 @@ local function telescope_project_files()
     return
   end
   local git_ok = pcall(builtin.git_files, { show_untracked = true })
-  if not git_ok then
-    builtin.find_files()
+  if git_ok then
+    return
   end
+  builtin.find_files()
 end
 
-vim.keymap.set('n', "<leader>f", telescope_project_files, { desc = "Find files (git aware)" })
+vim.keymap.set('n', "<leader>f", telescope_project_files, { desc = "Find files" })
 vim.keymap.set('n', "'", telescope_safe(function(builtin) builtin.git_status() end), { desc = "Git status picker" })
 vim.keymap.set('n', '<Leader>a', telescope_safe(function(builtin) builtin.live_grep() end), { desc = "Live grep" })
 vim.keymap.set('n', ';', telescope_safe(function(builtin) builtin.buffers() end), { desc = "List buffers" })
