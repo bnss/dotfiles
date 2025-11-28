@@ -54,7 +54,11 @@ return {
 				ensure_installed = { "c", "lua", "vim", "javascript", "typescript", "html", "css", "vue", "svelte" },
 				sync_install = false,
 				auto_install = true,
-				highlight = { enable = true, additional_vim_regex_highlighting = false },
+				highlight = {
+					enable = true,
+					disable = { "tmux" },
+					additional_vim_regex_highlighting = { "tmux" },
+				},
 				matchup = { enable = true },
 			})
 		end,
