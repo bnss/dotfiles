@@ -18,6 +18,7 @@ mkdir -p ~/.config/karabiner
 mkdir -p ~/.config/ghostty/themes
 mkdir -p ~/.config/tinted-theming/tinty/
 mkdir -p ~/.oh-my-zsh
+mkdir -p ~/.claude
 
 touch ~/.tokens
 touch ~/.oh-my-zsh/oh-my-zsh.sh
@@ -68,6 +69,11 @@ ln -s ~/dotfiles/nvim/lua ~/.config/nvim/lua
 ln -s ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -s ~/dotfiles/vim/all.snippets ~/.vim/my-snippets/UltiSnips/all.snippets
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -s ~/dotfiles/.claude/settings.json ~/.claude/settings.json
+ln -s ~/dotfiles/.claude/statusline-command.sh ~/.claude/statusline-command.sh
+ln -s ~/dotfiles/.claude/tmux-notify.sh ~/.claude/tmux-notify.sh
+ln -s ~/dotfiles/.claude/tmux-clear.sh ~/.claude/tmux-clear.sh
 
 # ln -s ~/Dropbox/dotfiles/bash/bashrc.bash ~/.bashrc
 # ln -s ~/Dropbox/dotfiles/bash/bash_profile.bash ~/.bash_profile

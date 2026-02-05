@@ -1,0 +1,94 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(find:*)",
+      "Bash(fd:*)",
+      "Bash(wc:*)",
+      "Bash(file:*)",
+      "Bash(which:*)",
+      "Bash(pwd:*)",
+      "Bash(grep:*)",
+      "Bash(jq:*)",
+      "Bash(echo:*)",
+      "Bash(tree:*)",
+      "Bash(diff:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git blame:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)",
+      "Bash(git symbolic-ref:*)",
+      "Bash(git worktree:*)",
+      "Bash(git remote:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "mcp__atlassian__*",
+      "mcp__github__*",
+      "mcp__Sentry__*",
+      "Read(//Users/bnss/**)",
+      "Bash(npm run test*)",
+      "Bash(npm run check:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run format:*)",
+      "Bash(npx svelte-check:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx prettier:*)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/main show f92e75f03 --no-stat -p)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/main show f92e75f03 -p)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/fix-502-errors status --short)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/main status --short)",
+      "Bash(git fetch:*)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/main fetch origin main)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/main log --oneline -1 origin/main)",
+      "Bash(git pull:*)",
+      "Bash(gh api:*)",
+      "Bash(git -C /Users/bnss/Code/rx-frontend-wt/main worktree list:*)",
+      "Bash(git stash:*)",
+      "Bash(git rebase:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr view:*)",
+      "Bash(git push)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "model": "opus",
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ~/.claude/tmux-notify.sh",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ~/.claude/tmux-clear.sh",
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "/bin/bash ~/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": true,
+    "arx-dev-core@accelins-claude-code": true,
+    "arx-hb-ui-kit@accelins-claude-code": true
+  }
+}
