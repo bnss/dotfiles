@@ -140,3 +140,71 @@ alias lego='mupen64plus --windowed ~/Dropbox/Documents/ROMs/N64/LEGORacers.n64'
 
 # Qlik
 alias reloadUi='cd ../automations-ui; npm run lib; cd ../automations-editor; npm run serve:qmfe'
+
+# Git worktree navigation - rx-frontend
+alias wt='cd ~/Code/rx-frontend-wt'
+alias wtm='cd ~/Code/rx-frontend-wt/main'
+alias wtls='git worktree list'
+wta() { cd ~/Code/rx-frontend-wt && git worktree add "$1" -b "ben/$1" main && cd "$1" && ../setup-worktree.sh; }
+wtr() { cd ~/Code/rx-frontend-wt && git worktree remove "$1"; }
+
+# Create worktree + tmux window (split panes) + start Claude
+wtc() {
+  if [ -z "$1" ]; then
+    echo "Usage: wtc <worktree-name>" >&2
+    return 1
+  fi
+  local name="$1"
+  local wt_path="$HOME/Code/rx-frontend-wt/$name"
+
+  # Create worktree if it doesn't exist (in subshell to preserve cwd)
+  if [ ! -d "$wt_path" ]; then
+    (cd ~/Code/rx-frontend-wt && git worktree add "$name" -b "ben/$name" main && cd "$name" && ../setup-worktree.sh)
+  fi
+
+  # Create new tmux window with split panes
+  tmux new-window -n "$name" -c "$wt_path"
+  tmux split-window -h -c "$wt_path"
+  tmux select-pane -L
+  tmux send-keys "claude" Enter
+}
+
+# Git worktree navigation - ap-ui
+alias awt='cd ~/Code/ap-ui-wt'
+alias awtm='cd ~/Code/ap-ui-wt/main'
+awta() { cd ~/Code/ap-ui-wt && git worktree add "$1" -b "ben/$1" main && cd "$1"; }
+awtr() { cd ~/Code/ap-ui-wt && git worktree remove "$1"; }
+
+# Create ap-ui worktree + tmux window (split panes) + start Claude
+awtc() {
+  if [ -z "$1" ]; then
+    echo "Usage: awtc <worktree-name>" >&2
+    return 1
+  fi
+  local name="$1"
+  local wt_path="$HOME/Code/ap-ui-wt/$name"
+
+  # Create worktree if it doesn't exist (in subshell to preserve cwd)
+  if [ ! -d "$wt_path" ]; then
+    (cd ~/Code/ap-ui-wt && git worktree add "$name" -b "ben/$name" main)
+  fi
+
+  # Create new tmux window with split panes
+  tmux new-window -n "$name" -c "$wt_path"
+  tmux split-window -h -c "$wt_path"
+  tmux select-pane -L
+  tmux send-keys "claude" Enter
+}
+
+# Tmux helpers
+# Add Claude session name to current tmux window: tcs "session name"
+tcs() {
+  current=$(tmux display-message -p '#W')
+  tmux rename-window "${current} | $1"
+}
+
+# Mark window as needing attention (adds 🔴 prefix)
+tcr() { tmux rename-window "🔴 $(tmux display-message -p '#W' | sed 's/^🔴 //')"; }
+
+# Clear attention marker (removes 🔴 prefix)
+tcc() { tmux rename-window "$(tmux display-message -p '#W' | sed 's/^🔴 //')"; }
