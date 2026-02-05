@@ -2,6 +2,22 @@ return {
 	-- Colorschemes via tinted/base16
 	{ "RRethy/base16-nvim", lazy = false, priority = 1000 },
 
+	-- Session management
+	{
+		"rmagatti/auto-session",
+		lazy = false,
+		opts = {
+			log_level = "error",
+			auto_session_enable_last_session = false,
+			auto_session_root_dir = vim.fn.stdpath("data") .. "/sessions/",
+			auto_session_enabled = true,
+			auto_save_enabled = true,
+			auto_restore_enabled = true,
+			auto_session_use_git_branch = true,
+			auto_session_suppress_dirs = { "~/", "~/Downloads", "/" },
+		},
+	},
+
 	-- UI / statusline
 	{
 		"itchyny/lightline.vim",
@@ -105,23 +121,8 @@ return {
 				format_on_save = { timeout_ms = 2500, lsp_format = "fallback" },
 			})
 
-			vim.api.nvim_create_autocmd("BufWritePre", {
-				desc = "Organize TS imports before formatting",
-				group = vim.api.nvim_create_augroup("FormatConfig", { clear = true }),
-				callback = function(ev)
-					local conform_opts = { bufnr = ev.buf, lsp_format = "fallback", timeout_ms = 2000 }
-					local client = vim.lsp.get_clients({ name = "ts_ls", bufnr = ev.buf })[1]
-
-					if client then
-						client:request("workspace/executeCommand", {
-							command = "_typescript.organizeImports",
-							arguments = { vim.api.nvim_buf_get_name(ev.buf) },
-						}, nil, ev.buf)
-					end
-
-					require("conform").format(conform_opts)
-				end,
-			})
+			-- Note: Import sorting is handled by ESLint via pre-commit hook (lint-staged)
+			-- Vim only does fast Prettier formatting to avoid slow saves
 		end,
 	},
 
@@ -248,76 +249,60 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 
-	-- Picker / search
+	-- FZF fuzzy finder
 	{
-		"nvim-telescope/telescope.nvim",
-		cmd = "Telescope",
-		version = false,
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			{
-				"nvim-telescope/telescope-fzf-native.nvim",
-				build = "make",
-				cond = function()
-					return vim.fn.executable("make") == 1
-				end,
-			},
-		},
-		opts = function()
-			local previewers = require("telescope.previewers")
-			local max_bytes = 200 * 1024
+		"junegunn/fzf",
+		build = "./install --bin",
+	},
+	{
+		"junegunn/fzf.vim",
+		dependencies = { "junegunn/fzf" },
+		config = function()
+			-- FZF configuration
+			vim.g.fzf_vim = {}
 
-			local function apply_telescope_links()
-				local links = {
-					TelescopeNormal = "NormalFloat",
-					TelescopePromptNormal = "NormalFloat",
-					TelescopeResultsNormal = "NormalFloat",
-					TelescopePreviewNormal = "NormalFloat",
-					TelescopeBorder = "FloatBorder",
-					TelescopePromptBorder = "FloatBorder",
-					TelescopeResultsBorder = "FloatBorder",
-					TelescopePreviewBorder = "FloatBorder",
-					TelescopeTitle = "FloatBorder",
-					TelescopePromptTitle = "FloatBorder",
-					TelescopeResultsTitle = "FloatBorder",
-					TelescopePreviewTitle = "FloatBorder",
-				}
-
-				for group, link in pairs(links) do
-					vim.api.nvim_set_hl(0, group, { link = link })
-				end
-			end
-
-			local buffer_previewer_maker = function(filepath, bufnr, opts)
-				filepath = vim.fn.expand(filepath)
-				vim.loop.fs_stat(filepath, function(_, stat)
-					if stat and stat.size > max_bytes then
-						vim.schedule(function()
-							vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, { "File too large to preview" })
-						end)
-					else
-						previewers.buffer_previewer_maker(filepath, bufnr, opts)
-					end
-				end)
-			end
-
-			return {
-				defaults = {
-					buffer_previewer_maker = buffer_previewer_maker,
-				},
-				_apply_telescope_links = apply_telescope_links, -- stash for config
+			-- Default extra key bindings for opening files
+			vim.g.fzf_action = {
+				["ctrl-t"] = "tab split",
+				["ctrl-s"] = "split",
+				["ctrl-v"] = "vsplit",
 			}
-		end,
-		config = function(_, opts)
-			local telescope = require("telescope")
-			telescope.setup(opts)
-			if opts._apply_telescope_links then
-				opts._apply_telescope_links()
-				vim.api.nvim_create_autocmd("ColorScheme", {
-					callback = opts._apply_telescope_links,
-				})
-			end
-			pcall(telescope.load_extension, "fzf")
+
+			-- Preview window configuration
+			vim.g.fzf_vim.preview_window = { "right,50%", "ctrl-/" }
+
+			-- Custom FZF color scheme to match current theme
+			vim.g.fzf_colors = {
+				fg = { "fg", "Normal" },
+				bg = { "bg", "Normal" },
+				hl = { "fg", "Comment" },
+				["fg+"] = { "fg", "CursorLine", "CursorColumn", "Normal" },
+				["bg+"] = { "bg", "CursorLine", "CursorColumn" },
+				["hl+"] = { "fg", "Statement" },
+				info = { "fg", "PreProc" },
+				prompt = { "fg", "Conditional" },
+				pointer = { "fg", "Exception" },
+				marker = { "fg", "Keyword" },
+				spinner = { "fg", "Label" },
+				header = { "fg", "Comment" },
+			}
+
+			-- Command history
+			vim.g.fzf_history_dir = "~/.local/share/fzf-history"
+
+			-- Custom Rg command - search file content only (not filenames)
+			vim.cmd([[
+				command! -bang -nargs=* Rg
+					\ call fzf#vim#grep('rg --column --no-heading --line-number --color=always '.shellescape(<q-args>),
+					\ 1,
+					\ fzf#vim#with_preview({'options': '--delimiter : --nth 3..'}),
+					\ <bang>0)
+			]])
+
+			-- Git-aware file finder
+			vim.cmd([[
+				command! FZFFiles execute (exists("*fugitive#head") && len(fugitive#head())) ? 'GFiles' : 'Files'
+			]])
 		end,
 	},
 }
