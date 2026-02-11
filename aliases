@@ -164,9 +164,11 @@ wtc() {
 
   # Create new tmux window with split panes
   tmux new-window -n "$name" -c "$wt_path"
+  tmux set-window-option automatic-rename off  # Prevent tmux from overwriting window name
   tmux split-window -h -c "$wt_path"
   tmux select-pane -L
-  tmux send-keys "claude" Enter
+  # Run claude, then clear red dot when it exits
+  tmux send-keys "claude; tcc" Enter
 }
 
 # Git worktree navigation - ap-ui
@@ -191,9 +193,11 @@ awtc() {
 
   # Create new tmux window with split panes
   tmux new-window -n "$name" -c "$wt_path"
+  tmux set-window-option automatic-rename off  # Prevent tmux from overwriting window name
   tmux split-window -h -c "$wt_path"
   tmux select-pane -L
-  tmux send-keys "claude" Enter
+  # Run claude, then clear red dot when it exits
+  tmux send-keys "claude; tcc" Enter
 }
 
 # Tmux helpers
@@ -208,3 +212,67 @@ tcr() { tmux rename-window "🔴 $(tmux display-message -p '#W' | sed 's/^🔴 /
 
 # Clear attention marker (removes 🔴 prefix)
 tcc() { tmux rename-window "$(tmux display-message -p '#W' | sed 's/^🔴 //')"; }
+
+# Multi-repo feature workflow
+# Usage: feature <name> [repos...] [--link]
+# Examples:
+#   feature fix-button              # Creates worktree in current repo only (detects from pwd)
+#   feature fix-button rx ap        # Creates worktrees in both rx-frontend and ap-ui
+#   feature fix-button rx ap --link # Also sets up npm link between them
+feature() {
+  local name="$1"
+  shift
+  local repos=()
+  local do_link=false
+
+  # Parse arguments
+  for arg in "$@"; do
+    case "$arg" in
+      --link) do_link=true ;;
+      *) repos+=("$arg") ;;
+    esac
+  done
+
+  # If no repos specified, detect from current directory
+  if [ ${#repos[@]} -eq 0 ]; then
+    case "$(pwd)" in
+      *rx-frontend*) wtc "$name" ;;
+      *ap-ui*) awtc "$name" ;;
+      *) echo "Could not detect repo from current directory. Specify repos: rx, ap" >&2; return 1 ;;
+    esac
+    return
+  fi
+
+  # Create worktrees in specified repos
+  for repo in "${repos[@]}"; do
+    case "$repo" in
+      rx|rx-frontend) wtc "$name" ;;
+      ap|ap-ui) awtc "$name" ;;
+      *) echo "Unknown repo: $repo (use: rx, ap)" >&2 ;;
+    esac
+  done
+
+  # Link packages if requested
+  if $do_link; then
+    link_worktrees "$name"
+  fi
+}
+
+# Link ap-ui packages into rx-frontend worktree via npm link
+link_worktrees() {
+  local name="$1"
+  local ap_wt="$HOME/Code/ap-ui-wt/$name"
+  local rx_wt="$HOME/Code/rx-frontend-wt/$name"
+
+  if [ ! -d "$ap_wt" ] || [ ! -d "$rx_wt" ]; then
+    echo "Both worktrees must exist: $ap_wt and $rx_wt" >&2
+    return 1
+  fi
+
+  # Link hb-ui-kit
+  echo "Linking @accelins/hb-ui-kit..."
+  (cd "$ap_wt/packages/hb-ui-kit" && npm link)
+  (cd "$rx_wt" && npm link @accelins/hb-ui-kit)
+
+  echo "✓ Linked @accelins/hb-ui-kit from ap-ui to rx-frontend"
+}
