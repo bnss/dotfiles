@@ -160,6 +160,17 @@ When creating a new worktree, **always complete ALL steps**:
 
 **NEVER skip steps 3-5** - missing env files cause auth failures, missing node_modules means nothing runs.
 
+### Worktree Cleanup
+**NEVER delete a worktree from inside it** - this breaks Claude's cwd and causes "Path does not exist" errors.
+
+When user wants to clean up a worktree:
+1. **Tell them to run `cleanup-worktree`** from the shell (not a Claude command)
+2. This shell function handles: closing tmux window, removing worktree, pruning git
+
+If cleanup already failed and cwd is broken:
+- User must start a new Claude session
+- Run `git worktree prune` from a valid directory to clean up stale entries
+
 ## Commandline & Permissions
 - `~/.claude/settings.json` defines auto-allowed commands - never ask permission for those
 - When asking permission for a read-only or repetitive command, suggest: "Want me to add this to settings.json?"

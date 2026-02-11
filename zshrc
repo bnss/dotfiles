@@ -165,5 +165,41 @@ alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/conf
 # Created by `pipx` on 2024-07-24 13:25:08
 # export PATH="$PATH:/Users/bnss/.local/bin"
 
+# Wrap claude to clear tmux bell indicator on exit
+claude() {
+    command claude "$@"
+    # Clear bell flag after Claude exits (toggling monitor-bell resets it)
+    tmux set-window-option -q monitor-bell off 2>/dev/null
+    tmux set-window-option -q monitor-bell on 2>/dev/null
+}
+
+# Clean up a git worktree and close the tmux window
+# Run this from inside the worktree you want to remove
+cleanup-worktree() {
+    local wt_path=$(pwd)
+    local wt_name=$(basename "$wt_path")
+    local bare_repo=$(git rev-parse --git-common-dir 2>/dev/null | sed 's|/\.git$||; s|/worktrees/.*||')
+
+    if [[ -z "$bare_repo" ]] || [[ ! -d "$bare_repo" ]]; then
+        echo "Not in a git worktree"
+        return 1
+    fi
+
+    echo "Cleaning up worktree: $wt_name"
+
+    # Spawn detached cleanup (survives tmux kill)
+    nohup bash -c "
+        sleep 1
+        cd '$bare_repo'
+        git worktree remove '$wt_path' --force 2>/dev/null
+        rm -rf '$wt_path' 2>/dev/null
+        git worktree prune
+    " >/dev/null 2>&1 &
+    disown
+
+    # Kill this tmux window
+    tmux kill-window
+}
+
 # Run Starship
 eval "$(starship init zsh)"
