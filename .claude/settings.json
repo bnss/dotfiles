@@ -31,6 +31,7 @@
       "Bash(git commit:*)",
       "Bash(git -C:*)",
       "mcp__atlassian__*",
+      "mcp__figma-remote-mcp__*",
       "mcp__github__*",
       "mcp__Sentry__*",
       "Read(/Users/bnss/Code/**)",
