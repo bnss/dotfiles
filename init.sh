@@ -71,6 +71,8 @@ ln -s ~/dotfiles/vim/all.snippets ~/.vim/my-snippets/UltiSnips/all.snippets
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -s ~/dotfiles/.claude/settings.json ~/.claude/settings.json
+ln -s ~/dotfiles/.claude/commands ~/.claude/commands
+ln -s ~/dotfiles/.claude/skills ~/.claude/skills
 ln -s ~/dotfiles/.claude/statusline-command.sh ~/.claude/statusline-command.sh
 ln -s ~/dotfiles/.claude/tmux-notify.sh ~/.claude/tmux-notify.sh
 ln -s ~/dotfiles/.claude/tmux-clear.sh ~/.claude/tmux-clear.sh

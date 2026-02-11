@@ -22,14 +22,25 @@ If searching for something and can't find it in config files, **stop and ask** -
 
 ## Repository Locations
 
+**Convention:** Folders ending in `-wt` are **worktree repos** (bare repo with worktrees inside). E.g., `ap-ui-wt/` contains `main/`, `feature-branch/`, etc.
+
+**Prefer worktree repos** (`-wt`) over regular clones when both exist - they enable parallel Claude sessions per feature branch.
+
 | Alias | Path | Description |
 |-------|------|-------------|
-| hb-ui-kit | `~/Code/ap-ui/packages/hb-ui-kit` | Hummingbird UI Kit (design system components) |
-| ap-ui | `~/Code/ap-ui` | AP-UI monorepo (all UI packages) |
-| frontend | `~/Code/rx-frontend-wt/main` | RX Frontend (main application worktree) |
+| ap-ui-wt | `~/Code/ap-ui-wt/` | AP-UI worktree repo (bare) - **preferred** |
+| ap-ui | `~/Code/ap-ui` | AP-UI regular clone (legacy) |
+| hb-ui-kit | `~/Code/ap-ui-wt/main/packages/hb-ui-kit` | Hummingbird UI Kit (via worktree) |
+| rx-frontend-wt | `~/Code/rx-frontend-wt/` | RX Frontend worktree repo (bare) - **preferred** |
+| frontend | `~/Code/rx-frontend-wt/main` | RX Frontend main worktree |
 | backend | `~/Code/rx-api` | RX Backend |
-| backend | `~/Code/rx-analytics` | RX Backend |
+| backend | `~/Code/rx-analytics` | RX Analytics |
 | flipt | `~/Code/rx-flipt-feature-flags` | Feature flags (Flipt) - prod & stage configs |
+
+## Environment Tokens
+
+- `~/.tokens` - Shell exports for `GH_TOKEN` etc. (sourced by shell profile)
+- If npm/gh auth fails with scope errors, the token here may need updating on GitHub.com
 
 ## Feature Flags
 
@@ -57,6 +68,45 @@ Key stages:
 - For long-running tasks, use subagents to verify work
 - Run tests after making changes to catch regressions
 - Use "code-simplifier" subagent after completing features to clean up code
+
+## Verification Rules
+
+### Configuration Changes
+When modifying worktrees, tmux, shell aliases, or any config:
+- Test the change interactively before declaring done
+- If you can't test it yourself, ask the user to verify
+
+### UI Component Fixes
+After fixing UI components (accordions, filters, radio buttons):
+- Verify the component still renders correctly
+- Check for empty content, missing registrations, broken parent-child relationships
+- Don't assume the fix worked - confirm it
+
+### Tool Authentication Failures
+When Jira, GitHub, or other tool auth fails:
+- **Stop and ask user to re-authenticate** (`/mcp`)
+- Never proceed without the integration or skip the step silently
+
+### Import/Module Issues (rx-frontend)
+For rx-frontend changes:
+- Verify import map configuration is correct
+- Confirm the module is actually being loaded before considering fix complete
+
+## Design System Work (hb-ui-kit)
+
+**Figma is the source of truth. ALWAYS check it FIRST.**
+
+Workflow for any visual/styling changes:
+1. **Figma first** - Fetch designs using Figma MCP before touching code
+2. **Understand all states** - open/closed, with/without optional elements, all variants
+3. **Extract exact values** - spacing, typography, colors from Figma (don't guess)
+4. **Implement** - Use design tokens that match the Figma specs
+5. **Verify** - Compare implementation against Figma before marking done
+
+**Never:**
+- Guess at spacing/styling based on screenshots alone
+- Make reactive fixes without checking the design spec
+- Say "done" without verifying against Figma
 
 ## Prompting Patterns I May Use
 - "Grill me on these changes" = Review my code critically before PR
@@ -90,23 +140,25 @@ npx tsc --noEmit && npm run lint
 If either fails, fix issues before committing. Don't skip this step.
 
 ### Worktree Workflow
+- **Always use worktrees for feature work** - never commit directly in `main/` worktree
 - Structure: `repo-wt/` (bare) with `main/`, `feature-a/`, `feature-b/` as worktrees
 - Each worktree can run its own Claude session independently
+- `main/` worktree is for pulling, diffing, comparing only - keep it clean
 - Use `/worktree` skill for guided setup, or follow checklist below
 
 ### Worktree Setup Checklist
 When creating a new worktree, **always complete ALL steps**:
 1. Pull main first: `git -C <main-worktree> pull`
 2. Create worktree: `git worktree add ../<name> -b <branch> main`
-3. Copy env symlinks:
+3. Symlink env files (required for auth/API access):
    ```bash
    ln -s /Users/bnss/Code/rx-frontend/.env.local <new-worktree>/.env.local
    ln -s /Users/bnss/Code/rx-frontend/.env.e2e <new-worktree>/.env.e2e
    ```
 4. Install dependencies: `cd <new-worktree> && npm install`
-5. Verify auth works: test Jira/GitHub connection before proceeding
+5. Verify setup: run `npm run build` or tests to confirm everything works
 
-**NEVER skip steps 3-5** - missing env files cause auth failures downstream.
+**NEVER skip steps 3-5** - missing env files cause auth failures, missing node_modules means nothing runs.
 
 ## Commandline & Permissions
 - `~/.claude/settings.json` defines auto-allowed commands - never ask permission for those
@@ -130,8 +182,23 @@ When creating a new worktree, **always complete ALL steps**:
 
 ### Pull Request Format:
 - PR titles must match commit format: `fix: AC-55216 description here`
-- Be terse in PR descriptions
 - If no ticket exists, add `pre-approved` label to PR (not in title)
+- **Follow repo PR template** (`.github/pull_request_template.md`):
+  ```markdown
+  ## Proposed Changes
+  <brief bullet points of what changed>
+
+  ## Related Issues (Slack links, Sentry links, Splunk links, etc.)
+  <links if relevant, otherwise leave blank>
+
+  ## Screenshots and Recordings
+  ### Before
+  <if relevant>
+  ### After
+  <if relevant>
+  ```
+- Omit the Checklist section from the template
+- Leave sections blank if not relevant (don't remove headers)
 
 When creating Jira tickets, use these defaults:
 
