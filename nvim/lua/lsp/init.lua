@@ -97,22 +97,36 @@ end
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("LspKeymaps", { clear = true }),
 	callback = function(event)
-		local opts = { buffer = event.buf, remap = false }
+		local function opts(desc)
+			return { buffer = event.buf, remap = false, desc = desc }
+		end
 
-		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-		vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-		vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
-		vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+		-- Navigation
+		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts("Go to definition"))
+		vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts("Go to declaration"))
+		vim.keymap.set("n", "gr", vim.lsp.buf.references, opts("Find references"))
+		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts("Go to implementation"))
+		vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, opts("Go to type definition"))
+		vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover documentation"))
+
+		-- Actions
+		vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts("Rename symbol"))
+		vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts("Code action"))
+
+		-- Diagnostics
+		vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts("Show diagnostic"))
 		vim.keymap.set("n", "[d", function()
-			vim.diagnostic.jump({ count = 1, float = true })
-		end, opts)
-		vim.keymap.set("n", "]d", function()
 			vim.diagnostic.jump({ count = -1, float = true })
-		end, opts)
-		vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
-		vim.keymap.set("n", "<leader>fr", require("fzf-lua").lsp_references, opts)
-		vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
-		vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
+		end, opts("Previous diagnostic"))
+		vim.keymap.set("n", "]d", function()
+			vim.diagnostic.jump({ count = 1, float = true })
+		end, opts("Next diagnostic"))
+
+		-- Workspace
+		vim.keymap.set("n", "<leader>ws", vim.lsp.buf.workspace_symbol, opts("Workspace symbols"))
+
+		-- Insert mode
+		vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts("Signature help"))
 	end,
 })
 
