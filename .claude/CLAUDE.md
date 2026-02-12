@@ -174,6 +174,18 @@ If cleanup already failed and cwd is broken:
 ## Commandline & Permissions
 - `~/.claude/settings.json` defines auto-allowed commands - never ask permission for those
 - When asking permission for a read-only or repetitive command, suggest: "Want me to add this to settings.json?"
+- **Never use Bash for file operations** - use dedicated tools instead:
+  - Read files → `Read` tool (not `cat`, `head`, `tail`, `sed -n`)
+  - Edit files → `Edit` tool (not `sed -i`, `awk`)
+  - Search files → `Grep`/`Glob` tools (not `grep`, `find`)
+
+## Tool Selection: MCP over WebFetch
+For any service with a working MCP integration, **always use the MCP tools instead of WebFetch**. WebFetch fails on authenticated pages - don't ask for permission, just use the MCP directly.
+
+Examples:
+- Confluence/Jira (`accelins.atlassian.net`) → Atlassian MCP
+- GitHub → GitHub MCP or `gh` CLI
+- Figma → Figma MCP
 
 ## GitHub
 - Favor `gh` CLI over MCP tools for GitHub operations
