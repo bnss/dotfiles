@@ -167,7 +167,7 @@ rwtc() {
   tmux set-window-option automatic-rename off
   tmux split-window -h -c "$wt_path"
   tmux select-pane -L
-  tmux send-keys "claude --plan; tcc" Enter
+  tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
 
 # Create worktree + tmux window (split panes) + start Claude
@@ -213,7 +213,7 @@ wtc() {
   tmux split-window -h -c "$wt_path"
   tmux select-pane -L
   # Run claude, then clear red dot when it exits
-  tmux send-keys "claude --plan; tcc" Enter
+  tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
 
 # Git worktree navigation - ap-ui
@@ -242,7 +242,7 @@ awtc() {
   tmux split-window -h -c "$wt_path"
   tmux select-pane -L
   # Run claude, then clear red dot when it exits
-  tmux send-keys "claude --plan; tcc" Enter
+  tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
 
 # Tmux helpers
