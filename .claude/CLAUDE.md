@@ -53,6 +53,12 @@ Key stages:
 - **Release**: Both stage and prod `enabled: true`, clean up rollout segments
 - **Cleanup**: Remove flag from code and config
 
+### Flipt Skills (Preferred)
+When the `arx-dev-core-flipt` plugin is installed, **always use the skills** instead of editing Flipt YAML files manually:
+- `/arx-dev-core-flipt:create-feature-flag` — create new flags (Development stage)
+- `/arx-dev-core-flipt:promote-feature-flag` — promote through lifecycle (acceptance, release)
+- `/arx-dev-core-flipt:remove-feature-flag` — cleanup after release
+
 ## Config Structure
 - `~/.claude/CLAUDE.md` → symlinked to `~/dotfiles/.claude/CLAUDE.md` (backed up)
 - `~/.claude/settings.json` → symlinked to `~/dotfiles/.claude/settings.json` (backed up)
@@ -108,6 +114,18 @@ Workflow for any visual/styling changes:
 - Make reactive fixes without checking the design spec
 - Say "done" without verifying against Figma
 
+### Sandbox UI (sd-*) Component Attribute Names
+- `@accelins/sandbox-ui` Lit components use **camelCase** attribute names, NOT kebab-case
+- Check `node_modules/@accelins/sandbox-ui/dist/custom-elements.json` for actual attribute/property mappings
+- Examples: `dialogTitle` not `dialog-title`, `minWidth` not `min-width`, `aspectRatio` not `aspect-ratio`
+- Svelte sets kebab-case as HTML attributes which Lit won't recognize → properties stay at defaults
+
+### Design System Version Checking
+- hb-ui-kit CDN `main` build tracks latest merged commits to main branch
+- Ecosystem dashboard "commits behind" count = ALL monorepo commits, not just hb-ui-kit
+- Stage (`version: main`) and Prod (`version: 0.5.0`) can both include same fixes
+- To verify deployed version: check CDN bundle content, not commit counts
+
 ## Prompting Patterns I May Use
 - "Grill me on these changes" = Review my code critically before PR
 - "Prove to me this works" = Diff behavior between main and feature branch
@@ -121,6 +139,8 @@ Workflow for any visual/styling changes:
 - **Always pull main before**: creating branches, comparing/diffing, reviewing PRs
   - In worktree setups: `git -C <path-to-main-worktree> pull`
 - Read-only git commands can be executed without asking (`git log`, `git diff`, `git blame`, `git status`, `git branch`, `git show`)
+- **Never amend commits** unless explicitly asked — always create new commits to preserve history and easy reverts
+- **Never force push** without asking permission first — only when truly necessary (e.g. after a requested rebase/amend)
 
 ### Branch Naming
 - Format: `ben/<type>/[optional-jira-ticket]<description>`
