@@ -51,7 +51,7 @@ Key stages:
 - **Development**: `enabled: false` with team/QA rollouts
 - **Acceptance testing**: Stage `enabled: true` (except `stage-prodlike-qa-segment`), Prod `enabled: false` with QA rollouts
 - **Release**: Both stage and prod `enabled: true`, clean up rollout segments
-- **Cleanup**: Remove flag from code and config
+- **Cleanup**: Two-step process — **first** remove flag from codebase and deploy to prod, **then** remove from Flipt config in a separate PR. Never remove the Flipt config simultaneously with the code change.
 
 ### Flipt Skills (Preferred)
 When the `arx-dev-core-flipt` plugin is installed, **always use the skills** instead of editing Flipt YAML files manually:
@@ -65,14 +65,46 @@ When the `arx-dev-core-flipt` plugin is installed, **always use the skills** ins
 - `~/.claude/settings.secrets.json` → local only, NOT backed up (for API keys, tokens)
 
 ## Self-Improvement
-- After any correction from me, ask: "Should I update CLAUDE.md so I don't make this mistake again?"
+- After any correction from me, update `tasks/lessons.md` with the pattern and a rule to prevent it
+- Also ask: "Should I update CLAUDE.md so I don't make this mistake again?"
 - When I say yes, add a concise rule to prevent the specific mistake
+- Review `tasks/lessons.md` at session start for relevant patterns
 - When creating personal config files, ALWAYS store them in `~/dotfiles/` and symlink to their target location. Update `~/dotfiles/init.sh` with the symlink command. NEVER include secrets (API keys, tokens) in dotfiles - those go in local-only files like `settings.secrets.json`.
 
+## Workflow Orchestration
+
+### Planning
+- Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
+- If something goes sideways, **STOP and re-plan immediately** — don't keep pushing
+- Use plan mode for verification steps, not just building
+
+### Subagent Strategy
+- Use subagents liberally to keep main context window clean
+- One task per subagent for focused execution
+- For complex problems, throw more compute at it via subagents
+
+### Demand Elegance
+- For non-trivial changes: pause and ask "is there a more elegant way?"
+- If a fix feels hacky, step back and implement the clean solution
+- Skip this for simple, obvious fixes — don't over-engineer
+
+### Autonomous Bug Fixing
+- When given a bug report: just fix it. Don't ask for hand-holding
+- Point at logs, errors, failing tests — then resolve them
+- Zero context switching required from the user
+
+### Task Management
+- Write plan to `tasks/todo.md` with checkable items
+- Track progress by marking items complete as you go
+- Document results and capture lessons in `tasks/lessons.md`
+
 ## Verification & Quality
+- **Never mark a task complete without proving it works**
+- Diff behavior between main and feature branch when relevant
+- Ask: "Would a staff engineer approve this?"
+- Run tests, check logs, demonstrate correctness
 - After completing a feature, offer: "Want me to verify this works with a background agent?"
 - For long-running tasks, use subagents to verify work
-- Run tests after making changes to catch regressions
 - Use "code-simplifier" subagent after completing features to clean up code
 
 ## Verification Rules
@@ -202,10 +234,12 @@ If cleanup already failed and cwd is broken:
 ## Tool Selection: MCP over WebFetch
 For any service with a working MCP integration, **always use the MCP tools instead of WebFetch**. WebFetch fails on authenticated pages - don't ask for permission, just use the MCP directly.
 
-Examples:
-- Confluence/Jira (`accelins.atlassian.net`) → Atlassian MCP
-- GitHub → GitHub MCP or `gh` CLI
-- Figma → Figma MCP
+**Fallback chains** (never skip to WebFetch):
+- **GitHub**: `gh` CLI → GitHub MCP (`mcp__github__*`) → ask user. **Never WebFetch.**
+- **Confluence/Jira**: Atlassian MCP → ask user. **Never WebFetch.**
+- **Figma**: Figma MCP → ask user. **Never WebFetch.**
+
+If `gh` CLI is rate limited, use GitHub MCP immediately — don't try WebFetch as an intermediate step.
 
 ## GitHub
 - Favor `gh` CLI over MCP tools for GitHub operations
