@@ -145,7 +145,7 @@ alias reloadUi='cd ../automations-ui; npm run lib; cd ../automations-editor; npm
 alias wt='cd ~/Code/rx-frontend-wt'
 alias wtm='cd ~/Code/rx-frontend-wt/main'
 alias wtls='git worktree list'
-wta() { cd ~/Code/rx-frontend-wt && git worktree add "$1" -b "ben/$1" main && cd "$1" && ../setup-worktree.sh; }
+wta() { cd ~/Code/rx-frontend-wt && git fetch origin main && git worktree add "$1" -b "ben/$1" origin/main && cd "$1" && ../setup-worktree.sh; }
 wtr() { cd ~/Code/rx-frontend-wt && git worktree remove "$1"; }
 
 # Create rx-frontend worktree + tmux window (explicit, ignores current directory)
@@ -159,7 +159,7 @@ rwtc() {
 
   # Create worktree if it doesn't exist (in subshell to preserve cwd)
   if [ ! -d "$wt_path" ]; then
-    (cd ~/Code/rx-frontend-wt && git worktree add "$name" -b "ben/$name" main && cd "$name" && ../setup-worktree.sh)
+    (cd ~/Code/rx-frontend-wt && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh)
   fi
 
   # Create new tmux window with split panes
@@ -201,9 +201,9 @@ wtc() {
   # Create worktree if it doesn't exist (in subshell to preserve cwd)
   if [ ! -d "$wt_path" ]; then
     if $run_setup; then
-      (cd "$base_path" && git worktree add "$name" -b "ben/$name" main && cd "$name" && ../setup-worktree.sh)
+      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh)
     else
-      (cd "$base_path" && git worktree add "$name" -b "ben/$name" main)
+      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main)
     fi
   fi
 
@@ -219,7 +219,7 @@ wtc() {
 # Git worktree navigation - ap-ui
 alias awt='cd ~/Code/ap-ui-wt'
 alias awtm='cd ~/Code/ap-ui-wt/main'
-awta() { cd ~/Code/ap-ui-wt && git worktree add "$1" -b "ben/$1" main && cd "$1"; }
+awta() { cd ~/Code/ap-ui-wt && git fetch origin main && git worktree add "$1" -b "ben/$1" origin/main && cd "$1"; }
 awtr() { cd ~/Code/ap-ui-wt && git worktree remove "$1"; }
 
 # Create ap-ui worktree + tmux window (split panes) + start Claude
@@ -233,7 +233,7 @@ awtc() {
 
   # Create worktree if it doesn't exist (in subshell to preserve cwd)
   if [ ! -d "$wt_path" ]; then
-    (cd ~/Code/ap-ui-wt && git worktree add "$name" -b "ben/$name" main)
+    (cd ~/Code/ap-ui-wt && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main)
   fi
 
   # Create new tmux window with split panes
