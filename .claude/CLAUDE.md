@@ -98,6 +98,10 @@ When the `arx-dev-core-flipt` plugin is installed, **always use the skills** ins
 - Track progress by marking items complete as you go
 - Document results and capture lessons in `tasks/lessons.md`
 
+### Pre-Commit/Review Check
+- When `/commit` or `/review` is invoked, **check for deferred/paused tasks** from the conversation (e.g. "pause for now", "hold off on this", "come back to this later")
+- If any exist, list them and ask whether to address them before proceeding
+
 ## Verification & Quality
 - **Never mark a task complete without proving it works**
 - Diff behavior between main and feature branch when relevant
