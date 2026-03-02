@@ -75,12 +75,24 @@
       "Bash(gh:*)",
       "Bash(git stash:*)",
       "Bash(git rebase:*)",
-      "Bash(for:*)"
+      "Bash(for:*)",
+      "Bash(lsof:*)"
     ],
     "defaultMode": "acceptEdits"
   },
   "model": "opus",
   "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ~/.claude/tmux-notify.sh",
+            "async": true
+          }
+        ]
+      }
+    ],
     "Notification": [
       {
         "hooks": [
