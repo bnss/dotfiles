@@ -294,6 +294,10 @@ When creating Jira tickets, use these defaults:
 ## Sentry Defaults
 
 - When you mark a sentry issue as resolved, please mark it as "resolved in the next release"
+- When a Jira ticket is created for a Sentry issue, link them:
+  - Add a comment on the Jira ticket with the Sentry issue link
+  - Add a comment on the Sentry issue (if possible) with the Jira ticket link
+  - Note: bi-directional Sentry↔Jira linking requires the Sentry UI; do what's possible via MCP
 
 ## Claude Code Sessions
 
