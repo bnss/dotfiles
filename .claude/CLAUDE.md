@@ -307,6 +307,19 @@ When creating Jira tickets, use these defaults:
 - Ask: "Want to rename this session to `<suggested-name>`?" with a short, descriptive name
 - Use `/rename <session-name>` to rename
 
+## Shell Script Style
+- **No single-line `if` statements** — always use multi-line with explicit braces:
+  ```bash
+  # Good
+  if [[ condition ]]; then
+    action
+  fi
+
+  # Bad
+  [[ condition ]] && action
+  if [[ condition ]]; then action; fi
+  ```
+
 ## Response Formatting
 
 - Visually clear but **compact** - don't add excessive blank lines or padding

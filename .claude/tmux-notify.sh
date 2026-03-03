@@ -6,10 +6,6 @@
 # Bail early if not in tmux
 [ -z "$TMUX" ] && exit 0
 
-# Only set 🔴 if the user is NOT looking at this pane
-active_pane=$(tmux display-message -p '#{pane_id}' 2>/dev/null)
-[[ "$TMUX_PANE" == "$active_pane" ]] && exit 0
-
 # Get window name for this Claude pane (not the active window)
 current=$(tmux display-message -t "$TMUX_PANE" -p '#W' 2>/dev/null)
 
