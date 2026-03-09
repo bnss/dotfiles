@@ -202,6 +202,13 @@ If either fails, fix issues before committing. Don't skip this step.
 - `main/` worktree is for pulling, diffing, comparing only - keep it clean
 - Use `/worktree` skill for guided setup, or follow checklist below
 
+### Bare Repo Setup (one-time)
+After `git clone --bare`, the fetch refspec is missing. **Always add it**:
+```bash
+git -C <bare-repo> config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+```
+Without this, `git fetch`/`git pull` silently fails to update `origin/main`, causing all worktrees to start from stale code.
+
 ### Worktree Setup Checklist
 When creating a new worktree, **always complete ALL steps**:
 1. Pull main first: `git -C <main-worktree> pull`
@@ -231,9 +238,10 @@ If cleanup already failed and cwd is broken:
 - `~/.claude/settings.json` defines auto-allowed commands - never ask permission for those
 - When asking permission for a read-only or repetitive command, suggest: "Want me to add this to settings.json?"
 - **Never use Bash for file operations** - use dedicated tools instead:
-  - Read files → `Read` tool (not `cat`, `head`, `tail`, `sed -n`)
-  - Edit files → `Edit` tool (not `sed -i`, `awk`)
+  - Read files → `Read` tool (not `cat`, `head`, `tail`)
+  - Edit files → `Edit` tool (not `awk`)
   - Search files → `Grep`/`Glob` tools (not `grep`, `find`)
+- **Never use `sed`** — not for reading (`sed -n`), not for editing (`sed -i`), not in pipes. Use `Read` (with `offset`/`limit`) for reading and `Edit` for modifications. Only use `sed` if absolutely no dedicated tool can accomplish the task.
 
 ## Tool Selection: MCP over WebFetch
 For any service with a working MCP integration, **always use the MCP tools instead of WebFetch**. WebFetch fails on authenticated pages - don't ask for permission, just use the MCP directly.
