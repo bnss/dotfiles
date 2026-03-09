@@ -6,6 +6,8 @@ Run 5 parallel review agents to catch regressions and issues from multiple angle
 
 First, identify the files that have changed (use git diff against main if on a feature branch, or look at recent commits).
 
+**Important**: When reviewing code, never use piped bash commands (e.g. `git diff | grep | head`). Instead use dedicated tools: `Grep` for searching content, `Read` for reading files, `Glob` for finding files. Only use `Bash` for simple, non-piped commands like `git diff`, `git log`, `git blame`, `gh pr list`.
+
 Then launch these 5 review agents **in parallel** using the Task tool:
 
 ### 1. CLAUDE.md Compliance Review
