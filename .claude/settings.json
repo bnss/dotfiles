@@ -52,6 +52,7 @@
       "Bash(npm ls:*)",
       "Bash(npm view:*)",
       "Bash(npm show:*)",
+      "Bash(npm test:*)",
       "Bash(npm run test\\:*:*)",
       "Bash(npm run test:*)",
       "Bash(npm run check:*)",
