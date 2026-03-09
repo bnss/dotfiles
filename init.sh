@@ -35,6 +35,7 @@ brew install --cask gitify
 brew install --cask vial
 brew install --cask linearmouse
 brew install --cask background-music
+brew install --cask jordanbaird-ice
 
 echo "-= Installing Theming Dependencies =-"
 brew tap tinted-theming/tinted
