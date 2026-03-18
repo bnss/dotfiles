@@ -237,11 +237,12 @@ If cleanup already failed and cwd is broken:
 ## Commandline & Permissions
 - `~/.claude/settings.json` defines auto-allowed commands - never ask permission for those
 - When asking permission for a read-only or repetitive command, suggest: "Want me to add this to settings.json?"
-- **Never use Bash for file operations** - use dedicated tools instead:
-  - Read files → `Read` tool (not `cat`, `head`, `tail`)
-  - Edit files → `Edit` tool (not `awk`)
-  - Search files → `Grep`/`Glob` tools (not `grep`, `find`)
-- **Never use `sed`** — not for reading (`sed -n`), not for editing (`sed -i`), not in pipes. Use `Read` (with `offset`/`limit`) for reading and `Edit` for modifications. Only use `sed` if absolutely no dedicated tool can accomplish the task.
+- **ALWAYS prefer dedicated tools over Bash equivalents** — this is a hard rule, not a suggestion:
+  - Read files → `Read` tool (not `cat`, `head`, `tail`, `less`, `more`)
+  - Edit files → `Edit` tool (not `sed`, `awk`)
+  - Search file contents → `Grep` tool (not `grep`, `rg`)
+  - Find/list files → `Glob` tool (not `find`, `ls`)
+  - Only fall back to Bash when the dedicated tool genuinely cannot do the job
 
 ## Tool Selection: MCP over WebFetch
 For any service with a working MCP integration, **always use the MCP tools instead of WebFetch**. WebFetch fails on authenticated pages - don't ask for permission, just use the MCP directly.
@@ -252,6 +253,8 @@ For any service with a working MCP integration, **always use the MCP tools inste
 - **Figma**: Figma MCP → ask user. **Never WebFetch.**
 
 If `gh` CLI is rate limited, use GitHub MCP immediately — don't try WebFetch as an intermediate step.
+
+- **Datadog**: When the user pastes a `datadoghq.eu` URL or asks about Datadog logs/metrics/monitors/errors, **always invoke the `/datadog` skill**. Use `pup` CLI commands (with `DD_SITE=datadoghq.eu`) — never WebFetch.
 
 ## GitHub
 - Favor `gh` CLI over MCP tools for GitHub operations
