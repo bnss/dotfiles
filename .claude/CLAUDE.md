@@ -260,7 +260,8 @@ If `gh` CLI is rate limited, use GitHub MCP immediately — don't try WebFetch a
 - Favor `gh` CLI over MCP tools for GitHub operations
 - For Actions workflow runs/job logs: always use `gh` CLI (`gh run view`, `gh run view --job`), never WebFetch
 - When creating PRs, assign `bnss` as assignee
-- Add copilot as reviewer: try `--reviewer copilot` during `gh pr create`, if it fails use `gh pr edit <number> --add-reviewer copilot`
+- Add copilot as reviewer: always use the REST API after PR creation (both initial and re-requests). `--reviewer copilot` and `--add-reviewer copilot` silently no-op or use the wrong username:
+  `gh api repos/<owner>/<repo>/pulls/<number>/requested_reviewers -f 'reviewers[]=copilot-pull-request-reviewer[bot]' --method POST`
 
 ## Jira Defaults
 

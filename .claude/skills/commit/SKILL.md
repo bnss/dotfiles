@@ -109,10 +109,10 @@ EOF
 )" --assignee bnss
 ```
 
-Then add copilot as reviewer:
+Then add copilot as reviewer (use REST API — `--add-reviewer` silently no-ops for re-requests):
 
 ```bash
-gh pr edit <PR_NUMBER> --add-reviewer copilot
+gh api repos/<owner>/<repo>/pulls/<PR_NUMBER>/requested_reviewers -f 'reviewers[]=copilot-pull-request-reviewer[bot]' --method POST
 ```
 
 **If no Jira ticket exists**, add the `pre-approved` label:
