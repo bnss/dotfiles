@@ -216,6 +216,48 @@ wtc() {
   tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
 
+# Create worktree + split pane in current window + start Claude
+# Same as wtc but opens a single side-by-side pane instead of a new window
+wtcs() {
+  if [ -z "$1" ]; then
+    echo "Usage: wtcs <worktree-name>" >&2
+    return 1
+  fi
+  local name="$1"
+  local base_path
+  local run_setup=false
+
+  # Detect repo from current directory
+  case "$(pwd)" in
+    *ap-ui*)
+      base_path="$HOME/Code/ap-ui-wt"
+      ;;
+    *rx-frontend*)
+      base_path="$HOME/Code/rx-frontend-wt"
+      run_setup=true
+      ;;
+    *)
+      echo "Could not detect repo from current directory (use from ap-ui-wt or rx-frontend-wt)" >&2
+      return 1
+      ;;
+  esac
+
+  local wt_path="$base_path/$name"
+
+  # Create worktree if it doesn't exist (in subshell to preserve cwd)
+  if [ ! -d "$wt_path" ]; then
+    if $run_setup; then
+      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh)
+    else
+      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main)
+    fi
+  fi
+
+  # Split current pane vertically (side by side) and run claude there
+  tmux split-window -h -c "$wt_path"
+  tmux send-keys "claude --permission-mode plan; tcc" Enter
+}
+
 # Git worktree navigation - ap-ui
 alias awt='cd ~/Code/ap-ui-wt'
 alias awtm='cd ~/Code/ap-ui-wt/main'
