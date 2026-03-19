@@ -142,13 +142,13 @@ alias lego='mupen64plus --windowed ~/Dropbox/Documents/ROMs/N64/LEGORacers.n64'
 alias reloadUi='cd ../automations-ui; npm run lib; cd ../automations-editor; npm run serve:qmfe'
 
 # Git worktree navigation - rx-frontend
-alias wt='cd ~/Code/rx-frontend-wt'
-alias wtm='cd ~/Code/rx-frontend-wt/main'
-alias wtls='git worktree list'
-wta() { cd ~/Code/rx-frontend-wt && git fetch origin main && git worktree add "$1" -b "ben/$1" origin/main && cd "$1" && ../setup-worktree.sh; }
-wtr() { cd ~/Code/rx-frontend-wt && git worktree remove "$1"; }
+alias wt='cd ~/Code/rx-frontend-wt'       # wt  = worktree (go to rx-frontend bare repo)
+alias wtm='cd ~/Code/rx-frontend-wt/main' # wtm = worktree main (go to rx-frontend main worktree)
+alias wtls='git worktree list'             # wtls = worktree list
+wta() { cd ~/Code/rx-frontend-wt && git fetch origin main && git worktree add "$1" -b "ben/$1" origin/main && cd "$1" && ../setup-worktree.sh; } # wta = worktree add
+wtr() { cd ~/Code/rx-frontend-wt && git worktree remove "$1"; } # wtr = worktree remove
 
-# Create rx-frontend worktree + tmux window (explicit, ignores current directory)
+# rwtc = rx worktree create (explicit rx-frontend, ignores current directory)
 rwtc() {
   if [ -z "$1" ]; then
     echo "Usage: rwtc <worktree-name>" >&2
@@ -170,7 +170,7 @@ rwtc() {
   tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
 
-# Create worktree + tmux window (split panes) + start Claude
+# wtc = worktree create (new tmux window with split panes + Claude)
 # Auto-detects repo from current directory (rx-frontend-wt or ap-ui-wt)
 wtc() {
   if [ -z "$1" ]; then
@@ -216,8 +216,7 @@ wtc() {
   tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
 
-# Create worktree + split pane in current window + start Claude
-# Same as wtc but opens a single side-by-side pane instead of a new window
+# wtcs = worktree create split (same as wtc but splits current window instead of new one)
 wtcs() {
   if [ -z "$1" ]; then
     echo "Usage: wtcs <worktree-name>" >&2
@@ -259,12 +258,12 @@ wtcs() {
 }
 
 # Git worktree navigation - ap-ui
-alias awt='cd ~/Code/ap-ui-wt'
-alias awtm='cd ~/Code/ap-ui-wt/main'
-awta() { cd ~/Code/ap-ui-wt && git fetch origin main && git worktree add "$1" -b "ben/$1" origin/main && cd "$1"; }
-awtr() { cd ~/Code/ap-ui-wt && git worktree remove "$1"; }
+alias awt='cd ~/Code/ap-ui-wt'       # awt  = ap-ui worktree (go to ap-ui bare repo)
+alias awtm='cd ~/Code/ap-ui-wt/main' # awtm = ap-ui worktree main
+awta() { cd ~/Code/ap-ui-wt && git fetch origin main && git worktree add "$1" -b "ben/$1" origin/main && cd "$1"; } # awta = ap-ui worktree add
+awtr() { cd ~/Code/ap-ui-wt && git worktree remove "$1"; } # awtr = ap-ui worktree remove
 
-# Create ap-ui worktree + tmux window (split panes) + start Claude
+# awtc = ap-ui worktree create (new tmux window with split panes + Claude)
 awtc() {
   if [ -z "$1" ]; then
     echo "Usage: awtc <worktree-name>" >&2
