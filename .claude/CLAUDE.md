@@ -236,6 +236,7 @@ If cleanup already failed and cwd is broken:
 
 ## Commandline & Permissions
 - `~/.claude/settings.json` defines auto-allowed commands - never ask permission for those
+- **Never chain commands with `&&`** — Claude Code's permission system evaluates chained commands differently, causing unexpected prompts even for allowed commands. Use separate Bash tool calls instead.
 - When asking permission for a read-only or repetitive command, suggest: "Want me to add this to settings.json?"
 - **ALWAYS prefer dedicated tools over Bash equivalents** — this is a hard rule, not a suggestion:
   - Read files → `Read` tool (not `cat`, `head`, `tail`, `less`, `more`)
