@@ -1,4 +1,6 @@
 #!/bin/bash
+# Usage: git clone git@github.com:bnss/dotfiles.git ~/dotfiles && ~/dotfiles/init.sh
+# Must be cloned to ~/dotfiles — all symlinks and scripts assume this path.
 
 if [ "$1" = "--backup" ]; then
   echo "-= Backing up existing configs to ~/old_configs =-"
