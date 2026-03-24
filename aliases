@@ -158,14 +158,20 @@ rwtc() {
   local wt_path="$HOME/Code/rx-frontend-wt/$name"
 
   # Create worktree if it doesn't exist (in subshell to preserve cwd)
+  local needs_setup=false
   if [ ! -d "$wt_path" ]; then
-    (cd ~/Code/rx-frontend-wt && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh)
+    (cd ~/Code/rx-frontend-wt && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh --skip-install)
+    needs_setup=true
   fi
 
   # Create new tmux window with split panes
   tmux new-window -n "$name" -c "$wt_path"
   tmux set-window-option automatic-rename off
   tmux split-window -h -c "$wt_path"
+  # Run npm install in the right pane if needed
+  if $needs_setup; then
+    tmux send-keys "npm install" Enter
+  fi
   tmux select-pane -L
   tmux send-keys "claude --permission-mode plan; tcc" Enter
 }
@@ -199,9 +205,11 @@ wtc() {
   local wt_path="$base_path/$name"
 
   # Create worktree if it doesn't exist (in subshell to preserve cwd)
+  local needs_setup=false
   if [ ! -d "$wt_path" ]; then
     if $run_setup; then
-      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh)
+      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh --skip-install)
+      needs_setup=true
     else
       (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main)
     fi
@@ -211,6 +219,10 @@ wtc() {
   tmux new-window -n "$name" -c "$wt_path"
   tmux set-window-option automatic-rename off  # Prevent tmux from overwriting window name
   tmux split-window -h -c "$wt_path"
+  # Run npm install in the right pane if needed (runs visibly in background)
+  if $needs_setup; then
+    tmux send-keys "npm install" Enter
+  fi
   tmux select-pane -L
   # Run claude, then clear red dot when it exits
   tmux send-keys "claude --permission-mode plan; tcc" Enter
@@ -244,12 +256,20 @@ wtcs() {
   local wt_path="$base_path/$name"
 
   # Create worktree if it doesn't exist (in subshell to preserve cwd)
+  local needs_setup=false
   if [ ! -d "$wt_path" ]; then
     if $run_setup; then
-      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh)
+      (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main && cd "$name" && ../setup-worktree.sh --skip-install)
+      needs_setup=true
     else
       (cd "$base_path" && git fetch origin main && git worktree add "$name" -b "ben/$name" origin/main)
     fi
+  fi
+
+  # Run npm install in background if needed (wtcs has no spare pane)
+  if $needs_setup; then
+    (cd "$wt_path" && npm install &> /tmp/npm-install-$name.log &)
+    echo "npm install running in background (log: /tmp/npm-install-$name.log)"
   fi
 
   # Split current pane vertically (side by side) and run claude there
