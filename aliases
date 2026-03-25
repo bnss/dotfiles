@@ -319,6 +319,16 @@ tcr() { tmux rename-window "🔴 $(tmux display-message -p '#W' | sed 's/^🔴 /
 # Clear attention marker (removes 🔴 prefix)
 tcc() { tmux rename-window "$(tmux display-message -p '#W' | sed 's/^🔴 //')"; }
 
+# Resume Claude session for a PR review (rehydrates original context)
+# Usage: review-pr 447  or  review-pr https://github.com/org/repo/pull/447
+review-pr() {
+  if [ -z "$1" ]; then
+    echo "Usage: review-pr <pr-number-or-url>" >&2
+    return 1
+  fi
+  claude --from-pr "$1"
+}
+
 # Multi-repo feature workflow
 # Usage: feature <name> [repos...] [--link]
 # Examples:
