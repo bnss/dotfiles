@@ -92,6 +92,9 @@
       "Bash(lsof*)",
       "Bash(lsof:*)",
       "Bash(lsof *)",
+      "Bash(sed -n*)",
+      "Bash(sed -n:*)",
+      "Bash(sed -n *)",
       "mcp__atlassian__*",
       "mcp__figma-remote-mcp__*",
       "mcp__github__*",
@@ -109,6 +112,11 @@
       "Search(//Users/bnss/Code/**)",
       "List(//Users/bnss/Code/**)",
       "Find(//Users/bnss/Code/**)"
+    ],
+    "deny": [
+      "Bash(sed -i*)",
+      "Bash(sed -i:*)",
+      "Bash(sed -i *)"
     ],
     "ask": [
       "Bash(git push --force *)",
