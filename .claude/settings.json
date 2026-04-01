@@ -185,6 +185,19 @@
   "enabledPlugins": {
     "code-simplifier@claude-plugins-official": true,
     "arx-dev-core@accelins-claude-code": true,
-    "arx-hb-ui-kit@accelins-claude-code": true
+    "arx-hb-ui-kit@accelins-claude-code": true,
+    "arx-frontend-lit-core@accelins-claude-code": true,
+    "arx-frontend-svelte-lit@accelins-claude-code": true,
+    "auto-auth@pi-marketplace": true,
+    "dev-workflow-toolkit@pi-marketplace": true,
+    "arx-dev-core-flipt@accelins-claude-code": true
+  },
+  "extraKnownMarketplaces": {
+    "pi-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "accelins/exp-pi-marketplace"
+      }
+    }
   }
 }

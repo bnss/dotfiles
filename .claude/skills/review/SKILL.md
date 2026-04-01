@@ -1,4 +1,7 @@
-# Comprehensive Code Review
+---
+name: review
+description: "Comprehensive Code Review. Run 5 parallel review agents to catch regressions and issues from multiple angles. Use when asked to: review code, review my changes, is this ready to commit, check this code."
+---
 
 Run 5 parallel review agents to catch regressions and issues from multiple angles.
 
@@ -6,7 +9,7 @@ Run 5 parallel review agents to catch regressions and issues from multiple angle
 
 First, identify the files that have changed (use git diff against main if on a feature branch, or look at recent commits).
 
-**Important**: When reviewing code, never use piped bash commands (e.g. `git diff | grep | head`). Instead use dedicated tools: `Grep` for searching content, `Read` for reading files, `Glob` for finding files. Only use `Bash` for simple, non-piped commands like `git diff`, `git log`, `git blame`, `gh pr list`.
+**Important**: When reviewing code, never use piped bash commands (e.g. `git diff | grep | head`). Instead use dedicated tools: `Grep` for searching content, `Read` for reading files, `Glob` for finding files. Only use `Bash` for simple, non-piped commands like `git diff`, `git log`, `git blame`, `gh pr list`. **Never chain commands with `;` or `&&`** — each command must be a separate Bash tool call. Chained commands trigger permission prompts even for allowed commands.
 
 Then launch these 5 review agents **in parallel** using the Task tool:
 
